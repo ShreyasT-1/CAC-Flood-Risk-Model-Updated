@@ -1,13 +1,6 @@
-# Coastal Flood Risk Model
+# Coastal Flood Risk Model for Congressional App Challenge
 
-A predictive model for coastal flood insurance risk, covering tracts within 30 miles of the coastline from Maine to Florida (14 East Coast states).
-
-## What it does
-
-`floodData.py` has two modes:
-
-- **`build`** — downloads and assembles the training data: NFIP claims and policy history, Census demographics, coastline distance, elevation, rainfall, and FEMA flood zone coverage for every qualifying coastal tract.
-- **`lookup <address>`** — geocodes a single address and returns a plain-language flood risk report using the same underlying data sources. This is the backend for the address-lookup app.
+A predictive model for coastal flood insurance risk, covering regions within 30 miles of the coastline from Maine to Florida (14 East Coast states).
 
 ## What the model predicts
 
@@ -46,17 +39,4 @@ Each row is one coastal tract in one time window. The model predicts flood insur
 
 **Physical:** `elevMeanFt`, `elevMinFt`, `elevRangeFt`, `rain100yr24hrIn`
 
-`model_ready.parquet` adds missing-value indicator flags per feature, applies log/arcsinh transforms to skewed columns, and standardizes using train-set statistics only. `model_scaler.json` stores that fit so new addresses can be scored on the same scale at inference time.
 
-
-```
-
-## Model
-
-- PyTorch regression model, trained on `model_ready.parquet`.
-- Poisson loss with exposure, to handle count data weighted by policy-years.
-- Scored against baseline models (state average, past claim rate, zone-only, Poisson GLM) using a single shared scoring function (deviance + top-decile capture) to keep comparisons fair.
-
-## Status
-
-Data pipeline in progress — see in-repo notes for current source completion status.
