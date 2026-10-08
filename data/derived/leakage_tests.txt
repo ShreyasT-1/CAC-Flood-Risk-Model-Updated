@@ -1,0 +1,38 @@
+LEAKAGE TESTS
+[PASS] no event_id appears in both test and trainval/unseen
+[PASS] no event_id spans two cv folds
+[PASS] no holdout gauge has a trainval row
+[PASS] pilot gauges in train >= half of pilot gauges
+[PASS] no trainval/unseen row inside test+buffer window
+[PASS] features recomputed from data <= t match table (40 gauges x 8 hours x 3 features), mismatches=0
+[PASS] exceed_next_6h equals max stage over (t, t+6] only (10 gauges x 20 hours), mismatches=0
+[PASS] nwm_flow_pctile reference = TRAIN hours only (unseen gauges: unseen hours), mismatched gauges=0
+
+WARNINGS
+none
+
+                                        0       1         2        3
+split                              buffer    test  trainval   unseen
+gauges                                236     236       202       34
+storm_events_in_split                   1       1        89       89
+storm_events_with_primary_pos_12h       1       1        80       50
+rows                                79296  302788  13989106  2354602
+primary_gauges                        177     177       151       26
+primary_pos_1h                         32    7447     63383     8061
+primary_pos_2h                         47    7584     64349     8255
+primary_pos_3h                         70    7718     65290     8446
+primary_pos_4h                         96    7851     66221     8634
+primary_pos_5h                        123    7981     67143     8820
+primary_pos_6h                        151    8111     68060     9005
+primary_pos_7h                        182    8241     68971     9189
+primary_pos_8h                        214    8367     69880     9371
+primary_pos_9h                        246    8492     70783     9551
+primary_pos_10h                       279    8616     71681     9730
+primary_pos_11h                       313    8740     72575     9909
+primary_pos_12h                       348    8863     73466    10087
+primary_pos_gauges_12h                 35      85       104       22
+proxy_pos_12h                         591    9046     59338    11218
+
+holdout gauges (34): 02074000 02077303 02082585 02084000 02087275 0208758850 02088000 0209205053 02093000 02094775 02097280 02099000 02102000 02103000 02104000 02113850 02116500 0212414900 0212430653 02126375 02133624 02138520 0214265828 0214266000 02143040 02146285 02146315 0214640410 02146470 03447687 0344894205 03451500 0345577330 03500000
+cv fold primary positives (12h): {0: 14694.0, 1: 14693.0, 2: 14693.0, 3: 14693.0, 4: 14693.0}
+Florence event_id=39 window 2018-09-13 17:00:00+00:00 .. 2018-11-06 03:00:00+00:00; buffer 2018-09-06 17:00:00+00:00 .. 2018-11-13 03:00:00+00:00

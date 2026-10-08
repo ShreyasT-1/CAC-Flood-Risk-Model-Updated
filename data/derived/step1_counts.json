@@ -1,0 +1,15 @@
+{
+ "nc_stream_sites_total": 2196,
+ "with_continuous_series": 442,
+ "with_discharge": 371,
+ "with_stage": 335,
+ "with_discharge_in_window": 248,
+ "with_stage_in_window": 294,
+ "with_official_flood_stage": 233,
+ "without_official_flood_stage": 209,
+ "official_stage_and_stage_series": 233,
+ "datum_ok": 150,
+ "datum_excluded": 83,
+ "in_pilot": 89,
+ "pilot_lookup_failed": 9
+}

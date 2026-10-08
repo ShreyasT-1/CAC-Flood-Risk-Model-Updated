@@ -1,0 +1,5 @@
+split,gauges,storm_events_in_split,storm_events_with_primary_pos_12h,rows,primary_gauges,primary_pos_1h,primary_pos_2h,primary_pos_3h,primary_pos_4h,primary_pos_5h,primary_pos_6h,primary_pos_7h,primary_pos_8h,primary_pos_9h,primary_pos_10h,primary_pos_11h,primary_pos_12h,primary_pos_gauges_12h,proxy_pos_12h
+buffer,236,1,1,79296,177,32,47,70,96,123,151,182,214,246,279,313,348,35,591
+test,236,1,1,302788,177,7447,7584,7718,7851,7981,8111,8241,8367,8492,8616,8740,8863,85,9046
+trainval,202,89,80,13989106,151,63383,64349,65290,66221,67143,68060,68971,69880,70783,71681,72575,73466,104,59338
+unseen,34,89,50,2354602,26,8061,8255,8446,8634,8820,9005,9189,9371,9551,9730,9909,10087,22,11218

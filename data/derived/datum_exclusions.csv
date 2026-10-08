@@ -1,0 +1,56 @@
+usgs_id,nws_lid,datum_reason
+0204382800,PSQN7,no NWPS crest with USGS gage height
+02053200,POTN7,no NWPS crest with USGS gage height
+02077670,BTHN7,fewer than 2 comparable crest events
+0208062765,HFXN7,no NWPS crest with USGS gage height
+02081094,JAMN7,no NWPS crest with USGS gage height
+0208114150,WESN7,no NWPS crest with USGS gage height
+0208250410,LXRN7,no NWPS crest with USGS gage height
+02082950,RNGN7,fewer than 2 comparable crest events
+02084557,VANN7,no NWPS crest with USGS gage height
+02085070,ENON7,median |USGS-NWS| > 0.5 ft
+0208521324,LTLN7,fewer than 2 comparable crest events
+0208524090,MBHN7,fewer than 2 comparable crest events
+02086624,BNRN7,fewer than 2 comparable crest events
+02087183,NEUN7,no NWPS crest with USGS gage height
+02087337,BKJN7,median |USGS-NWS| > 0.5 ft
+0208734795,WAWN7,median |USGS-NWS| > 0.5 ft
+0208735012,RBRN7,no NWPS crest with USGS gage height
+0208735460,WSSN7,median |USGS-NWS| > 0.5 ft
+02087359,WALN7,fewer than 2 comparable crest events
+0208773375,SFCN7,no NWPS crest with USGS gage height
+02088383,LRZN7,no NWPS crest with USGS gage height
+02090380,LUCN7,fewer than 2 comparable crest events
+02095000,SBCN7,median |USGS-NWS| > 0.5 ft
+0209722970,SCRN7,no NWPS crest with USGS gage height
+02097280,TFRN7,fewer than 2 comparable crest events
+0209734440,BOCN7,fewer than 2 comparable crest events
+02097517,MGCN7,no NWPS crest with USGS gage height
+02098206,HRMN7,no NWPS crest with USGS gage height
+0210166029,CCRN7,no NWPS crest with USGS gage height
+02102192,BUCN7,fewer than 2 comparable crest events
+0210382325,CCBN7,fewer than 2 comparable crest events
+02104220,RFDN7,fewer than 2 comparable crest events
+02105500,STPN7,median |USGS-NWS| > 0.5 ft
+02111500,REDN7,no NWPS crest with USGS gage height
+02114450,DALN7,no NWPS crest with USGS gage height
+0212378405,PDTN7,no NWPS crest with USGS gage height
+02126000,NRWN7,fewer than 2 comparable crest events
+02128000,LITN7,no NWPS crest with USGS gage height
+02132320,BSHN7,fewer than 2 comparable crest events
+02133500,HOFN7,fewer than 2 comparable crest events
+02133624,MAXN7,no NWPS crest with USGS gage height
+02134500,BRDN7,no NWPS crest with USGS gage height
+0214265808,TORN7,fewer than 2 comparable crest events
+02144000,BESN7,fewer than 2 comparable crest events
+02146315,WSTN7,no NWPS crest with USGS gage height
+02146381,PNVN7,fewer than 2 comparable crest events
+02146530,PINN7,fewer than 2 comparable crest events
+02152100,CSRN7,fewer than 2 comparable crest events
+03446000,MRSN7,fewer than 2 comparable crest events
+0344632850,MNMN7,no NWPS crest with USGS gage height
+03453000,IVYN7,no NWPS crest with USGS gage height
+03455500,LLGN7,no NWPS crest with USGS gage height
+0345577330,RTRN7,no NWPS crest with USGS gage height
+03459500,HEPN7,fewer than 2 comparable crest events
+0350011450,CARN7,no NWPS crest with USGS gage height
