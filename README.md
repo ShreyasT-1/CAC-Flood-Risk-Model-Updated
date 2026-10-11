@@ -1,125 +1,93 @@
-# FloodLens
+# FloodLens Lifelines
 
-**A catchment-level flood susceptibility score for the U.S. East Coast.**
+**Floods don't just damage property. They cut people off from help.**
 
-FloodLens ranks 134,903 coastal catchments, from Maine to Florida, by how intense their runoff is likely to be, using only permanent features of the landscape. Enter an address, get a percentile band, see what's driving it, and compare it against FEMA's flood zone.
+FloodLens Lifelines forecasts when, and for how long, a neighborhood, a dialysis clinic or a nursing home may lose its road route to the nearest hospital and fire station during a flood. Insurance maps ask whether a building is in a flood zone. We ask a harder question: **can this address still reach help?**
 
-`134,903 catchments` · `14 states + PA/DC headwaters` · `17 features` · `XGBoost` · `4 held-out basins for testing`
-
----
-
-## Why it exists
-
-Flood risk is usually communicated as a single yes/no: is this parcel inside a FEMA flood zone? That leaves two gaps.
-
-- **Coverage.** Some areas have no FEMA map at all (3,557 catchments in our study area). Unmapped does not mean safe.
-- **Context.** A zone label doesn't say how a watershed compares with the rest of the coast, or why.
-
-FloodLens adds a comparable, explainable score for every catchment, and is explicit about where it can't give one.
+`3 counties` · `250+ structure-seeded crossings` · `6,940 neighborhoods modeled` · `11 emergency hospitals` · `220 fire stations` · `1 hurricane replayed hour by hour`
 
 ---
+
+## The problem nobody maps
+
+When Hurricane Florence hit Cape Fear in 2018, the most dangerous flooding came days after the rain stopped. Rivers crested, bridges and low crossings closed, and whole communities lost their routes out. Flood tools tell you where the water will be. None of them answer what happens to the *road network* around you, and ambulances and fire engines drive roads, not floodplains.
 
 ## What it does
 
-- **Locates** an address in its NHDPlus catchment.
-- **Ranks** that catchment against all East Coast catchments as a percentile band.
-- **Explains** the score with the top drivers (slope, impervious cover, rainfall depth, terrain, and more).
-- **Compares** the score with the FEMA flood zone, and flags where FEMA has no map or the model doesn't apply.
+Pick an address. FloodLens Lifelines shows:
 
-It is a relative ranking tool. It is **not** a flood forecast, an inundation map, or a storm-surge model.
+- **Time to isolation.** The first hour a route to help may break.
+- **Isolation duration.** How long access may stay cut.
+- **Detour cost.** How many extra minutes the surviving route adds.
+- **Critical crossing.** The one bridge or culvert whose failure matters most to you.
+- **Route redundancy.** How many hospitals and fire stations you can still reach.
+- **What Breaks First.** Every crossing in the region, ranked by how many people lose access if it fails, not by how likely it is to flood.
 
----
+All results are scenario-based and probabilistic. We never tell anyone a road is safe.
 
-## How it works
+## The pipeline
 
-```mermaid
-flowchart LR
-    A[NOAA · USGS · EPA · FEMA] --> B[Pipeline<br/>134,903 catchments]
-    B --> C[Audit<br/>leakage + label cleaning]
-    C --> D[XGBoost<br/>17 static features]
-    D --> E[Percentile bands<br/>+ top drivers]
-    E --> F[App]
-    G[FEMA zones] --> F
+```
+NOAA National Water Model ─┐
+USGS stream gauges ────────┤
+NCDOT + NBI structures ────┼─►  Crossing-level hazard  ─►  Dynamic road graph  ─►  Address-level
+1 m lidar terrain (HAND) ──┤     (recurrence-flow           (246,088 segments,        isolation
+FEMA flood zones ──────────┤      scenarios per hour)        closures per hour)       forecast
+CMS hospitals / USGS fire ─┘                                 multi-source routing
 ```
 
-1. **Collect.** A parallel pipeline joins NOAA's National Water Model, EPA StreamCat, USGS NHDPlus, NOAA Atlas 14 rainfall statistics, and FEMA flood maps onto every catchment within 50 miles of the coast.
-2. **Define the target.** For each catchment, the National Water Model's simulated peak flow divided by drainage area (log-scaled) over water years 1980–2022.
-3. **Learn.** A gradient-boosted model predicts that target from static landscape features only: terrain, soils and runoff, land cover, rainfall depth, distance to coast, and elevation above the channel.
-4. **Score.** Every catchment gets a percentile rank and a five-band category, plus the features pushing it up or down.
-5. **Serve.** The app looks up an address and shows the band, the drivers, and the FEMA zone side by side.
+1. **Hazard.** For every hour, each crossing's reach flow is compared with its 2- to 50-year recurrence flows from the National Water Model.
+2. **Terrain.** 1 m lidar gives each crossing's approach elevation and height above the channel, so long, high bridges aren't treated like low culverts.
+3. **Network.** A closed crossing removes its road segment from a drive graph covering three counties plus a 40 km buffer.
+4. **Routing.** Multi-source shortest paths run from every hospital and fire station to 6,940 Census block centroids, recomputed each hour.
+5. **Output.** Per-neighborhood time to isolation, duration, detour, redundancy and the critical crossing.
 
----
+## What makes it different
 
-## Data
-
-| Source | Role |
+| Typical flood tool | FloodLens Lifelines |
 |---|---|
-| NOAA National Water Model retrospective | Target (simulated peak flow) |
-| EPA StreamCat | Land cover, runoff, baseflow, precipitation, TWI, elevation |
-| USGS NHDPlusV2 | Catchments, drainage area, slope, flowline elevation, coastline |
-| NOAA Atlas 14 | 10-yr and 100-yr, 24-hour rainfall depths |
-| FEMA NFHL | Comparison and display only, never a model input |
-| USGS NWIS streamgages | Independent validation against observed flow |
+| Is this parcel in a flood zone? | Can this address still reach a hospital? |
+| Static map | Hour-by-hour dynamic network |
+| Hazard only | Hazard × network consequence |
+| Ranks places by flood chance | Ranks crossings by *people cut off* |
+| Asks you to trust it | Reports where it is wrong |
 
-**Dataset:** 134,903 catchments, of which 114,502 form the clean modeling set (93,948 train, 20,554 test). The rest are scored but never trained or evaluated on. About 13,000 tidal and shoreline catchments have no National Water Model coverage, so the app shows their FEMA zone rather than a score.
+## Proven against a real disaster
 
----
+We replay **Hurricane Florence (2018)** hour by hour, from Sept 13 to Nov 6, as both a hindcast on the NWM retrospective and a replay of the archived operational forecasts. We tested our own results against 24 matched road-closure reports with a random-draw null, and we publish the outcome whichever way it goes. [TBD: updated label test after manual review.]
 
-## Evaluation
+## Built to keep learning
 
-The model is tested on **whole river basins it never saw**: New England (0110), Mid-Atlantic (0203), Carolinas–Georgia (0302), and Atlantic Florida (0309). Random splits would flatter the results, since neighboring catchments are nearly identical. The protocol, metrics, and success criteria were written before any tuning (`docs/evaluation_protocol.md`), and the test set is scored once.
+- **Live forecast archive.** An hourly job archives every NWM short-range forecast cycle (18-hour leads) with its model version. This builds the real forecast-versus-reality dataset for the next storm.
+- **Gauge-stage nowcast.** A gradient-boosted model trained on 236 gauges, 90 storm events and 8 years of data predicts flood-stage exceedance up to 12 hours ahead. It is tested on held-out events, 34 unseen gauges and Florence against persistence baselines, with bootstrap confidence intervals. [TBD: final onset-recall numbers after retraining.]
+- **A leakage-tested pipeline.** Splits are by event and by gauge, statistics come from training data only, and automated tests recompute features from truncated data to prove nothing looks into the future.
 
-Preliminary cross-validation on the training basins (default XGBoost, test set untouched):
+## Radical about its limits
 
-| Measure | Value |
-|---|---|
-| Rank correlation, all 17 features | ~0.45 |
-| Rank correlation, without drainage-area features | 0.29 |
-| Rank correlation, drainage area regressed out | 0.34 |
-| 3-feature linear baseline | 0.28 |
+Most tools hide their weak spots. This one lists them:
 
+- It models river flooding only. **Storm surge, tide and street flooding are not included.**
+- Closure scenarios are not calibrated closure probabilities.
+- Closure labels are sparse and positive-only, so we do not claim validation.
+- Bridge deck height is not available from any public source, so we estimate it from lidar and flag where that fails.
+- We **never** say a road is safe.
 
----
+## Where this goes
 
-## Design decisions worth knowing
-
-- **Static features only.** The model can't see weather, so it ranks susceptibility, not events.
-- **FEMA is never an input.** It's the independent comparison, not a shortcut.
-- **"Unmapped" is not "safe."** Catchments with no FEMA data are never filled with zeros.
-- **Noisy labels are excluded, not patched.** Tiny-area, zero-flow, and implausible-ratio catchments are flagged and left out of training.
-- **Size is reported honestly.** Results always show the full model, a no-area ablation, and a size-adjusted rank correlation side by side.
-- **Two shortcuts were tested and removed.** Tropical-storm exposure acted as a location proxy (a plain-latitude control matched its gain), and full HAND rasters weren't worth ~40 GB, so a lightweight elevation-above-channel proxy is used and labeled as one.
-
----
-
-## Limitations
-
-- The target is simulated, not observed flooding.
-- Tidal and storm-surge flooding are not modeled. Those catchments show FEMA zones instead.
-- Flow per unit area depends strongly on catchment size, so absolute values are less meaningful than relative rank.
-- Very small and very dry basins are excluded from training, so scores there are less reliable.
-- Dams, storm timing, and local drainage infrastructure are not represented.
-- Test basins differ substantially from training basins in climate and terrain, so expect held-out scores below cross-validation scores.
-
-Details: `docs/README_modeling_handoff.md`.
-
----
+The Cape Fear pilot is the proof of concept. The data sources are national: NWM, USGS, NBI, CMS, Census, OSM and 3DEP. The same pipeline can cover any U.S. coastal region. The end goal is a tool emergency managers can use *before* the water arrives. That means evacuating the dialysis center before its road closes, and pre-positioning an ambulance on the right side of the river.
 
 ## Repository
 
 ```
-app/                        the FloodLens app
-pipeline/                   data collection and assembly
-config/feature_policy.yaml  allowed features, exclusions, flags
-data/processed/             frozen dataset, split manifest (raw data not committed)
-models/                     final model and per-catchment scores
-docs/                       audit report, evaluation protocol, data dictionary
-TECHNICAL_OVERVIEW.md       developer-level detail
+src/            numbered pipeline: gauges → crosswalk → hazard → network → routing → ML
+src/phase1/     routing engine, recurrence, connectivity, label tests
+data/           raw inputs, derived tables, exports (large files not committed)
+reports/        phase reports, data cards, model evaluations
+docs/           archiver setup, ML handoff, claims, export schema
 ```
 
+## Data and credits
 
----
+NOAA National Water Model and OWP, USGS NWIS and 3DEP, NCDOT, FHWA National Bridge Inventory, FEMA NFHL, CMS Hospital General Information, U.S. Census Bureau, OpenStreetMap contributors, NCAR/GDEX Stage IV. Please follow each provider's terms.
 
-## Credits
-
-Built on public datasets from NOAA, USGS, EPA, and FEMA. Please follow each provider's terms.
+*Built by Nishaanth Jay and Shreyas T. for the Congressional App Challenge.*
