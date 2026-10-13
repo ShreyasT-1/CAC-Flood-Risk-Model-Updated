@@ -1,0 +1,849 @@
+[
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "370190205101022",
+  "county": "Brunswick",
+  "pop20": 32,
+  "centroid_lat": 33.88665,
+  "centroid_lon": -78.50635,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH BRUNSWICK MEDICAL CENTER",
+   "drive_min": 27.7
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Sunset Beach Fire Station 11 - 1",
+   "drive_min": 1.7
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_2827",
+   "road": "Ocean Highway East",
+   "stream": null,
+   "effect_if_closed": "+5.5 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_1706",
+   "road": "Shoreline Drive East",
+   "stream": null,
+   "effect_if_closed": "+4.8 min",
+   "crossings_on_segment": 1
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 3
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "370190203113025",
+  "county": "Brunswick",
+  "pop20": 10,
+  "centroid_lat": 33.92643,
+  "centroid_lon": -78.20687,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH BRUNSWICK MEDICAL CENTER",
+   "drive_min": 19.9
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Sunset Harbor and Zion Hill Volunteer Fire Department",
+   "drive_min": 5.8
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_0018",
+   "road": "SR1112",
+   "stream": "MERCERS MILL POND",
+   "effect_if_closed": "loses all access",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_2264",
+   "road": "Sunset Harbor Road Southeast",
+   "stream": null,
+   "effect_if_closed": "+0.4 min",
+   "crossings_on_segment": 2
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 2,
+   "fire_stations_within_10_min": 1
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "370190203161019",
+  "county": "Brunswick",
+  "pop20": 64,
+  "centroid_lat": 33.90612,
+  "centroid_lon": -78.07236,
+  "baseline_nearest_ed_hospital": {
+   "name": "J ARTHUR DOSHER MEMORIAL HOSPITAL",
+   "drive_min": 10.0
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Oak Island Fire and Rescue Station 2 - Yaupon Beach Fire Department",
+   "drive_min": 0.8
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_0012",
+   "road": "NC133",
+   "stream": "INTRACOASTAL WATERWAY",
+   "effect_if_closed": "+17.6 min",
+   "crossings_on_segment": 3
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 5
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "370190203061061",
+  "county": "Brunswick",
+  "pop20": 59,
+  "centroid_lat": 33.9328,
+  "centroid_lon": -78.01594,
+  "baseline_nearest_ed_hospital": {
+   "name": "J ARTHUR DOSHER MEMORIAL HOSPITAL",
+   "drive_min": 2.1
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Southport Fire Department",
+   "drive_min": 1.9
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 2,
+   "fire_stations_within_10_min": 3
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "370190205081004",
+  "county": "Brunswick",
+  "pop20": 77,
+  "centroid_lat": 33.92299,
+  "centroid_lon": -78.52072,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH BRUNSWICK MEDICAL CENTER",
+   "drive_min": 26.7
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Sunset Beach Fire Station 11 - 1",
+   "drive_min": 10.0
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_0767",
+   "road": "Sandpiper Bay Drive Southwest",
+   "stream": null,
+   "effect_if_closed": "loses all access",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_0767",
+   "road": "Sandpiper Bay Drive Southwest",
+   "stream": null,
+   "effect_if_closed": "loses all access",
+   "crossings_on_segment": 1
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 0
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "370190203133023",
+  "county": "Brunswick",
+  "pop20": 22,
+  "centroid_lat": 33.91727,
+  "centroid_lon": -78.11952,
+  "baseline_nearest_ed_hospital": {
+   "name": "J ARTHUR DOSHER MEMORIAL HOSPITAL",
+   "drive_min": 15.3
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Oak Island Fire and Rescue Station 1",
+   "drive_min": 5.1
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_0012",
+   "road": "NC133",
+   "stream": "INTRACOASTAL WATERWAY",
+   "effect_if_closed": "+8.0 min",
+   "crossings_on_segment": 3
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 2,
+   "fire_stations_within_10_min": 3
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "370190205113006",
+  "county": "Brunswick",
+  "pop20": 6,
+  "centroid_lat": 33.91913,
+  "centroid_lon": -78.38959,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH BRUNSWICK MEDICAL CENTER",
+   "drive_min": 18.7
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Shallotte Point Volunteer Fire Department",
+   "drive_min": 2.6
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_0766",
+   "road": "Gurganus Road Southwest",
+   "stream": null,
+   "effect_if_closed": "loses all access",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_0766",
+   "road": "Gurganus Road Southwest",
+   "stream": null,
+   "effect_if_closed": "loses all access",
+   "crossings_on_segment": 1
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 3
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "370190201022030",
+  "county": "Brunswick",
+  "pop20": 10,
+  "centroid_lat": 34.27995,
+  "centroid_lon": -78.11466,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 16.9
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Leland Fire / Rescue Department Station 51",
+   "drive_min": 5.0
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_0076",
+   "road": "US17,US74/76,NC133",
+   "stream": "BRUNSWICK RIVER",
+   "effect_if_closed": "+6.2 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_1360",
+   "road": "Andrew Jackson Highway",
+   "stream": "Cowpen Branch",
+   "effect_if_closed": "+2.8 min",
+   "crossings_on_segment": 1
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 2
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371290120081001",
+  "county": "New Hanover",
+  "pop20": 460,
+  "centroid_lat": 34.15681,
+  "centroid_lon": -77.89534,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 8.4
+  },
+  "baseline_nearest_fire_station": {
+   "name": "New Hanover County Fire Rescue Myrtle Grove Station 18",
+   "drive_min": 2.9
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_1591",
+   "road": "South College Road",
+   "stream": null,
+   "effect_if_closed": "loses all access",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_1591",
+   "road": "South College Road",
+   "stream": null,
+   "effect_if_closed": "loses all access",
+   "crossings_on_segment": 1
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 9
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371290120061018",
+  "county": "New Hanover",
+  "pop20": 32,
+  "centroid_lat": 34.19516,
+  "centroid_lon": -77.89153,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 4.3
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Wilmington Fire Department Station 7",
+   "drive_min": 0.9
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_1913",
+   "road": "Shipyard Boulevard",
+   "stream": null,
+   "effect_if_closed": "+0.5 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_1438",
+   "road": "South College Road",
+   "stream": "Hewletts Creek",
+   "effect_if_closed": "+1.6 min",
+   "crossings_on_segment": 1
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 13
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371290112001022",
+  "county": "New Hanover",
+  "pop20": 12,
+  "centroid_lat": 34.23248,
+  "centroid_lon": -77.94498,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 5.2
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Wilmington Fire Department Headquarters",
+   "drive_min": 1.1
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_1337",
+   "road": "South 16th Street",
+   "stream": null,
+   "effect_if_closed": "+0.7 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 12
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371290117054024",
+  "county": "New Hanover",
+  "pop20": 32,
+  "centroid_lat": 34.27184,
+  "centroid_lon": -77.80201,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 17.0
+  },
+  "baseline_nearest_fire_station": {
+   "name": "New Hanover Fire Rescue Station 16 Ogden",
+   "drive_min": 4.1
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_2678",
+   "road": "Market Street",
+   "stream": null,
+   "effect_if_closed": "+0.5 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 5
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371290102002017",
+  "county": "New Hanover",
+  "pop20": 17,
+  "centroid_lat": 34.23335,
+  "centroid_lon": -77.92693,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 3.6
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Wilmington Fire Department Headquarters",
+   "drive_min": 1.4
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_1337",
+   "road": "South 16th Street",
+   "stream": null,
+   "effect_if_closed": "+2.1 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 10
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371290120061004",
+  "county": "New Hanover",
+  "pop20": 39,
+  "centroid_lat": 34.19701,
+  "centroid_lon": -77.89568,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 4.1
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Wilmington Fire Department Station 7",
+   "drive_min": 1.7
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_1913",
+   "road": "Shipyard Boulevard",
+   "stream": null,
+   "effect_if_closed": "+0.5 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_1438",
+   "road": "South College Road",
+   "stream": "Hewletts Creek",
+   "effect_if_closed": "+1.1 min",
+   "crossings_on_segment": 1
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 13
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371290120082021",
+  "county": "New Hanover",
+  "pop20": 71,
+  "centroid_lat": 34.14688,
+  "centroid_lon": -77.89611,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 9.3
+  },
+  "baseline_nearest_fire_station": {
+   "name": "New Hanover County Fire Rescue Myrtle Grove Station 18",
+   "drive_min": 2.7
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_0863",
+   "road": "Carolina Beach Road",
+   "stream": "Mott Creek",
+   "effect_if_closed": "+0.3 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_1750",
+   "road": "South College Road",
+   "stream": null,
+   "effect_if_closed": "+0.4 min",
+   "crossings_on_segment": 1
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 8
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371290121072005",
+  "county": "New Hanover",
+  "pop20": 33,
+  "centroid_lat": 34.07966,
+  "centroid_lon": -77.91881,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 16.7
+  },
+  "baseline_nearest_fire_station": {
+   "name": "New Hanover County Fire Rescue Federal Point Station 19",
+   "drive_min": 5.2
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_0863",
+   "road": "Carolina Beach Road",
+   "stream": "Mott Creek",
+   "effect_if_closed": "+1.2 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 3
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371290121082005",
+  "county": "New Hanover",
+  "pop20": 39,
+  "centroid_lat": 34.08801,
+  "centroid_lon": -77.88785,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 13.6
+  },
+  "baseline_nearest_fire_station": {
+   "name": "New Hanover County Fire Rescue Federal Point Station 19",
+   "drive_min": 4.4
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_0863",
+   "road": "Carolina Beach Road",
+   "stream": "Mott Creek",
+   "effect_if_closed": "+1.2 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 3
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371419202012003",
+  "county": "Pender",
+  "pop20": 159,
+  "centroid_lat": 34.39838,
+  "centroid_lon": -77.65914,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 32.4
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Pender Emergency Medical Services and Fire Station 14",
+   "drive_min": 3.6
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_1588",
+   "road": "US Highway 17",
+   "stream": null,
+   "effect_if_closed": "+1.3 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 0,
+   "fire_stations_within_10_min": 2
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371419201041013",
+  "county": "Pender",
+  "pop20": 4,
+  "centroid_lat": 34.4377,
+  "centroid_lon": -77.57299,
+  "baseline_nearest_ed_hospital": {
+   "name": "ONSLOW MEMORIAL HOSPITAL",
+   "drive_min": 39.5
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Surf City Fire Department Station 25",
+   "drive_min": 3.0
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 0,
+   "fire_stations_within_10_min": 4
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371419204021033",
+  "county": "Pender",
+  "pop20": 51,
+  "centroid_lat": 34.54811,
+  "centroid_lon": -77.94893,
+  "baseline_nearest_ed_hospital": {
+   "name": "PENDER MEMORIAL HOSPITAL",
+   "drive_min": 3.8
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Burgaw Fire Department",
+   "drive_min": 3.2
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_1607",
+   "road": "West Wilmington Street",
+   "stream": null,
+   "effect_if_closed": "+1.2 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_1607",
+   "road": "West Wilmington Street",
+   "stream": null,
+   "effect_if_closed": "+1.2 min",
+   "crossings_on_segment": 1
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 2
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371419205013003",
+  "county": "Pender",
+  "pop20": 21,
+  "centroid_lat": 34.49646,
+  "centroid_lon": -78.06776,
+  "baseline_nearest_ed_hospital": {
+   "name": "PENDER MEMORIAL HOSPITAL",
+   "drive_min": 21.3
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Atkinson Fire Department",
+   "drive_min": 15.7
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_1838",
+   "road": null,
+   "stream": null,
+   "effect_if_closed": "+4.3 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_1824",
+   "road": null,
+   "stream": "Mill Branch",
+   "effect_if_closed": "+0.4 min",
+   "crossings_on_segment": 1
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 0
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371419205012000",
+  "county": "Pender",
+  "pop20": 4,
+  "centroid_lat": 34.59804,
+  "centroid_lon": -78.13272,
+  "baseline_nearest_ed_hospital": {
+   "name": "PENDER MEMORIAL HOSPITAL",
+   "drive_min": 24.7
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Penderlea Fire Department",
+   "drive_min": 12.2
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_1606",
+   "road": null,
+   "stream": "Bear Den Branch",
+   "effect_if_closed": "+7.9 min",
+   "crossings_on_segment": 2
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_1189",
+   "road": null,
+   "stream": null,
+   "effect_if_closed": "+3.4 min",
+   "crossings_on_segment": 1
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 0
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371419202013000",
+  "county": "Pender",
+  "pop20": 466,
+  "centroid_lat": 34.40509,
+  "centroid_lon": -77.6497,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 33.1
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Pender Emergency Medical Services and Fire Station 14",
+   "drive_min": 3.4
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_1588",
+   "road": "US Highway 17",
+   "stream": null,
+   "effect_if_closed": "+2.9 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 0,
+   "fire_stations_within_10_min": 2
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371419202022029",
+  "county": "Pender",
+  "pop20": 12,
+  "centroid_lat": 34.3465,
+  "centroid_lon": -77.70786,
+  "baseline_nearest_ed_hospital": {
+   "name": "NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER",
+   "drive_min": 28.1
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Pender Emergency Medical Services and Fire Station 16",
+   "drive_min": 5.5
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_1109",
+   "road": "Washington Acres Road",
+   "stream": null,
+   "effect_if_closed": "+2.2 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": "V2_1109",
+   "road": "Washington Acres Road",
+   "stream": null,
+   "effect_if_closed": "+1.9 min",
+   "crossings_on_segment": 1
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 2
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ },
+ {
+  "stamp": "SAMPLE - block-centroid estimate",
+  "geoid20": "371419204022024",
+  "county": "Pender",
+  "pop20": 27,
+  "centroid_lat": 34.55604,
+  "centroid_lon": -77.92928,
+  "baseline_nearest_ed_hospital": {
+   "name": "PENDER MEMORIAL HOSPITAL",
+   "drive_min": 1.6
+  },
+  "baseline_nearest_fire_station": {
+   "name": "Burgaw Fire Department",
+   "drive_min": 0.7
+  },
+  "critical_crossing_for_hospital_access": {
+   "crossing_id": "V2_1350",
+   "road": "East Wilmington Street",
+   "stream": "Osgood Branch",
+   "effect_if_closed": "+0.1 min",
+   "crossings_on_segment": 1
+  },
+  "critical_crossing_for_fire_access": {
+   "crossing_id": null,
+   "note": "no inventoried crossing on the baseline path, or closing the crossings on it changes nothing",
+   "effect": null
+  },
+  "redundancy": {
+   "ed_hospitals_within_30_min": 1,
+   "fire_stations_within_10_min": 2
+  },
+  "method": "Baseline routing on OSM default speeds, no traffic. Critical crossing = the crossing on the baseline path whose closure alone (whole junction-to-junction segment) hurts this block most. No hazard or flow input."
+ }
+]

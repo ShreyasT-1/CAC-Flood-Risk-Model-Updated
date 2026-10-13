@@ -1,0 +1,2 @@
+variant,n_positive_reports,n_crossings,storm_clusters,auc,auc_ci95,share_gt_q2_reports,share_gt_q2_controls,timing_hit_reports,timing_diff,pass_B,pass_C
+1_all_auto_labels,74,66,24,0.958,"[0.916, 0.992]",0.608,0.0073,0.811,0.671,True,True

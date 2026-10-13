@@ -3,3 +3,4 @@ data/derived/ml_full_table/
 data/derived/*.parquet
 __pycache__/
 *.tmp
+data/forecasts/

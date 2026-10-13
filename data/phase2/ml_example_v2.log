@@ -1,0 +1,199 @@
+split check: table split/cv_fold agree with splits.csv; each event lies in exactly one fold; buffer rows dropped
+train rows 2,346,695 (positives 58,773); eval rows 3,890,055; gauges: train 151, unseen 26 with usable rows (34 reserved), Florence 177
+fitted seed 42
+fitted seed 43
+fitted seed 44
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\ml_example_v2.py:57: RuntimeWarning: invalid value encountered in divide
+  tpk, nk = tp[last], n[last]; prec = tpk / nk
+VAL (fold 4, trained gauges) | onset (is_exceed_now False) done
+VAL (fold 4, trained gauges) | strict onset (stage at cutoff < flood stage) done
+VAL (fold 4, trained gauges) | all hours done
+UNSEEN gauges (non-Florence) | onset (is_exceed_now False) done
+UNSEEN gauges (non-Florence) | strict onset (stage at cutoff < flood stage) done
+UNSEEN gauges (non-Florence) | all hours done
+TEST Florence | onset (is_exceed_now False) done
+TEST Florence | strict onset (stage at cutoff < flood stage) done
+TEST Florence | all hours done
+                    eval_set                                   population                           score      rows  positives  recall50  recall20  pr_auc
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)                     hgb_seedavg 1869083.0     2407.0     0.384     0.536   0.378
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)              persist_stage_frac 1869083.0     2407.0     0.000     0.110   0.054
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)               persist_extrap12h 1869083.0     2407.0     0.000     0.000   0.046
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)          calibrated_persistence 1869083.0     2407.0     0.000     0.184   0.065
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False) calibrated_persistence_below_fs 1869083.0     2407.0     0.000     0.000   0.064
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)                     hgb_seedavg 1868901.0     2398.0     0.389     0.535   0.404
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)              persist_stage_frac 1868901.0     2398.0     0.000     0.126   0.060
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)               persist_extrap12h 1868901.0     2398.0     0.000     0.000   0.046
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)          calibrated_persistence 1868901.0     2398.0     0.000     0.186   0.069
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage) calibrated_persistence_below_fs 1868901.0     2398.0     0.000     0.000   0.064
+VAL (fold 4, trained gauges)                                    all hours                     hgb_seedavg 1881509.0    14664.0     0.935     0.968   0.938
+VAL (fold 4, trained gauges)                                    all hours              persist_stage_frac 1881509.0    14664.0     0.886     0.915   0.883
+VAL (fold 4, trained gauges)                                    all hours               persist_extrap12h 1881509.0    14664.0     0.905     0.926   0.465
+VAL (fold 4, trained gauges)                                    all hours          calibrated_persistence 1881509.0    14664.0     0.895     0.917   0.870
+VAL (fold 4, trained gauges)                                    all hours calibrated_persistence_below_fs 1881509.0    14664.0     0.904     0.920   0.727
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)                     hgb_seedavg 1776157.0     2165.0     0.417     0.597   0.395
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)              persist_stage_frac 1776157.0     2165.0     0.004     0.200   0.088
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)               persist_extrap12h 1776157.0     2165.0     0.000     0.000   0.082
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)          calibrated_persistence 1776157.0     2165.0     0.003     0.341   0.119
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False) calibrated_persistence_below_fs 1776157.0     2165.0     0.000     0.462   0.121
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)                     hgb_seedavg 1775960.0     2152.0     0.421     0.595   0.404
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)              persist_stage_frac 1775960.0     2152.0     0.000     0.213   0.096
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)               persist_extrap12h 1775960.0     2152.0     0.000     0.000   0.082
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)          calibrated_persistence 1775960.0     2152.0     0.000     0.343   0.125
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage) calibrated_persistence_below_fs 1775960.0     2152.0     0.000     0.462   0.122
+UNSEEN gauges (non-Florence)                                    all hours                     hgb_seedavg 1784173.0     9997.0     0.912     0.912   0.903
+UNSEEN gauges (non-Florence)                                    all hours              persist_stage_frac 1784173.0     9997.0     0.871     0.904   0.861
+UNSEEN gauges (non-Florence)                                    all hours               persist_extrap12h 1784173.0     9997.0     0.878     0.919   0.485
+UNSEEN gauges (non-Florence)                                    all hours          calibrated_persistence 1784173.0     9997.0     0.884     0.909   0.858
+UNSEEN gauges (non-Florence)                                    all hours calibrated_persistence_below_fs 1784173.0     9997.0     0.899     0.915   0.753
+               TEST Florence                  onset (is_exceed_now False)                     hgb_seedavg  217026.0     1362.0     0.504     0.710   0.467
+               TEST Florence                  onset (is_exceed_now False)              persist_stage_frac  217026.0     1362.0     0.005     0.053   0.059
+               TEST Florence                  onset (is_exceed_now False)               persist_extrap12h  217026.0     1362.0     0.001     0.488   0.165
+               TEST Florence                  onset (is_exceed_now False)          calibrated_persistence  217026.0     1362.0     0.005     0.183   0.110
+               TEST Florence                  onset (is_exceed_now False) calibrated_persistence_below_fs  217026.0     1362.0     0.004     0.351   0.163
+               TEST Florence strict onset (stage at cutoff < flood stage)                     hgb_seedavg  216905.0     1350.0     0.516     0.713   0.486
+               TEST Florence strict onset (stage at cutoff < flood stage)              persist_stage_frac  216905.0     1350.0     0.000     0.067   0.058
+               TEST Florence strict onset (stage at cutoff < flood stage)               persist_extrap12h  216905.0     1350.0     0.001     0.485   0.165
+               TEST Florence strict onset (stage at cutoff < flood stage)          calibrated_persistence  216905.0     1350.0     0.001     0.181   0.114
+               TEST Florence strict onset (stage at cutoff < flood stage) calibrated_persistence_below_fs  216905.0     1350.0     0.001     0.347   0.162
+               TEST Florence                                    all hours                     hgb_seedavg  224373.0     8599.0     0.976     0.996   0.965
+               TEST Florence                                    all hours              persist_stage_frac  224373.0     8599.0     0.897     0.951   0.899
+               TEST Florence                                    all hours               persist_extrap12h  224373.0     8599.0     0.923     0.961   0.774
+               TEST Florence                                    all hours          calibrated_persistence  224373.0     8599.0     0.906     0.953   0.906
+               TEST Florence                                    all hours calibrated_persistence_below_fs  224373.0     8599.0     0.916     0.958   0.889
+                    eval_set                                   population                                                     score   metric   diff  diff_lo  diff_hi
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)                     DIFF hgb_seedavg - persist_stage_frac recall50  0.384    0.085    0.496
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)                     DIFF hgb_seedavg - persist_stage_frac recall20  0.426    0.174    0.633
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)                     DIFF hgb_seedavg - persist_stage_frac   pr_auc  0.325    0.216    0.405
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)                      DIFF hgb_seedavg - persist_extrap12h recall50  0.384    0.085    0.496
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)                      DIFF hgb_seedavg - persist_extrap12h recall20  0.536    0.188    0.642
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)                      DIFF hgb_seedavg - persist_extrap12h   pr_auc  0.333    0.246    0.403
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)                 DIFF hgb_seedavg - calibrated_persistence recall50  0.384    0.085    0.496
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)                 DIFF hgb_seedavg - calibrated_persistence recall20  0.352    0.188    0.514
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)                 DIFF hgb_seedavg - calibrated_persistence   pr_auc  0.313    0.216    0.383
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)        DIFF hgb_seedavg - calibrated_persistence_below_fs recall50  0.384    0.085    0.496
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)        DIFF hgb_seedavg - calibrated_persistence_below_fs recall20  0.536    0.188    0.618
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)        DIFF hgb_seedavg - calibrated_persistence_below_fs   pr_auc  0.315    0.233    0.379
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)              DIFF hgb_seedavg - best (persist_stage_frac) recall50  0.384    0.085    0.496
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)              DIFF hgb_seedavg - best (persist_stage_frac) recall20  0.426    0.174    0.633
+VAL (fold 4, trained gauges)                  onset (is_exceed_now False)              DIFF hgb_seedavg - best (persist_stage_frac)   pr_auc  0.325    0.216    0.405
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)                     DIFF hgb_seedavg - persist_stage_frac recall50  0.389    0.108    0.512
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)                     DIFF hgb_seedavg - persist_stage_frac recall20  0.408    0.178    0.538
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)                     DIFF hgb_seedavg - persist_stage_frac   pr_auc  0.344    0.284    0.447
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)                      DIFF hgb_seedavg - persist_extrap12h recall50  0.389    0.109    0.512
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)                      DIFF hgb_seedavg - persist_extrap12h recall20  0.535    0.242    0.648
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)                      DIFF hgb_seedavg - persist_extrap12h   pr_auc  0.358    0.292    0.444
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)                 DIFF hgb_seedavg - calibrated_persistence recall50  0.389    0.109    0.512
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)                 DIFF hgb_seedavg - calibrated_persistence recall20  0.348    0.188    0.428
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)                 DIFF hgb_seedavg - calibrated_persistence   pr_auc  0.336    0.280    0.425
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)        DIFF hgb_seedavg - calibrated_persistence_below_fs recall50  0.389    0.109    0.512
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)        DIFF hgb_seedavg - calibrated_persistence_below_fs recall20  0.535    0.188    0.611
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)        DIFF hgb_seedavg - calibrated_persistence_below_fs   pr_auc  0.340    0.281    0.415
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)              DIFF hgb_seedavg - best (persist_stage_frac) recall50  0.389    0.108    0.512
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)              DIFF hgb_seedavg - best (persist_stage_frac) recall20  0.408    0.178    0.538
+VAL (fold 4, trained gauges) strict onset (stage at cutoff < flood stage)              DIFF hgb_seedavg - best (persist_stage_frac)   pr_auc  0.344    0.284    0.447
+VAL (fold 4, trained gauges)                                    all hours                     DIFF hgb_seedavg - persist_stage_frac recall50  0.049    0.023    0.081
+VAL (fold 4, trained gauges)                                    all hours                     DIFF hgb_seedavg - persist_stage_frac recall20  0.053    0.027    0.134
+VAL (fold 4, trained gauges)                                    all hours                     DIFF hgb_seedavg - persist_stage_frac   pr_auc  0.055    0.035    0.076
+VAL (fold 4, trained gauges)                                    all hours                      DIFF hgb_seedavg - persist_extrap12h recall50  0.031    0.018    0.882
+VAL (fold 4, trained gauges)                                    all hours                      DIFF hgb_seedavg - persist_extrap12h recall20  0.042    0.020    0.120
+VAL (fold 4, trained gauges)                                    all hours                      DIFF hgb_seedavg - persist_extrap12h   pr_auc  0.473    0.375    0.569
+VAL (fold 4, trained gauges)                                    all hours                 DIFF hgb_seedavg - calibrated_persistence recall50  0.040    0.018    0.066
+VAL (fold 4, trained gauges)                                    all hours                 DIFF hgb_seedavg - calibrated_persistence recall20  0.051    0.026    0.123
+VAL (fold 4, trained gauges)                                    all hours                 DIFF hgb_seedavg - calibrated_persistence   pr_auc  0.068    0.047    0.094
+VAL (fold 4, trained gauges)                                    all hours        DIFF hgb_seedavg - calibrated_persistence_below_fs recall50  0.031    0.015    0.055
+VAL (fold 4, trained gauges)                                    all hours        DIFF hgb_seedavg - calibrated_persistence_below_fs recall20  0.048    0.023    0.103
+VAL (fold 4, trained gauges)                                    all hours        DIFF hgb_seedavg - calibrated_persistence_below_fs   pr_auc  0.211    0.150    0.293
+VAL (fold 4, trained gauges)                                    all hours               DIFF hgb_seedavg - best (persist_extrap12h) recall50  0.031    0.018    0.882
+VAL (fold 4, trained gauges)                                    all hours               DIFF hgb_seedavg - best (persist_extrap12h) recall20  0.042    0.020    0.120
+VAL (fold 4, trained gauges)                                    all hours               DIFF hgb_seedavg - best (persist_extrap12h)   pr_auc  0.473    0.375    0.569
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)                     DIFF hgb_seedavg - persist_stage_frac recall50  0.412    0.298    0.507
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)                     DIFF hgb_seedavg - persist_stage_frac recall20  0.397    0.295    0.527
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)                     DIFF hgb_seedavg - persist_stage_frac   pr_auc  0.307    0.260    0.351
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)                      DIFF hgb_seedavg - persist_extrap12h recall50  0.416    0.298    0.510
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)                      DIFF hgb_seedavg - persist_extrap12h recall20  0.597    0.477    0.669
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)                      DIFF hgb_seedavg - persist_extrap12h   pr_auc  0.313    0.258    0.364
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)                 DIFF hgb_seedavg - calibrated_persistence recall50  0.414    0.298    0.509
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)                 DIFF hgb_seedavg - calibrated_persistence recall20  0.256    0.198    0.311
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)                 DIFF hgb_seedavg - calibrated_persistence   pr_auc  0.276    0.239    0.319
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)        DIFF hgb_seedavg - calibrated_persistence_below_fs recall50  0.416    0.298    0.510
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)        DIFF hgb_seedavg - calibrated_persistence_below_fs recall20  0.135    0.099    0.182
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)        DIFF hgb_seedavg - calibrated_persistence_below_fs   pr_auc  0.274    0.227    0.311
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)              DIFF hgb_seedavg - best (persist_stage_frac) recall50  0.412    0.298    0.507
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)              DIFF hgb_seedavg - best (persist_stage_frac) recall20  0.397    0.295    0.527
+UNSEEN gauges (non-Florence)                  onset (is_exceed_now False)              DIFF hgb_seedavg - best (persist_stage_frac)   pr_auc  0.307    0.260    0.351
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)                     DIFF hgb_seedavg - persist_stage_frac recall50  0.421    0.307    0.507
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)                     DIFF hgb_seedavg - persist_stage_frac recall20  0.382    0.300    0.454
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)                     DIFF hgb_seedavg - persist_stage_frac   pr_auc  0.308    0.268    0.356
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)                      DIFF hgb_seedavg - persist_extrap12h recall50  0.421    0.307    0.507
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)                      DIFF hgb_seedavg - persist_extrap12h recall20  0.595    0.487    0.667
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)                      DIFF hgb_seedavg - persist_extrap12h   pr_auc  0.322    0.272    0.382
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)                 DIFF hgb_seedavg - calibrated_persistence recall50  0.421    0.307    0.507
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)                 DIFF hgb_seedavg - calibrated_persistence recall20  0.252    0.200    0.302
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)                 DIFF hgb_seedavg - calibrated_persistence   pr_auc  0.278    0.239    0.320
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)        DIFF hgb_seedavg - calibrated_persistence_below_fs recall50  0.421    0.307    0.507
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)        DIFF hgb_seedavg - calibrated_persistence_below_fs recall20  0.133    0.097    0.189
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)        DIFF hgb_seedavg - calibrated_persistence_below_fs   pr_auc  0.282    0.240    0.325
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)              DIFF hgb_seedavg - best (persist_stage_frac) recall50  0.421    0.307    0.507
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)              DIFF hgb_seedavg - best (persist_stage_frac) recall20  0.382    0.300    0.454
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)              DIFF hgb_seedavg - best (persist_stage_frac)   pr_auc  0.308    0.268    0.356
+UNSEEN gauges (non-Florence)                                    all hours                     DIFF hgb_seedavg - persist_stage_frac recall50  0.041    0.028    0.057
+UNSEEN gauges (non-Florence)                                    all hours                     DIFF hgb_seedavg - persist_stage_frac recall20  0.008   -0.001    0.023
+UNSEEN gauges (non-Florence)                                    all hours                     DIFF hgb_seedavg - persist_stage_frac   pr_auc  0.042    0.034    0.048
+UNSEEN gauges (non-Florence)                                    all hours                      DIFF hgb_seedavg - persist_extrap12h recall50  0.034    0.017    0.896
+UNSEEN gauges (non-Florence)                                    all hours                      DIFF hgb_seedavg - persist_extrap12h recall20 -0.007   -0.014    0.007
+UNSEEN gauges (non-Florence)                                    all hours                      DIFF hgb_seedavg - persist_extrap12h   pr_auc  0.419    0.334    0.503
+UNSEEN gauges (non-Florence)                                    all hours                 DIFF hgb_seedavg - calibrated_persistence recall50  0.028    0.018    0.040
+UNSEEN gauges (non-Florence)                                    all hours                 DIFF hgb_seedavg - calibrated_persistence recall20  0.003   -0.005    0.016
+UNSEEN gauges (non-Florence)                                    all hours                 DIFF hgb_seedavg - calibrated_persistence   pr_auc  0.045    0.036    0.062
+UNSEEN gauges (non-Florence)                                    all hours        DIFF hgb_seedavg - calibrated_persistence_below_fs recall50  0.013    0.006    0.023
+UNSEEN gauges (non-Florence)                                    all hours        DIFF hgb_seedavg - calibrated_persistence_below_fs recall20 -0.003   -0.010    0.010
+UNSEEN gauges (non-Florence)                                    all hours        DIFF hgb_seedavg - calibrated_persistence_below_fs   pr_auc  0.151    0.101    0.234
+UNSEEN gauges (non-Florence)                                    all hours DIFF hgb_seedavg - best (calibrated_persistence_below_fs) recall50  0.013    0.006    0.023
+UNSEEN gauges (non-Florence)                                    all hours DIFF hgb_seedavg - best (calibrated_persistence_below_fs) recall20 -0.003   -0.010    0.010
+UNSEEN gauges (non-Florence)                                    all hours DIFF hgb_seedavg - best (calibrated_persistence_below_fs)   pr_auc  0.151    0.101    0.234
+               TEST Florence                  onset (is_exceed_now False)                     DIFF hgb_seedavg - persist_stage_frac recall50  0.499    0.400    0.584
+               TEST Florence                  onset (is_exceed_now False)                     DIFF hgb_seedavg - persist_stage_frac recall20  0.657    0.505    0.775
+               TEST Florence                  onset (is_exceed_now False)                     DIFF hgb_seedavg - persist_stage_frac   pr_auc  0.408    0.349    0.469
+               TEST Florence                  onset (is_exceed_now False)                      DIFF hgb_seedavg - persist_extrap12h recall50  0.503    0.375    0.589
+               TEST Florence                  onset (is_exceed_now False)                      DIFF hgb_seedavg - persist_extrap12h recall20  0.222    0.104    0.320
+               TEST Florence                  onset (is_exceed_now False)                      DIFF hgb_seedavg - persist_extrap12h   pr_auc  0.302    0.245    0.362
+               TEST Florence                  onset (is_exceed_now False)                 DIFF hgb_seedavg - calibrated_persistence recall50  0.499    0.386    0.577
+               TEST Florence                  onset (is_exceed_now False)                 DIFF hgb_seedavg - calibrated_persistence recall20  0.527    0.393    0.626
+               TEST Florence                  onset (is_exceed_now False)                 DIFF hgb_seedavg - calibrated_persistence   pr_auc  0.357    0.300    0.422
+               TEST Florence                  onset (is_exceed_now False)        DIFF hgb_seedavg - calibrated_persistence_below_fs recall50  0.500    0.363    0.577
+               TEST Florence                  onset (is_exceed_now False)        DIFF hgb_seedavg - calibrated_persistence_below_fs recall20  0.359    0.236    0.458
+               TEST Florence                  onset (is_exceed_now False)        DIFF hgb_seedavg - calibrated_persistence_below_fs   pr_auc  0.304    0.252    0.361
+               TEST Florence                  onset (is_exceed_now False)              DIFF hgb_seedavg - best (persist_stage_frac) recall50  0.499    0.400    0.584
+               TEST Florence                  onset (is_exceed_now False)              DIFF hgb_seedavg - best (persist_stage_frac) recall20  0.657    0.505    0.775
+               TEST Florence                  onset (is_exceed_now False)              DIFF hgb_seedavg - best (persist_stage_frac)   pr_auc  0.408    0.349    0.469
+               TEST Florence strict onset (stage at cutoff < flood stage)                     DIFF hgb_seedavg - persist_stage_frac recall50  0.516    0.414    0.597
+               TEST Florence strict onset (stage at cutoff < flood stage)                     DIFF hgb_seedavg - persist_stage_frac recall20  0.647    0.511    0.760
+               TEST Florence strict onset (stage at cutoff < flood stage)                     DIFF hgb_seedavg - persist_stage_frac   pr_auc  0.428    0.367    0.486
+               TEST Florence strict onset (stage at cutoff < flood stage)                      DIFF hgb_seedavg - persist_extrap12h recall50  0.514    0.401    0.587
+               TEST Florence strict onset (stage at cutoff < flood stage)                      DIFF hgb_seedavg - persist_extrap12h recall20  0.228    0.097    0.324
+               TEST Florence strict onset (stage at cutoff < flood stage)                      DIFF hgb_seedavg - persist_extrap12h   pr_auc  0.321    0.271    0.372
+               TEST Florence strict onset (stage at cutoff < flood stage)                 DIFF hgb_seedavg - calibrated_persistence recall50  0.515    0.352    0.561
+               TEST Florence strict onset (stage at cutoff < flood stage)                 DIFF hgb_seedavg - calibrated_persistence recall20  0.532    0.392    0.618
+               TEST Florence strict onset (stage at cutoff < flood stage)                 DIFF hgb_seedavg - calibrated_persistence   pr_auc  0.372    0.316    0.424
+               TEST Florence strict onset (stage at cutoff < flood stage)        DIFF hgb_seedavg - calibrated_persistence_below_fs recall50  0.514    0.364    0.585
+               TEST Florence strict onset (stage at cutoff < flood stage)        DIFF hgb_seedavg - calibrated_persistence_below_fs recall20  0.367    0.234    0.451
+               TEST Florence strict onset (stage at cutoff < flood stage)        DIFF hgb_seedavg - calibrated_persistence_below_fs   pr_auc  0.324    0.267    0.373
+               TEST Florence strict onset (stage at cutoff < flood stage)               DIFF hgb_seedavg - best (persist_extrap12h) recall50  0.514    0.401    0.587
+               TEST Florence strict onset (stage at cutoff < flood stage)               DIFF hgb_seedavg - best (persist_extrap12h) recall20  0.228    0.097    0.324
+               TEST Florence strict onset (stage at cutoff < flood stage)               DIFF hgb_seedavg - best (persist_extrap12h)   pr_auc  0.321    0.271    0.372
+               TEST Florence                                    all hours                     DIFF hgb_seedavg - persist_stage_frac recall50  0.080    0.054    0.121
+               TEST Florence                                    all hours                     DIFF hgb_seedavg - persist_stage_frac recall20  0.045    0.024    0.088
+               TEST Florence                                    all hours                     DIFF hgb_seedavg - persist_stage_frac   pr_auc  0.065    0.047    0.096
+               TEST Florence                                    all hours                      DIFF hgb_seedavg - persist_extrap12h recall50  0.053    0.036    0.080
+               TEST Florence                                    all hours                      DIFF hgb_seedavg - persist_extrap12h recall20  0.034    0.018    0.064
+               TEST Florence                                    all hours                      DIFF hgb_seedavg - persist_extrap12h   pr_auc  0.191    0.152    0.247
+               TEST Florence                                    all hours                 DIFF hgb_seedavg - calibrated_persistence recall50  0.071    0.048    0.106
+               TEST Florence                                    all hours                 DIFF hgb_seedavg - calibrated_persistence recall20  0.042    0.023    0.083
+               TEST Florence                                    all hours                 DIFF hgb_seedavg - calibrated_persistence   pr_auc  0.059    0.043    0.083
+               TEST Florence                                    all hours        DIFF hgb_seedavg - calibrated_persistence_below_fs recall50  0.060    0.041    0.087
+               TEST Florence                                    all hours        DIFF hgb_seedavg - calibrated_persistence_below_fs recall20  0.037    0.020    0.075
+               TEST Florence                                    all hours        DIFF hgb_seedavg - calibrated_persistence_below_fs   pr_auc  0.076    0.054    0.098
+               TEST Florence                                    all hours               DIFF hgb_seedavg - best (persist_extrap12h) recall50  0.053    0.036    0.080
+               TEST Florence                                    all hours               DIFF hgb_seedavg - best (persist_extrap12h) recall20  0.034    0.018    0.064
+               TEST Florence                                    all hours               DIFF hgb_seedavg - best (persist_extrap12h)   pr_auc  0.191    0.152    0.247
+wrote data/phase2/ml_example_v2_results.csv

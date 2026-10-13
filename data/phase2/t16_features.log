@@ -1,0 +1,17 @@
+E1 reaches 1059 hours 213 / 213 bad 0 s 121
+E7 reaches 1364 hours 155 / 155 bad 0 s 103
+E2 reaches 5353 hours 173 / 173 bad 0 s 118
+E3 reaches 5397 hours 311 / 311 bad 0 s 245
+E4 reaches 1524 hours 149 / 149 bad 0 s 108
+E5 reaches 5869 hours 519 / 519 bad 0 s 336
+E8 reaches 1007 hours 149 / 149 bad 0 s 114
+E9 reaches 990 hours 195 / 195 bad 0 s 128
+E6 reaches 1903 hours 362 / 362 bad 0 s 241
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\56_t16_features.py:48: RuntimeWarning: divide by zero encountered in log
+  F["log_r10"] = np.log(F.merge(PK, on=["event_id", "feature_id"], how="left").peak_cfs.values / F.q10_cfs.values); F["log_r2"] = np.log(F.merge(PK, on=["event_id", "feature_id"], how="left").peak_cfs.values / F.q2_cfs.values)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\56_t16_features.py:48: RuntimeWarning: divide by zero encountered in log
+  F["log_r10"] = np.log(F.merge(PK, on=["event_id", "feature_id"], how="left").peak_cfs.values / F.q10_cfs.values); F["log_r2"] = np.log(F.merge(PK, on=["event_id", "feature_id"], how="left").peak_cfs.values / F.q2_cfs.values)
+peak recomputed vs T15 stored: max rel diff 0.0 | rows 24466 of 24466
+34121 rows; 713 positives; NaN per feature: {'log_r10': 0, 'log_r2': 0, 'hours_above_q2': 0, 'len_m': 1550, 'stream_order': 0, 'tidal_flag': 0, 'stype': 0}
+{'bridge': 22241, 'culvert': 6773, 'pipe': 5107}
+labels identical to T15 nine-event sets

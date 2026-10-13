@@ -1,0 +1,201 @@
+facility_type,crossing_set,scenario,group,peak_hour,crossing_id,pop_cut_off,stream,road,crossing_src,lat,lon
+hospital_ED_acute,seed,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0018,1105,MERCERS MILL POND,SR1112,ncdot+nbi,33.9582,-78.2138
+hospital_ED_acute,seed,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0100,1045,ROYAL OAK RIVER,US17 NBL,ncdot+nbi,34.0232,-78.2636
+hospital_ED_acute,seed,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0011,832,INTRACOASTAL WATERWAY,NC904,ncdot+nbi,33.8959,-78.4398
+hospital_ED_acute,seed,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0195,382,CYPRESS CREEK,SR1411,ncdot+nbi,34.5134,-77.8453
+hospital_ED_acute,seed,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0169,297,NE CAPE FEAR RIVER,NC53,ncdot+nbi,34.5986,-77.8753
+hospital_ED_acute,seed,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0139,233,LONG CREEK,SR1345,ncdot+nbi,34.5813,-77.9646
+hospital_ED_acute,seed,RL10,Brunswick,2018-09-18 11:00:00,V2_0077,370,MIDDLE SWAMP,NC906,ncdot+nbi,34.0521,-78.1532
+hospital_ED_acute,seed,RL10,Brunswick,2018-09-18 11:00:00,V2_0021,125,RIVER SWAMP,NC906,ncdot+nbi,34.0118,-78.1468
+hospital_ED_acute,seed,RL10,Brunswick,2018-09-18 11:00:00,V2_0078,80,BOLIVIA BRANCH,SR1512,ncdot+nbi,34.0631,-78.143
+hospital_ED_acute,seed,RL10,Pender,2018-09-17 01:00:00,V2_0169,297,NE CAPE FEAR RIVER,NC53,ncdot+nbi,34.5986,-77.8753
+hospital_ED_acute,seed,RL10,Pender,2018-09-17 01:00:00,V2_0164,117,LONG CREEK,NC53,ncdot,34.5419,-78.0006
+hospital_ED_acute,seed,RL10,Pender,2018-09-17 01:00:00,V2_0141,82,KEITH BRANCH,SR1336,ncdot+nbi,34.5734,-77.9979
+hospital_ED_acute,seed,RL2,Brunswick,2018-09-17 17:00:00,V2_0018,1105,MERCERS MILL POND,SR1112,ncdot+nbi,33.9582,-78.2138
+hospital_ED_acute,seed,RL2,Brunswick,2018-09-17 17:00:00,V2_0100,1045,ROYAL OAK RIVER,US17 NBL,ncdot+nbi,34.0232,-78.2636
+hospital_ED_acute,seed,RL2,Brunswick,2018-09-17 17:00:00,V2_0000,898,STURGEON CREEK,SR1435,ncdot,34.2458,-78.0007
+hospital_ED_acute,seed,RL2,Pender,2018-09-17 01:00:00,V2_0195,382,CYPRESS CREEK,SR1411,ncdot+nbi,34.5134,-77.8453
+hospital_ED_acute,seed,RL2,Pender,2018-09-17 01:00:00,V2_0169,297,NE CAPE FEAR RIVER,NC53,ncdot+nbi,34.5986,-77.8753
+hospital_ED_acute,seed,RL2,Pender,2018-09-17 01:00:00,V2_0139,233,LONG CREEK,SR1345,ncdot+nbi,34.5813,-77.9646
+hospital_ED_acute,seed,RL50,Brunswick,2018-09-18 11:00:00,V2_0078,80,BOLIVIA BRANCH,SR1512,ncdot+nbi,34.0631,-78.143
+hospital_ED_acute,seed,RL50,Pender,2018-09-17 01:00:00,V2_0155,45,LYON CREEK,SR1104,ncdot+nbi,34.3956,-78.1621
+hospital_ED_acute,seed,RL50,Pender,2018-09-17 01:00:00,V2_0279,14,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,Brunswick,2018-09-17 02:00:00,V2_0076,33980,BRUNSWICK RIVER,"US17,US74/76,NC133",ncdot+nbi,34.2341,-77.9861
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,Brunswick,2018-09-17 02:00:00,V2_0725,5777,Atlantic Intracoastal Waterway,,osm_secondary,33.9218,-78.0724
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,Brunswick,2018-09-17 02:00:00,V2_0251,2332,CREEK,US17 BUS.,ncdot+nbi,33.9717,-78.3876
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),2018-09-17 18:00:00,V2_0809,772,,Manly Avenue,osm_secondary,34.249,-77.9009
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),2018-09-17 18:00:00,V2_1575,119,Northeast Cape Fear River,Isabel Holmes Bridge,osm_secondary,34.2519,-77.9506
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),2018-09-17 18:00:00,V2_2680,55,,,osm_secondary,34.2363,-77.8326
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover north (lat>=34.28),2018-09-17 18:00:00,V2_0958,1702,Ness Creek,Oakley Road,osm_secondary,34.3016,-77.9256
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover north (lat>=34.28),2018-09-17 18:00:00,V2_0125,1335,PRINCE GEORGE CREEK,I40,ncdot+nbi,34.339,-77.8785
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover north (lat>=34.28),2018-09-17 18:00:00,V2_0952,321,Ness Creek,Rockhill Road,osm_secondary,34.3073,-77.923
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,Pender,2018-09-17 03:00:00,V2_0147,1186,MOORE CREEK,"NC11,53",ncdot+nbi,34.5275,-78.1141
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,Pender,2018-09-17 03:00:00,V2_0161,908,CYPRESS CREEK,NC53,ncdot+nbi,34.5448,-78.0363
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,Pender,2018-09-17 03:00:00,V2_2496,704,,,osm_secondary,34.663,-77.9433
+hospital_ED_acute,seed_plus_osm_secondary,RL10,Brunswick,2018-09-17 04:00:00,V2_1922,35536,Cape Fear River,Cape Fear Memorial Bridge,osm_secondary,34.2275,-77.9519
+hospital_ED_acute,seed_plus_osm_secondary,RL10,Brunswick,2018-09-17 04:00:00,V2_0725,5777,Atlantic Intracoastal Waterway,,osm_secondary,33.9218,-78.0724
+hospital_ED_acute,seed_plus_osm_secondary,RL10,Brunswick,2018-09-17 04:00:00,V2_1370,1870,Atlantic Intracoastal Waterway,Middleton Street,osm_secondary,33.9279,-78.1591
+hospital_ED_acute,seed_plus_osm_secondary,RL10,New Hanover Wilmington/south (lat<34.28),2018-09-17 04:00:00,V2_1575,119,Northeast Cape Fear River,Isabel Holmes Bridge,osm_secondary,34.2519,-77.9506
+hospital_ED_acute,seed_plus_osm_secondary,RL10,New Hanover Wilmington/south (lat<34.28),2018-09-17 04:00:00,V2_1922,81,Cape Fear River,Cape Fear Memorial Bridge,osm_secondary,34.2275,-77.9519
+hospital_ED_acute,seed_plus_osm_secondary,RL10,Pender,2018-09-17 03:00:00,V2_0161,1533,CYPRESS CREEK,NC53,ncdot+nbi,34.5448,-78.0363
+hospital_ED_acute,seed_plus_osm_secondary,RL10,Pender,2018-09-17 03:00:00,V2_0156,585,NE CAPE FEAR RIVER,NC210,ncdot+nbi,34.4433,-77.8337
+hospital_ED_acute,seed_plus_osm_secondary,RL10,Pender,2018-09-17 03:00:00,V2_1183,478,Deer Valley Branch,Malpass Corner Road,osm_secondary,34.4779,-78.0935
+hospital_ED_acute,seed_plus_osm_secondary,RL2,Brunswick,2018-09-17 02:00:00,V2_0076,19019,BRUNSWICK RIVER,"US17,US74/76,NC133",ncdot+nbi,34.2341,-77.9861
+hospital_ED_acute,seed_plus_osm_secondary,RL2,Brunswick,2018-09-17 02:00:00,V2_0725,5777,Atlantic Intracoastal Waterway,,osm_secondary,33.9218,-78.0724
+hospital_ED_acute,seed_plus_osm_secondary,RL2,Brunswick,2018-09-17 02:00:00,V2_1989,5023,,Ocean Highway East,osm_secondary,34.0088,-78.2967
+hospital_ED_acute,seed_plus_osm_secondary,RL2,New Hanover Wilmington/south (lat<34.28),2018-09-17 18:00:00,V2_0809,772,,Manly Avenue,osm_secondary,34.249,-77.9009
+hospital_ED_acute,seed_plus_osm_secondary,RL2,New Hanover Wilmington/south (lat<34.28),2018-09-17 18:00:00,V2_0124,767,SMITH CREEK,SR1302,ncdot+nbi,34.2579,-77.9197
+hospital_ED_acute,seed_plus_osm_secondary,RL2,New Hanover Wilmington/south (lat<34.28),2018-09-17 18:00:00,V2_0103,647,SMITH CREEK,SR1175,ncdot+nbi,34.2624,-77.8877
+hospital_ED_acute,seed_plus_osm_secondary,RL2,New Hanover north (lat>=34.28),2018-09-17 01:00:00,V2_0124,6939,SMITH CREEK,SR1302,ncdot+nbi,34.2579,-77.9197
+hospital_ED_acute,seed_plus_osm_secondary,RL2,New Hanover north (lat>=34.28),2018-09-17 01:00:00,V2_1367,3636,,North College Road,osm_secondary,34.2948,-77.8736
+hospital_ED_acute,seed_plus_osm_secondary,RL2,New Hanover north (lat>=34.28),2018-09-17 01:00:00,V2_0125,1335,PRINCE GEORGE CREEK,I40,ncdot+nbi,34.339,-77.8785
+hospital_ED_acute,seed_plus_osm_secondary,RL2,Pender,2018-09-17 02:00:00,V2_0161,908,CYPRESS CREEK,NC53,ncdot+nbi,34.5448,-78.0363
+hospital_ED_acute,seed_plus_osm_secondary,RL2,Pender,2018-09-17 02:00:00,V2_1608,743,Mill Branch,East Church Street,osm_secondary,34.5329,-78.1624
+hospital_ED_acute,seed_plus_osm_secondary,RL2,Pender,2018-09-17 02:00:00,V2_2496,704,,,osm_secondary,34.663,-77.9433
+hospital_ED_acute,seed_plus_osm_secondary,RL50,Brunswick,2018-09-18 11:00:00,V2_1356,338,Atlantic Intracoastal Waterway,Sunset Boulevard South,osm_secondary,33.8814,-78.5114
+hospital_ED_acute,seed_plus_osm_secondary,RL50,Brunswick,2018-09-18 11:00:00,V2_2256,293,,Benton Road Southeast,osm_secondary,34.0264,-78.2597
+hospital_ED_acute,seed_plus_osm_secondary,RL50,Brunswick,2018-09-18 11:00:00,V2_1511,94,,Old Ocean Highway,osm_secondary,34.0639,-78.1511
+hospital_ED_acute,seed_plus_osm_secondary,RL50,Pender,2018-09-17 18:00:00,V2_0169,130,NE CAPE FEAR RIVER,NC53,ncdot+nbi,34.5986,-77.8753
+hospital_ED_acute,seed_plus_osm_secondary,RL50,Pender,2018-09-17 18:00:00,V2_2437,118,,,osm_secondary,34.6245,-77.8855
+hospital_ED_acute,seed_plus_osm_secondary,RL50,Pender,2018-09-17 18:00:00,V2_2683,103,,Croomsbridge Road,osm_secondary,34.6207,-77.8443
+hospital_ED_acute,seed_reliable,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0018,1105,MERCERS MILL POND,SR1112,ncdot+nbi,33.9582,-78.2138
+hospital_ED_acute,seed_reliable,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0037,26,BEAR PEN ISLD. SWAMP,NC211,ncdot+nbi,34.141,-78.3249
+hospital_ED_acute,seed_reliable,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0247,23,MILL BRANCH,SR1334,ncdot+nbi,34.1465,-78.5097
+hospital_ED_acute,seed_reliable,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0139,233,LONG CREEK,SR1345,ncdot+nbi,34.5813,-77.9646
+hospital_ED_acute,seed_reliable,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0211,89,PIKE CREEK,SR1628,ncdot+nbi,34.4799,-77.8754
+hospital_ED_acute,seed_reliable,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0155,45,LYON CREEK,SR1104,ncdot+nbi,34.3956,-78.1621
+hospital_ED_acute,seed_reliable,RL10,Brunswick,2018-09-18 11:00:00,V2_0037,26,BEAR PEN ISLD. SWAMP,NC211,ncdot+nbi,34.141,-78.3249
+hospital_ED_acute,seed_reliable,RL10,Brunswick,2018-09-18 11:00:00,V2_0247,23,MILL BRANCH,SR1334,ncdot+nbi,34.1465,-78.5097
+hospital_ED_acute,seed_reliable,RL10,Brunswick,2018-09-18 11:00:00,V2_0074,21,RED RUN,SR1401,ncdot+nbi,34.0706,-78.2033
+hospital_ED_acute,seed_reliable,RL10,Pender,2018-09-17 18:00:00,V2_0211,89,PIKE CREEK,SR1628,ncdot+nbi,34.4799,-77.8754
+hospital_ED_acute,seed_reliable,RL10,Pender,2018-09-17 18:00:00,V2_0155,45,LYON CREEK,SR1104,ncdot+nbi,34.3956,-78.1621
+hospital_ED_acute,seed_reliable,RL10,Pender,2018-09-17 18:00:00,V2_0279,14,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+hospital_ED_acute,seed_reliable,RL2,Brunswick,2018-09-18 11:00:00,V2_0018,1105,MERCERS MILL POND,SR1112,ncdot+nbi,33.9582,-78.2138
+hospital_ED_acute,seed_reliable,RL2,Brunswick,2018-09-18 11:00:00,V2_0037,26,BEAR PEN ISLD. SWAMP,NC211,ncdot+nbi,34.141,-78.3249
+hospital_ED_acute,seed_reliable,RL2,Brunswick,2018-09-18 11:00:00,V2_0247,23,MILL BRANCH,SR1334,ncdot+nbi,34.1465,-78.5097
+hospital_ED_acute,seed_reliable,RL2,Pender,2018-09-17 01:00:00,V2_0139,233,LONG CREEK,SR1345,ncdot+nbi,34.5813,-77.9646
+hospital_ED_acute,seed_reliable,RL2,Pender,2018-09-17 01:00:00,V2_0211,89,PIKE CREEK,SR1628,ncdot+nbi,34.4799,-77.8754
+hospital_ED_acute,seed_reliable,RL2,Pender,2018-09-17 01:00:00,V2_0155,45,LYON CREEK,SR1104,ncdot+nbi,34.3956,-78.1621
+hospital_ED_acute,seed_reliable,RL50,Brunswick,2018-09-17 02:00:00,V2_0037,26,BEAR PEN ISLD. SWAMP,NC211,ncdot+nbi,34.141,-78.3249
+hospital_ED_acute,seed_reliable,RL50,Brunswick,2018-09-17 02:00:00,V2_0247,23,MILL BRANCH,SR1334,ncdot+nbi,34.1465,-78.5097
+hospital_ED_acute,seed_reliable,RL50,Pender,2018-09-17 01:00:00,V2_0155,45,LYON CREEK,SR1104,ncdot+nbi,34.3956,-78.1621
+hospital_ED_acute,seed_reliable,RL50,Pender,2018-09-17 01:00:00,V2_0279,14,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+exit_major,seed,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0056,14692,LOCKWOODS FOLLY RIVER,NC211,ncdot+nbi,34.0108,-78.2634
+exit_major,seed,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0009,11982,ORTON CREEK,NC87,ncdot+nbi,33.9962,-78.0421
+exit_major,seed,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0054,6663,BELL SWAMP,"US17,NC87",ncdot+nbi,34.1347,-78.0949
+exit_major,seed,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0196,585,BURGAW CREEK,SR1411,ncdot+nbi,34.5409,-77.8529
+exit_major,seed,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0169,294,NE CAPE FEAR RIVER,NC53,ncdot+nbi,34.5986,-77.8753
+exit_major,seed,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0139,233,LONG CREEK,SR1345,ncdot+nbi,34.5813,-77.9646
+exit_major,seed,RL10,Brunswick,2018-09-18 11:00:00,V2_0077,495,MIDDLE SWAMP,NC906,ncdot+nbi,34.0521,-78.1532
+exit_major,seed,RL10,Brunswick,2018-09-18 11:00:00,V2_0078,80,BOLIVIA BRANCH,SR1512,ncdot+nbi,34.0631,-78.143
+exit_major,seed,RL10,Brunswick,2018-09-18 11:00:00,V2_0272,56,BAY BRANCH,SR1340,ncdot+nbi,34.1184,-78.4513
+exit_major,seed,RL10,Pender,2018-09-17 01:00:00,V2_0169,294,NE CAPE FEAR RIVER,NC53,ncdot+nbi,34.5986,-77.8753
+exit_major,seed,RL10,Pender,2018-09-17 01:00:00,V2_0161,199,CYPRESS CREEK,NC53,ncdot+nbi,34.5448,-78.0363
+exit_major,seed,RL10,Pender,2018-09-17 01:00:00,V2_0279,59,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+exit_major,seed,RL2,Brunswick,2018-09-17 17:00:00,V2_0056,14499,LOCKWOODS FOLLY RIVER,NC211,ncdot+nbi,34.0108,-78.2634
+exit_major,seed,RL2,Brunswick,2018-09-17 17:00:00,V2_0280,5481,JUMP AND RUN CREEK,NC133,ncdot+nbi,33.9483,-78.0519
+exit_major,seed,RL2,Brunswick,2018-09-17 17:00:00,V2_0054,5412,BELL SWAMP,"US17,NC87",ncdot+nbi,34.1347,-78.0949
+exit_major,seed,RL2,Pender,2018-09-17 01:00:00,V2_0196,585,BURGAW CREEK,SR1411,ncdot+nbi,34.5409,-77.8529
+exit_major,seed,RL2,Pender,2018-09-17 01:00:00,V2_0169,294,NE CAPE FEAR RIVER,NC53,ncdot+nbi,34.5986,-77.8753
+exit_major,seed,RL2,Pender,2018-09-17 01:00:00,V2_0139,233,LONG CREEK,SR1345,ncdot+nbi,34.5813,-77.9646
+exit_major,seed,RL50,Brunswick,2018-09-18 11:00:00,V2_0078,80,BOLIVIA BRANCH,SR1512,ncdot+nbi,34.0631,-78.143
+exit_major,seed,RL50,Pender,2018-09-17 01:00:00,V2_0279,59,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,Brunswick,2018-09-17 02:00:00,V2_0004,27867,HOOD'S CREEK,"US74,US76W.",ncdot+nbi,34.2786,-78.1255
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,Brunswick,2018-09-17 02:00:00,V2_0009,9519,ORTON CREEK,NC87,ncdot+nbi,33.9962,-78.0421
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,Brunswick,2018-09-17 02:00:00,V2_2833,9214,,Southport-Supply Road Southeast,osm_secondary,33.998,-78.2396
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),2018-09-17 18:00:00,V2_0809,772,,Manly Avenue,osm_secondary,34.249,-77.9009
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),2018-09-17 18:00:00,V2_0294,106,CAPE FEAR RIVER,"I-I40W,US17S",ncdot+nbi,34.2732,-78.0019
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),2018-09-17 18:00:00,V2_2680,55,,,osm_secondary,34.2363,-77.8326
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover north (lat>=34.28),2018-09-17 18:00:00,V2_0958,1290,Ness Creek,Oakley Road,osm_secondary,34.3016,-77.9256
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover north (lat>=34.28),2018-09-17 18:00:00,V2_2511,1230,,Castle Hayne Road,osm_secondary,34.3444,-77.9036
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover north (lat>=34.28),2018-09-17 18:00:00,V2_0952,733,Ness Creek,Rockhill Road,osm_secondary,34.3073,-77.923
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,Pender,2018-09-17 03:00:00,V2_2499,6924,,,osm_secondary,34.4838,-77.8782
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,Pender,2018-09-17 03:00:00,V2_2665,4833,,,osm_secondary,34.6633,-77.9431
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,Pender,2018-09-17 03:00:00,V2_2660,1633,,US 117 South,osm_secondary,34.5162,-77.9041
+exit_major,seed_plus_osm_secondary,RL10,Brunswick,2018-09-17 04:00:00,V2_0004,28034,HOOD'S CREEK,"US74,US76W.",ncdot+nbi,34.2786,-78.1255
+exit_major,seed_plus_osm_secondary,RL10,Brunswick,2018-09-17 04:00:00,V2_0284,6490,TRIBUTARY TO MORGAN CRK.,I140E,ncdot+nbi,34.2079,-78.0774
+exit_major,seed_plus_osm_secondary,RL10,Brunswick,2018-09-17 04:00:00,V2_1370,4849,Atlantic Intracoastal Waterway,Middleton Street,osm_secondary,33.9279,-78.1591
+exit_major,seed_plus_osm_secondary,RL10,New Hanover Wilmington/south (lat<34.28),2018-09-17 04:00:00,V2_0294,106,CAPE FEAR RIVER,"I-I40W,US17S",ncdot+nbi,34.2732,-78.0019
+exit_major,seed_plus_osm_secondary,RL10,New Hanover Wilmington/south (lat<34.28),2018-09-17 04:00:00,V2_0004,81,HOOD'S CREEK,"US74,US76W.",ncdot+nbi,34.2786,-78.1255
+exit_major,seed_plus_osm_secondary,RL10,New Hanover Wilmington/south (lat<34.28),2018-09-17 04:00:00,V2_0120,13,CAPE FEAR RIVER,US17/74/421/NC133,ncdot+nbi,34.2424,-77.9576
+exit_major,seed_plus_osm_secondary,RL10,Pender,2018-09-17 03:00:00,V2_1709,1656,Buxton Branch,,osm_secondary,34.5444,-78.0774
+exit_major,seed_plus_osm_secondary,RL10,Pender,2018-09-17 03:00:00,V2_1183,478,Deer Valley Branch,Malpass Corner Road,osm_secondary,34.4779,-78.0935
+exit_major,seed_plus_osm_secondary,RL10,Pender,2018-09-17 03:00:00,V2_0156,435,NE CAPE FEAR RIVER,NC210,ncdot+nbi,34.4433,-77.8337
+exit_major,seed_plus_osm_secondary,RL2,Brunswick,2018-09-17 02:00:00,V2_0004,17713,HOOD'S CREEK,"US74,US76W.",ncdot+nbi,34.2786,-78.1255
+exit_major,seed_plus_osm_secondary,RL2,Brunswick,2018-09-17 02:00:00,V2_1370,4849,Atlantic Intracoastal Waterway,Middleton Street,osm_secondary,33.9279,-78.1591
+exit_major,seed_plus_osm_secondary,RL2,Brunswick,2018-09-17 02:00:00,V2_1374,4613,Woodward Branch,Main Street,osm_secondary,33.9786,-78.3776
+exit_major,seed_plus_osm_secondary,RL2,New Hanover Wilmington/south (lat<34.28),2018-09-17 18:00:00,V2_1323,1058,Smith Creek,Martin Luther King Jr Parkway,osm_secondary,34.2573,-77.9374
+exit_major,seed_plus_osm_secondary,RL2,New Hanover Wilmington/south (lat<34.28),2018-09-17 18:00:00,V2_0103,884,SMITH CREEK,SR1175,ncdot+nbi,34.2624,-77.8877
+exit_major,seed_plus_osm_secondary,RL2,New Hanover Wilmington/south (lat<34.28),2018-09-17 18:00:00,V2_0809,772,,Manly Avenue,osm_secondary,34.249,-77.9009
+exit_major,seed_plus_osm_secondary,RL2,New Hanover north (lat>=34.28),2018-09-17 01:00:00,V2_2501,5868,,John Jay Burney Junior Freeway,osm_secondary,34.3017,-77.9571
+exit_major,seed_plus_osm_secondary,RL2,New Hanover north (lat>=34.28),2018-09-17 01:00:00,V2_1367,1869,,North College Road,osm_secondary,34.2948,-77.8736
+exit_major,seed_plus_osm_secondary,RL2,New Hanover north (lat>=34.28),2018-09-17 01:00:00,V2_1761,1801,,North College Road,osm_secondary,34.3241,-77.8839
+exit_major,seed_plus_osm_secondary,RL2,Pender,2018-09-17 01:00:00,V2_2499,6924,,,osm_secondary,34.4838,-77.8782
+exit_major,seed_plus_osm_secondary,RL2,Pender,2018-09-17 01:00:00,V2_2665,4050,,,osm_secondary,34.6633,-77.9431
+exit_major,seed_plus_osm_secondary,RL2,Pender,2018-09-17 01:00:00,V2_2660,1633,,US 117 South,osm_secondary,34.5162,-77.9041
+exit_major,seed_plus_osm_secondary,RL50,Brunswick,2018-09-18 11:00:00,V2_1356,338,Atlantic Intracoastal Waterway,Sunset Boulevard South,osm_secondary,33.8814,-78.5114
+exit_major,seed_plus_osm_secondary,RL50,Brunswick,2018-09-18 11:00:00,V2_2256,293,,Benton Road Southeast,osm_secondary,34.0264,-78.2597
+exit_major,seed_plus_osm_secondary,RL50,Brunswick,2018-09-18 11:00:00,V2_0612,142,,Main Street,osm_secondary,34.0735,-78.1437
+exit_major,seed_plus_osm_secondary,RL50,Pender,2018-09-17 18:00:00,V2_0169,130,NE CAPE FEAR RIVER,NC53,ncdot+nbi,34.5986,-77.8753
+exit_major,seed_plus_osm_secondary,RL50,Pender,2018-09-17 18:00:00,V2_2437,118,,,osm_secondary,34.6245,-77.8855
+exit_major,seed_plus_osm_secondary,RL50,Pender,2018-09-17 18:00:00,V2_2683,100,,Croomsbridge Road,osm_secondary,34.6207,-77.8443
+exit_major,seed_reliable,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0018,1105,MERCERS MILL POND,SR1112,ncdot+nbi,33.9582,-78.2138
+exit_major,seed_reliable,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0014,26,HONEY ISLAND SWAMP,NC211,ncdot+nbi,34.1911,-78.3569
+exit_major,seed_reliable,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0247,23,MILL BRANCH,SR1334,ncdot+nbi,34.1465,-78.5097
+exit_major,seed_reliable,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0139,233,LONG CREEK,SR1345,ncdot+nbi,34.5813,-77.9646
+exit_major,seed_reliable,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0211,89,PIKE CREEK,SR1628,ncdot+nbi,34.4799,-77.8754
+exit_major,seed_reliable,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0279,59,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+exit_major,seed_reliable,RL10,Brunswick,2018-09-18 11:00:00,V2_0014,26,HONEY ISLAND SWAMP,NC211,ncdot+nbi,34.1911,-78.3569
+exit_major,seed_reliable,RL10,Brunswick,2018-09-18 11:00:00,V2_0247,23,MILL BRANCH,SR1334,ncdot+nbi,34.1465,-78.5097
+exit_major,seed_reliable,RL10,Brunswick,2018-09-18 11:00:00,V2_0074,12,RED RUN,SR1401,ncdot+nbi,34.0706,-78.2033
+exit_major,seed_reliable,RL10,Pender,2018-09-17 18:00:00,V2_0211,89,PIKE CREEK,SR1628,ncdot+nbi,34.4799,-77.8754
+exit_major,seed_reliable,RL10,Pender,2018-09-17 18:00:00,V2_0279,59,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+exit_major,seed_reliable,RL2,Brunswick,2018-09-18 11:00:00,V2_0018,1105,MERCERS MILL POND,SR1112,ncdot+nbi,33.9582,-78.2138
+exit_major,seed_reliable,RL2,Brunswick,2018-09-18 11:00:00,V2_0014,26,HONEY ISLAND SWAMP,NC211,ncdot+nbi,34.1911,-78.3569
+exit_major,seed_reliable,RL2,Brunswick,2018-09-18 11:00:00,V2_0247,23,MILL BRANCH,SR1334,ncdot+nbi,34.1465,-78.5097
+exit_major,seed_reliable,RL2,Pender,2018-09-17 01:00:00,V2_0139,233,LONG CREEK,SR1345,ncdot+nbi,34.5813,-77.9646
+exit_major,seed_reliable,RL2,Pender,2018-09-17 01:00:00,V2_0211,89,PIKE CREEK,SR1628,ncdot+nbi,34.4799,-77.8754
+exit_major,seed_reliable,RL2,Pender,2018-09-17 01:00:00,V2_0279,59,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+exit_major,seed_reliable,RL50,Brunswick,2018-09-17 02:00:00,V2_0014,26,HONEY ISLAND SWAMP,NC211,ncdot+nbi,34.1911,-78.3569
+exit_major,seed_reliable,RL50,Brunswick,2018-09-17 02:00:00,V2_0247,23,MILL BRANCH,SR1334,ncdot+nbi,34.1465,-78.5097
+exit_major,seed_reliable,RL50,Pender,2018-09-17 01:00:00,V2_0279,59,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+exit_major_plus_secondary,seed,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0056,14692,LOCKWOODS FOLLY RIVER,NC211,ncdot+nbi,34.0108,-78.2634
+exit_major_plus_secondary,seed,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0009,11982,ORTON CREEK,NC87,ncdot+nbi,33.9962,-78.0421
+exit_major_plus_secondary,seed,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0054,6663,BELL SWAMP,"US17,NC87",ncdot+nbi,34.1347,-78.0949
+exit_major_plus_secondary,seed,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0196,585,BURGAW CREEK,SR1411,ncdot+nbi,34.5409,-77.8529
+exit_major_plus_secondary,seed,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0139,233,LONG CREEK,SR1345,ncdot+nbi,34.5813,-77.9646
+exit_major_plus_secondary,seed,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0169,230,NE CAPE FEAR RIVER,NC53,ncdot+nbi,34.5986,-77.8753
+exit_major_plus_secondary,seed,RL10,Brunswick,2018-09-18 11:00:00,V2_0077,495,MIDDLE SWAMP,NC906,ncdot+nbi,34.0521,-78.1532
+exit_major_plus_secondary,seed,RL10,Brunswick,2018-09-18 11:00:00,V2_0078,80,BOLIVIA BRANCH,SR1512,ncdot+nbi,34.0631,-78.143
+exit_major_plus_secondary,seed,RL10,Brunswick,2018-09-18 11:00:00,V2_0272,56,BAY BRANCH,SR1340,ncdot+nbi,34.1184,-78.4513
+exit_major_plus_secondary,seed,RL10,Pender,2018-09-17 01:00:00,V2_0169,230,NE CAPE FEAR RIVER,NC53,ncdot+nbi,34.5986,-77.8753
+exit_major_plus_secondary,seed,RL10,Pender,2018-09-17 01:00:00,V2_0161,199,CYPRESS CREEK,NC53,ncdot+nbi,34.5448,-78.0363
+exit_major_plus_secondary,seed,RL10,Pender,2018-09-17 01:00:00,V2_0170,64,ANGOLA CREEK,NC53,ncdot+nbi,34.6563,-77.7351
+exit_major_plus_secondary,seed,RL2,Brunswick,2018-09-17 17:00:00,V2_0056,14499,LOCKWOODS FOLLY RIVER,NC211,ncdot+nbi,34.0108,-78.2634
+exit_major_plus_secondary,seed,RL2,Brunswick,2018-09-17 17:00:00,V2_0280,5481,JUMP AND RUN CREEK,NC133,ncdot+nbi,33.9483,-78.0519
+exit_major_plus_secondary,seed,RL2,Brunswick,2018-09-17 17:00:00,V2_0054,5412,BELL SWAMP,"US17,NC87",ncdot+nbi,34.1347,-78.0949
+exit_major_plus_secondary,seed,RL2,Pender,2018-09-17 01:00:00,V2_0196,585,BURGAW CREEK,SR1411,ncdot+nbi,34.5409,-77.8529
+exit_major_plus_secondary,seed,RL2,Pender,2018-09-17 01:00:00,V2_0139,233,LONG CREEK,SR1345,ncdot+nbi,34.5813,-77.9646
+exit_major_plus_secondary,seed,RL2,Pender,2018-09-17 01:00:00,V2_0169,230,NE CAPE FEAR RIVER,NC53,ncdot+nbi,34.5986,-77.8753
+exit_major_plus_secondary,seed,RL50,Brunswick,2018-09-18 11:00:00,V2_0078,80,BOLIVIA BRANCH,SR1512,ncdot+nbi,34.0631,-78.143
+exit_major_plus_secondary,seed,RL50,Pender,2018-09-17 01:00:00,V2_0279,59,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+exit_major_plus_secondary,seed_reliable,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0018,1105,MERCERS MILL POND,SR1112,ncdot+nbi,33.9582,-78.2138
+exit_major_plus_secondary,seed_reliable,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0014,26,HONEY ISLAND SWAMP,NC211,ncdot+nbi,34.1911,-78.3569
+exit_major_plus_secondary,seed_reliable,REF_3.64xHWT,Brunswick,2018-09-17 01:00:00,V2_0247,23,MILL BRANCH,SR1334,ncdot+nbi,34.1465,-78.5097
+exit_major_plus_secondary,seed_reliable,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0139,233,LONG CREEK,SR1345,ncdot+nbi,34.5813,-77.9646
+exit_major_plus_secondary,seed_reliable,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0211,89,PIKE CREEK,SR1628,ncdot+nbi,34.4799,-77.8754
+exit_major_plus_secondary,seed_reliable,REF_3.64xHWT,Pender,2018-09-17 01:00:00,V2_0279,59,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+exit_major_plus_secondary,seed_reliable,RL10,Brunswick,2018-09-18 11:00:00,V2_0014,26,HONEY ISLAND SWAMP,NC211,ncdot+nbi,34.1911,-78.3569
+exit_major_plus_secondary,seed_reliable,RL10,Brunswick,2018-09-18 11:00:00,V2_0247,23,MILL BRANCH,SR1334,ncdot+nbi,34.1465,-78.5097
+exit_major_plus_secondary,seed_reliable,RL10,Brunswick,2018-09-18 11:00:00,V2_0074,12,RED RUN,SR1401,ncdot+nbi,34.0706,-78.2033
+exit_major_plus_secondary,seed_reliable,RL10,Pender,2018-09-17 18:00:00,V2_0211,89,PIKE CREEK,SR1628,ncdot+nbi,34.4799,-77.8754
+exit_major_plus_secondary,seed_reliable,RL10,Pender,2018-09-17 18:00:00,V2_0279,59,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+exit_major_plus_secondary,seed_reliable,RL2,Brunswick,2018-09-18 11:00:00,V2_0018,1105,MERCERS MILL POND,SR1112,ncdot+nbi,33.9582,-78.2138
+exit_major_plus_secondary,seed_reliable,RL2,Brunswick,2018-09-18 11:00:00,V2_0014,26,HONEY ISLAND SWAMP,NC211,ncdot+nbi,34.1911,-78.3569
+exit_major_plus_secondary,seed_reliable,RL2,Brunswick,2018-09-18 11:00:00,V2_0247,23,MILL BRANCH,SR1334,ncdot+nbi,34.1465,-78.5097
+exit_major_plus_secondary,seed_reliable,RL2,Pender,2018-09-17 01:00:00,V2_0139,233,LONG CREEK,SR1345,ncdot+nbi,34.5813,-77.9646
+exit_major_plus_secondary,seed_reliable,RL2,Pender,2018-09-17 01:00:00,V2_0211,89,PIKE CREEK,SR1628,ncdot+nbi,34.4799,-77.8754
+exit_major_plus_secondary,seed_reliable,RL2,Pender,2018-09-17 01:00:00,V2_0279,59,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977
+exit_major_plus_secondary,seed_reliable,RL50,Brunswick,2018-09-17 02:00:00,V2_0014,26,HONEY ISLAND SWAMP,NC211,ncdot+nbi,34.1911,-78.3569
+exit_major_plus_secondary,seed_reliable,RL50,Brunswick,2018-09-17 02:00:00,V2_0247,23,MILL BRANCH,SR1334,ncdot+nbi,34.1465,-78.5097
+exit_major_plus_secondary,seed_reliable,RL50,Pender,2018-09-17 01:00:00,V2_0279,59,BUCKLE CREEK,SR1104,ncdot+nbi,34.4031,-78.1977

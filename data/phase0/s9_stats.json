@@ -1,0 +1,18 @@
+{
+ "reports_in_csv": 81,
+ "closure_candidates_in_csv": 58,
+ "within_500m_named_road_any_set": {
+  "reports": 24,
+  "unique_crossings": 23
+ },
+ "within_500m_named_road_seed_only": {
+  "reports": 9,
+  "unique_crossings": 9
+ },
+ "within_500m_named_road_good_fair_only": 9,
+ "within_1km_named_road": 43,
+ "within_100m_named_road": 1,
+ "nearest_is_road_match": 32,
+ "threshold": 30,
+ "threshold_met": false
+}

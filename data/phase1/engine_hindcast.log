@@ -1,0 +1,13 @@
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\phase1\engine.py:79: RuntimeWarning: invalid value encountered in subtract
+  t = d[onode]; ok = np.isfinite(t) & base_ok; det = (t - base_t) / 60
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\phase1\engine.py:80: RuntimeWarning: invalid value encountered in subtract
+  aff = base_ok & (~np.isfinite(t) | (np.nan_to_num(t - base_t, nan=0) > 60) | (red[onode] != r0[onode]))   # >1 min slower, unreachable, or fewer facilities in range
+hospital seed done 114 s
+hospital seed_reliable done 189 s
+hospital seed_plus_osm_secondary done 358 s
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\phase1\engine.py:79: RuntimeWarning: invalid value encountered in subtract
+  t = d[onode]; ok = np.isfinite(t) & base_ok; det = (t - base_t) / 60
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\phase1\engine.py:80: RuntimeWarning: invalid value encountered in subtract
+  aff = base_ok & (~np.isfinite(t) | (np.nan_to_num(t - base_t, nan=0) > 60) | (red[onode] != r0[onode]))   # >1 min slower, unreachable, or fewer facilities in range
+fire_station seed done 474 s
+saved hindcast_nwm_v30_retro elapsed 490 s; origins used 6940 of snapped (dropped >1.5 km)

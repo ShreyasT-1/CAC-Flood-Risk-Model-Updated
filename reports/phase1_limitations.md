@@ -1,0 +1,30 @@
+# Phase 1 prototype - limitations (read before using any output)
+
+Every closure result is a **SCENARIO** (flow / high_water_threshold above a chosen ratio), not a probability and not a calibrated closure model. Hindcast and forecast runs are labelled in every file name (`replay_hindcast_*`, `replay_forecast_*`).
+
+## Not in the hazard at all
+1. **Storm surge, tide and coastal flooding.** The hazard is NWM channel streamflow (`channel_rt` / retrospective `chrtout`) only. NOAA describes tide and surge as a separate coastal total-water-level product, linked to the NWM from v3.0 through SCHISM with ocean forcing from STOFS and P-SURGE (https://water.noaa.gov/about/nwm); that coupling is one-way (hydrology does not receive coastal updates) and is not in the streamflow series we replay. The 2018 operational forecasts (v1.2 era) had no coastal component at all. Wilmington's US-421 and the barrier islands are exposed to surge and tidal flooding that this system cannot see; one Florence report we matched ("storm surge ... made US-421 impassable") is exactly this case. Source for the v3.0 coupling statement: https://water.noaa.gov/about/nwm and the NOAA OWP coastal-coupling webinar (https://www.weather.gov/media/watercommunity/Webinar/2026Jul16/NWM%20TWL%20Coastal%20Modeling%20-%20Coastal%20Coupling%20CoP%20Webinar%20-%20July%202026.pdf), both read via search summaries, not the full v3.0 technical documentation.
+2. **Pluvial / urban drainage / ditch flooding**, levee and culvert-capacity failures, road washouts, debris, wind and tree closures. NWM reaches do not model stormwater systems. The label check below shows closures reported on roads with no matched reach.
+3. **Deck elevation / freeboard / scour.** Closure is a function of flow ratio only. No source gives deck or low-chord height (Phase 0). Long, high-level or tidal bridges can be "closed" by a flow ratio although their decks sit far above the water; the `seed_reliable` crossing set excludes the ones our provisional rule flags, and results from `seed` and `seed_plus_osm_secondary` should be read with this in mind.
+
+## Hazard-threshold weaknesses
+4. **The ratio-to-closure mapping is uncalibrated and sits at the wrong scale.** Official flood stage corresponds to a median **3.6 x** `high_water_threshold` (about 1.4 x the 2-year flow; p90 27 x threshold; n = 100 gauged reaches, `p2_stats.json`). The requested scenario ratios 0.5-1.5 therefore close roads at flows far below flood stage.
+5. **Saturation in the Florence replay.** The hindcast peak flow was 8.7-143 x threshold (median 32 x) on every structure-seeded crossing, so ratios 0.5, 0.75, 1.0 and 1.5 give identical results at the peak. Extended scenarios (3.64, 10, 30, 60, 100) were added; they are my choice, not calibrated.
+6. **Zero / tiny thresholds.** 137 of 3,836 pilot reaches (112 order-1) have a 2-year flow of exactly 0. `hazard_threshold_ok = false` removes them (plus any with q2 < 1 cfs, my arbitrary minimum). Excluded crossings are never closed by the hazard, which understates risk where it matters least-known.
+7. **Order-1 weakness.** 77% of OSM-derived crossing matches are order-1 reaches; the NWM's weakest. For structure-seeded crossings it is 28%. The secondary OSM set is almost entirely order-1 and `poor` quality; `seed_plus_osm_secondary` results are a sensitivity test, not a best estimate.
+8. **Free-running hindcast.** The v3.0 retrospective has no data assimilation and 2018 has well-known timing/magnitude errors in tropical-storm events. In the label comparison, 2 of 15 reports have flow below threshold at the reported hour though the replay peaks 9-30 x later (timing).
+9. **The v3.0 vs v1.2 forecasts differ in model version, forcing and network**; the forecast pass is not an apples-to-apples replay of the hindcast. Its short-range lead time (<= 12 h used) is also a bounded subset (see report).
+
+## Labels
+10. **Positives only.** LSR closure reports say a road was closed; absence of a report is "unknown", not "open". There is no way here to count false alarms.
+11. **Tiny and unreviewed.** 24 reports have a crossing on the named road within 500 m (threshold 30: NOT met); 9 of them are structure-seeded crossings, and 9 of the 24 have no reach/threshold at all. They are candidates until reviewed by hand. Coordinates are rounded to ~1 km. The label comparison is qualitative and proves nothing about skill.
+
+## Network / people model
+12. **Routing:** OSM drive network, default speeds by road class, no traffic, no turn restrictions, no maxspeed parsing; ferries, gates and private roads ignored. Parallel arcs keep only the fastest. A closure removes the whole junction-to-junction segment containing the crossing, which can be long.
+13. **Origins:** 2020 Census block centroids snapped to the nearest graph node (origins >1.5 km from a node dropped; 390 snap >500 m); snap distance is not driven. 2020 population, not time-of-day or evacuations.
+14. **Facilities:** only 4 hospitals with emergency services lie inside the 10 km buffer (CMS list geocoded with the Census geocoder; two military hospitals did not geocode and are out of scope). Columbus Regional (Whiteville), Cape Fear Valley-Bladen, Onslow Memorial, Vidant Duplin and the Horry/Georgetown (SC) hospitals lie outside the buffer and are absent. The CMS 'Emergency Services = Yes' flag also admits behavioural-health hospitals (none fall inside the buffer), so western and northern origins may show artificial isolation. Fire stations are from OSM (HIFLD availability could not be confirmed), a volunteer-built list.
+15. **Critical crossing** = the first closed crossing on the baseline shortest path, not a minimum cut. **Redundancy** = number of facilities reachable within 30 min (hospitals) or 10 min (fire stations) under the current closures.
+16. **Baseline unreachable origins** (islands, graph gaps; 5,949 people in New Hanover) are reported separately and excluded from loss counts.
+
+## Not done
+No individual addresses, no ML, no live feeds, no UI. Nothing here has been validated against observed closures.

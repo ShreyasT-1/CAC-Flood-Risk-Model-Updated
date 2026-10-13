@@ -1,0 +1,68 @@
+osm_id,kind,name,operator,lon,lat
+367909828,node,Surf City Police Department,,-77.5427158,34.4291803
+822141060,node,Topsail Beach Fire Deptartment,,-77.6301879,34.365493
+1041713076,node,Southport Fire Dept,,-78.0230195,33.9304489
+2000101199,node,Leland Fire/Rescue Headquarters,"Leland Volunteer Fire/Rescue Department, Inc",-78.0274801,34.248643
+2000101403,node,Navassa Fire Department,,-78.0097238,34.2564336
+2000102294,node,Winnabow Fire Department,,-78.088334,34.1488889
+2002718027,node,Leland Fire/Rescue Westport Fire Station 52,Leland Volunteer Fire/Rescue Department,-77.9877504,34.1896176
+4808482474,node,City of Wilmington Fire Department Headquarters,City of Wilmington,-77.9387519,34.2363306
+4808514646,node,City of Wilmington Fire Station 2,City of Wilmington,-77.9047417,34.2199771
+4808514647,node,City of Wilmington Fire Station 3,City of Wilmington,-77.8940982,34.2394979
+5057242847,node,,,-77.7497331,34.3328707
+6875845301,node,Kelly Volunteer Fire Department,,-78.3220756,34.4660307
+7142003469,node,Turkey Creek Fire & Rescue Station 2,,-77.4026499,34.5453504
+7147473727,node,North Topsail Beach Fire Department,,-77.4924978,34.4577901
+7147473738,node,Surf City Fire Department,,-77.5372512,34.4306954
+7412460221,node,Maple Hill Volunteer Fire Department,,-77.6938228,34.6628
+8490778900,node,Shiloh Columbia Fire Department,,-78.1036814,34.5933828
+8490778902,node,Taylors Bridge Fire Department,,-78.2619838,34.8737063
+8554965668,node,,,-78.0676309,34.03227
+8914565952,node,Turkey Creek Fire Station,,-77.4764586,34.524399
+9802735011,node,Hickory Grove VFD,,-78.4235803,34.7493778
+9836336505,node,Garland Fire Department,,-78.398455,34.7900269
+9837034344,node,Lisbon VFD Station 59,,-78.5278766,34.514717
+9837034345,node,Clarkton Fire Department,,-78.6601463,34.4863161
+9984102987,node,Dublin VFD Station 53,,-78.7298981,34.6552736
+9984114251,node,Tar Heel Fire Station 57,,-78.7907247,34.7377606
+10278626072,node,Back Swamp Volunteer Fire Department,,-77.6724579,34.8407024
+10278629165,node,Lyman Vol. Fire Dept.,,-77.7464262,34.8541853
+10295054896,node,North East Volunteer Fire Department,,-77.9102904,34.781715
+10716562723,node,Bay Trees Lakes Vfd,,-78.4159801,34.6878469
+10781901378,node,LONG CREEK VOLUNTEER FIRE DEPARTMENT,,-77.9827371,34.440243
+10816493218,node,Pender EMS and Fire - Station 1,,-77.9164935,34.5585793
+10875912151,node,Lake Waccamaw Fire Station 9,,-78.5224283,34.3196873
+10875918946,node,Hallsboro Fire Department,,-78.5994198,34.321717
+10875922081,node,Acme-Delco-Riegelwood Fire Station 1-3,,-78.2918257,34.3776933
+10875958792,node,Buckhead Fire Station,,-78.4106949,34.3736635
+10875975261,node,White Marsh-Welches Creek Fire Department,,-78.6758033,34.3855161
+10878248022,node,North Whiteville Volunteer Fire Department,,-78.7399808,34.4237129
+11159188938,node,Greenevers Volunteer Fire Department,,-77.930755,34.8229575
+11766693499,node,Half Moon Volunteer Fire Departnment,,-77.4624918,34.8329447
+11848421415,node,Rhodestown Fire Station,,-77.522699,34.8270362
+12040109527,node,Dan And Ines Memorial Fire Station,,-78.1594918,33.9200612
+12040217021,node,Southport Fire Department Substation,,-78.0501999,33.9492458
+13361857068,node,Tri-Beach VFD Station 1,,-78.2630247,33.9320716
+68774632,way,Surf City Station 2,,-77.56927254,34.44907544
+328707511,way,Station 17 Murrayville,New Hanover County Fire Rescue,-77.86637240833333,34.29212713333333
+332326373,way,,Wilmington International Airport,-77.90681877777777,34.268557622222225
+349936650,way,Calabash Fire Department,,-78.56648485555554,33.8929983888889
+363247982,way,,,-78.51206475454548,33.88387711818182
+440540163,way,White Lake Fire Department,,-78.48642981111112,34.632511977777774
+556341605,way,Tri-Beach VFD Station 8-2,,-78.30763016,33.91093306
+611299470,way,Back Swamp Volunteer Fire Department,,-77.62338828333334,34.837580349999996
+777866421,way,Bolivia Volunteer Fire Department,,-78.14481826,34.06442328
+877716862,way,Kure Beach Fire Department and Ocean Rescue,,-77.91045646666667,33.999502622222224
+899696997,way,,,-77.90474794444444,34.22002935555556
+908546109,way,Harrells Vol. Fire Department,,-78.20095646666667,34.72793531666667
+921504087,way,Watha Station,Penderlea Fire Department,-77.9635929,34.645245233333334
+963740227,way,,,-77.47637130000001,34.52440718
+976910669,way,,,-77.8940861263158,34.23944603157895
+980574536,way,,,-77.98779969090909,34.18963279090909
+1019508570,way,Albert J. Ellis Airport Fire and Rescue,Onslow County,-77.60453466086956,34.8320182
+1057907304,way,Pender EMS & Fire Station 29,,-78.04201848,34.39782418
+1219868586,way,,,-78.00301545555556,34.77229565555555
+1320825938,way,Duplin County Fire Department,,-77.82072134,34.83280446
+1324855142,way,Whiteville Fire Department,,-78.70192306,34.32606500999999
+1348802506,way,Northwest Volunteer Fire Department,,-78.15976762,34.31389624
+1527639076,way,Ocean Isle Beach Fire Department,,-78.4400214,33.90001844

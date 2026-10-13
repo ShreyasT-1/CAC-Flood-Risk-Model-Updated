@@ -1,0 +1,50 @@
+{
+ "E1": {
+  "hours_expected": 213,
+  "hours_read": 213,
+  "missing": [],
+  "versions": [
+   "v2.2"
+  ]
+ },
+ "E2": {
+  "hours_expected": 173,
+  "hours_read": 173,
+  "missing": [],
+  "versions": [
+   "v3.0"
+  ]
+ },
+ "E3": {
+  "hours_expected": 311,
+  "hours_read": 311,
+  "missing": [],
+  "versions": [
+   "v3.0"
+  ]
+ },
+ "E4": {
+  "hours_expected": 149,
+  "hours_read": 149,
+  "missing": [],
+  "versions": [
+   "v3.0"
+  ]
+ },
+ "E5": {
+  "hours_expected": 519,
+  "hours_read": 519,
+  "missing": [],
+  "versions": [
+   "v3.0"
+  ]
+ },
+ "E6": {
+  "hours_expected": 362,
+  "hours_read": 362,
+  "missing": [],
+  "versions": [
+   "v3.0"
+  ]
+ }
+}

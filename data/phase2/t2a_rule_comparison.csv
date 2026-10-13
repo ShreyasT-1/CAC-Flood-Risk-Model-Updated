@@ -1,0 +1,35 @@
+series,pool,rule,n_assessed_reports,n,median_pct,share_ge_50,null_mean_median,p_one_sided
+hindcast_nwm_v30_retro,seed,peak_bin (phase1 baseline),15,15,63.2,1.0,57.9,0.576
+hindcast_nwm_v30_retro,seed,earliest_q2 (phase1 baseline),15,15,50.0,0.8,49.9,0.792
+hindcast_nwm_v30_retro,seed,hours_above_q2,15,15,37.9,0.33,50.0,0.839
+hindcast_nwm_v30_retro,seed,hours_above_q10,15,15,41.4,0.47,50.0,0.759
+hindcast_nwm_v30_retro,seed,peak_flow/q10,15,15,62.8,0.67,50.0,0.144
+hindcast_nwm_v30_retro,seed,peak_flow/q2,15,15,57.9,0.67,50.0,0.27
+hindcast_nwm_v30_retro,seed,REF peak/(3.64xHWT),15,15,62.1,0.6,50.0,0.188
+hindcast_nwm_v30_retro,seed,REF hours_above_3.64xHWT,15,15,33.3,0.33,50.0,0.91
+hindcast_nwm_v30_retro,seed_reliable only,peak_bin (phase1 baseline),4,4,61.1,1.0,51.2,0.323
+hindcast_nwm_v30_retro,seed_reliable only,earliest_q2 (phase1 baseline),4,4,40.5,0.25,50.0,0.732
+hindcast_nwm_v30_retro,seed_reliable only,hours_above_q2,4,4,34.7,0.25,49.9,0.777
+hindcast_nwm_v30_retro,seed_reliable only,hours_above_q10,4,4,57.8,0.75,49.9,0.346
+hindcast_nwm_v30_retro,seed_reliable only,peak_flow/q10,4,4,46.6,0.5,49.9,0.568
+hindcast_nwm_v30_retro,seed_reliable only,peak_flow/q2,4,4,51.7,0.5,49.8,0.471
+hindcast_nwm_v30_retro,seed_reliable only,REF peak/(3.64xHWT),4,4,45.8,0.5,50.0,0.585
+hindcast_nwm_v30_retro,seed_reliable only,REF hours_above_3.64xHWT,4,4,37.4,0.5,50.0,0.741
+hindcast_nwm_v30_retro,seed,flow/q10 at report hour vs county pool same hour,15,15,47.0,0.47,49.9,0.601
+hindcast_nwm_v30_retro,seed_reliable only,flow/q10 at report hour vs county pool same hour,4,4,44.9,0.5,50.1,0.611
+forecast_nwm_v12_shortrange,seed,peak_bin (phase1 baseline),15,15,51.5,0.6,50.0,0.526
+forecast_nwm_v12_shortrange,seed,earliest_q2 (phase1 baseline),15,3,33.3,0.33,45.4,1.0
+forecast_nwm_v12_shortrange,seed,hours_above_q2,15,15,52.3,0.53,49.8,0.477
+forecast_nwm_v12_shortrange,seed,hours_above_q10,15,15,40.9,0.33,44.6,0.966
+forecast_nwm_v12_shortrange,seed,peak_flow/q10,15,15,49.6,0.47,50.0,0.524
+forecast_nwm_v12_shortrange,seed,peak_flow/q2,15,15,51.5,0.53,50.0,0.506
+forecast_nwm_v12_shortrange,seed,REF peak/(3.64xHWT),15,15,54.6,0.6,50.0,0.302
+forecast_nwm_v12_shortrange,seed,REF hours_above_3.64xHWT,15,15,30.3,0.33,46.3,0.999
+forecast_nwm_v12_shortrange,seed_reliable only,peak_bin (phase1 baseline),4,4,40.7,0.5,49.1,0.794
+forecast_nwm_v12_shortrange,seed_reliable only,earliest_q2 (phase1 baseline),4,0,,,,
+forecast_nwm_v12_shortrange,seed_reliable only,hours_above_q2,4,4,40.3,0.5,49.0,0.651
+forecast_nwm_v12_shortrange,seed_reliable only,hours_above_q10,4,4,47.6,0.25,48.8,0.725
+forecast_nwm_v12_shortrange,seed_reliable only,peak_flow/q10,4,4,42.3,0.5,50.0,0.651
+forecast_nwm_v12_shortrange,seed_reliable only,peak_flow/q2,4,4,38.3,0.5,49.9,0.72
+forecast_nwm_v12_shortrange,seed_reliable only,REF peak/(3.64xHWT),4,4,40.1,0.5,49.9,0.691
+forecast_nwm_v12_shortrange,seed_reliable only,REF hours_above_3.64xHWT,4,4,40.5,0.0,48.2,0.865

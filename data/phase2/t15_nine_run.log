@@ -1,0 +1,298 @@
+reaches 124134
+structures 16135 assessed 14662 reliable-analogue among assessed 9932
+event_id                     start                last_start  records  counties  crossings_assessed  pos100  pos250  neg100
+      E1 2023-08-27 22:04:00+00:00 2023-09-02 17:42:00+00:00       69         9                1284      48      52    1236
+      E7 2023-12-17 19:37:00+00:00 2023-12-21 04:49:00+00:00       53        13                1755      39      40    1716
+      E2 2024-01-09 13:51:00+00:00 2024-01-13 16:01:00+00:00      198        41                7645     140     165    7505
+      E3 2024-08-06 18:53:00+00:00 2024-08-16 15:26:00+00:00      360        48                7405     171     200    7234
+      E4 2024-09-16 14:27:00+00:00 2024-09-19 17:53:00+00:00       54        15                1927      26      29    1901
+      E5 2024-09-25 08:30:00+00:00 2024-10-13 21:31:00+00:00      260        46                8784     196     235    8588
+      E8 2025-05-12 17:18:00+00:00 2025-05-15 20:20:00+00:00       31         8                1466      25      26    1441
+      E9 2025-06-12 12:30:00+00:00 2025-06-17 13:47:00+00:00       33        10                1325      23      28    1302
+      E6 2025-07-06 16:48:00+00:00 2025-07-18 17:00:00+00:00      104        15                2530      45      53    2485
+E7 reaches 1364 hours 155 / 155 missing 0 versions ['v3.0'] s 35
+E8 reaches 1007 hours 149 / 149 missing 0 versions ['v3.0'] s 33
+E9 reaches 990 hours 195 / 195 missing 0 versions ['v3.0'] s 44
+Helene event(s): ['E5']
+{
+ "pos100|excl_helene|r10": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.69,
+  "ci95_boot_event_county_cells": [
+   0.623,
+   0.745
+  ],
+  "n_pos": 517,
+  "n_neg": 24820,
+  "verdict": "PASS"
+ },
+ "pos100|excl_helene|r2": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.697,
+  "ci95_boot_event_county_cells": [
+   0.633,
+   0.748
+  ],
+  "n_pos": 517,
+  "n_neg": 24820
+ },
+ "pos100|helene_only|r10": {
+  "events": [
+   "E5"
+  ],
+  "pooled_mean_event_auc": 0.638,
+  "ci95_boot_event_county_cells": [
+   0.552,
+   0.712
+  ],
+  "n_pos": 196,
+  "n_neg": 8588
+ },
+ "pos100|helene_only|r2": {
+  "events": [
+   "E5"
+  ],
+  "pooled_mean_event_auc": 0.618,
+  "ci95_boot_event_county_cells": [
+   0.53,
+   0.698
+  ],
+  "n_pos": 196,
+  "n_neg": 8588
+ },
+ "pos100|all_events|r10": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.685,
+  "ci95_boot_event_county_cells": [
+   0.623,
+   0.734
+  ],
+  "n_pos": 713,
+  "n_neg": 33408
+ },
+ "pos100|all_events|r2": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.688,
+  "ci95_boot_event_county_cells": [
+   0.631,
+   0.735
+  ],
+  "n_pos": 713,
+  "n_neg": 33408
+ },
+ "pos250|excl_helene|r10": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.689,
+  "ci95_boot_event_county_cells": [
+   0.621,
+   0.74
+  ],
+  "n_pos": 593,
+  "n_neg": 24744
+ },
+ "pos250|excl_helene|r2": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.694,
+  "ci95_boot_event_county_cells": [
+   0.63,
+   0.743
+  ],
+  "n_pos": 593,
+  "n_neg": 24744
+ },
+ "pos250|helene_only|r10": {
+  "events": [
+   "E5"
+  ],
+  "pooled_mean_event_auc": 0.649,
+  "ci95_boot_event_county_cells": [
+   0.565,
+   0.721
+  ],
+  "n_pos": 235,
+  "n_neg": 8549
+ },
+ "pos250|helene_only|r2": {
+  "events": [
+   "E5"
+  ],
+  "pooled_mean_event_auc": 0.628,
+  "ci95_boot_event_county_cells": [
+   0.542,
+   0.705
+  ],
+  "n_pos": 235,
+  "n_neg": 8549
+ },
+ "pos250|all_events|r10": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.685,
+  "ci95_boot_event_county_cells": [
+   0.622,
+   0.732
+  ],
+  "n_pos": 828,
+  "n_neg": 33293
+ },
+ "pos250|all_events|r2": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.687,
+  "ci95_boot_event_county_cells": [
+   0.63,
+   0.732
+  ],
+  "n_pos": 828,
+  "n_neg": 33293
+ },
+ "PRIMARY": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.69,
+  "ci95_boot_event_county_cells": [
+   0.623,
+   0.745
+  ],
+  "n_pos": 517,
+  "n_neg": 24820,
+  "verdict": "PASS"
+ }
+}
+                      group event_id     n  n_pos  n_neg  n_counties  auc_r10  auc_r2 auc_r10_ci95_county_boot  precision_q2  recall_q2  precision_q10  recall_q10  share_gt_q10_pos  share_gt_q10_neg
+100 m (primary)|excl_helene       E1  1284     48   1236           9    0.806   0.786           [0.682, 0.865]         0.060      0.917          0.113       0.708             0.708             0.215
+100 m (primary)|excl_helene       E2  7645    140   7505          41    0.500   0.526           [0.425, 0.594]         0.019      0.729          0.021       0.079             0.079             0.067
+100 m (primary)|excl_helene       E3  7405    171   7234          48    0.652   0.676           [0.553, 0.731]         0.028      0.807          0.052       0.246             0.246             0.106
+100 m (primary)|excl_helene       E4  1927     26   1901          15    0.819   0.803           [0.632, 0.917]         0.027      0.808          0.090       0.462             0.462             0.064
+100 m (primary)|excl_helene       E6  2530     45   2485          15    0.801   0.817            [0.72, 0.884]         0.029      0.956          0.046       0.822             0.822             0.312
+100 m (primary)|excl_helene       E7  1755     39   1716          13    0.671   0.697            [0.44, 0.823]         0.053      0.692          0.000       0.000             0.000             0.001
+100 m (primary)|excl_helene       E8  1466     25   1441           8    0.516   0.479             [0.14, 0.83]         0.025      0.080          0.000       0.000             0.000             0.001
+100 m (primary)|excl_helene       E9  1325     23   1302          10    0.758   0.788           [0.652, 0.908]         0.038      0.565          0.088       0.217             0.217             0.040
+100 m (primary)|excl_helene      ALL 25337    517  24820          76    0.650   0.665             [0.599, 0.7]         0.027      0.754          0.054       0.273             0.273             0.100
+100 m (primary)|helene_only       E5  8784    196   8588          46    0.638   0.618            [0.56, 0.713]         0.026      0.867          0.035       0.643             0.643             0.407
+100 m (primary)|helene_only      ALL  8784    196   8588          46    0.638   0.618           [0.557, 0.709]         0.026      0.867          0.035       0.643             0.643             0.407
+ 100 m (primary)|all_events       E1  1284     48   1236           9    0.806   0.786            [0.67, 0.866]         0.060      0.917          0.113       0.708             0.708             0.215
+ 100 m (primary)|all_events       E2  7645    140   7505          41    0.500   0.526           [0.422, 0.599]         0.019      0.729          0.021       0.079             0.079             0.067
+ 100 m (primary)|all_events       E3  7405    171   7234          48    0.652   0.676           [0.561, 0.736]         0.028      0.807          0.052       0.246             0.246             0.106
+ 100 m (primary)|all_events       E4  1927     26   1901          15    0.819   0.803           [0.635, 0.915]         0.027      0.808          0.090       0.462             0.462             0.064
+ 100 m (primary)|all_events       E5  8784    196   8588          46    0.638   0.618           [0.555, 0.711]         0.026      0.867          0.035       0.643             0.643             0.407
+ 100 m (primary)|all_events       E6  2530     45   2485          15    0.801   0.817           [0.724, 0.879]         0.029      0.956          0.046       0.822             0.822             0.312
+ 100 m (primary)|all_events       E7  1755     39   1716          13    0.671   0.697           [0.442, 0.828]         0.053      0.692          0.000       0.000             0.000             0.001
+ 100 m (primary)|all_events       E8  1466     25   1441           8    0.516   0.479           [0.134, 0.828]         0.025      0.080          0.000       0.000             0.000             0.001
+ 100 m (primary)|all_events       E9  1325     23   1302          10    0.758   0.788             [0.65, 0.91]         0.038      0.565          0.088       0.217             0.217             0.040
+ 100 m (primary)|all_events      ALL 34121    713  33408          85    0.644   0.652           [0.596, 0.687]         0.027      0.785          0.043       0.374             0.374             0.179
+       pool                            stratum     n  n_pos  n_neg  auc_r10 note  precision_q10  recall_q10
+excl_helene                      order_class=1  6214     52   6162    0.629               0.023       0.288
+excl_helene                      order_class=2  9529    133   9396    0.703               0.048       0.331
+excl_helene                    order_class=>=3  9594    332   9262    0.619               0.078       0.247
+excl_helene            reliable_analogue=False  8292    244   8048    0.632               0.064       0.246
+excl_helene             reliable_analogue=True 17045    273  16772    0.657               0.048       0.297
+excl_helene                        tidal=False 23840    460  23380    0.644               0.051       0.274
+excl_helene                         tidal=True  1497     57   1440    0.685               0.094       0.263
+excl_helene structure_class=bridge_len_unknown   701     23    678    0.605               0.058       0.130
+excl_helene  structure_class=bridge_long_ge35m  6861    167   6694    0.669               0.060       0.293
+excl_helene structure_class=bridge_short_lt35m  8750    223   8527    0.645               0.069       0.238
+excl_helene       structure_class=culvert/pipe  9025    104   8921    0.655               0.036       0.346
+helene_only                      order_class=1  2595     31   2564    0.501               0.014       0.452
+helene_only                      order_class=2  3278     49   3229    0.613               0.020       0.531
+helene_only                    order_class=>=3  2911    116   2795    0.676               0.067       0.741
+helene_only            reliable_analogue=False  2750     86   2664    0.648               0.049       0.733
+helene_only             reliable_analogue=True  6034    110   5924    0.625               0.027       0.573
+helene_only                        tidal=False  8557    187   8370    0.634               0.034       0.636
+helene_only                         tidal=True   227      9    218    0.742               0.087       0.778
+helene_only structure_class=bridge_len_unknown   555     16    539    0.442               0.027       0.500
+helene_only  structure_class=bridge_long_ge35m  2033     49   1984    0.707               0.042       0.776
+helene_only structure_class=bridge_short_lt35m  3341    107   3234    0.603               0.044       0.617
+helene_only       structure_class=culvert/pipe  2855     24   2831    0.651               0.015       0.583
+event_id                     start  records  counties
+      E1 2023-08-27 22:04:00+00:00       69         9
+      E7 2023-12-17 19:37:00+00:00       53        13
+      E2 2024-01-09 13:51:00+00:00      198        41
+      E3 2024-08-06 18:53:00+00:00      360        48
+      E4 2024-09-16 14:27:00+00:00       54        15
+      E5 2024-09-25 08:30:00+00:00      260        46
+      E8 2025-05-12 17:18:00+00:00       31         8
+      E9 2025-06-12 12:30:00+00:00       33        10
+      E6 2025-07-06 16:48:00+00:00      104        15

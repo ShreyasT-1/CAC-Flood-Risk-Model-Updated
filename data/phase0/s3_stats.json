@@ -1,0 +1,29 @@
+{
+ "florence": {
+  "gold": 1,
+  "silver": 65,
+  "bronze": 2
+ },
+ "matthew": {
+  "gold": 0,
+  "silver": 2,
+  "bronze": 0
+ },
+ "florence_all_pilot": 146,
+ "matthew_all_pilot": 20,
+ "florence_dropped_nonflood_closure": 11,
+ "florence_closure_word_pilot": 82,
+ "florence_candidates": 68,
+ "florence_source_counts": {
+  "DEPT OF HIGHWAYS": 54,
+  "COUNTY OFFICIAL": 11,
+  "PUBLIC": 2,
+  "NWS EMPLOYEE": 1
+ },
+ "naive_any_crossing_within_100m_florence": 2,
+ "naive_within_500m_florence": 32,
+ "named_road_crossing_within_500m_florence": 23,
+ "named_road_crossing_within_1000m_florence": 42,
+ "unique_gold_crossings": 1,
+ "county_text_vs_point_mismatch": 2
+}

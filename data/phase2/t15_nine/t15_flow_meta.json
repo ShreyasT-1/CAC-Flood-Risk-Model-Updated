@@ -1,0 +1,26 @@
+{
+ "E7": {
+  "hours_expected": 155,
+  "hours_read": 155,
+  "missing": [],
+  "versions": [
+   "v3.0"
+  ]
+ },
+ "E8": {
+  "hours_expected": 149,
+  "hours_read": 149,
+  "missing": [],
+  "versions": [
+   "v3.0"
+  ]
+ },
+ "E9": {
+  "hours_expected": 195,
+  "hours_read": 195,
+  "missing": [],
+  "versions": [
+   "v3.0"
+  ]
+ }
+}

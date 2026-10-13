@@ -1,0 +1,220 @@
+[
+ {
+  "label": "primary_hour",
+  "stat": "hour",
+  "n_reports": 74,
+  "n_crossings": 66,
+  "n_storm_clusters": 24,
+  "median_pct_reports": 1.0,
+  "median_pct_controls": 0.437,
+  "share_gt_q2_reports": 0.608,
+  "share_gt_q2_controls": 0.0073,
+  "share_gt_q10_reports": 0.284,
+  "share_gt_q10_controls": 0.0007,
+  "median_ratio_q2": 1.29,
+  "median_ratio_q10": 0.43,
+  "auc": 0.958,
+  "auc_ci95": [
+   0.916,
+   0.992
+  ],
+  "d_share_gt_q2": 0.601,
+  "d_share_gt_q2_ci95": [
+   0.398,
+   0.726
+  ],
+  "d_share_gt_q10": 0.283,
+  "d_share_gt_q10_ci95": [
+   0.087,
+   0.406
+  ],
+  "timing_hit_reports": 0.811,
+  "timing_hit_controls": 0.14,
+  "timing_diff": 0.671,
+  "timing_diff_ci95": [
+   0.556,
+   0.841
+  ],
+  "timing_diff_given_window_gt_q2": 0.587,
+  "timing_diff_given_window_gt_q2_ci95": [
+   0.476,
+   0.76
+  ],
+  "loo_auc_range": [
+   0.954,
+   0.973
+  ],
+  "loo_auc_clusters_ge5": {
+   "0": 0.973,
+   "2": 0.955,
+   "3": 0.955,
+   "5": 0.956,
+   "20": 0.954
+  },
+  "pass_B": true,
+  "pass_C": true
+ },
+ {
+  "label": "sens_window_max_pm6h",
+  "stat": "win6",
+  "n_reports": 74,
+  "n_crossings": 66,
+  "n_storm_clusters": 24,
+  "median_pct_reports": 1.0,
+  "median_pct_controls": 0.438,
+  "share_gt_q2_reports": 0.824,
+  "share_gt_q2_controls": 0.0086,
+  "share_gt_q10_reports": 0.446,
+  "share_gt_q10_controls": 0.0009,
+  "median_ratio_q2": 2.08,
+  "median_ratio_q10": 0.76,
+  "auc": 0.981,
+  "auc_ci95": [
+   0.945,
+   0.999
+  ],
+  "d_share_gt_q2": 0.816,
+  "d_share_gt_q2_ci95": [
+   0.67,
+   0.908
+  ],
+  "d_share_gt_q10": 0.445,
+  "d_share_gt_q10_ci95": [
+   0.187,
+   0.606
+  ],
+  "timing_hit_reports": 0.811,
+  "timing_hit_controls": 0.14,
+  "timing_diff": 0.671,
+  "timing_diff_ci95": [
+   0.556,
+   0.841
+  ],
+  "timing_diff_given_window_gt_q2": 0.587,
+  "timing_diff_given_window_gt_q2_ci95": [
+   0.476,
+   0.76
+  ],
+  "loo_auc_range": [
+   0.975,
+   0.996
+  ],
+  "loo_auc_clusters_ge5": {
+   "0": 0.996,
+   "2": 0.979,
+   "3": 0.98,
+   "5": 0.975,
+   "20": 0.979
+  },
+  "pass_B": true,
+  "pass_C": true
+ },
+ {
+  "label": "sens_order_ge2",
+  "stat": "hour",
+  "n_reports": 57,
+  "n_crossings": 54,
+  "n_storm_clusters": 20,
+  "median_pct_reports": 1.0,
+  "median_pct_controls": 0.385,
+  "share_gt_q2_reports": 0.632,
+  "share_gt_q2_controls": 0.0072,
+  "share_gt_q10_reports": 0.263,
+  "share_gt_q10_controls": 0.0005,
+  "median_ratio_q2": 1.28,
+  "median_ratio_q10": 0.43,
+  "auc": 0.962,
+  "auc_ci95": [
+   0.915,
+   0.996
+  ],
+  "d_share_gt_q2": 0.624,
+  "d_share_gt_q2_ci95": [
+   0.393,
+   0.764
+  ],
+  "d_share_gt_q10": 0.263,
+  "d_share_gt_q10_ci95": [
+   0.029,
+   0.397
+  ],
+  "timing_hit_reports": 0.825,
+  "timing_hit_controls": 0.145,
+  "timing_diff": 0.679,
+  "timing_diff_ci95": [
+   0.578,
+   0.825
+  ],
+  "timing_diff_given_window_gt_q2": 0.605,
+  "timing_diff_given_window_gt_q2_ci95": [
+   0.463,
+   0.852
+  ],
+  "loo_auc_range": [
+   0.959,
+   0.982
+  ],
+  "loo_auc_clusters_ge5": {
+   "0": 0.982,
+   "4": 0.959,
+   "16": 0.959
+  },
+  "pass_B": true,
+  "pass_C": true
+ },
+ {
+  "label": "sens_accept_plus_uncertain",
+  "stat": "hour",
+  "n_reports": 89,
+  "n_crossings": 81,
+  "n_storm_clusters": 31,
+  "median_pct_reports": 1.0,
+  "median_pct_controls": 0.449,
+  "share_gt_q2_reports": 0.618,
+  "share_gt_q2_controls": 0.0063,
+  "share_gt_q10_reports": 0.292,
+  "share_gt_q10_controls": 0.0006,
+  "median_ratio_q2": 1.31,
+  "median_ratio_q10": 0.46,
+  "auc": 0.963,
+  "auc_ci95": [
+   0.934,
+   0.99
+  ],
+  "d_share_gt_q2": 0.612,
+  "d_share_gt_q2_ci95": [
+   0.456,
+   0.717
+  ],
+  "d_share_gt_q10": 0.292,
+  "d_share_gt_q10_ci95": [
+   0.109,
+   0.418
+  ],
+  "timing_hit_reports": 0.843,
+  "timing_hit_controls": 0.158,
+  "timing_diff": 0.685,
+  "timing_diff_ci95": [
+   0.583,
+   0.824
+  ],
+  "timing_diff_given_window_gt_q2": 0.557,
+  "timing_diff_given_window_gt_q2_ci95": [
+   0.469,
+   0.691
+  ],
+  "loo_auc_range": [
+   0.96,
+   0.975
+  ],
+  "loo_auc_clusters_ge5": {
+   "2": 0.975,
+   "4": 0.961,
+   "5": 0.961,
+   "8": 0.963,
+   "25": 0.96
+  },
+  "pass_B": true,
+  "pass_C": true
+ }
+]

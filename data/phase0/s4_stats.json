@@ -1,0 +1,20 @@
+{
+ "coverage_bbox": {
+  "New Hanover": 0.9999999999999988,
+  "Brunswick": 0.9999999999999992,
+  "Pender": 0.9999999999999967
+ },
+ "tiles": 172,
+ "projects": {
+  "NC_HurricaneFlorence_2020_D20": 162,
+  "SC_2023Horry_Processing_D24": 10
+ },
+ "n": 20,
+ "road_elev_ok": 20,
+ "with_reach": 12,
+ "hand_plausible": 12,
+ "fail_counts": {
+  "": 12,
+  "no_reach_within_100m": 8
+ }
+}

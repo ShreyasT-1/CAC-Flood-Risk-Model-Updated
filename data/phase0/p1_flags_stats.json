@@ -1,0 +1,46 @@
+{
+ "cutoffs": {
+  "structure_len_m_lt": 35.0,
+  "order_le": 3,
+  "q2_min_cfs": 1.0,
+  "status": "provisional, 14 NGS marks"
+ },
+ "crest_reliable": 150,
+ "crest_reason": {
+  "secondary_osm": 2599,
+  "ok": 150,
+  "length>=35m": 101,
+  "no_reach_order": 30,
+  "no_structure_length": 16,
+  "tidal_like": 13,
+  "order>3": 11
+ },
+ "hazard_ok": 1583,
+ "hazard_reason": {
+  "ok": 1583,
+  "no_reach": 1234,
+  "q2<1cfs": 94,
+  "q2_zero": 9
+ },
+ "quality_before": {
+  "poor": 2476,
+  "fair": 321,
+  "good": 123
+ },
+ "quality_after": {
+  "poor": 2476,
+  "fair": 352,
+  "good": 92
+ },
+ "good_downgraded": 31,
+ "seed_quality_after": {
+  "fair": 165,
+  "good": 92,
+  "poor": 64
+ },
+ "seed_hazard_ok": 250,
+ "seed_n": 321,
+ "marks_reliable_n": 7,
+ "marks_reliable_max_abs_crest_minus_mark": 0.7548194026947019,
+ "marks_unreliable_min_abs": 0.0475681304931647
+}

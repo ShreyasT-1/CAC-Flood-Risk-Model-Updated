@@ -1,0 +1,22 @@
+layer Flood Hazard Zones | maxRecordCount 2000 | fields ['OBJECTID', 'DFIRM_ID', 'FLD_AR_ID', 'STUDY_TYP', 'FLD_ZONE', 'ZONE_SUBTY', 'SFHA_TF', 'STATIC_BFE', 'V_DATUM', 'DEPTH', 'LEN_UNIT', 'VELOCITY', 'VEL_UNIT', 'AR_REVERT', 'AR_SUBTRV', 'BFE_REVERT', 'DEP_REVERT', 'DUAL_ZONE', 'SOURCE_CIT', 'SHAPE', 'SHAPE.STArea()', 'SHAPE.STLength()', 'GFID', 'GlobalID']
+bbox -78.7 33.792 -77.468 34.783 counties ['STATEFP', 'COUNTYFP', 'COUNTYNS', 'AFFGEOID', 'GEOID', 'NAME', 'NAMELSAD', 'STUSPS']
+retry 0 tile -78.7 33.792 off 600 page 200 JSONDecodeError('Expecting value: line 1 column 1 (char 0)') 500
+column -78.7 features so far 2621
+column -78.5 features so far 3963
+column -78.3 features so far 5527
+column -78.1 features so far 8782
+column -77.9 features so far 12315
+column -77.7 features so far 14064
+column -77.5 features so far 14145
+saved data/phase2/fema_nfhl.parquet 14145 polygons
+fld_zone  zone_subty                        
+X         0.2 PCT ANNUAL CHANCE FLOOD HAZARD    4546
+          AREA OF MINIMAL FLOOD HAZARD          3919
+AE        NaN                                   3729
+AO        NaN                                    865
+VE        NaN                                    555
+A         NaN                                    264
+AE        FLOODWAY                               248
+X         1 PCT FUTURE CONDITIONS                 15
+A                                                  2
+AE                                                 2

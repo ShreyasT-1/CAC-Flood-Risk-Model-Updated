@@ -1,0 +1,240 @@
+Helene event(s): ['E5']
+{
+ "pos100|excl_helene|r10": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6"
+  ],
+  "pooled_mean_event_auc": 0.716,
+  "ci95_boot_event_county_cells": [
+   0.655,
+   0.752
+  ],
+  "n_pos": 430,
+  "n_neg": 20361,
+  "verdict": "PASS"
+ },
+ "pos100|excl_helene|r2": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6"
+  ],
+  "pooled_mean_event_auc": 0.722,
+  "ci95_boot_event_county_cells": [
+   0.664,
+   0.757
+  ],
+  "n_pos": 430,
+  "n_neg": 20361
+ },
+ "pos100|helene_only|r10": {
+  "events": [
+   "E5"
+  ],
+  "pooled_mean_event_auc": 0.638,
+  "ci95_boot_event_county_cells": [
+   0.554,
+   0.714
+  ],
+  "n_pos": 196,
+  "n_neg": 8588
+ },
+ "pos100|helene_only|r2": {
+  "events": [
+   "E5"
+  ],
+  "pooled_mean_event_auc": 0.618,
+  "ci95_boot_event_county_cells": [
+   0.53,
+   0.695
+  ],
+  "n_pos": 196,
+  "n_neg": 8588
+ },
+ "pos100|all_events|r10": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6"
+  ],
+  "pooled_mean_event_auc": 0.703,
+  "ci95_boot_event_county_cells": [
+   0.65,
+   0.735
+  ],
+  "n_pos": 626,
+  "n_neg": 28949
+ },
+ "pos100|all_events|r2": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6"
+  ],
+  "pooled_mean_event_auc": 0.704,
+  "ci95_boot_event_county_cells": [
+   0.653,
+   0.738
+  ],
+  "n_pos": 626,
+  "n_neg": 28949
+ },
+ "pos250|excl_helene|r10": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6"
+  ],
+  "pooled_mean_event_auc": 0.708,
+  "ci95_boot_event_county_cells": [
+   0.652,
+   0.746
+  ],
+  "n_pos": 499,
+  "n_neg": 20292
+ },
+ "pos250|excl_helene|r2": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6"
+  ],
+  "pooled_mean_event_auc": 0.714,
+  "ci95_boot_event_county_cells": [
+   0.657,
+   0.751
+  ],
+  "n_pos": 499,
+  "n_neg": 20292
+ },
+ "pos250|helene_only|r10": {
+  "events": [
+   "E5"
+  ],
+  "pooled_mean_event_auc": 0.649,
+  "ci95_boot_event_county_cells": [
+   0.564,
+   0.722
+  ],
+  "n_pos": 235,
+  "n_neg": 8549
+ },
+ "pos250|helene_only|r2": {
+  "events": [
+   "E5"
+  ],
+  "pooled_mean_event_auc": 0.628,
+  "ci95_boot_event_county_cells": [
+   0.542,
+   0.705
+  ],
+  "n_pos": 235,
+  "n_neg": 8549
+ },
+ "pos250|all_events|r10": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6"
+  ],
+  "pooled_mean_event_auc": 0.698,
+  "ci95_boot_event_county_cells": [
+   0.649,
+   0.731
+  ],
+  "n_pos": 734,
+  "n_neg": 28841
+ },
+ "pos250|all_events|r2": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6"
+  ],
+  "pooled_mean_event_auc": 0.7,
+  "ci95_boot_event_county_cells": [
+   0.65,
+   0.734
+  ],
+  "n_pos": 734,
+  "n_neg": 28841
+ },
+ "PRIMARY": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6"
+  ],
+  "pooled_mean_event_auc": 0.716,
+  "ci95_boot_event_county_cells": [
+   0.655,
+   0.752
+  ],
+  "n_pos": 430,
+  "n_neg": 20361,
+  "verdict": "PASS"
+ }
+}
+                      group event_id     n  n_pos  n_neg  n_counties  auc_r10  auc_r2 auc_r10_ci95_county_boot  precision_q2  recall_q2  precision_q10  recall_q10  share_gt_q10_pos  share_gt_q10_neg
+100 m (primary)|excl_helene       E1  1284     48   1236           9    0.806   0.786           [0.682, 0.865]         0.060      0.917          0.113       0.708             0.708             0.215
+100 m (primary)|excl_helene       E2  7645    140   7505          41    0.500   0.526           [0.425, 0.594]         0.019      0.729          0.021       0.079             0.079             0.067
+100 m (primary)|excl_helene       E3  7405    171   7234          48    0.652   0.676           [0.553, 0.731]         0.028      0.807          0.052       0.246             0.246             0.106
+100 m (primary)|excl_helene       E4  1927     26   1901          15    0.819   0.803           [0.632, 0.917]         0.027      0.808          0.090       0.462             0.462             0.064
+100 m (primary)|excl_helene       E6  2530     45   2485          15    0.801   0.817            [0.72, 0.884]         0.029      0.956          0.046       0.822             0.822             0.312
+100 m (primary)|excl_helene      ALL 20791    430  20361          74    0.658   0.673             [0.6, 0.719]         0.026      0.809          0.053       0.316             0.316             0.119
+100 m (primary)|helene_only       E5  8784    196   8588          46    0.638   0.618           [0.556, 0.711]         0.026      0.867          0.035       0.643             0.643             0.407
+100 m (primary)|helene_only      ALL  8784    196   8588          46    0.638   0.618           [0.553, 0.716]         0.026      0.867          0.035       0.643             0.643             0.407
+ 100 m (primary)|all_events       E1  1284     48   1236           9    0.806   0.786           [0.679, 0.867]         0.060      0.917          0.113       0.708             0.708             0.215
+ 100 m (primary)|all_events       E2  7645    140   7505          41    0.500   0.526           [0.421, 0.597]         0.019      0.729          0.021       0.079             0.079             0.067
+ 100 m (primary)|all_events       E3  7405    171   7234          48    0.652   0.676           [0.563, 0.734]         0.028      0.807          0.052       0.246             0.246             0.106
+ 100 m (primary)|all_events       E4  1927     26   1901          15    0.819   0.803           [0.637, 0.915]         0.027      0.808          0.090       0.462             0.462             0.064
+ 100 m (primary)|all_events       E5  8784    196   8588          46    0.638   0.618           [0.556, 0.712]         0.026      0.867          0.035       0.643             0.643             0.407
+ 100 m (primary)|all_events       E6  2530     45   2485          15    0.801   0.817           [0.723, 0.879]         0.029      0.956          0.046       0.822             0.822             0.312
+ 100 m (primary)|all_events      ALL 29575    626  28949          83    0.650   0.656           [0.599, 0.695]         0.026      0.827          0.042       0.419             0.419             0.205
+       pool                            stratum     n  n_pos  n_neg  auc_r10 note  precision_q10  recall_q10
+excl_helene                      order_class=1  5060     43   5017    0.623               0.021       0.302
+excl_helene                      order_class=2  7787    121   7666    0.684               0.048       0.355
+excl_helene                    order_class=>=3  7944    266   7678    0.644               0.077       0.301
+excl_helene            reliable_analogue=False  6787    198   6589    0.644               0.064       0.303
+excl_helene             reliable_analogue=True 14004    232  13772    0.663               0.046       0.328
+excl_helene                        tidal=False 19616    382  19234    0.653               0.050       0.317
+excl_helene                         tidal=True  1175     48   1127    0.691               0.094       0.312
+excl_helene structure_class=bridge_len_unknown   557     16    541    0.606               0.058       0.188
+excl_helene  structure_class=bridge_long_ge35m  5646    144   5502    0.674               0.060       0.340
+excl_helene structure_class=bridge_short_lt35m  7024    180   6844    0.652               0.066       0.278
+excl_helene       structure_class=culvert/pipe  7564     90   7474    0.665               0.036       0.378
+helene_only                      order_class=1  2595     31   2564    0.501               0.014       0.452
+helene_only                      order_class=2  3278     49   3229    0.613               0.020       0.531
+helene_only                    order_class=>=3  2911    116   2795    0.676               0.067       0.741
+helene_only            reliable_analogue=False  2750     86   2664    0.648               0.049       0.733
+helene_only             reliable_analogue=True  6034    110   5924    0.625               0.027       0.573
+helene_only                        tidal=False  8557    187   8370    0.634               0.034       0.636
+helene_only                         tidal=True   227      9    218    0.742               0.087       0.778
+helene_only structure_class=bridge_len_unknown   555     16    539    0.442               0.027       0.500
+helene_only  structure_class=bridge_long_ge35m  2033     49   1984    0.707               0.042       0.776
+helene_only structure_class=bridge_short_lt35m  3341    107   3234    0.603               0.044       0.617
+helene_only       structure_class=culvert/pipe  2855     24   2831    0.651               0.015       0.583

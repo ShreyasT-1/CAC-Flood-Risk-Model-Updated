@@ -1,0 +1,21 @@
+stress_test,n_segments_closed,group,pop,pop_no_path_to_any_ED,share,pop_detour_gt10min
+A. 33 hazard-assessed NH seed crossings,33,NH Wilmington/south,183610,0,0.0,0
+A. 33 hazard-assessed NH seed crossings,33,NH north,36143,0,0.0,0
+A. 33 hazard-assessed NH seed crossings,33,Brunswick,135766,0,0.0,0
+A. 33 hazard-assessed NH seed crossings,33,Pender,58879,0,0.0,0
+B. all 61 NH seed crossings (incl. not assessed),59,NH Wilmington/south,183610,3639,0.0198,81
+B. all 61 NH seed crossings (incl. not assessed),59,NH north,36143,0,0.0,0
+B. all 61 NH seed crossings (incl. not assessed),59,Brunswick,135766,0,0.0,39718
+B. all 61 NH seed crossings (incl. not assessed),59,Pender,58879,0,0.0,71
+C. all NH crossings incl. OSM-secondary,591,NH Wilmington/south,183610,53922,0.2937,329
+C. all NH crossings incl. OSM-secondary,591,NH north,36143,13735,0.38,0
+C. all NH crossings incl. OSM-secondary,591,Brunswick,135766,0,0.0,39718
+C. all NH crossings incl. OSM-secondary,591,Pender,58879,0,0.0,71
+D. every seed crossing in 3 counties,303,NH Wilmington/south,183610,3720,0.0203,0
+D. every seed crossing in 3 counties,303,NH north,36143,0,0.0,0
+D. every seed crossing in 3 counties,303,Brunswick,135766,79461,0.5853,10749
+D. every seed crossing in 3 counties,303,Pender,58879,3780,0.0642,10188
+E. every OSM bridge-tagged segment in graph,2062,NH Wilmington/south,183610,12666,0.069,885
+E. every OSM bridge-tagged segment in graph,2062,NH north,36143,831,0.023,556
+E. every OSM bridge-tagged segment in graph,2062,Brunswick,135766,81660,0.6015,7130
+E. every OSM bridge-tagged segment in graph,2062,Pender,58879,5640,0.0958,8817

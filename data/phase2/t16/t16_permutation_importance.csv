@@ -1,0 +1,15 @@
+model,group,mean,std
+hgb,stream_order,0.1049,0.0445
+hgb,log_r10,0.0951,0.0283
+hgb,structure_length,0.0906,0.0467
+hgb,log_r2,0.0654,0.0366
+hgb,hours_above_q2,0.0404,0.0263
+hgb,structure_type,0.0101,0.0095
+hgb,tidal_flag,0.0026,0.0025
+logistic,log_r2,0.1642,0.1513
+logistic,stream_order,0.123,0.0374
+logistic,structure_length,0.0647,0.0238
+logistic,hours_above_q2,0.0274,0.0291
+logistic,structure_type,0.0251,0.0135
+logistic,log_r10,0.0094,0.0229
+logistic,tidal_flag,0.0003,0.0004

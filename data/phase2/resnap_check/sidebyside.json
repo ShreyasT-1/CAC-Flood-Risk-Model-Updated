@@ -1,0 +1,67 @@
+{
+ "phase1_snap": {
+  "snap": "phase1",
+  "origin_blocks": 6940,
+  "origin_people": 421319,
+  "unreachable_blocks_ed": 88,
+  "unreachable_people_ed": 6921,
+  "median_snap_m": 88.5,
+  "blocks_snap_gt500m": 352,
+  "crossings_with_effect": 1046,
+  "top3_people_affected": [
+   43394,
+   43394,
+   43313
+  ],
+  "top3_ids": [
+   "V2_0111",
+   "V2_1922",
+   "V2_0076"
+  ],
+  "peak_blocks_lost_ed_RL2": 249,
+  "peak_people_lost_ed_RL2": 7500,
+  "peak_blocks_lost_ed_RL10": 204,
+  "peak_people_lost_ed_RL10": 6668,
+  "peak_people_lost_fire_RL10": 4507
+ },
+ "resnap": {
+  "snap": "resnap",
+  "origin_blocks": 6919,
+  "origin_people": 420741,
+  "unreachable_blocks_ed": 2,
+  "unreachable_people_ed": 168,
+  "median_snap_m": 88.5,
+  "blocks_snap_gt500m": 351,
+  "crossings_with_effect": 1050,
+  "top3_people_affected": [
+   43513,
+   43513,
+   43432
+  ],
+  "top3_ids": [
+   "V2_0111",
+   "V2_1922",
+   "V2_0076"
+  ],
+  "peak_blocks_lost_ed_RL2": 251,
+  "peak_people_lost_ed_RL2": 7582,
+  "peak_blocks_lost_ed_RL10": 206,
+  "peak_people_lost_ed_RL10": 6750,
+  "peak_people_lost_fire_RL10": 4589
+ },
+ "check": {
+  "sample_n": 30,
+  "flagged_service_only": 10,
+  "flagged_ramp": 0,
+  "flagged_across_water": 0,
+  "flagged_any_user_criterion": 10,
+  "new_snap_gt500m": 16,
+  "median_old_snap_m": 202.0,
+  "median_new_snap_m": 531.0,
+  "dropped_n": 21,
+  "dropped_people": 578,
+  "dropped_cross_water": 14,
+  "dropped_all_old_unreachable": true,
+  "spearman_people_affected_rank": 0.997
+ }
+}

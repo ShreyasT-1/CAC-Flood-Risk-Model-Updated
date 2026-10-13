@@ -1,0 +1,35 @@
+{
+ "seed": {
+  "matched": 257,
+  "with_q2": 257,
+  "with_all5": 257,
+  "with_hwt": 257,
+  "order1": 73,
+  "order1_with_q2": 73,
+  "order1_with_all5": 73,
+  "order1_with_hwt": 73,
+  "all_crossings": 321
+ },
+ "secondary": {
+  "matched": 1429,
+  "with_q2": 1429,
+  "with_all5": 1429,
+  "with_hwt": 1429,
+  "order1": 1238,
+  "order1_with_q2": 1238,
+  "order1_with_all5": 1238,
+  "order1_with_hwt": 1238,
+  "all_crossings": 2599
+ },
+ "all": {
+  "matched": 1686,
+  "with_q2": 1686,
+  "with_all5": 1686,
+  "with_hwt": 1686,
+  "order1": 1311,
+  "order1_with_q2": 1311,
+  "order1_with_all5": 1311,
+  "order1_with_hwt": 1311,
+  "all_crossings": 2920
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "pooled_auc": {
+  "base": 0.69,
+  "logistic_without_hand": 0.757,
+  "hgb_without_hand": 0.798,
+  "logistic_with_hand": 0.757,
+  "hgb_with_hand": 0.798
+ },
+ "pooled_ci95": {
+  "base": [
+   0.624,
+   0.744
+  ],
+  "logistic_without_hand": [
+   0.697,
+   0.802
+  ],
+  "hgb_without_hand": [
+   0.759,
+   0.82
+  ]
+ },
+ "diff_vs_baseline": {
+  "logistic_without_hand": {
+   "diff": 0.066,
+   "ci95": [
+    0.03,
+    0.102
+   ],
+   "excludes_zero": true
+  },
+  "hgb_without_hand": {
+   "diff": 0.108,
+   "ci95": [
+    0.045,
+    0.171
+   ],
+   "excludes_zero": true
+  }
+ },
+ "PRIMARY_verdict": "PASS",
+ "within_county_auc": {
+  "loso_non_helene|base": {
+   "auc": 0.626,
+   "ci95": [
+    0.578,
+    0.671
+   ],
+   "cells": 38
+  },
+  "loso_non_helene|logistic_without_hand": {
+   "auc": 0.733,
+   "ci95": [
+    0.689,
+    0.777
+   ],
+   "cells": 38
+  },
+  "loso_non_helene|hgb_without_hand": {
+   "auc": 0.708,
+   "ci95": [
+    0.66,
+    0.756
+   ],
+   "cells": 38
+  },
+  "helene|base": {
+   "auc": 0.651,
+   "ci95": [
+    0.57,
+    0.704
+   ],
+   "cells": 17
+  },
+  "helene|logistic_without_hand": {
+   "auc": 0.727,
+   "ci95": [
+    0.651,
+    0.804
+   ],
+   "cells": 17
+  },
+  "helene|hgb_without_hand": {
+   "auc": 0.711,
+   "ci95": [
+    0.61,
+    0.794
+   ],
+   "cells": 17
+  }
+ },
+ "helene": {
+  "base": {
+   "auc": 0.638
+  },
+  "logistic_without_hand": {
+   "auc": 0.726
+  },
+  "hgb_without_hand": {
+   "auc": 0.719
+  },
+  "logistic_with_hand": {
+   "auc": 0.726
+  },
+  "hgb_with_hand": {
+   "auc": 0.719
+  }
+ }
+}

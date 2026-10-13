@@ -1,0 +1,41 @@
+eval_set,population,metric,best_baseline,model_minus_baseline,lo,hi,beats
+"VAL (held-out events, trained gauges)",onset only [ensemble],recall @50% precision,nwm_flow_pctile,0.4095133952979771,0.09784141321212216,0.5230841761395683,YES
+"VAL (held-out events, trained gauges)",onset only [ensemble],recall @20% precision,persist_stage_frac,0.42208857299070535,0.18605005586507828,0.6222169229621877,YES
+"VAL (held-out events, trained gauges)",onset only,recall @50% precision,nwm_flow_pctile,-0.0142154182613449,-0.04387460074821108,0.0,NO
+"VAL (held-out events, trained gauges)",onset only,recall @20% precision,persist_stage_frac,0.3954802259887006,-0.18084809317864217,0.6069145230033508,NO
+"VAL (held-out events, trained gauges)",strict onset (stage at cutoff < flood stage) [ensemble],recall @50% precision,nwm_flow_pctile,0.41602634467618,0.12084543881153496,0.5282059738009417,YES
+"VAL (held-out events, trained gauges)",strict onset (stage at cutoff < flood stage) [ensemble],recall @20% precision,persist_stage_frac,0.4072447859495061,0.1739424860853432,0.5382683197181816,YES
+"VAL (held-out events, trained gauges)",strict onset (stage at cutoff < flood stage),recall @50% precision,nwm_flow_pctile,-0.0142700329308452,-0.041389496174103146,0.0641786928798411,NO
+"VAL (held-out events, trained gauges)",strict onset (stage at cutoff < flood stage),recall @20% precision,persist_stage_frac,0.38419319429198684,-0.21793629917657822,0.5766861271038404,NO
+UNSEEN gauges (non-Florence),onset only [ensemble],recall @50% precision,baseline_ratio,0.4075804776739356,0.1979305105979022,0.6288754042558012,YES
+UNSEEN gauges (non-Florence),onset only [ensemble],recall @20% precision,persist_stage_frac,0.39615784008307375,0.2961115285421278,0.5689089371053825,YES
+UNSEEN gauges (non-Florence),onset only,recall @50% precision,baseline_ratio,-0.0171339563862928,-0.03744959928061131,0.14335967434986674,NO
+UNSEEN gauges (non-Florence),onset only,recall @20% precision,persist_stage_frac,0.18622360678435448,-0.035308778347903205,0.492159622543536,NO
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage) [ensemble],recall @50% precision,baseline_ratio,0.415794979079498,0.2150169331888995,0.624889032956187,YES
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage) [ensemble],recall @20% precision,persist_stage_frac,0.3844142259414227,0.24091768195516072,0.5053067818440221,YES
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),recall @50% precision,baseline_ratio,-0.0156903765690376,-0.039679961851671074,0.1258854079684809,NO
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),recall @20% precision,persist_stage_frac,0.176255230125523,-0.09210282775619619,0.4493799440764148,NO
+TEST (Florence),onset only [ensemble],recall @50% precision,nwm_flow_pctile,0.41516245487364617,0.2759159163692183,0.5335674508041155,YES
+TEST (Florence),onset only [ensemble],recall @20% precision,persist_extrap12h,0.3077617328519856,0.23884920634920626,0.36808938356164383,YES
+TEST (Florence),onset only,recall @50% precision,nwm_flow_pctile,0.1657641395908544,-0.09054940266145146,0.4548210682828258,NO
+TEST (Florence),onset only,recall @20% precision,persist_extrap12h,0.3158844765342962,0.25116426394548513,0.3796606055835432,YES
+TEST (Florence),strict onset (stage at cutoff < flood stage) [ensemble],recall @50% precision,nwm_flow_pctile,0.4259597806215723,0.3048583749078746,0.5323063118857445,YES
+TEST (Florence),strict onset (stage at cutoff < flood stage) [ensemble],recall @20% precision,persist_extrap12h,0.3098720292504571,0.2144880287934902,0.3799681004044238,YES
+TEST (Florence),strict onset (stage at cutoff < flood stage),recall @50% precision,nwm_flow_pctile,0.1886045094454601,-0.07932971816948589,0.43292802729056684,NO
+TEST (Florence),strict onset (stage at cutoff < flood stage),recall @20% precision,persist_extrap12h,0.31718464351005504,0.24050602312232194,0.3943785995982638,YES
+PILOT non-Florence (VAL+UNSEEN),onset only [ensemble],recall @50% precision,baseline_ratio,0.2093275488069414,0.04462191842223218,0.3511365865314318,YES
+PILOT non-Florence (VAL+UNSEEN),onset only [ensemble],recall @20% precision,persist_stage_frac,0.3427331887201736,0.18453301078332016,0.47478428739298306,YES
+PILOT non-Florence (VAL+UNSEEN),onset only,recall @50% precision,baseline_ratio,-0.009761388286334,-0.033674247785451084,0.0,NO
+PILOT non-Florence (VAL+UNSEEN),onset only,recall @20% precision,persist_stage_frac,0.13702096890817067,-0.09538526440879382,0.43261807323162377,NO
+PILOT non-Florence (VAL+UNSEEN),strict onset (stage at cutoff < flood stage) [ensemble],recall @50% precision,baseline_ratio,0.2083333333333334,0.08541214689688192,0.38409807880506486,YES
+PILOT non-Florence (VAL+UNSEEN),strict onset (stage at cutoff < flood stage) [ensemble],recall @20% precision,persist_stage_frac,0.3289473684210527,0.1739375290589251,0.47277366419851913,YES
+PILOT non-Florence (VAL+UNSEEN),strict onset (stage at cutoff < flood stage),recall @50% precision,baseline_ratio,-0.0098684210526315,-0.03821447560472406,0.0,NO
+PILOT non-Florence (VAL+UNSEEN),strict onset (stage at cutoff < flood stage),recall @20% precision,persist_stage_frac,0.14510233918128657,-0.08973153975893702,0.4724818142348035,NO
+PILOT Florence (TEST),onset only [ensemble],recall @50% precision,nwm_flow_pctile,0.36184210526315785,0.14680925553319918,0.5270842538995183,YES
+PILOT Florence (TEST),onset only [ensemble],recall @20% precision,persist_extrap12h,0.33114035087719296,0.2327495143273434,0.44360442295325675,YES
+PILOT Florence (TEST),onset only,recall @50% precision,nwm_flow_pctile,0.12426900584795322,-0.15796694547736576,0.45612257401989975,NO
+PILOT Florence (TEST),onset only,recall @20% precision,persist_extrap12h,0.3771929824561404,0.2523870344518427,0.46370760981420706,YES
+PILOT Florence (TEST),strict onset (stage at cutoff < flood stage) [ensemble],recall @50% precision,nwm_flow_pctile,0.3839285714285715,0.24205952520173082,0.6061523132228821,YES
+PILOT Florence (TEST),strict onset (stage at cutoff < flood stage) [ensemble],recall @20% precision,persist_extrap12h,0.3348214285714286,0.2352600937547256,0.44909371613078036,YES
+PILOT Florence (TEST),strict onset (stage at cutoff < flood stage),recall @50% precision,nwm_flow_pctile,0.1376488095238096,-0.10665309093307454,0.5257121962455374,NO
+PILOT Florence (TEST),strict onset (stage at cutoff < flood stage),recall @20% precision,persist_extrap12h,0.3794642857142857,0.2672768592657174,0.47840575774035854,YES

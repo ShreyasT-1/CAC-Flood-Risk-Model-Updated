@@ -1,0 +1,126 @@
+201412 cached
+201501 cached
+201502 cached
+201503 cached
+201504 cached
+201505 cached
+201506 cached
+201507 cached
+201508 cached
+201509 cached
+201510 cached
+201511 cached
+201512 cached
+201601 cached
+201602 cached
+201603 cached
+201604 cached
+201605 cached
+201606 cached
+201607 cached
+201608 cached
+201609 cached
+201610 cached
+201611 cached
+201612 cached
+201701 cached
+201702 cached
+201703 cached
+201704 cached
+201705 cached
+201706 cached
+201707 cached
+201708 cached
+201709 cached
+201710 cached
+201711 cached
+201712 cached
+201801 cached
+201802 cached
+201803 cached
+201804 cached
+201805 cached
+201806 cached
+201807 cached
+201808 cached
+201809 cached
+201810 cached
+201811 cached
+201812 cached
+201901 744 hours
+201902 672 hours
+201903 744 hours
+201904 cached
+201905 cached
+201906 cached
+201907 cached
+201908 cached
+201909 cached
+201910 cached
+201911 cached
+201912 cached
+202001 cached
+202002 cached
+202003 cached
+202004 cached
+202005 cached
+202006 cached
+202007 cached
+202008 cached
+202009 cached
+202010 cached
+202011 cached
+202012 cached
+202101 cached
+202102 cached
+202103 cached
+202104 cached
+202105 cached
+202106 cached
+202107 cached
+202108 cached
+202109 cached
+202110 cached
+202111 0 hours
+202112 cached
+202201 0 hours
+202202 cached
+202203 0 hours
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 203, in _process_chunk
+    return [fn(*args) for args in chunk]
+            ~~^^^^^^^
+  File "C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py", line 110, in month
+    tarf.unlink()
+    ~~~~~~~~~~~^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py", line 1042, in unlink
+    os.unlink(self)
+    ~~~~~~~~~^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\nisha\\OneDrive\\Desktop\\Projects\\lifeline\\data\\raw\\stage4\\stage4.202204.tar'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py", line 117, in <module>
+    for ym, s in ex.map(month, MONTHS):
+                 ~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 617, in _chain_from_iterable_of_lists
+    for element in iterable:
+                   ^^^^^^^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 645, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 312, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 447, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 396, in __get_result
+    raise self._exception
+PermissionError: [Errno 13] The process cannot access the file because it is being used by another process: 'C:\\Users\\nisha\\OneDrive\\Desktop\\Projects\\lifeline\\data\\raw\\stage4\\stage4.202204.tar'

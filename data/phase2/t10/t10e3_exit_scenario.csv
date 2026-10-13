@@ -1,0 +1,25 @@
+facility,closure_set,n_segments_closed,group,pop_base,pop_no_path,share
+exit_major,a_documented_upper_bound,326,Brunswick,135766,17302,0.1274
+exit_major,a_documented_upper_bound,326,Pender,58879,109,0.0019
+exit_major,a_documented_upper_bound,326,NH Wilmington/south,183610,2415,0.0132
+exit_major,a_documented_upper_bound,326,NH north,36143,0,0.0
+exit_major,b_model_q10,137,Brunswick,135766,0,0.0
+exit_major,b_model_q10,137,Pender,58879,0,0.0
+exit_major,b_model_q10,137,NH Wilmington/south,183610,0,0.0
+exit_major,b_model_q10,137,NH north,36143,0,0.0
+hospital_ED_acute,a_documented_upper_bound,326,Brunswick,135766,13162,0.0969
+hospital_ED_acute,a_documented_upper_bound,326,Pender,58879,109,0.0019
+hospital_ED_acute,a_documented_upper_bound,326,NH Wilmington/south,183610,2415,0.0132
+hospital_ED_acute,a_documented_upper_bound,326,NH north,36143,0,0.0
+hospital_ED_acute,b_model_q10,137,Brunswick,135766,0,0.0
+hospital_ED_acute,b_model_q10,137,Pender,58879,0,0.0
+hospital_ED_acute,b_model_q10,137,NH Wilmington/south,183610,0,0.0
+hospital_ED_acute,b_model_q10,137,NH north,36143,0,0.0
+exit_major_plus_secondary,a_documented_upper_bound,326,Brunswick,135766,17302,0.1274
+exit_major_plus_secondary,a_documented_upper_bound,326,Pender,58879,109,0.0019
+exit_major_plus_secondary,a_documented_upper_bound,326,NH Wilmington/south,183610,2415,0.0132
+exit_major_plus_secondary,a_documented_upper_bound,326,NH north,36143,0,0.0
+exit_major_plus_secondary,b_model_q10,137,Brunswick,135766,0,0.0
+exit_major_plus_secondary,b_model_q10,137,Pender,58879,0,0.0
+exit_major_plus_secondary,b_model_q10,137,NH Wilmington/south,183610,0,0.0
+exit_major_plus_secondary,b_model_q10,137,NH north,36143,0,0.0

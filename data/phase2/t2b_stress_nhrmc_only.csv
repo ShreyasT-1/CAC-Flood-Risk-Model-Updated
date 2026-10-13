@@ -1,0 +1,11 @@
+stress_test,group,to,pop,pop_no_path,share
+A. 33 hazard-assessed NH seed crossings,NH Wilmington/south,NHRMC only,183610,0,0.0
+A. 33 hazard-assessed NH seed crossings,NH north,NHRMC only,36143,0,0.0
+B. all 61 NH seed crossings (incl. not assessed),NH Wilmington/south,NHRMC only,183610,3639,0.0198
+B. all 61 NH seed crossings (incl. not assessed),NH north,NHRMC only,36143,0,0.0
+C. all NH crossings incl. OSM-secondary,NH Wilmington/south,NHRMC only,183610,53922,0.2937
+C. all NH crossings incl. OSM-secondary,NH north,NHRMC only,36143,13735,0.38
+D. every seed crossing in 3 counties,NH Wilmington/south,NHRMC only,183610,3720,0.0203
+D. every seed crossing in 3 counties,NH north,NHRMC only,36143,0,0.0
+E. every OSM bridge-tagged segment in graph,NH Wilmington/south,NHRMC only,183610,12666,0.069
+E. every OSM bridge-tagged segment in graph,NH north,NHRMC only,36143,831,0.023

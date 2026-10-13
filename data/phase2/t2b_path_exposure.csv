@@ -1,0 +1,5 @@
+group,pop,share_baseline_path_crosses_hazard_assessed_seed,share_crosses_any_seed_incl_unassessed,share_crosses_any_crossing_incl_osm,share_path_uses_bridge_tagged_segment
+NH Wilmington/south,183610,0.121,0.141,0.95,0.186
+NH north,36143,0.561,0.561,1.0,0.737
+Brunswick,135766,0.83,0.841,0.965,0.784
+Pender,58879,0.264,0.317,0.918,0.766

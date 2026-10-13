@@ -1,0 +1,1319 @@
+{
+ "New Hanover|seed|0.5": {
+  "peak_pop_unreachable": 0,
+  "hours_any_loss": 0
+ },
+ "New Hanover|seed|1.0": {
+  "peak_pop_unreachable": 0,
+  "hours_any_loss": 0
+ },
+ "New Hanover|seed|3.64": {
+  "peak_pop_unreachable": 0,
+  "hours_any_loss": 0
+ },
+ "New Hanover|seed|10.0": {
+  "peak_pop_unreachable": 0,
+  "hours_any_loss": 0
+ },
+ "New Hanover|seed|30.0": {
+  "peak_pop_unreachable": 0,
+  "hours_any_loss": 0
+ },
+ "New Hanover|seed_reliable|0.5": {
+  "peak_pop_unreachable": 0,
+  "hours_any_loss": 0
+ },
+ "New Hanover|seed_reliable|1.0": {
+  "peak_pop_unreachable": 0,
+  "hours_any_loss": 0
+ },
+ "New Hanover|seed_reliable|3.64": {
+  "peak_pop_unreachable": 0,
+  "hours_any_loss": 0
+ },
+ "New Hanover|seed_reliable|10.0": {
+  "peak_pop_unreachable": 0,
+  "hours_any_loss": 0
+ },
+ "New Hanover|seed_reliable|30.0": {
+  "peak_pop_unreachable": 0,
+  "hours_any_loss": 0
+ },
+ "New Hanover|seed_plus_osm_secondary|0.5": {
+  "peak_hour": "2018-09-15 13:00:00",
+  "peak_pop_unreachable": 19898,
+  "pop_base": 219753,
+  "first_loss": "2018-09-13 00:00:00",
+  "last_loss": "2018-11-06 23:00:00",
+  "hours_any_loss": 1320,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0124",
+    "pop_cut_off": 5683,
+    "stream": "SMITH CREEK",
+    "road": "SR1302",
+    "lat": 34.2579,
+    "lon": -77.9197,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_1367",
+    "pop_cut_off": 3636,
+    "stream": NaN,
+    "road": "North College Road",
+    "lat": 34.2948,
+    "lon": -77.8736,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_0131",
+    "pop_cut_off": 1757,
+    "stream": "SMITH CREEK",
+    "road": "US117, NC132 RAMP",
+    "lat": 34.2747,
+    "lon": -77.8693,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "New Hanover|seed_plus_osm_secondary|1.0": {
+  "peak_hour": "2018-09-16 08:00:00",
+  "peak_pop_unreachable": 19898,
+  "pop_base": 219753,
+  "first_loss": "2018-09-14 04:00:00",
+  "last_loss": "2018-11-06 23:00:00",
+  "hours_any_loss": 1292,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0124",
+    "pop_cut_off": 5683,
+    "stream": "SMITH CREEK",
+    "road": "SR1302",
+    "lat": 34.2579,
+    "lon": -77.9197,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_1367",
+    "pop_cut_off": 3636,
+    "stream": NaN,
+    "road": "North College Road",
+    "lat": 34.2948,
+    "lon": -77.8736,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_0131",
+    "pop_cut_off": 1757,
+    "stream": "SMITH CREEK",
+    "road": "US117, NC132 RAMP",
+    "lat": 34.2747,
+    "lon": -77.8693,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "New Hanover|seed_plus_osm_secondary|3.64": {
+  "peak_hour": "2018-09-16 06:00:00",
+  "peak_pop_unreachable": 19698,
+  "pop_base": 219753,
+  "first_loss": "2018-09-14 06:00:00",
+  "last_loss": "2018-09-19 14:00:00",
+  "hours_any_loss": 129,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0124",
+    "pop_cut_off": 5683,
+    "stream": "SMITH CREEK",
+    "road": "SR1302",
+    "lat": 34.2579,
+    "lon": -77.9197,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_1367",
+    "pop_cut_off": 3636,
+    "stream": NaN,
+    "road": "North College Road",
+    "lat": 34.2948,
+    "lon": -77.8736,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_0131",
+    "pop_cut_off": 1757,
+    "stream": "SMITH CREEK",
+    "road": "US117, NC132 RAMP",
+    "lat": 34.2747,
+    "lon": -77.8693,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "New Hanover|seed_plus_osm_secondary|10.0": {
+  "peak_hour": "2018-09-16 10:00:00",
+  "peak_pop_unreachable": 18820,
+  "pop_base": 219753,
+  "first_loss": "2018-09-14 10:00:00",
+  "last_loss": "2018-09-17 07:00:00",
+  "hours_any_loss": 70,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0124",
+    "pop_cut_off": 5683,
+    "stream": "SMITH CREEK",
+    "road": "SR1302",
+    "lat": 34.2579,
+    "lon": -77.9197,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_1367",
+    "pop_cut_off": 3636,
+    "stream": NaN,
+    "road": "North College Road",
+    "lat": 34.2948,
+    "lon": -77.8736,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_0131",
+    "pop_cut_off": 1757,
+    "stream": "SMITH CREEK",
+    "road": "US117, NC132 RAMP",
+    "lat": 34.2747,
+    "lon": -77.8693,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "New Hanover|seed_plus_osm_secondary|30.0": {
+  "peak_hour": "2018-09-16 06:00:00",
+  "peak_pop_unreachable": 3071,
+  "pop_base": 219753,
+  "first_loss": "2018-09-14 11:00:00",
+  "last_loss": "2018-09-16 20:00:00",
+  "hours_any_loss": 45,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0958",
+    "pop_cut_off": 1702,
+    "stream": "Ness Creek",
+    "road": "Oakley Road",
+    "lat": 34.3016,
+    "lon": -77.9256,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_0952",
+    "pop_cut_off": 622,
+    "stream": "Ness Creek",
+    "road": "Rockhill Road",
+    "lat": 34.3073,
+    "lon": -77.923,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_2419",
+    "pop_cut_off": 372,
+    "stream": NaN,
+    "road": "Providence Point Road",
+    "lat": 34.2568,
+    "lon": -77.8044,
+    "set_": "osm_secondary"
+   }
+  ]
+ },
+ "Brunswick|seed|0.5": {
+  "peak_hour": "2018-09-15 16:00:00",
+  "peak_pop_unreachable": 5872,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 04:00:00",
+  "last_loss": "2018-11-06 23:00:00",
+  "hours_any_loss": 1292,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0018",
+    "pop_cut_off": 1105,
+    "stream": "MERCERS MILL POND",
+    "road": "SR1112",
+    "lat": 33.9582,
+    "lon": -78.2138,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0100",
+    "pop_cut_off": 1045,
+    "stream": "ROYAL OAK RIVER",
+    "road": "US17 NBL",
+    "lat": 34.0232,
+    "lon": -78.2636,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0000",
+    "pop_cut_off": 898,
+    "stream": "STURGEON CREEK",
+    "road": "SR1435",
+    "lat": 34.2458,
+    "lon": -78.0007,
+    "set_": "ncdot"
+   }
+  ]
+ },
+ "Brunswick|seed|1.0": {
+  "peak_hour": "2018-09-15 17:00:00",
+  "peak_pop_unreachable": 5872,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 04:00:00",
+  "last_loss": "2018-10-16 21:00:00",
+  "hours_any_loss": 786,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0018",
+    "pop_cut_off": 1105,
+    "stream": "MERCERS MILL POND",
+    "road": "SR1112",
+    "lat": 33.9582,
+    "lon": -78.2138,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0100",
+    "pop_cut_off": 1045,
+    "stream": "ROYAL OAK RIVER",
+    "road": "US17 NBL",
+    "lat": 34.0232,
+    "lon": -78.2636,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0000",
+    "pop_cut_off": 898,
+    "stream": "STURGEON CREEK",
+    "road": "SR1435",
+    "lat": 34.2458,
+    "lon": -78.0007,
+    "set_": "ncdot"
+   }
+  ]
+ },
+ "Brunswick|seed|3.64": {
+  "peak_hour": "2018-09-16 05:00:00",
+  "peak_pop_unreachable": 5872,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 08:00:00",
+  "last_loss": "2018-09-26 21:00:00",
+  "hours_any_loss": 301,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0018",
+    "pop_cut_off": 1105,
+    "stream": "MERCERS MILL POND",
+    "road": "SR1112",
+    "lat": 33.9582,
+    "lon": -78.2138,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0100",
+    "pop_cut_off": 1045,
+    "stream": "ROYAL OAK RIVER",
+    "road": "US17 NBL",
+    "lat": 34.0232,
+    "lon": -78.2636,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0000",
+    "pop_cut_off": 898,
+    "stream": "STURGEON CREEK",
+    "road": "SR1435",
+    "lat": 34.2458,
+    "lon": -78.0007,
+    "set_": "ncdot"
+   }
+  ]
+ },
+ "Brunswick|seed|10.0": {
+  "peak_hour": "2018-09-16 05:00:00",
+  "peak_pop_unreachable": 3984,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 13:00:00",
+  "last_loss": "2018-09-21 19:00:00",
+  "hours_any_loss": 175,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0018",
+    "pop_cut_off": 1105,
+    "stream": "MERCERS MILL POND",
+    "road": "SR1112",
+    "lat": 33.9582,
+    "lon": -78.2138,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0100",
+    "pop_cut_off": 1045,
+    "stream": "ROYAL OAK RIVER",
+    "road": "US17 NBL",
+    "lat": 34.0232,
+    "lon": -78.2636,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0077",
+    "pop_cut_off": 370,
+    "stream": "MIDDLE SWAMP",
+    "road": "NC906",
+    "lat": 34.0521,
+    "lon": -78.1532,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Brunswick|seed|30.0": {
+  "peak_hour": "2018-09-16 04:00:00",
+  "peak_pop_unreachable": 1909,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 14:00:00",
+  "last_loss": "2018-09-17 20:00:00",
+  "hours_any_loss": 68,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0018",
+    "pop_cut_off": 1105,
+    "stream": "MERCERS MILL POND",
+    "road": "SR1112",
+    "lat": 33.9582,
+    "lon": -78.2138,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0077",
+    "pop_cut_off": 370,
+    "stream": "MIDDLE SWAMP",
+    "road": "NC906",
+    "lat": 34.0521,
+    "lon": -78.1532,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0021",
+    "pop_cut_off": 125,
+    "stream": "RIVER SWAMP",
+    "road": "NC906",
+    "lat": 34.0118,
+    "lon": -78.1468,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Brunswick|seed_reliable|0.5": {
+  "peak_hour": "2018-09-14 16:00:00",
+  "peak_pop_unreachable": 1195,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 09:00:00",
+  "last_loss": "2018-11-06 23:00:00",
+  "hours_any_loss": 1287,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0018",
+    "pop_cut_off": 1105,
+    "stream": "MERCERS MILL POND",
+    "road": "SR1112",
+    "lat": 33.9582,
+    "lon": -78.2138,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0037",
+    "pop_cut_off": 26,
+    "stream": "BEAR PEN ISLD. SWAMP",
+    "road": "NC211",
+    "lat": 34.141,
+    "lon": -78.3249,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0247",
+    "pop_cut_off": 23,
+    "stream": "MILL BRANCH",
+    "road": "SR1334",
+    "lat": 34.1465,
+    "lon": -78.5097,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Brunswick|seed_reliable|1.0": {
+  "peak_hour": "2018-09-14 17:00:00",
+  "peak_pop_unreachable": 1195,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 10:00:00",
+  "last_loss": "2018-10-16 21:00:00",
+  "hours_any_loss": 780,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0018",
+    "pop_cut_off": 1105,
+    "stream": "MERCERS MILL POND",
+    "road": "SR1112",
+    "lat": 33.9582,
+    "lon": -78.2138,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0037",
+    "pop_cut_off": 26,
+    "stream": "BEAR PEN ISLD. SWAMP",
+    "road": "NC211",
+    "lat": 34.141,
+    "lon": -78.3249,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0247",
+    "pop_cut_off": 23,
+    "stream": "MILL BRANCH",
+    "road": "SR1334",
+    "lat": 34.1465,
+    "lon": -78.5097,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Brunswick|seed_reliable|3.64": {
+  "peak_hour": "2018-09-15 20:00:00",
+  "peak_pop_unreachable": 1195,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 11:00:00",
+  "last_loss": "2018-09-26 21:00:00",
+  "hours_any_loss": 299,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0018",
+    "pop_cut_off": 1105,
+    "stream": "MERCERS MILL POND",
+    "road": "SR1112",
+    "lat": 33.9582,
+    "lon": -78.2138,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0037",
+    "pop_cut_off": 26,
+    "stream": "BEAR PEN ISLD. SWAMP",
+    "road": "NC211",
+    "lat": 34.141,
+    "lon": -78.3249,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0247",
+    "pop_cut_off": 23,
+    "stream": "MILL BRANCH",
+    "road": "SR1334",
+    "lat": 34.1465,
+    "lon": -78.5097,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Brunswick|seed_reliable|10.0": {
+  "peak_hour": "2018-09-16 03:00:00",
+  "peak_pop_unreachable": 1195,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 13:00:00",
+  "last_loss": "2018-09-21 19:00:00",
+  "hours_any_loss": 175,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0018",
+    "pop_cut_off": 1105,
+    "stream": "MERCERS MILL POND",
+    "road": "SR1112",
+    "lat": 33.9582,
+    "lon": -78.2138,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0037",
+    "pop_cut_off": 26,
+    "stream": "BEAR PEN ISLD. SWAMP",
+    "road": "NC211",
+    "lat": 34.141,
+    "lon": -78.3249,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0247",
+    "pop_cut_off": 23,
+    "stream": "MILL BRANCH",
+    "road": "SR1334",
+    "lat": 34.1465,
+    "lon": -78.5097,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Brunswick|seed_reliable|30.0": {
+  "peak_hour": "2018-09-16 12:00:00",
+  "peak_pop_unreachable": 1174,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 14:00:00",
+  "last_loss": "2018-09-17 20:00:00",
+  "hours_any_loss": 59,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0018",
+    "pop_cut_off": 1105,
+    "stream": "MERCERS MILL POND",
+    "road": "SR1112",
+    "lat": 33.9582,
+    "lon": -78.2138,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0037",
+    "pop_cut_off": 26,
+    "stream": "BEAR PEN ISLD. SWAMP",
+    "road": "NC211",
+    "lat": 34.141,
+    "lon": -78.3249,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0247",
+    "pop_cut_off": 23,
+    "stream": "MILL BRANCH",
+    "road": "SR1334",
+    "lat": 34.1465,
+    "lon": -78.5097,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Brunswick|seed_plus_osm_secondary|0.5": {
+  "peak_hour": "2018-09-15 15:00:00",
+  "peak_pop_unreachable": 128715,
+  "pop_base": 135766,
+  "first_loss": "2018-09-13 00:00:00",
+  "last_loss": "2018-11-06 23:00:00",
+  "hours_any_loss": 1320,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0076",
+    "pop_cut_off": 13341,
+    "stream": "BRUNSWICK RIVER",
+    "road": "US17,US74/76,NC133",
+    "lat": 34.2341,
+    "lon": -77.9861,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_1385",
+    "pop_cut_off": 11741,
+    "stream": "Shallotte River",
+    "road": "Ocean Highway West",
+    "lat": 33.9479,
+    "lon": -78.4919,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_0725",
+    "pop_cut_off": 5777,
+    "stream": "Atlantic Intracoastal Waterway",
+    "road": NaN,
+    "lat": 33.9218,
+    "lon": -78.0724,
+    "set_": "osm_secondary"
+   }
+  ]
+ },
+ "Brunswick|seed_plus_osm_secondary|1.0": {
+  "peak_hour": "2018-09-16 08:00:00",
+  "peak_pop_unreachable": 128715,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 04:00:00",
+  "last_loss": "2018-10-21 07:00:00",
+  "hours_any_loss": 892,
+  "top_critical": [
+   {
+    "crossing_id": "V2_1385",
+    "pop_cut_off": 11627,
+    "stream": "Shallotte River",
+    "road": "Ocean Highway West",
+    "lat": 33.9479,
+    "lon": -78.4919,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_0076",
+    "pop_cut_off": 9003,
+    "stream": "BRUNSWICK RIVER",
+    "road": "US17,US74/76,NC133",
+    "lat": 34.2341,
+    "lon": -77.9861,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0725",
+    "pop_cut_off": 5777,
+    "stream": "Atlantic Intracoastal Waterway",
+    "road": NaN,
+    "lat": 33.9218,
+    "lon": -78.0724,
+    "set_": "osm_secondary"
+   }
+  ]
+ },
+ "Brunswick|seed_plus_osm_secondary|3.64": {
+  "peak_hour": "2018-09-16 15:00:00",
+  "peak_pop_unreachable": 128355,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 05:00:00",
+  "last_loss": "2018-09-28 03:00:00",
+  "hours_any_loss": 335,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0076",
+    "pop_cut_off": 19182,
+    "stream": "BRUNSWICK RIVER",
+    "road": "US17,US74/76,NC133",
+    "lat": 34.2341,
+    "lon": -77.9861,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_1385",
+    "pop_cut_off": 12804,
+    "stream": "Shallotte River",
+    "road": "Ocean Highway West",
+    "lat": 33.9479,
+    "lon": -78.4919,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_0725",
+    "pop_cut_off": 5777,
+    "stream": "Atlantic Intracoastal Waterway",
+    "road": NaN,
+    "lat": 33.9218,
+    "lon": -78.0724,
+    "set_": "osm_secondary"
+   }
+  ]
+ },
+ "Brunswick|seed_plus_osm_secondary|10.0": {
+  "peak_hour": "2018-09-16 04:00:00",
+  "peak_pop_unreachable": 61518,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 05:00:00",
+  "last_loss": "2018-09-22 06:00:00",
+  "hours_any_loss": 194,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0725",
+    "pop_cut_off": 5777,
+    "stream": "Atlantic Intracoastal Waterway",
+    "road": NaN,
+    "lat": 33.9218,
+    "lon": -78.0724,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_0020",
+    "pop_cut_off": 5199,
+    "stream": "DUTCHMAN CREEK",
+    "road": "NC211",
+    "lat": 33.9498,
+    "lon": -78.0384,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0483",
+    "pop_cut_off": 2337,
+    "stream": NaN,
+    "road": "Holden Beach Road",
+    "lat": 33.9509,
+    "lon": -78.3107,
+    "set_": "osm_secondary"
+   }
+  ]
+ },
+ "Brunswick|seed_plus_osm_secondary|30.0": {
+  "peak_hour": "2018-09-16 13:00:00",
+  "peak_pop_unreachable": 22210,
+  "pop_base": 135766,
+  "first_loss": "2018-09-14 12:00:00",
+  "last_loss": "2018-09-19 03:00:00",
+  "hours_any_loss": 112,
+  "top_critical": [
+   {
+    "crossing_id": "V2_2833",
+    "pop_cut_off": 2592,
+    "stream": NaN,
+    "road": "Southport-Supply Road Southeast",
+    "lat": 33.998,
+    "lon": -78.2396,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_1522",
+    "pop_cut_off": 2120,
+    "stream": "Allen Creek",
+    "road": "Alton Lennon Drive",
+    "lat": 34.0463,
+    "lon": -78.0373,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_0100",
+    "pop_cut_off": 1624,
+    "stream": "ROYAL OAK RIVER",
+    "road": "US17 NBL",
+    "lat": 34.0232,
+    "lon": -78.2636,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Pender|seed|0.5": {
+  "peak_hour": "2018-09-16 18:00:00",
+  "peak_pop_unreachable": 1687,
+  "pop_base": 58879,
+  "first_loss": "2018-09-14 04:00:00",
+  "last_loss": "2018-10-20 11:00:00",
+  "hours_any_loss": 866,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0195",
+    "pop_cut_off": 382,
+    "stream": "CYPRESS CREEK",
+    "road": "SR1411",
+    "lat": 34.5134,
+    "lon": -77.8453,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0169",
+    "pop_cut_off": 297,
+    "stream": "NE CAPE FEAR RIVER",
+    "road": "NC53",
+    "lat": 34.5986,
+    "lon": -77.8753,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0139",
+    "pop_cut_off": 233,
+    "stream": "LONG CREEK",
+    "road": "SR1345",
+    "lat": 34.5813,
+    "lon": -77.9646,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Pender|seed|1.0": {
+  "peak_hour": "2018-09-16 20:00:00",
+  "peak_pop_unreachable": 1687,
+  "pop_base": 58879,
+  "first_loss": "2018-09-14 22:00:00",
+  "last_loss": "2018-10-07 23:00:00",
+  "hours_any_loss": 554,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0195",
+    "pop_cut_off": 382,
+    "stream": "CYPRESS CREEK",
+    "road": "SR1411",
+    "lat": 34.5134,
+    "lon": -77.8453,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0169",
+    "pop_cut_off": 297,
+    "stream": "NE CAPE FEAR RIVER",
+    "road": "NC53",
+    "lat": 34.5986,
+    "lon": -77.8753,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0139",
+    "pop_cut_off": 233,
+    "stream": "LONG CREEK",
+    "road": "SR1345",
+    "lat": 34.5813,
+    "lon": -77.9646,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Pender|seed|3.64": {
+  "peak_hour": "2018-09-16 23:00:00",
+  "peak_pop_unreachable": 1687,
+  "pop_base": 58879,
+  "first_loss": "2018-09-15 05:00:00",
+  "last_loss": "2018-09-24 11:00:00",
+  "hours_any_loss": 222,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0195",
+    "pop_cut_off": 382,
+    "stream": "CYPRESS CREEK",
+    "road": "SR1411",
+    "lat": 34.5134,
+    "lon": -77.8453,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0169",
+    "pop_cut_off": 297,
+    "stream": "NE CAPE FEAR RIVER",
+    "road": "NC53",
+    "lat": 34.5986,
+    "lon": -77.8753,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0139",
+    "pop_cut_off": 233,
+    "stream": "LONG CREEK",
+    "road": "SR1345",
+    "lat": 34.5813,
+    "lon": -77.9646,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Pender|seed|10.0": {
+  "peak_hour": "2018-09-16 07:00:00",
+  "peak_pop_unreachable": 1628,
+  "pop_base": 58879,
+  "first_loss": "2018-09-15 17:00:00",
+  "last_loss": "2018-09-20 00:00:00",
+  "hours_any_loss": 104,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0195",
+    "pop_cut_off": 382,
+    "stream": "CYPRESS CREEK",
+    "road": "SR1411",
+    "lat": 34.5134,
+    "lon": -77.8453,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0169",
+    "pop_cut_off": 297,
+    "stream": "NE CAPE FEAR RIVER",
+    "road": "NC53",
+    "lat": 34.5986,
+    "lon": -77.8753,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0139",
+    "pop_cut_off": 233,
+    "stream": "LONG CREEK",
+    "road": "SR1345",
+    "lat": 34.5813,
+    "lon": -77.9646,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Pender|seed|30.0": {
+  "peak_hour": "2018-09-16 08:00:00",
+  "peak_pop_unreachable": 244,
+  "pop_base": 58879,
+  "first_loss": "2018-09-16 02:00:00",
+  "last_loss": "2018-09-17 20:00:00",
+  "hours_any_loss": 39,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0220",
+    "pop_cut_off": 104,
+    "stream": "BURGAW CREEK",
+    "road": "I40",
+    "lat": 34.5782,
+    "lon": -77.903,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0211",
+    "pop_cut_off": 89,
+    "stream": "PIKE CREEK",
+    "road": "SR1628",
+    "lat": 34.4799,
+    "lon": -77.8754,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0146",
+    "pop_cut_off": 51,
+    "stream": "LONG CREEK",
+    "road": "SR1120",
+    "lat": 34.5203,
+    "lon": -78.0273,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Pender|seed_reliable|0.5": {
+  "peak_hour": "2018-09-16 18:00:00",
+  "peak_pop_unreachable": 394,
+  "pop_base": 58879,
+  "first_loss": "2018-09-14 11:00:00",
+  "last_loss": "2018-10-13 17:00:00",
+  "hours_any_loss": 697,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0139",
+    "pop_cut_off": 233,
+    "stream": "LONG CREEK",
+    "road": "SR1345",
+    "lat": 34.5813,
+    "lon": -77.9646,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0211",
+    "pop_cut_off": 89,
+    "stream": "PIKE CREEK",
+    "road": "SR1628",
+    "lat": 34.4799,
+    "lon": -77.8754,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0155",
+    "pop_cut_off": 45,
+    "stream": "LYON CREEK",
+    "road": "SR1104",
+    "lat": 34.3956,
+    "lon": -78.1621,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Pender|seed_reliable|1.0": {
+  "peak_hour": "2018-09-16 20:00:00",
+  "peak_pop_unreachable": 394,
+  "pop_base": 58879,
+  "first_loss": "2018-09-14 23:00:00",
+  "last_loss": "2018-10-05 11:00:00",
+  "hours_any_loss": 493,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0139",
+    "pop_cut_off": 233,
+    "stream": "LONG CREEK",
+    "road": "SR1345",
+    "lat": 34.5813,
+    "lon": -77.9646,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0211",
+    "pop_cut_off": 89,
+    "stream": "PIKE CREEK",
+    "road": "SR1628",
+    "lat": 34.4799,
+    "lon": -77.8754,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0155",
+    "pop_cut_off": 45,
+    "stream": "LYON CREEK",
+    "road": "SR1104",
+    "lat": 34.3956,
+    "lon": -78.1621,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Pender|seed_reliable|3.64": {
+  "peak_hour": "2018-09-16 23:00:00",
+  "peak_pop_unreachable": 394,
+  "pop_base": 58879,
+  "first_loss": "2018-09-15 05:00:00",
+  "last_loss": "2018-09-24 11:00:00",
+  "hours_any_loss": 217,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0139",
+    "pop_cut_off": 233,
+    "stream": "LONG CREEK",
+    "road": "SR1345",
+    "lat": 34.5813,
+    "lon": -77.9646,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0211",
+    "pop_cut_off": 89,
+    "stream": "PIKE CREEK",
+    "road": "SR1628",
+    "lat": 34.4799,
+    "lon": -77.8754,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0155",
+    "pop_cut_off": 45,
+    "stream": "LYON CREEK",
+    "road": "SR1104",
+    "lat": 34.3956,
+    "lon": -78.1621,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Pender|seed_reliable|10.0": {
+  "peak_hour": "2018-09-16 07:00:00",
+  "peak_pop_unreachable": 335,
+  "pop_base": 58879,
+  "first_loss": "2018-09-15 17:00:00",
+  "last_loss": "2018-09-20 00:00:00",
+  "hours_any_loss": 104,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0139",
+    "pop_cut_off": 233,
+    "stream": "LONG CREEK",
+    "road": "SR1345",
+    "lat": 34.5813,
+    "lon": -77.9646,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0211",
+    "pop_cut_off": 89,
+    "stream": "PIKE CREEK",
+    "road": "SR1628",
+    "lat": 34.4799,
+    "lon": -77.8754,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0218",
+    "pop_cut_off": 13,
+    "stream": "BEE BRANCH",
+    "road": "SR1335",
+    "lat": 34.6056,
+    "lon": -78.0424,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Pender|seed_reliable|30.0": {
+  "peak_hour": "2018-09-16 02:00:00",
+  "peak_pop_unreachable": 89,
+  "pop_base": 58879,
+  "first_loss": "2018-09-16 02:00:00",
+  "last_loss": "2018-09-17 20:00:00",
+  "hours_any_loss": 38,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0211",
+    "pop_cut_off": 89,
+    "stream": "PIKE CREEK",
+    "road": "SR1628",
+    "lat": 34.4799,
+    "lon": -77.8754,
+    "set_": "ncdot+nbi"
+   }
+  ]
+ },
+ "Pender|seed_plus_osm_secondary|0.5": {
+  "peak_hour": "2018-09-16 16:00:00",
+  "peak_pop_unreachable": 16183,
+  "pop_base": 58879,
+  "first_loss": "2018-09-14 02:00:00",
+  "last_loss": "2018-11-05 06:00:00",
+  "hours_any_loss": 1068,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0161",
+    "pop_cut_off": 908,
+    "stream": "CYPRESS CREEK",
+    "road": "NC53",
+    "lat": 34.5448,
+    "lon": -78.0363,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_1608",
+    "pop_cut_off": 743,
+    "stream": "Mill Branch",
+    "road": "East Church Street",
+    "lat": 34.5329,
+    "lon": -78.1624,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_1057",
+    "pop_cut_off": 700,
+    "stream": NaN,
+    "road": "Penderlea Road",
+    "lat": 34.5517,
+    "lon": -77.9363,
+    "set_": "osm_secondary"
+   }
+  ]
+ },
+ "Pender|seed_plus_osm_secondary|1.0": {
+  "peak_hour": "2018-09-16 19:00:00",
+  "peak_pop_unreachable": 16183,
+  "pop_base": 58879,
+  "first_loss": "2018-09-14 09:00:00",
+  "last_loss": "2018-10-28 12:00:00",
+  "hours_any_loss": 1060,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0161",
+    "pop_cut_off": 908,
+    "stream": "CYPRESS CREEK",
+    "road": "NC53",
+    "lat": 34.5448,
+    "lon": -78.0363,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_1608",
+    "pop_cut_off": 743,
+    "stream": "Mill Branch",
+    "road": "East Church Street",
+    "lat": 34.5329,
+    "lon": -78.1624,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_1057",
+    "pop_cut_off": 700,
+    "stream": NaN,
+    "road": "Penderlea Road",
+    "lat": 34.5517,
+    "lon": -77.9363,
+    "set_": "osm_secondary"
+   }
+  ]
+ },
+ "Pender|seed_plus_osm_secondary|3.64": {
+  "peak_hour": "2018-09-16 15:00:00",
+  "peak_pop_unreachable": 16102,
+  "pop_base": 58879,
+  "first_loss": "2018-09-14 10:00:00",
+  "last_loss": "2018-09-30 15:00:00",
+  "hours_any_loss": 390,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0161",
+    "pop_cut_off": 908,
+    "stream": "CYPRESS CREEK",
+    "road": "NC53",
+    "lat": 34.5448,
+    "lon": -78.0363,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_0220",
+    "pop_cut_off": 754,
+    "stream": "BURGAW CREEK",
+    "road": "I40",
+    "lat": 34.5782,
+    "lon": -77.903,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_1608",
+    "pop_cut_off": 743,
+    "stream": "Mill Branch",
+    "road": "East Church Street",
+    "lat": 34.5329,
+    "lon": -78.1624,
+    "set_": "osm_secondary"
+   }
+  ]
+ },
+ "Pender|seed_plus_osm_secondary|10.0": {
+  "peak_hour": "2018-09-16 08:00:00",
+  "peak_pop_unreachable": 15822,
+  "pop_base": 58879,
+  "first_loss": "2018-09-14 10:00:00",
+  "last_loss": "2018-09-24 22:00:00",
+  "hours_any_loss": 253,
+  "top_critical": [
+   {
+    "crossing_id": "V2_0161",
+    "pop_cut_off": 908,
+    "stream": "CYPRESS CREEK",
+    "road": "NC53",
+    "lat": 34.5448,
+    "lon": -78.0363,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_2496",
+    "pop_cut_off": 752,
+    "stream": NaN,
+    "road": NaN,
+    "lat": 34.663,
+    "lon": -77.9433,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_1608",
+    "pop_cut_off": 743,
+    "stream": "Mill Branch",
+    "road": "East Church Street",
+    "lat": 34.5329,
+    "lon": -78.1624,
+    "set_": "osm_secondary"
+   }
+  ]
+ },
+ "Pender|seed_plus_osm_secondary|30.0": {
+  "peak_hour": "2018-09-16 08:00:00",
+  "peak_pop_unreachable": 2248,
+  "pop_base": 58879,
+  "first_loss": "2018-09-15 05:00:00",
+  "last_loss": "2018-09-21 00:00:00",
+  "hours_any_loss": 132,
+  "top_critical": [
+   {
+    "crossing_id": "V2_1599",
+    "pop_cut_off": 645,
+    "stream": "West Prong of Osgood Branch",
+    "road": "Highsmith Road",
+    "lat": 34.5367,
+    "lon": -77.9297,
+    "set_": "osm_secondary"
+   },
+   {
+    "crossing_id": "V2_0229",
+    "pop_cut_off": 279,
+    "stream": "MILL BRANCH",
+    "road": "SR1404",
+    "lat": 34.4604,
+    "lon": -78.0231,
+    "set_": "ncdot+nbi"
+   },
+   {
+    "crossing_id": "V2_1490",
+    "pop_cut_off": 264,
+    "stream": NaN,
+    "road": "Malpass Corner Road",
+    "lat": 34.5323,
+    "lon": -77.9969,
+    "set_": "osm_secondary"
+   }
+  ]
+ }
+}

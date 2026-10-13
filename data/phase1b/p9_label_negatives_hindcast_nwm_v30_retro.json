@@ -1,0 +1,53 @@
+{
+ "series": "hindcast_nwm_v30_retro",
+ "n_reports": 24,
+ "assessed": 15,
+ "not_assessed_no_reach_or_threshold": 9,
+ "assessed_by_crossing_src": {
+  "ncdot+nbi": 8,
+  "osm_secondary": 7
+ },
+ "left_censored_q2_among_assessed": 0,
+ "peak_bin_percentile": {
+  "n": 15,
+  "median": 63.2,
+  "mean": 61.2,
+  "share_ge_50": 1.0,
+  "share_ge_75": 0.0
+ },
+ "earliest_q2_percentile": {
+  "n": 15,
+  "median": 50.0,
+  "mean": 59.6,
+  "share_ge_50": 0.8,
+  "share_ge_75": 0.4
+ },
+ "peak_bin_percentile_structure_crossings_only": {
+  "n": 8,
+  "median": 63.2,
+  "mean": 60.0,
+  "share_ge_50": 1.0,
+  "share_ge_75": 0.0
+ },
+ "earliest_q2_percentile_structure_crossings_only": {
+  "n": 8,
+  "median": 50.0,
+  "mean": 51.7,
+  "share_ge_50": 0.75,
+  "share_ge_75": 0.25
+ },
+ "reported_peak_bin_counts": {
+  "above_50": 15
+ },
+ "seed_peak_bin_counts": {
+  "above_50": 205,
+  "25-50": 25,
+  "10-25": 11,
+  "5-10": 5,
+  "2-5": 4
+ },
+ "null_median_peak_bin_pct_mean": 58.0,
+ "perm_p_peak_bin_one_sided": 0.581,
+ "null_median_earliest_q2_pct_mean": 49.9,
+ "perm_p_earliest_q2_one_sided": 0.784
+}

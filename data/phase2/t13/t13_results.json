@@ -1,0 +1,146 @@
+{
+ "counts": {
+  "crossings": 250,
+  "in_footprint": 250,
+  "raster_flooded_share_bbox": 0.2191
+ },
+ "results": [
+  {
+   "label": "PRIMARY: inside = flooded cell within 30 m; max flow/q10 over 09-18..09-29",
+   "n": 250,
+   "n_inside": 243,
+   "n_outside": 7,
+   "share_inside": 0.972,
+   "per_county": {
+    "Brunswick": {
+     "sum": 116,
+     "count": 121
+    },
+    "New Hanover": {
+     "sum": 31,
+     "count": 33
+    },
+    "Pender": {
+     "sum": 87,
+     "count": 87
+    }
+   },
+   "auc": 0.583,
+   "auc_ci95": [
+    0.32,
+    0.827
+   ],
+   "median_inside": 0.55,
+   "median_outside": 0.35,
+   "share_gt1_inside": 0.309,
+   "share_gt1_outside": 0.286,
+   "verdict": "FAIL"
+  },
+  {
+   "label": "secondary: max flow/q2",
+   "n": 250,
+   "n_inside": 243,
+   "n_outside": 7,
+   "share_inside": 0.972,
+   "per_county": {
+    "Brunswick": {
+     "sum": 116,
+     "count": 121
+    },
+    "New Hanover": {
+     "sum": 31,
+     "count": 33
+    },
+    "Pender": {
+     "sum": 87,
+     "count": 87
+    }
+   },
+   "auc": 0.573,
+   "auc_ci95": [
+    0.297,
+    0.819
+   ],
+   "median_inside": 2.65,
+   "median_outside": 1.6,
+   "share_gt1_inside": 0.802,
+   "share_gt1_outside": 0.714,
+   "verdict": "FAIL"
+  },
+  {
+   "label": "secondary: cell at point",
+   "n": 250,
+   "n_inside": 215,
+   "n_outside": 35,
+   "share_inside": 0.86,
+   "per_county": {
+    "Brunswick": {
+     "sum": 101,
+     "count": 121
+    },
+    "New Hanover": {
+     "sum": 27,
+     "count": 33
+    },
+    "Pender": {
+     "sum": 79,
+     "count": 87
+    }
+   },
+   "auc": 0.647,
+   "auc_ci95": [
+    0.542,
+    0.751
+   ],
+   "median_inside": 0.67,
+   "median_outside": 0.31,
+   "share_gt1_inside": 0.335,
+   "share_gt1_outside": 0.143,
+   "verdict": "PASS"
+  },
+  {
+   "label": "secondary: within 100 m",
+   "n": 250,
+   "n_inside": 247,
+   "n_outside": 3,
+   "share_inside": 0.988,
+   "per_county": {
+    "Brunswick": {
+     "sum": 119,
+     "count": 121
+    },
+    "New Hanover": {
+     "sum": 32,
+     "count": 33
+    },
+    "Pender": {
+     "sum": 87,
+     "count": 87
+    }
+   },
+   "verdict": "too few to test"
+  },
+  {
+   "label": "secondary: seed_reliable only",
+   "n": 147,
+   "n_inside": 144,
+   "n_outside": 3,
+   "share_inside": 0.98,
+   "per_county": {
+    "Brunswick": {
+     "sum": 65,
+     "count": 66
+    },
+    "New Hanover": {
+     "sum": 19,
+     "count": 21
+    },
+    "Pender": {
+     "sum": 59,
+     "count": 59
+    }
+   },
+   "verdict": "too few to test"
+  }
+ ]
+}

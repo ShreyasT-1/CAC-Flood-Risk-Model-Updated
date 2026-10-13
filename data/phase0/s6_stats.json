@@ -1,0 +1,119 @@
+{
+ "seed": {
+  "n": 321,
+  "matched_100": 257,
+  "match_rate_100": 0.801,
+  "match_rate_50": 0.745,
+  "order_dist": {
+   "1": 73,
+   "2": 88,
+   "3": 55,
+   "4": 30,
+   "5": 8,
+   "7": 3
+  },
+  "on_order1": 73,
+  "order1_share_of_matched": 0.284,
+  "quality": {
+   "fair": 134,
+   "good": 123,
+   "poor": 64
+  },
+  "tidal_like": 68,
+  "multi_reach_ambiguous": 46,
+  "unique_reaches": 219
+ },
+ "seed_by_src": {
+  "ncdot+nbi": 292,
+  "ncdot": 16,
+  "nbi_only": 13
+ },
+ "seed_by_type": {
+  "BRIDGE": 201,
+  "PIPE": 61,
+  "CULVERT": 46,
+  "BRIDGE(NBI)": 13
+ },
+ "secondary": {
+  "n": 2599,
+  "matched_100": 1429,
+  "match_rate_100": 0.55,
+  "match_rate_50": 0.527,
+  "order_dist": {
+   "1": 1238,
+   "2": 142,
+   "3": 25,
+   "4": 4,
+   "5": 17,
+   "6": 1,
+   "7": 2
+  },
+  "on_order1": 1238,
+  "order1_share_of_matched": 0.866,
+  "quality": {
+   "poor": 2412,
+   "fair": 187
+  },
+  "tidal_like": 27,
+  "multi_reach_ambiguous": 135,
+  "unique_reaches": 602
+ },
+ "all": {
+  "n": 2920,
+  "matched_100": 1686,
+  "match_rate_100": 0.577,
+  "match_rate_50": 0.551,
+  "order_dist": {
+   "1": 1311,
+   "2": 230,
+   "3": 80,
+   "4": 34,
+   "5": 25,
+   "6": 1,
+   "7": 5
+  },
+  "on_order1": 1311,
+  "order1_share_of_matched": 0.778,
+  "quality": {
+   "poor": 2476,
+   "fair": 321,
+   "good": 123
+  },
+  "tidal_like": 95,
+  "multi_reach_ambiguous": 181,
+  "unique_reaches": 778
+ },
+ "seed_name_agree_among_matched": 0.735,
+ "seed_unmatched_examples": [
+  {
+   "crossing_id": "V2_0001",
+   "feature_name": "DISCHARGE CANAL",
+   "road_carried": "NC87",
+   "match_dist_m": NaN
+  },
+  {
+   "crossing_id": "V2_0026",
+   "feature_name": "TOWN CREEK",
+   "road_carried": "SR1411",
+   "match_dist_m": 119.47672544261978
+  },
+  {
+   "crossing_id": "V2_0043",
+   "feature_name": "HOOD CREEK",
+   "road_carried": "NC87",
+   "match_dist_m": NaN
+  },
+  {
+   "crossing_id": "V2_0046",
+   "feature_name": "DRIVING CREEK",
+   "road_carried": "NC211",
+   "match_dist_m": NaN
+  },
+  {
+   "crossing_id": "V2_0071",
+   "feature_name": "CP&L DISCHARGE CANAL",
+   "road_carried": "NC211(CLOSED)",
+   "match_dist_m": NaN
+  }
+ ]
+}

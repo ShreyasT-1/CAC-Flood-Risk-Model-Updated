@@ -1,0 +1,16 @@
+graph bbox -79.08298822470942 33.48189432694947 -77.0836761835645 35.09297119133348
+data/raw/nc.osm.pbf ways so far 87177
+data/phase1b/raw/south-carolina-latest.osm.pbf ways so far 121734
+segments 246088 nodes 195481 km 40774
+crossings snapped 2742 of 2920
+origins 6977 snap>500 m 390 snap>1500 m 37
+hospitals snapped 16 of 16
+fire stations snapped 214 of 220
+EXITS (major = motorway/trunk/primary): 6 | plus secondary: 11
+     highway                ref                    name      lat      lon
+7   motorway               I 40                     NaN  34.7194 -77.9454
+6      trunk             US 421      Wilmington Highway  34.6802 -78.1572
+2      trunk              US 17      Wilmington Highway  34.4783 -77.5740
+11     trunk              US 17                     NaN  33.8951 -78.5923
+9      trunk  US 74;US 76;NC 87  Andrew Jackson Highway  34.3076 -78.1975
+4    primary       US 117;NC 11                     NaN  34.7166 -77.9792

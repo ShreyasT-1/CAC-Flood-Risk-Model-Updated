@@ -1,0 +1,23 @@
+{
+ "gauges": 43,
+ "gauge_events_scored": 73,
+ "gauge_events_total": 86,
+ "by_event": {
+  "Florence": 39,
+  "Matthew": 34
+ },
+ "median_nse": 0.55,
+ "median_kge": 0.41,
+ "share_nse_gt0": 0.84,
+ "share_peak_ratio_0p5_to_2": 0.767,
+ "median_peak_ratio": 0.98,
+ "median_abs_peak_time_err_h": 4.0,
+ "exceed_q2_hours": {
+  "both": 3689,
+  "obs_only": 2351,
+  "nwm_only": 1539
+ },
+ "q2_hit_rate_of_observed_hours": 0.611,
+ "q2_precision_of_nwm_hours": 0.706,
+ "verdict_pass": true
+}

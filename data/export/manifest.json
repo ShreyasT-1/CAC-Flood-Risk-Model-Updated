@@ -1,0 +1,201 @@
+{
+ "snap": "phase1",
+ "built_utc": "2026-10-13T00:17:51+00:00",
+ "git_head": "74e661443f3577126daa453cb105c2daf9b0b8c6",
+ "git_note": "most project files are uncommitted, so file sha256 values are the reliable provenance",
+ "files": [
+  {
+   "file": "crossings_export.csv",
+   "rows": 2920,
+   "row_unit": "records",
+   "source_script": "src/export_data.py",
+   "input_files": [
+    "data/phase0/crossings_v2.parquet",
+    "data/phase1b/crossing_snap.parquet",
+    "data/phase2/fema_assign_crossings.csv",
+    "data/phase2/fema_nfhl.parquet"
+   ],
+   "input_sha256": {
+    "data/phase0/crossings_v2.parquet": "ba22000b4380e93f378da2afb4efc6e86888fc50c66714f466a340411ec1e101",
+    "data/phase1b/crossing_snap.parquet": "61c64321d18c15db8c0063f21a44be88084cd7f10b1fec85bcd035491e5a167d",
+    "data/phase2/fema_assign_crossings.csv": "a7c4de30b51b582bcb369730d675138026e86650de02d1238e568b544d91acc5",
+    "data/phase2/fema_nfhl.parquet": "5b0776a11318659f082addd3012fcd039f32d6fd8aad49c00bad084b757ceb4d"
+   },
+   "sha256": "a81f44a17436c817c60ce3735cd43111825971844b6f21cce21ee08ce7e8b836"
+  },
+  {
+   "file": "crossings_export.geojson",
+   "rows": 2920,
+   "row_unit": "records",
+   "source_script": "src/export_data.py",
+   "input_files": [
+    "data/phase0/crossings_v2.parquet",
+    "data/phase1b/crossing_snap.parquet",
+    "data/phase2/fema_assign_crossings.csv",
+    "data/phase2/fema_nfhl.parquet"
+   ],
+   "input_sha256": {
+    "data/phase0/crossings_v2.parquet": "ba22000b4380e93f378da2afb4efc6e86888fc50c66714f466a340411ec1e101",
+    "data/phase1b/crossing_snap.parquet": "61c64321d18c15db8c0063f21a44be88084cd7f10b1fec85bcd035491e5a167d",
+    "data/phase2/fema_assign_crossings.csv": "a7c4de30b51b582bcb369730d675138026e86650de02d1238e568b544d91acc5",
+    "data/phase2/fema_nfhl.parquet": "5b0776a11318659f082addd3012fcd039f32d6fd8aad49c00bad084b757ceb4d"
+   },
+   "sha256": "243110415985d7954807e361375d368d64c947af397bc4d3e7c93e799f2453d3"
+  },
+  {
+   "file": "consequence_ranking.csv",
+   "rows": 2920,
+   "row_unit": "records",
+   "source_script": "src/export_data.py (+src/22_engine_p2.py Net/solve)",
+   "input_files": [
+    "data/phase0/crossings_v2.parquet",
+    "data/phase1b/crossing_snap.parquet",
+    "data/phase2/fema_assign_crossings.csv",
+    "data/phase2/fema_nfhl.parquet",
+    "data/phase1b/graph_segments.parquet",
+    "data/phase1b/origins_snapped.parquet",
+    "data/phase1b/hospitals_snapped.parquet",
+    "data/phase1b/firestations_snapped.parquet",
+    "data/phase1b/graph_nodes.parquet"
+   ],
+   "input_sha256": {
+    "data/phase0/crossings_v2.parquet": "ba22000b4380e93f378da2afb4efc6e86888fc50c66714f466a340411ec1e101",
+    "data/phase1b/crossing_snap.parquet": "61c64321d18c15db8c0063f21a44be88084cd7f10b1fec85bcd035491e5a167d",
+    "data/phase2/fema_assign_crossings.csv": "a7c4de30b51b582bcb369730d675138026e86650de02d1238e568b544d91acc5",
+    "data/phase2/fema_nfhl.parquet": "5b0776a11318659f082addd3012fcd039f32d6fd8aad49c00bad084b757ceb4d",
+    "data/phase1b/graph_segments.parquet": "560266a2e94ba9a56f21228bb5636cfe7a8fefbfb0af675252b60bba3c34b09d",
+    "data/phase1b/origins_snapped.parquet": "82324708183156777608fde67582b3482d0b7e618b16aa9c97bfe7a5b2b6f919",
+    "data/phase1b/hospitals_snapped.parquet": "7f77dc6b4f5954c8c4da25b927efbbd88a19be44cb8be3fcef0c0d24df4ec558",
+    "data/phase1b/firestations_snapped.parquet": "6aea7041c17ea03ddf947ecc91168e285a699847e030dcc424a32f24e44cc4cf",
+    "data/phase1b/graph_nodes.parquet": "5a295a2ab5d840648cbe70973eb7b562c8a919e80671b41b133428d0e0c79546"
+   },
+   "sha256": "bdf6917adc9545b4b4b12376dced55fdad6d21503f4be5bb7b82429978d2c2ac"
+  },
+  {
+   "file": "address_report_sample.json",
+   "rows": 25,
+   "row_unit": "records",
+   "source_script": "src/export_data.py",
+   "input_files": [
+    "data/phase0/crossings_v2.parquet",
+    "data/phase1b/crossing_snap.parquet",
+    "data/phase2/fema_assign_crossings.csv",
+    "data/phase2/fema_nfhl.parquet",
+    "data/phase1b/graph_segments.parquet",
+    "data/phase1b/origins_snapped.parquet",
+    "data/phase1b/hospitals_snapped.parquet",
+    "data/phase1b/firestations_snapped.parquet",
+    "data/phase1b/graph_nodes.parquet"
+   ],
+   "input_sha256": {
+    "data/phase0/crossings_v2.parquet": "ba22000b4380e93f378da2afb4efc6e86888fc50c66714f466a340411ec1e101",
+    "data/phase1b/crossing_snap.parquet": "61c64321d18c15db8c0063f21a44be88084cd7f10b1fec85bcd035491e5a167d",
+    "data/phase2/fema_assign_crossings.csv": "a7c4de30b51b582bcb369730d675138026e86650de02d1238e568b544d91acc5",
+    "data/phase2/fema_nfhl.parquet": "5b0776a11318659f082addd3012fcd039f32d6fd8aad49c00bad084b757ceb4d",
+    "data/phase1b/graph_segments.parquet": "560266a2e94ba9a56f21228bb5636cfe7a8fefbfb0af675252b60bba3c34b09d",
+    "data/phase1b/origins_snapped.parquet": "82324708183156777608fde67582b3482d0b7e618b16aa9c97bfe7a5b2b6f919",
+    "data/phase1b/hospitals_snapped.parquet": "7f77dc6b4f5954c8c4da25b927efbbd88a19be44cb8be3fcef0c0d24df4ec558",
+    "data/phase1b/firestations_snapped.parquet": "6aea7041c17ea03ddf947ecc91168e285a699847e030dcc424a32f24e44cc4cf",
+    "data/phase1b/graph_nodes.parquet": "5a295a2ab5d840648cbe70973eb7b562c8a919e80671b41b133428d0e0c79546"
+   },
+   "sha256": "327abde988297eb6d200851dcba426f6711199c50e231c7b08a542db09f1d7ad"
+  },
+  {
+   "file": "florence_replay_hourly.csv",
+   "rows": 13200,
+   "row_unit": "records",
+   "source_script": "src/export_data.py (+src/22_engine_p2.py replay outputs)",
+   "input_files": [
+    "data/phase0/crossings_v2.parquet",
+    "data/phase1b/crossing_snap.parquet",
+    "data/phase2/fema_assign_crossings.csv",
+    "data/phase2/fema_nfhl.parquet",
+    "data/phase1b/flows_hindcast.parquet",
+    "data/phase2/engine/replay_hindcast_base_hour_state.parquet",
+    "data/phase2/engine/replay_hindcast_base_origin_state.parquet"
+   ],
+   "input_sha256": {
+    "data/phase0/crossings_v2.parquet": "ba22000b4380e93f378da2afb4efc6e86888fc50c66714f466a340411ec1e101",
+    "data/phase1b/crossing_snap.parquet": "61c64321d18c15db8c0063f21a44be88084cd7f10b1fec85bcd035491e5a167d",
+    "data/phase2/fema_assign_crossings.csv": "a7c4de30b51b582bcb369730d675138026e86650de02d1238e568b544d91acc5",
+    "data/phase2/fema_nfhl.parquet": "5b0776a11318659f082addd3012fcd039f32d6fd8aad49c00bad084b757ceb4d",
+    "data/phase1b/flows_hindcast.parquet": "d6d005f4d626a9edcc0be42b65961e5604486b6b855c1009e7a29139d1b84791",
+    "data/phase2/engine/replay_hindcast_base_hour_state.parquet": "e926aed17cb8497d97f3c35b1a1ae92004ae9a820b6dbad2d3f619983adf322f",
+    "data/phase2/engine/replay_hindcast_base_origin_state.parquet": "73f6de66ef5c80f862ce122c1cf365a8a961aa23c57e138582f0ce538860176b"
+   },
+   "sha256": "bcab827432510e413216d0224ff19e8bbef10c3f7bc71da42b1254033fa568bc"
+  },
+  {
+   "file": "blocks_export.csv",
+   "rows": 6940,
+   "row_unit": "records",
+   "source_script": "src/export_data.py (+src/62_fema_compare.py)",
+   "input_files": [
+    "data/phase1b/graph_segments.parquet",
+    "data/phase1b/origins_snapped.parquet",
+    "data/phase1b/hospitals_snapped.parquet",
+    "data/phase1b/firestations_snapped.parquet",
+    "data/phase1b/graph_nodes.parquet",
+    "data/phase2/fema_assign_blocks.csv"
+   ],
+   "input_sha256": {
+    "data/phase1b/graph_segments.parquet": "560266a2e94ba9a56f21228bb5636cfe7a8fefbfb0af675252b60bba3c34b09d",
+    "data/phase1b/origins_snapped.parquet": "82324708183156777608fde67582b3482d0b7e618b16aa9c97bfe7a5b2b6f919",
+    "data/phase1b/hospitals_snapped.parquet": "7f77dc6b4f5954c8c4da25b927efbbd88a19be44cb8be3fcef0c0d24df4ec558",
+    "data/phase1b/firestations_snapped.parquet": "6aea7041c17ea03ddf947ecc91168e285a699847e030dcc424a32f24e44cc4cf",
+    "data/phase1b/graph_nodes.parquet": "5a295a2ab5d840648cbe70973eb7b562c8a919e80671b41b133428d0e0c79546",
+    "data/phase2/fema_assign_blocks.csv": "77fe2e1488e731bbf7b858dfd7fd0342374ebe487e24b4d122704e7fbcff463d"
+   },
+   "sha256": "2bd0c1e99260b3765a3de85fdb64f81320341876fb46b551dfee6ac642bc13f2"
+  },
+  {
+   "file": "README.md",
+   "rows": 105,
+   "row_unit": "lines",
+   "source_script": "src/export_data.py + docs/export_readme_head.md",
+   "input_files": [
+    "reports/phase1_limitations.md",
+    "docs/export_readme_head.md",
+    "docs/export_snap_sidebyside.md"
+   ],
+   "input_sha256": {
+    "reports/phase1_limitations.md": "703818b41b8ba9521afb3759ed3d2728f3ce10ba4713d5a733898d8a0f1ca640",
+    "docs/export_readme_head.md": "4444d7caa94361afe3825894e931d239c81b77ea1ecee089388ce1f29f383744",
+    "docs/export_snap_sidebyside.md": "3e3754b704d999a38ab7f8cb7ee497498c98c656064c069afbfdd7913efaa76e"
+   },
+   "sha256": "605b9b3b300c13349651d3763797ab59c82ca4398da6bbdec9389a4370266766"
+  },
+  {
+   "file": "live_conditions.json",
+   "rows": 1686,
+   "row_unit": "records",
+   "live": true,
+   "source_script": "src/72_live_conditions.py",
+   "input_files": [
+    "data/export/crossings_export.csv",
+    "NOAA NWM analysis_assim channel_rt tm00 (url in the file)"
+   ],
+   "input_sha256": {
+    "data/export/crossings_export.csv": "a81f44a17436c817c60ce3735cd43111825971844b6f21cce21ee08ce7e8b836"
+   },
+   "generated_at": "2026-10-13T12:33:32+00:00",
+   "note": "rewritten on every run; sha256 deliberately not pinned; rows are 0 when available is false"
+  },
+  {
+   "file": "live_conditions.csv",
+   "rows": 1686,
+   "row_unit": "records",
+   "live": true,
+   "source_script": "src/72_live_conditions.py",
+   "input_files": [
+    "data/export/crossings_export.csv",
+    "NOAA NWM analysis_assim channel_rt tm00 (url in the file)"
+   ],
+   "input_sha256": {
+    "data/export/crossings_export.csv": "a81f44a17436c817c60ce3735cd43111825971844b6f21cce21ee08ce7e8b836"
+   },
+   "generated_at": "2026-10-13T12:33:32+00:00",
+   "note": "rewritten on every run; sha256 deliberately not pinned; rows are 0 when available is false"
+  }
+ ]
+}

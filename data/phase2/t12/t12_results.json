@@ -1,0 +1,407 @@
+{
+ "counts": {
+  "pairs_le1km": 346,
+  "pairs_le300m": 151,
+  "by_length_class_le300m": {
+   "bridge_long_ge35m": 76,
+   "bridge_short_lt35m": 44,
+   "culvert/pipe": 29,
+   "bridge_len_unknown": 2
+  },
+  "crest_notes": {
+   "ok": 282,
+   "no_1m_tile": 42,
+   "tile_nodata": 18,
+   "no_named_osm_road_within_30m": 4
+  },
+  "assessed_reach": 279,
+  "primary_set": 73
+ },
+ "results": [
+  {
+   "label": "PRIMARY riverine <=300m, long/unknown-length bridges excluded",
+   "n_with_crest": 54,
+   "n_hwm_above": 35,
+   "share_hwm_above": 0.648,
+   "share_ci95": [
+    0.515,
+    0.762
+   ],
+   "n_above_crest_plus_1m": 15,
+   "per_county": {
+    "Beaufort County": {
+     "sum": 3,
+     "count": 3
+    },
+    "Bladen County": {
+     "sum": 2,
+     "count": 3
+    },
+    "Craven County": {
+     "sum": 2,
+     "count": 4
+    },
+    "Duplin County": {
+     "sum": 5,
+     "count": 5
+    },
+    "Johnston County": {
+     "sum": 3,
+     "count": 4
+    },
+    "Jones County": {
+     "sum": 1,
+     "count": 1
+    },
+    "Lenoir County": {
+     "sum": 0,
+     "count": 2
+    },
+    "New Hanover County": {
+     "sum": 3,
+     "count": 4
+    },
+    "Onslow County": {
+     "sum": 4,
+     "count": 7
+    },
+    "Pamlico County": {
+     "sum": 1,
+     "count": 1
+    },
+    "Pender County": {
+     "sum": 1,
+     "count": 2
+    },
+    "Richmond County": {
+     "sum": 1,
+     "count": 1
+    },
+    "Robeson County": {
+     "sum": 5,
+     "count": 9
+    },
+    "Sampson County": {
+     "sum": 2,
+     "count": 2
+    },
+    "Wayne County": {
+     "sum": 2,
+     "count": 6
+    }
+   },
+   "model_metric": "peak_q10",
+   "n_model_above": 32,
+   "n_model_below": 15,
+   "auc": 0.55,
+   "auc_ci95": [
+    0.365,
+    0.731
+   ],
+   "median_ratio_above": 5.41,
+   "median_ratio_below": 3.24,
+   "verdict": "FAIL"
+  },
+  {
+   "label": "secondary: same set, peak/q2",
+   "n_with_crest": 54,
+   "n_hwm_above": 35,
+   "share_hwm_above": 0.648,
+   "share_ci95": [
+    0.515,
+    0.762
+   ],
+   "n_above_crest_plus_1m": 15,
+   "per_county": {
+    "Beaufort County": {
+     "sum": 3,
+     "count": 3
+    },
+    "Bladen County": {
+     "sum": 2,
+     "count": 3
+    },
+    "Craven County": {
+     "sum": 2,
+     "count": 4
+    },
+    "Duplin County": {
+     "sum": 5,
+     "count": 5
+    },
+    "Johnston County": {
+     "sum": 3,
+     "count": 4
+    },
+    "Jones County": {
+     "sum": 1,
+     "count": 1
+    },
+    "Lenoir County": {
+     "sum": 0,
+     "count": 2
+    },
+    "New Hanover County": {
+     "sum": 3,
+     "count": 4
+    },
+    "Onslow County": {
+     "sum": 4,
+     "count": 7
+    },
+    "Pamlico County": {
+     "sum": 1,
+     "count": 1
+    },
+    "Pender County": {
+     "sum": 1,
+     "count": 2
+    },
+    "Richmond County": {
+     "sum": 1,
+     "count": 1
+    },
+    "Robeson County": {
+     "sum": 5,
+     "count": 9
+    },
+    "Sampson County": {
+     "sum": 2,
+     "count": 2
+    },
+    "Wayne County": {
+     "sum": 2,
+     "count": 6
+    }
+   },
+   "model_metric": "peak_q2",
+   "n_model_above": 32,
+   "n_model_below": 15,
+   "auc": 0.56,
+   "auc_ci95": [
+    0.381,
+    0.742
+   ],
+   "median_ratio_above": 23.1,
+   "median_ratio_below": 11.48,
+   "verdict": "FAIL"
+  },
+  {
+   "label": "secondary: riverine <=1km",
+   "n_with_crest": 122,
+   "n_hwm_above": 74,
+   "share_hwm_above": 0.607,
+   "share_ci95": [
+    0.518,
+    0.689
+   ],
+   "n_above_crest_plus_1m": 35,
+   "per_county": {
+    "Beaufort County": {
+     "sum": 3,
+     "count": 3
+    },
+    "Bladen County": {
+     "sum": 3,
+     "count": 4
+    },
+    "Columbus County": {
+     "sum": 5,
+     "count": 6
+    },
+    "Craven County": {
+     "sum": 4,
+     "count": 7
+    },
+    "Duplin County": {
+     "sum": 10,
+     "count": 11
+    },
+    "Greene County": {
+     "sum": 0,
+     "count": 2
+    },
+    "Johnston County": {
+     "sum": 4,
+     "count": 6
+    },
+    "Jones County": {
+     "sum": 3,
+     "count": 3
+    },
+    "Lenoir County": {
+     "sum": 1,
+     "count": 5
+    },
+    "New Hanover County": {
+     "sum": 7,
+     "count": 10
+    },
+    "Onslow County": {
+     "sum": 6,
+     "count": 12
+    },
+    "Pamlico County": {
+     "sum": 2,
+     "count": 2
+    },
+    "Pender County": {
+     "sum": 6,
+     "count": 8
+    },
+    "Richmond County": {
+     "sum": 1,
+     "count": 1
+    },
+    "Robeson County": {
+     "sum": 13,
+     "count": 26
+    },
+    "Sampson County": {
+     "sum": 2,
+     "count": 2
+    },
+    "Stanly County": {
+     "sum": 0,
+     "count": 1
+    },
+    "Wayne County": {
+     "sum": 4,
+     "count": 13
+    }
+   },
+   "model_metric": "peak_q10",
+   "n_model_above": 64,
+   "n_model_below": 33,
+   "auc": 0.632,
+   "auc_ci95": [
+    0.508,
+    0.751
+   ],
+   "median_ratio_above": 4.95,
+   "median_ratio_below": 3.07,
+   "verdict": "PASS"
+  },
+  {
+   "label": "secondary: <=300m incl. unknown-length bridges",
+   "n_with_crest": 56,
+   "n_hwm_above": 37,
+   "share_hwm_above": 0.661,
+   "share_ci95": [
+    0.53,
+    0.771
+   ],
+   "n_above_crest_plus_1m": 17,
+   "per_county": {
+    "Beaufort County": {
+     "sum": 3,
+     "count": 3
+    },
+    "Bladen County": {
+     "sum": 2,
+     "count": 3
+    },
+    "Craven County": {
+     "sum": 2,
+     "count": 4
+    },
+    "Duplin County": {
+     "sum": 5,
+     "count": 5
+    },
+    "Johnston County": {
+     "sum": 3,
+     "count": 4
+    },
+    "Jones County": {
+     "sum": 1,
+     "count": 1
+    },
+    "Lenoir County": {
+     "sum": 0,
+     "count": 2
+    },
+    "New Hanover County": {
+     "sum": 3,
+     "count": 4
+    },
+    "Onslow County": {
+     "sum": 4,
+     "count": 7
+    },
+    "Pamlico County": {
+     "sum": 1,
+     "count": 1
+    },
+    "Pender County": {
+     "sum": 1,
+     "count": 2
+    },
+    "Richmond County": {
+     "sum": 1,
+     "count": 1
+    },
+    "Robeson County": {
+     "sum": 5,
+     "count": 9
+    },
+    "Sampson County": {
+     "sum": 3,
+     "count": 3
+    },
+    "Wayne County": {
+     "sum": 3,
+     "count": 7
+    }
+   },
+   "model_metric": "peak_q10",
+   "n_model_above": 34,
+   "n_model_below": 15,
+   "auc": 0.518,
+   "auc_ci95": [
+    0.341,
+    0.7
+   ],
+   "median_ratio_above": 5.01,
+   "median_ratio_below": 3.24,
+   "verdict": "FAIL"
+  },
+  {
+   "label": "descriptive: coastal HWMs <=1km",
+   "n_with_crest": 10,
+   "n_hwm_above": 8,
+   "share_hwm_above": 0.8,
+   "share_ci95": [
+    0.49,
+    0.943
+   ],
+   "n_above_crest_plus_1m": 6,
+   "per_county": {
+    "Beaufort County": {
+     "sum": 2,
+     "count": 2
+    },
+    "Carteret County": {
+     "sum": 1,
+     "count": 1
+    },
+    "New Hanover County": {
+     "sum": 1,
+     "count": 1
+    },
+    "Pamlico County": {
+     "sum": 4,
+     "count": 4
+    },
+    "Tyrrell County": {
+     "sum": 0,
+     "count": 2
+    }
+   },
+   "model_metric": "peak_q10",
+   "n_model_above": 1,
+   "n_model_below": 2,
+   "verdict": "too few to test"
+  }
+ ]
+}

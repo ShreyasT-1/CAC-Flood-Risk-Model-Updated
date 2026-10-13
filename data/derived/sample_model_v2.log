@@ -1,0 +1,167 @@
+train rows 2346695 eval rows 2332704
+VAL (held-out events, trained gauges) onset only done
+VAL (held-out events, trained gauges) strict onset (stage at cutoff < flood stage) done
+VAL (held-out events, trained gauges) all hours done
+UNSEEN gauges (non-Florence) onset only done
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage) done
+UNSEEN gauges (non-Florence) all hours done
+TEST (Florence) onset only done
+TEST (Florence) strict onset (stage at cutoff < flood stage) done
+TEST (Florence) all hours done
+PILOT non-Florence (VAL+UNSEEN) onset only done
+PILOT non-Florence (VAL+UNSEEN) strict onset (stage at cutoff < flood stage) done
+PILOT non-Florence (VAL+UNSEEN) all hours done
+PILOT Florence (TEST) onset only done
+PILOT Florence (TEST) strict onset (stage at cutoff < flood stage) done
+PILOT Florence (TEST) all hours done
+                                  eval_set                                    population               score     rows  positives  recall50  recall20  pr_auc
+0    VAL (held-out events, trained gauges)                                    onset only            NWM only  1026603       1829     0.000     0.000   0.033
+1    VAL (held-out events, trained gauges)                                    onset only          +own stage  1026603       1829     0.000     0.417   0.116
+2    VAL (held-out events, trained gauges)                                    onset only    +upstream gauges  1026603       1829     0.000     0.000   0.059
+3    VAL (held-out events, trained gauges)                                    onset only               +rain  1026603       1829     0.000     0.000   0.048
+4    VAL (held-out events, trained gauges)                                    onset only       +own+upstream  1026603       1829     0.000     0.440   0.122
+5    VAL (held-out events, trained gauges)                                    onset only                +all  1026603       1829     0.000     0.541   0.149
+6    VAL (held-out events, trained gauges)                                    onset only      baseline_ratio  1026603       1829     0.005     0.005   0.028
+7    VAL (held-out events, trained gauges)                                    onset only     nwm_flow_pctile  1026603       1829     0.014     0.033   0.040
+8    VAL (held-out events, trained gauges)                                    onset only  persist_stage_frac  1026603       1829     0.000     0.146   0.063
+9    VAL (held-out events, trained gauges)                                    onset only   persist_extrap12h  1026603       1829     0.000     0.000   0.058
+10   VAL (held-out events, trained gauges)  strict onset (stage at cutoff < flood stage)            NWM only  1026463       1822     0.000     0.000   0.033
+11   VAL (held-out events, trained gauges)  strict onset (stage at cutoff < flood stage)          +own stage  1026463       1822     0.000     0.422   0.117
+12   VAL (held-out events, trained gauges)  strict onset (stage at cutoff < flood stage)    +upstream gauges  1026463       1822     0.000     0.000   0.059
+13   VAL (held-out events, trained gauges)  strict onset (stage at cutoff < flood stage)               +rain  1026463       1822     0.000     0.000   0.048
+14   VAL (held-out events, trained gauges)  strict onset (stage at cutoff < flood stage)       +own+upstream  1026463       1822     0.000     0.443   0.123
+15   VAL (held-out events, trained gauges)  strict onset (stage at cutoff < flood stage)                +all  1026463       1822     0.000     0.543   0.150
+16   VAL (held-out events, trained gauges)  strict onset (stage at cutoff < flood stage)      baseline_ratio  1026463       1822     0.005     0.005   0.027
+17   VAL (held-out events, trained gauges)  strict onset (stage at cutoff < flood stage)     nwm_flow_pctile  1026463       1822     0.014     0.037   0.041
+18   VAL (held-out events, trained gauges)  strict onset (stage at cutoff < flood stage)  persist_stage_frac  1026463       1822     0.000     0.159   0.071
+19   VAL (held-out events, trained gauges)  strict onset (stage at cutoff < flood stage)   persist_extrap12h  1026463       1822     0.000     0.000   0.059
+20   VAL (held-out events, trained gauges)                                     all hours            NWM only  1036550      11649     0.609     0.908   0.443
+21   VAL (held-out events, trained gauges)                                     all hours          +own stage  1036550      11649     0.937     0.966   0.741
+22   VAL (held-out events, trained gauges)                                     all hours    +upstream gauges  1036550      11649     0.764     0.926   0.552
+23   VAL (held-out events, trained gauges)                                     all hours               +rain  1036550      11649     0.661     0.932   0.474
+24   VAL (held-out events, trained gauges)                                     all hours       +own+upstream  1036550      11649     0.941     0.968   0.736
+25   VAL (held-out events, trained gauges)                                     all hours                +all  1036550      11649     0.951     0.975   0.741
+26   VAL (held-out events, trained gauges)                                     all hours      baseline_ratio  1036550      11649     0.717     0.864   0.527
+27   VAL (held-out events, trained gauges)                                     all hours     nwm_flow_pctile  1036550      11649     0.032     0.424   0.213
+28   VAL (held-out events, trained gauges)                                     all hours  persist_stage_frac  1036550      11649     0.897     0.923   0.893
+29   VAL (held-out events, trained gauges)                                     all hours   persist_extrap12h  1036550      11649     0.916     0.932   0.527
+30            UNSEEN gauges (non-Florence)                                    onset only            NWM only  1162634       1926     0.000     0.000   0.036
+31            UNSEEN gauges (non-Florence)                                    onset only          +own stage  1162634       1926     0.000     0.554   0.166
+32            UNSEEN gauges (non-Florence)                                    onset only    +upstream gauges  1162634       1926     0.000     0.054   0.062
+33            UNSEEN gauges (non-Florence)                                    onset only               +rain  1162634       1926     0.000     0.000   0.049
+34            UNSEEN gauges (non-Florence)                                    onset only       +own+upstream  1162634       1926     0.000     0.153   0.081
+35            UNSEEN gauges (non-Florence)                                    onset only                +all  1162634       1926     0.000     0.393   0.141
+36            UNSEEN gauges (non-Florence)                                    onset only      baseline_ratio  1162634       1926     0.017     0.049   0.054
+37            UNSEEN gauges (non-Florence)                                    onset only     nwm_flow_pctile  1162634       1926     0.001     0.017   0.038
+38            UNSEEN gauges (non-Florence)                                    onset only  persist_stage_frac  1162634       1926     0.005     0.207   0.096
+39            UNSEEN gauges (non-Florence)                                    onset only   persist_extrap12h  1162634       1926     0.001     0.001   0.099
+40            UNSEEN gauges (non-Florence)  strict onset (stage at cutoff < flood stage)            NWM only  1162456       1912     0.000     0.000   0.036
+41            UNSEEN gauges (non-Florence)  strict onset (stage at cutoff < flood stage)          +own stage  1162456       1912     0.000     0.553   0.168
+42            UNSEEN gauges (non-Florence)  strict onset (stage at cutoff < flood stage)    +upstream gauges  1162456       1912     0.000     0.053   0.062
+43            UNSEEN gauges (non-Florence)  strict onset (stage at cutoff < flood stage)               +rain  1162456       1912     0.000     0.000   0.049
+44            UNSEEN gauges (non-Florence)  strict onset (stage at cutoff < flood stage)       +own+upstream  1162456       1912     0.000     0.154   0.081
+45            UNSEEN gauges (non-Florence)  strict onset (stage at cutoff < flood stage)                +all  1162456       1912     0.000     0.393   0.141
+46            UNSEEN gauges (non-Florence)  strict onset (stage at cutoff < flood stage)      baseline_ratio  1162456       1912     0.016     0.046   0.051
+47            UNSEEN gauges (non-Florence)  strict onset (stage at cutoff < flood stage)     nwm_flow_pctile  1162456       1912     0.001     0.014   0.037
+48            UNSEEN gauges (non-Florence)  strict onset (stage at cutoff < flood stage)  persist_stage_frac  1162456       1912     0.000     0.217   0.104
+49            UNSEEN gauges (non-Florence)  strict onset (stage at cutoff < flood stage)   persist_extrap12h  1162456       1912     0.000     0.000   0.099
+50            UNSEEN gauges (non-Florence)                                     all hours            NWM only  1169561       8689     0.188     0.833   0.344
+51            UNSEEN gauges (non-Florence)                                     all hours          +own stage  1169561       8689     0.914     0.943   0.719
+52            UNSEEN gauges (non-Florence)                                     all hours    +upstream gauges  1169561       8689     0.440     0.875   0.451
+53            UNSEEN gauges (non-Florence)                                     all hours               +rain  1169561       8689     0.204     0.897   0.352
+54            UNSEEN gauges (non-Florence)                                     all hours       +own+upstream  1169561       8689     0.605     0.939   0.497
+55            UNSEEN gauges (non-Florence)                                     all hours                +all  1169561       8689     0.919     0.955   0.633
+56            UNSEEN gauges (non-Florence)                                     all hours      baseline_ratio  1169561       8689     0.630     0.803   0.568
+57            UNSEEN gauges (non-Florence)                                     all hours     nwm_flow_pctile  1169561       8689     0.161     0.509   0.264
+58            UNSEEN gauges (non-Florence)                                     all hours  persist_stage_frac  1169561       8689     0.871     0.906   0.860
+59            UNSEEN gauges (non-Florence)                                     all hours   persist_extrap12h  1169561       8689     0.885     0.918   0.514
+60                         TEST (Florence)                                    onset only            NWM only   121277       1108     0.000     0.029   0.092
+61                         TEST (Florence)                                    onset only          +own stage   121277       1108     0.109     0.671   0.259
+62                         TEST (Florence)                                    onset only    +upstream gauges   121277       1108     0.000     0.289   0.127
+63                         TEST (Florence)                                    onset only               +rain   121277       1108     0.000     0.285   0.130
+64                         TEST (Florence)                                    onset only       +own+upstream   121277       1108     0.000     0.687   0.262
+65                         TEST (Florence)                                    onset only                +all   121277       1108     0.245     0.796   0.329
+66                         TEST (Florence)                                    onset only      baseline_ratio   121277       1108     0.000     0.098   0.060
+67                         TEST (Florence)                                    onset only     nwm_flow_pctile   121277       1108     0.079     0.168   0.127
+68                         TEST (Florence)                                    onset only  persist_stage_frac   121277       1108     0.008     0.010   0.070
+69                         TEST (Florence)                                    onset only   persist_extrap12h   121277       1108     0.018     0.480   0.197
+70                         TEST (Florence)  strict onset (stage at cutoff < flood stage)            NWM only   121175       1094     0.000     0.026   0.089
+71                         TEST (Florence)  strict onset (stage at cutoff < flood stage)          +own stage   121175       1094     0.115     0.672   0.264
+72                         TEST (Florence)  strict onset (stage at cutoff < flood stage)    +upstream gauges   121175       1094     0.000     0.251   0.124
+73                         TEST (Florence)  strict onset (stage at cutoff < flood stage)               +rain   121175       1094     0.000     0.189   0.128
+74                         TEST (Florence)  strict onset (stage at cutoff < flood stage)       +own+upstream   121175       1094     0.000     0.684   0.263
+75                         TEST (Florence)  strict onset (stage at cutoff < flood stage)                +all   121175       1094     0.265     0.794   0.333
+76                         TEST (Florence)  strict onset (stage at cutoff < flood stage)      baseline_ratio   121175       1094     0.000     0.089   0.056
+77                         TEST (Florence)  strict onset (stage at cutoff < flood stage)     nwm_flow_pctile   121175       1094     0.077     0.160   0.125
+78                         TEST (Florence)  strict onset (stage at cutoff < flood stage)  persist_stage_frac   121175       1094     0.000     0.000   0.062
+79                         TEST (Florence)  strict onset (stage at cutoff < flood stage)   persist_extrap12h   121175       1094     0.016     0.477   0.196
+80                         TEST (Florence)                                     all hours            NWM only   126593       6335     0.825     0.963   0.722
+81                         TEST (Florence)                                     all hours          +own stage   126593       6335     0.962     0.992   0.872
+82                         TEST (Florence)                                     all hours    +upstream gauges   126593       6335     0.878     0.959   0.725
+83                         TEST (Florence)                                     all hours               +rain   126593       6335     0.858     0.972   0.705
+84                         TEST (Florence)                                     all hours       +own+upstream   126593       6335     0.966     0.993   0.879
+85                         TEST (Florence)                                     all hours                +all   126593       6335     0.977     0.995   0.890
+86                         TEST (Florence)                                     all hours      baseline_ratio   126593       6335     0.746     0.906   0.691
+87                         TEST (Florence)                                     all hours     nwm_flow_pctile   126593       6335     0.564     0.829   0.545
+88                         TEST (Florence)                                     all hours  persist_stage_frac   126593       6335     0.889     0.944   0.891
+89                         TEST (Florence)                                     all hours   persist_extrap12h   126593       6335     0.907     0.946   0.775
+90         PILOT non-Florence (VAL+UNSEEN)                                    onset only            NWM only   534446        922     0.000     0.000   0.017
+91         PILOT non-Florence (VAL+UNSEEN)                                    onset only          +own stage   534446        922     0.000     0.178   0.084
+92         PILOT non-Florence (VAL+UNSEEN)                                    onset only    +upstream gauges   534446        922     0.000     0.000   0.029
+93         PILOT non-Florence (VAL+UNSEEN)                                    onset only               +rain   534446        922     0.000     0.000   0.025
+94         PILOT non-Florence (VAL+UNSEEN)                                    onset only       +own+upstream   534446        922     0.000     0.000   0.043
+95         PILOT non-Florence (VAL+UNSEEN)                                    onset only                +all   534446        922     0.000     0.206   0.093
+96         PILOT non-Florence (VAL+UNSEEN)                                    onset only      baseline_ratio   534446        922     0.010     0.011   0.016
+97         PILOT non-Florence (VAL+UNSEEN)                                    onset only     nwm_flow_pctile   534446        922     0.004     0.034   0.027
+98         PILOT non-Florence (VAL+UNSEEN)                                    onset only  persist_stage_frac   534446        922     0.004     0.069   0.045
+99         PILOT non-Florence (VAL+UNSEEN)                                    onset only   persist_extrap12h   534446        922     0.001     0.001   0.041
+100        PILOT non-Florence (VAL+UNSEEN)  strict onset (stage at cutoff < flood stage)            NWM only   534359        912     0.000     0.000   0.017
+101        PILOT non-Florence (VAL+UNSEEN)  strict onset (stage at cutoff < flood stage)          +own stage   534359        912     0.000     0.179   0.084
+102        PILOT non-Florence (VAL+UNSEEN)  strict onset (stage at cutoff < flood stage)    +upstream gauges   534359        912     0.000     0.000   0.028
+103        PILOT non-Florence (VAL+UNSEEN)  strict onset (stage at cutoff < flood stage)               +rain   534359        912     0.000     0.000   0.025
+104        PILOT non-Florence (VAL+UNSEEN)  strict onset (stage at cutoff < flood stage)       +own+upstream   534359        912     0.000     0.000   0.042
+105        PILOT non-Florence (VAL+UNSEEN)  strict onset (stage at cutoff < flood stage)                +all   534359        912     0.000     0.223   0.093
+106        PILOT non-Florence (VAL+UNSEEN)  strict onset (stage at cutoff < flood stage)      baseline_ratio   534359        912     0.010     0.011   0.015
+107        PILOT non-Florence (VAL+UNSEEN)  strict onset (stage at cutoff < flood stage)     nwm_flow_pctile   534359        912     0.004     0.034   0.027
+108        PILOT non-Florence (VAL+UNSEEN)  strict onset (stage at cutoff < flood stage)  persist_stage_frac   534359        912     0.000     0.078   0.046
+109        PILOT non-Florence (VAL+UNSEEN)  strict onset (stage at cutoff < flood stage)   persist_extrap12h   534359        912     0.000     0.000   0.040
+110        PILOT non-Florence (VAL+UNSEEN)                                     all hours            NWM only   536470       2871     0.000     0.452   0.161
+111        PILOT non-Florence (VAL+UNSEEN)                                     all hours          +own stage   536470       2871     0.794     0.859   0.564
+112        PILOT non-Florence (VAL+UNSEEN)                                     all hours    +upstream gauges   536470       2871     0.000     0.603   0.196
+113        PILOT non-Florence (VAL+UNSEEN)                                     all hours               +rain   536470       2871     0.000     0.577   0.158
+114        PILOT non-Florence (VAL+UNSEEN)                                     all hours       +own+upstream   536470       2871     0.499     0.848   0.323
+115        PILOT non-Florence (VAL+UNSEEN)                                     all hours                +all   536470       2871     0.817     0.886   0.511
+116        PILOT non-Florence (VAL+UNSEEN)                                     all hours      baseline_ratio   536470       2871     0.003     0.420   0.154
+117        PILOT non-Florence (VAL+UNSEEN)                                     all hours     nwm_flow_pctile   536470       2871     0.086     0.439   0.211
+118        PILOT non-Florence (VAL+UNSEEN)                                     all hours  persist_stage_frac   536470       2871     0.731     0.786   0.727
+119        PILOT non-Florence (VAL+UNSEEN)                                     all hours   persist_extrap12h   536470       2871     0.014     0.813   0.300
+120                  PILOT Florence (TEST)                                    onset only            NWM only    29617        456     0.000     0.008   0.090
+121                  PILOT Florence (TEST)                                    onset only          +own stage    29617        456     0.233     0.692   0.303
+122                  PILOT Florence (TEST)                                    onset only    +upstream gauges    29617        456     0.000     0.332   0.151
+123                  PILOT Florence (TEST)                                    onset only               +rain    29617        456     0.000     0.070   0.124
+124                  PILOT Florence (TEST)                                    onset only       +own+upstream    29617        456     0.353     0.736   0.326
+125                  PILOT Florence (TEST)                                    onset only                +all    29617        456     0.254     0.846   0.345
+126                  PILOT Florence (TEST)                                    onset only      baseline_ratio    29617        456     0.000     0.000   0.041
+127                  PILOT Florence (TEST)                                    onset only     nwm_flow_pctile    29617        456     0.129     0.193   0.155
+128                  PILOT Florence (TEST)                                    onset only  persist_stage_frac    29617        456     0.013     0.018   0.076
+129                  PILOT Florence (TEST)                                    onset only   persist_extrap12h    29617        456     0.081     0.469   0.207
+130                  PILOT Florence (TEST)  strict onset (stage at cutoff < flood stage)            NWM only    29574        448     0.000     0.000   0.086
+131                  PILOT Florence (TEST)  strict onset (stage at cutoff < flood stage)          +own stage    29574        448     0.311     0.686   0.308
+132                  PILOT Florence (TEST)  strict onset (stage at cutoff < flood stage)    +upstream gauges    29574        448     0.000     0.305   0.143
+133                  PILOT Florence (TEST)  strict onset (stage at cutoff < flood stage)               +rain    29574        448     0.000     0.000   0.120
+134                  PILOT Florence (TEST)  strict onset (stage at cutoff < flood stage)       +own+upstream    29574        448     0.354     0.732   0.328
+135                  PILOT Florence (TEST)  strict onset (stage at cutoff < flood stage)                +all    29574        448     0.254     0.844   0.347
+136                  PILOT Florence (TEST)  strict onset (stage at cutoff < flood stage)      baseline_ratio    29574        448     0.000     0.000   0.037
+137                  PILOT Florence (TEST)  strict onset (stage at cutoff < flood stage)     nwm_flow_pctile    29574        448     0.116     0.181   0.144
+138                  PILOT Florence (TEST)  strict onset (stage at cutoff < flood stage)  persist_stage_frac    29574        448     0.000     0.000   0.060
+139                  PILOT Florence (TEST)  strict onset (stage at cutoff < flood stage)   persist_extrap12h    29574        448     0.067     0.464   0.203
+140                  PILOT Florence (TEST)                                     all hours            NWM only    31360       2163     0.783     0.969   0.704
+141                  PILOT Florence (TEST)                                     all hours          +own stage    31360       2163     0.954     0.996   0.897
+142                  PILOT Florence (TEST)                                     all hours    +upstream gauges    31360       2163     0.842     0.923   0.728
+143                  PILOT Florence (TEST)                                     all hours               +rain    31360       2163     0.826     0.955   0.699
+144                  PILOT Florence (TEST)                                     all hours       +own+upstream    31360       2163     0.961     0.995   0.878
+145                  PILOT Florence (TEST)                                     all hours                +all    31360       2163     0.974     0.997   0.859
+146                  PILOT Florence (TEST)                                     all hours      baseline_ratio    31360       2163     0.691     0.872   0.621
+147                  PILOT Florence (TEST)                                     all hours     nwm_flow_pctile    31360       2163     0.729     0.885   0.712
+148                  PILOT Florence (TEST)                                     all hours  persist_stage_frac    31360       2163     0.854     0.919   0.861
+149                  PILOT Florence (TEST)                                     all hours   persist_extrap12h    31360       2163     0.876     0.927   0.767

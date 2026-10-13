@@ -1,0 +1,66 @@
+claim,quantity,how,recomputed,documented,status
+C1,T10-B AUC (mean per-report matched AUC),recomputed,0.958,0.958,ok
+C1,n reports,recomputed,74.0,74,ok
+C1,AUC CI low,stored,0.916,0.916,ok
+C1,AUC CI high,stored,0.992,0.992,ok
+C1,% reports above q2,recomputed,60.811,60.8,ok
+C1,% control hours above q2,recomputed,0.73,0.73,ok
+C2,"peak within +-24h, reports %",recomputed,81.081,81.1,ok
+C2,"peak within +-24h, controls %",recomputed,13.986,14.0,ok
+C2,difference,recomputed,0.671,0.671,ok
+C3,"peak ratio within 0.5-2.0, %",stored,76.7,76.7,ok
+C3,gauge-events scored,stored,73.0,73,ok
+C3,median |peak-time error| h,stored,4.0,4,ok
+C3,median NSE,stored,0.55,0.55,ok
+C3,gauges,stored,43.0,43,ok
+C4,median abs error %,stored,15.5,15.5,ok
+C4,"within +-30%, %",stored,91.3,91.3,ok
+C4,MAE min,stored,3.22,3.22,ok
+C4,bias min,stored,-2.72,-2.72,ok
+C4,n blocks,stored,150.0,150,ok
+C5,"T15 six-event pooled AUC (events E1,E2,E3,E4,E6)",recomputed,0.716,0.716,ok
+C5,T15 six-event positives,recomputed,430.0,430,ok
+C5,"T15 nine-event pooled AUC (events E1,E2,E3,E4,E6,E7,E8,E9)",recomputed,0.69,0.690,ok
+C5,T15 nine-event positives,recomputed,517.0,517,ok
+C6,crossings assessed,recomputed,2742.0,2742,ok
+C6,crossings total,recomputed,2920.0,2920,ok
+C6,top-ranked people affected,recomputed,43394.0,43394,ok
+C6,top-ranked blocks affected,recomputed,537.0,537,ok
+C6,top-ranked people losing hospital or fire access,recomputed,0.0,0,ok
+C7,seed crossings above RL2 at peak hour,recomputed,241.0,241,ok
+C7,seed crossings assessed,recomputed,250.0,250,ok
+C7,seed crossings whose peak exceeds q50,recomputed,205.0,205,ok
+C8,TEST Florence: model recall@50% precision,stored,0.504,0.504,ok
+C8,TEST Florence: best persistence recall@50%,stored,0.005,0.005,ok
+C8,UNSEEN gauges (non-Florence): model recall@50% precision,stored,0.417,0.417,ok
+C8,UNSEEN gauges (non-Florence): best persistence recall@50%,stored,0.004,0.004,ok
+C8,"VAL (fold 4, trained gauges): model recall@50% precision",stored,0.384,0.384,ok
+C8,"VAL (fold 4, trained gauges): best persistence recall@50%",stored,0.0,0.000,ok
+C9,seed crossings assessed,recomputed,250.0,250,ok
+C9,above RL10,recomputed,241.0,241,ok
+C9,above RL10 %,recomputed,96.4,96.4,ok
+C9,above RL10 and in SFHA,recomputed,214.0,214,ok
+C9,of those above RL10,recomputed,241.0,241,ok
+C9,"not above RL10, in SFHA",recomputed,7.0,7,ok
+C9,not above RL10,recomputed,9.0,9,ok
+C10,T16 baseline (raw peak/q10) pooled AUC,recomputed,0.69,0.690,ok
+C10,T16 HGB pooled AUC,recomputed,0.798,0.798,ok
+C10,T16 logistic pooled AUC,recomputed,0.757,0.757,ok
+C10,T16 HGB minus baseline,recomputed,0.108,0.108,ok
+C10,Helene HGB AUC,recomputed,0.719,0.719,ok
+C10,Helene baseline AUC,recomputed,0.638,0.638,ok
+T12,AUC,stored,0.55,0.55,ok
+T12,HWM above crest n,stored,35.0,35,ok
+T13,AUC,stored,0.583,0.58,ok
+T13,crossings inside flood extent,stored,243.0,243,ok
+E1,listed hit share %,stored,78.6,78.6,ok
+E1,unlisted hit share %,stored,65.2,65.2,ok
+E1,one-sided p,stored,0.085,0.085,ok
+export,rows crossings_export.csv (file vs manifest),recomputed,2920.0,2920,ok
+export,rows consequence_ranking.csv (file vs manifest),recomputed,2920.0,2920,ok
+export,rows address_report_sample.json (file vs manifest),recomputed,25.0,25,ok
+export,rows florence_replay_hourly.csv (file vs manifest),recomputed,13200.0,13200,ok
+export,rows blocks_export.csv (file vs manifest),recomputed,6940.0,6940,ok
+export,crossings rows vs README,recomputed,2920.0,2920,ok
+export,blocks rows vs README,recomputed,6940.0,6940,ok
+export,hourly rows = 1320 h x 2 sets x 5 scenarios,recomputed,13200.0,13200,ok

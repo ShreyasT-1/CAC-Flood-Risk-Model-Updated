@@ -1,0 +1,227 @@
+{
+ "pos100|excl_helene|r10": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.69,
+  "ci95_boot_event_county_cells": [
+   0.623,
+   0.745
+  ],
+  "n_pos": 517,
+  "n_neg": 24820,
+  "verdict": "PASS"
+ },
+ "pos100|excl_helene|r2": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.697,
+  "ci95_boot_event_county_cells": [
+   0.633,
+   0.748
+  ],
+  "n_pos": 517,
+  "n_neg": 24820
+ },
+ "pos100|helene_only|r10": {
+  "events": [
+   "E5"
+  ],
+  "pooled_mean_event_auc": 0.638,
+  "ci95_boot_event_county_cells": [
+   0.552,
+   0.712
+  ],
+  "n_pos": 196,
+  "n_neg": 8588
+ },
+ "pos100|helene_only|r2": {
+  "events": [
+   "E5"
+  ],
+  "pooled_mean_event_auc": 0.618,
+  "ci95_boot_event_county_cells": [
+   0.53,
+   0.698
+  ],
+  "n_pos": 196,
+  "n_neg": 8588
+ },
+ "pos100|all_events|r10": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.685,
+  "ci95_boot_event_county_cells": [
+   0.623,
+   0.734
+  ],
+  "n_pos": 713,
+  "n_neg": 33408
+ },
+ "pos100|all_events|r2": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.688,
+  "ci95_boot_event_county_cells": [
+   0.631,
+   0.735
+  ],
+  "n_pos": 713,
+  "n_neg": 33408
+ },
+ "pos250|excl_helene|r10": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.689,
+  "ci95_boot_event_county_cells": [
+   0.621,
+   0.74
+  ],
+  "n_pos": 593,
+  "n_neg": 24744
+ },
+ "pos250|excl_helene|r2": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.694,
+  "ci95_boot_event_county_cells": [
+   0.63,
+   0.743
+  ],
+  "n_pos": 593,
+  "n_neg": 24744
+ },
+ "pos250|helene_only|r10": {
+  "events": [
+   "E5"
+  ],
+  "pooled_mean_event_auc": 0.649,
+  "ci95_boot_event_county_cells": [
+   0.565,
+   0.721
+  ],
+  "n_pos": 235,
+  "n_neg": 8549
+ },
+ "pos250|helene_only|r2": {
+  "events": [
+   "E5"
+  ],
+  "pooled_mean_event_auc": 0.628,
+  "ci95_boot_event_county_cells": [
+   0.542,
+   0.705
+  ],
+  "n_pos": 235,
+  "n_neg": 8549
+ },
+ "pos250|all_events|r10": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.685,
+  "ci95_boot_event_county_cells": [
+   0.622,
+   0.732
+  ],
+  "n_pos": 828,
+  "n_neg": 33293
+ },
+ "pos250|all_events|r2": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.687,
+  "ci95_boot_event_county_cells": [
+   0.63,
+   0.732
+  ],
+  "n_pos": 828,
+  "n_neg": 33293
+ },
+ "PRIMARY": {
+  "events": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9"
+  ],
+  "pooled_mean_event_auc": 0.69,
+  "ci95_boot_event_county_cells": [
+   0.623,
+   0.745
+  ],
+  "n_pos": 517,
+  "n_neg": 24820,
+  "verdict": "PASS"
+ }
+}

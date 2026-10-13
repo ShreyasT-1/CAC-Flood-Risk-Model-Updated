@@ -1,0 +1,27 @@
+{
+ "pairs": 150,
+ "scored": 150,
+ "mae_min": 3.22,
+ "median_ape": 0.155,
+ "bias_min": -2.72,
+ "share_within_30pct": 0.913,
+ "mean_osrm_min": 19.4,
+ "by_county": {
+  "Brunswick": {
+   "mae": 2.439,
+   "med_ape": 0.115,
+   "n": 50
+  },
+  "New Hanover": {
+   "mae": 2.439,
+   "med_ape": 0.2,
+   "n": 50
+  },
+  "Pender": {
+   "mae": 4.786,
+   "med_ape": 0.128,
+   "n": 50
+  }
+ },
+ "verdict_pass": true
+}

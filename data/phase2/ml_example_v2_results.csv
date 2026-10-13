@@ -1,0 +1,208 @@
+eval_set,population,score,rows,positives,gauges,recall50,recall50_lo,recall50_hi,recall20,recall20_lo,recall20_hi,pr_auc,pr_auc_lo,pr_auc_hi,metric,diff,diff_lo,diff_hi
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),hgb_seed42,1869083.0,2407.0,151.0,0.0,0.0,0.0,0.4827586206896552,0.0,0.6422420986059959,0.12008104720972436,0.02516676843924551,0.20164976965044998,,,,
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),hgb_seed43,1869083.0,2407.0,151.0,0.0,0.0,0.0,0.5097631906938097,0.0,0.6770802873396713,0.13098022872402143,0.02592581941186336,0.22416677073432198,,,,
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),hgb_seed44,1869083.0,2407.0,151.0,0.0,0.0,0.0,0.47735770668882427,0.0,0.6545546739861389,0.13068736859378327,0.027182807873078266,0.2244124768341554,,,,
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),hgb_seedavg,1869083.0,2407.0,151.0,0.3838803489821354,0.08490921216693621,0.4962292574791165,0.5363523057748234,0.1875214841499905,0.6418734883795709,0.3782520294630134,0.2645567140673518,0.4826050455953689,,,,
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),persist_stage_frac,1869083.0,2407.0,151.0,0.0,0.0,0.0,0.11009555463232239,0.0,0.1833224579958733,0.05361998049773278,0.006646346050589772,0.07939414691157667,,,,
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),persist_extrap12h,1869083.0,2407.0,151.0,0.0,0.0,0.0,0.0,0.0,0.0,0.045661716918632834,0.007982894333963502,0.07367931519303547,,,,
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),calibrated_persistence,1869083.0,2407.0,151.0,0.0,0.0,0.0,0.18404653095139178,0.0,0.2684076799916572,0.06518132465663622,0.006782533106430478,0.09645831397069192,,,,
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),calibrated_persistence_below_fs,1869083.0,2407.0,151.0,0.0,0.0,0.0,0.0,0.0,0.41710355445034303,0.06353629563263302,0.006832256192553534,0.10087569582448085,,,,
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall50,0.3838803489821354,0.08490921216693621,0.4962292574791165
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall20,0.426256751142501,0.17428634493196907,0.6325737552037525
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,pr_auc,0.32463204896528064,0.2162811833900873,0.40458667661033476
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall50,0.3838803489821354,0.08490921216693621,0.4962292574791165
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall20,0.5363523057748234,0.1875214841499905,0.6418734883795709
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,pr_auc,0.33259031254438054,0.2457701628890081,0.4028452058518224
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall50,0.3838803489821354,0.08490921216693621,0.4962292574791165
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall20,0.3523057748234316,0.1875214841499905,0.5140777873205616
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,pr_auc,0.31307070480637716,0.21560498573304,0.38255427344183457
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall50,0.3838803489821354,0.08490921216693621,0.4962292574791165
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall20,0.5363523057748234,0.1875214841499905,0.6176052115744685
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,pr_auc,0.3147157338303804,0.23320881951320896,0.3790147955055874
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,recall50,0.3838803489821354,0.08490921216693621,0.4962292574791165
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,recall20,0.426256751142501,0.17428634493196907,0.6325737552037525
+"VAL (fold 4, trained gauges)",onset (is_exceed_now False),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,pr_auc,0.32463204896528064,0.2162811833900873,0.40458667661033476
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),hgb_seed42,1868901.0,2398.0,151.0,0.0,0.0,0.0,0.4891576313594662,0.0,0.6541239598200167,0.12107252424144552,0.023912627194042777,0.21273950508520226,,,,
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),hgb_seed43,1868901.0,2398.0,151.0,0.0,0.0,0.0,0.5100083402835697,0.0,0.6759598005208696,0.13217400932805834,0.027714046172542976,0.22698034098504888,,,,
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),hgb_seed44,1868901.0,2398.0,151.0,0.0,0.0,0.0,0.4778982485404504,0.0,0.6590927617806492,0.13186601651165578,0.03289220557144825,0.22084330412586942,,,,
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),hgb_seedavg,1868901.0,2398.0,151.0,0.3890742285237698,0.10913584942312478,0.5123253585192242,0.5346121768140116,0.2419020320656227,0.6478463358913186,0.404069584163545,0.32571736607591256,0.5273182910696184,,,,
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),persist_stage_frac,1868901.0,2398.0,151.0,0.0,0.0,0.0,0.1263552960800667,0.0208612110686181,0.2032386173343506,0.05986122451413718,0.04076360355655004,0.08798324696198834,,,,
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),persist_extrap12h,1868901.0,2398.0,151.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04581806078895749,0.034784200195146095,0.086324597612601,,,,
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),calibrated_persistence,1868901.0,2398.0,151.0,0.0,0.0,0.0,0.18640533778148458,0.0,0.28301589755571155,0.06853786405514815,0.04777332350528465,0.10736120303429389,,,,
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),calibrated_persistence_below_fs,1868901.0,2398.0,151.0,0.0,0.0,0.0,0.0,0.0,0.4156236355314694,0.06418263572810912,0.04599224293393886,0.11521880393409047,,,,
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall50,0.3890742285237698,0.10782475147501265,0.5123253585192242
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall20,0.40825688073394495,0.17774530905077265,0.5375984986245164
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,pr_auc,0.3442083596494078,0.28416339553873415,0.44716182348637146
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall50,0.3890742285237698,0.10913584942312478,0.5123253585192242
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall20,0.5346121768140116,0.2419020320656227,0.6478463358913186
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,pr_auc,0.3582515233745875,0.2923903350182661,0.4437318244051215
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall50,0.3890742285237698,0.10913584942312478,0.5123253585192242
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall20,0.348206839032527,0.18794567921986605,0.4284959389654011
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,pr_auc,0.3355317201083968,0.2799059932746093,0.4249768833227738
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall50,0.3890742285237698,0.10913584942312478,0.5123253585192242
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall20,0.5346121768140116,0.18808844332621588,0.6111093223457412
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,pr_auc,0.3398869484354359,0.28083129777991306,0.4150291512960998
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,recall50,0.3890742285237698,0.10782475147501265,0.5123253585192242
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,recall20,0.40825688073394495,0.17774530905077265,0.5375984986245164
+"VAL (fold 4, trained gauges)",strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,pr_auc,0.3442083596494078,0.28416339553873415,0.44716182348637146
+"VAL (fold 4, trained gauges)",all hours,hgb_seed42,1881509.0,14664.0,151.0,0.9412165848336062,0.7968068050670972,0.9714890594288671,0.9678805237315876,0.883876502854512,0.9861133905552829,0.6872598427703086,0.4031551814372603,0.8194573385264052,,,,
+"VAL (fold 4, trained gauges)",all hours,hgb_seed43,1881509.0,14664.0,151.0,0.9399890889252591,0.793632448413046,0.9704584335298675,0.967607746863066,0.883999276304402,0.9859673047256877,0.7152984987082839,0.4270413969345981,0.8371723480968934,,,,
+"VAL (fold 4, trained gauges)",all hours,hgb_seed44,1881509.0,14664.0,151.0,0.9414211674849973,0.7876103890587353,0.9704193578665546,0.9661074740861975,0.8865350310453013,0.985119978156783,0.7201568918068316,0.42375373888461426,0.8395165061083583,,,,
+"VAL (fold 4, trained gauges)",all hours,hgb_seedavg,1881509.0,14664.0,151.0,0.935215493726132,0.7881293717101359,0.9708302044384163,0.9680169121658483,0.8770697335329964,0.9865005931932272,0.9379897574642622,0.887732709023593,0.9675257370371995,,,,
+"VAL (fold 4, trained gauges)",all hours,persist_stage_frac,1881509.0,14664.0,151.0,0.8863884342607747,0.706873855812784,0.9393901107373465,0.9147572285870158,0.7244406448674231,0.9580309094933206,0.8825640496533056,0.6917729613378337,0.9256435297497566,,,,
+"VAL (fold 4, trained gauges)",all hours,persist_extrap12h,1881509.0,14664.0,151.0,0.9046644844517185,0.008188745052952754,0.9451816488140894,0.9256001091107474,0.7658434586909303,0.9616868493489574,0.4650195291864121,0.24814838639921186,0.5765977629054414,,,,
+"VAL (fold 4, trained gauges)",all hours,calibrated_persistence,1881509.0,14664.0,151.0,0.8950490998363339,0.7162958665709409,0.9435393706641306,0.9173486088379705,0.733859095299915,0.958980140453688,0.8697455603802438,0.6818644520597575,0.9121219719152087,,,,
+"VAL (fold 4, trained gauges)",all hours,calibrated_persistence_below_fs,1881509.0,14664.0,151.0,0.9044599018003273,0.7329369188040947,0.9472546416970405,0.920417348608838,0.7483111351057782,0.9601854137685226,0.7266142416317649,0.46642930217261036,0.8028523936124118,,,,
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall50,0.04882705946535726,0.02271315561885192,0.08106780095140437
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall20,0.053259683578832484,0.02653944244006883,0.1338789674554049
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,pr_auc,0.05542570781095657,0.034611327331890145,0.0763883754533082
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall50,0.030551009274413454,0.018269403595533473,0.8818936027555744
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall20,0.04241680305510087,0.02046359414681772,0.11989550278245852
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,pr_auc,0.47297022827785007,0.37515187334228595,0.5691420639864435
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall50,0.040166393889798147,0.01842633040309156,0.06561162654986243
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall20,0.05066830332787775,0.02558129037265218,0.12273139198444269
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,pr_auc,0.06824419708401841,0.04739048978338931,0.0942728227021985
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall50,0.03075559192580468,0.014767132486454967,0.05519245290604116
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall20,0.04759956355701034,0.023137499463035976,0.10288504711969702
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,pr_auc,0.21137551583249725,0.14959039077406766,0.29284421697314617
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - best (persist_extrap12h),,,,,,,,,,,,,recall50,0.030551009274413454,0.018269403595533473,0.8818936027555744
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - best (persist_extrap12h),,,,,,,,,,,,,recall20,0.04241680305510087,0.02046359414681772,0.11989550278245852
+"VAL (fold 4, trained gauges)",all hours,DIFF hgb_seedavg - best (persist_extrap12h),,,,,,,,,,,,,pr_auc,0.47297022827785007,0.37515187334228595,0.5691420639864435
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),hgb_seed42,1776157.0,2165.0,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01861442004100935,0.011177707229631828,0.027410545016344226,,,,
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),hgb_seed43,1776157.0,2165.0,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06082312359733016,0.0331945823591724,0.09984662196143596,,,,
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),hgb_seed44,1776157.0,2165.0,26.0,0.0,0.0,0.0,0.0,0.0,0.6276839833450407,0.09145620275800144,0.052747672612492885,0.1358661637184401,,,,
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),hgb_seedavg,1776157.0,2165.0,26.0,0.4166281755196305,0.2995627325970954,0.5099934049764431,0.5972286374133949,0.49521681866781203,0.6700083687965354,0.3949557773948497,0.31273203806623473,0.4589685449587512,,,,
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),persist_stage_frac,1776157.0,2165.0,26.0,0.004157043879907622,0.0,0.009010890851134984,0.2,0.003393063611990236,0.3050525928187441,0.08771278144323574,0.06888600956747672,0.10653877234299446,,,,
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),persist_extrap12h,1776157.0,2165.0,26.0,0.00046189376443418013,0.0,0.0016106701261388052,0.00046189376443418013,0.0,0.013075019128660548,0.0817102893693792,0.0512749265723654,0.10839962951753662,,,,
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),calibrated_persistence,1776157.0,2165.0,26.0,0.002771362586605081,0.0,0.007765257470754893,0.34133949191685914,0.2502881527220009,0.4288596445399768,0.11931288290722758,0.08667062147282578,0.14603447215417276,,,,
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),calibrated_persistence_below_fs,1776157.0,2165.0,26.0,0.00046189376443418013,0.0,0.0038757626484190793,0.4623556581986143,0.34537693138075953,0.5461042868780809,0.12101030269821784,0.07859886251124606,0.15666225529615652,,,,
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall50,0.4124711316397229,0.2979151277921743,0.5068936466902781
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall20,0.3972286374133949,0.2953696946662384,0.5274314857048423
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,pr_auc,0.307242995951614,0.25984480888329536,0.3505298236260901
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall50,0.4161662817551963,0.297994341987358,0.5099560357686703
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall20,0.5967667436489608,0.47723041443090336,0.6692381026640424
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,pr_auc,0.31324548802547053,0.2581282834668321,0.3637639055022508
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall50,0.4138568129330254,0.29793097063121105,0.5086032782244455
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall20,0.2558891454965358,0.19825925686172963,0.31101013939877414
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,pr_auc,0.27564289448762214,0.23869057778188943,0.3188234441165508
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall50,0.4161662817551963,0.297994341987358,0.5099560357686703
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall20,0.13487297921478064,0.09855830663075744,0.18207715630515361
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,pr_auc,0.2739454746966319,0.22704165347490088,0.3110226137851492
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,recall50,0.4124711316397229,0.2979151277921743,0.5068936466902781
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,recall20,0.3972286374133949,0.2953696946662384,0.5274314857048423
+UNSEEN gauges (non-Florence),onset (is_exceed_now False),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,pr_auc,0.307242995951614,0.25984480888329536,0.3505298236260901
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),hgb_seed42,1775960.0,2152.0,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0.018495413806373727,0.010980725693906467,0.026500716492778246,,,,
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),hgb_seed43,1775960.0,2152.0,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06061815329346115,0.03355938243289474,0.09561124687874807,,,,
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),hgb_seed44,1775960.0,2152.0,26.0,0.0,0.0,0.0,0.0,0.0,0.6108218863755185,0.09147991678874816,0.051560418340034414,0.13512037217998396,,,,
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),hgb_seedavg,1775960.0,2152.0,26.0,0.4205390334572491,0.30708512292400636,0.5072393259059805,0.5952602230483272,0.49256023383191266,0.6670293817379267,0.403660033270378,0.3323624397109579,0.47063621671810685,,,,
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),persist_stage_frac,1775960.0,2152.0,26.0,0.0,0.0,0.0,0.21328996282527882,0.09738169382441912,0.30004136717738006,0.09583489459570671,0.0705449706919023,0.12381390586166022,,,,
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),persist_extrap12h,1775960.0,2152.0,26.0,0.0,0.0,0.0,0.0,0.0,0.016737031036564074,0.08152563623856696,0.05204022423781895,0.1118743137140517,,,,
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),calibrated_persistence,1775960.0,2152.0,26.0,0.0,0.0,0.0011617904463057007,0.3434014869888476,0.23682358280902743,0.44110172580399076,0.1254642673612859,0.08539204468704893,0.16954696460283342,,,,
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),calibrated_persistence_below_fs,1775960.0,2152.0,26.0,0.0,0.0,0.0,0.46236059479553904,0.3390759610962132,0.5464355464946697,0.1217985582765721,0.0774140575637437,0.16404322611621908,,,,
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall50,0.4205390334572491,0.30708512292400636,0.5072393259059805
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall20,0.38197026022304836,0.2996063945366442,0.4544442220575084
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,pr_auc,0.3078251386746713,0.2683498396314023,0.35550286402848624
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall50,0.4205390334572491,0.30708512292400636,0.5072393259059805
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall20,0.5952602230483272,0.486656896019747,0.6670293817379267
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,pr_auc,0.32213439703181107,0.27217939459308527,0.38179388528692576
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall50,0.4205390334572491,0.30701115316901906,0.5072393259059805
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall20,0.25185873605947956,0.1995000057134042,0.30161749791194364
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,pr_auc,0.2781957659090921,0.23903092795440942,0.3198554309496518
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall50,0.4205390334572491,0.30708512292400636,0.5072393259059805
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall20,0.13289962825278812,0.09744394575906065,0.18863311782164335
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,pr_auc,0.2818614749938059,0.24037424438513916,0.32513324860437753
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,recall50,0.4205390334572491,0.30708512292400636,0.5072393259059805
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,recall20,0.38197026022304836,0.2996063945366442,0.4544442220575084
+UNSEEN gauges (non-Florence),strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,pr_auc,0.3078251386746713,0.2683498396314023,0.35550286402848624
+UNSEEN gauges (non-Florence),all hours,hgb_seed42,1784173.0,9997.0,26.0,0.0,0.0,0.0,0.0,0.0,0.9569335802730785,0.11890399918270263,0.07459920229271223,0.16829787406180335,,,,
+UNSEEN gauges (non-Florence),all hours,hgb_seed43,1784173.0,9997.0,26.0,0.8877663298989696,0.0,0.9401950147985558,0.9529858957687306,0.9184848359774546,0.9715841889603514,0.3599089199784189,0.25246745166385437,0.47395164236534537,,,,
+UNSEEN gauges (non-Florence),all hours,hgb_seed44,1784173.0,9997.0,26.0,0.8859657897369211,0.8207563793769456,0.9171401394274777,0.9220766229868961,0.8896956963931055,0.9427468905400023,0.4736150252391311,0.3508971352776098,0.5914510218577649,,,,
+UNSEEN gauges (non-Florence),all hours,hgb_seedavg,1784173.0,9997.0,26.0,0.9119735920776233,0.8787411971830986,0.9333343675185328,0.9121736520956287,0.8787411971830986,0.9458275047316288,0.9032444855098694,0.8746698234172975,0.9296363435082873,,,,
+UNSEEN gauges (non-Florence),all hours,persist_stage_frac,1784173.0,9997.0,26.0,0.8713614084225267,0.8285572037765403,0.901445529921134,0.9039711913574072,0.8643857923080277,0.9287553589907976,0.8610499695937956,0.8349275214439595,0.8927810723457394,,,,
+UNSEEN gauges (non-Florence),all hours,persist_extrap12h,1784173.0,9997.0,26.0,0.8775632689806943,0.006580764406493475,0.9139306381943536,0.9192757827348205,0.8847921640233943,0.942829290940479,0.48464828680568145,0.3724681177282565,0.5985232577358048,,,,
+UNSEEN gauges (non-Florence),all hours,calibrated_persistence,1784173.0,9997.0,26.0,0.8838651595478644,0.843475933699148,0.9102511636384873,0.9091727518255477,0.8724631262809053,0.9335768005234089,0.858327631608842,0.7974161437109939,0.8911729118923616,,,,
+UNSEEN gauges (non-Florence),all hours,calibrated_persistence_below_fs,1784173.0,9997.0,26.0,0.8988696608982695,0.8610926143512874,0.9231026776309813,0.9151745523657097,0.8796799344715202,0.9395321859986325,0.7526188748362476,0.6314455824101066,0.8300270571142889,,,,
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall50,0.040612183655096556,0.028278265043676913,0.05749799800848675
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall20,0.008202460738221506,-0.0005342754350997706,0.02301000480414939
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,pr_auc,0.042194515916073705,0.03399084575029442,0.048099281293181646
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall50,0.03441032309692904,0.01661501909332086,0.8964596233196501
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall20,-0.007102130639191739,-0.013828339233185336,0.006723167202643107
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,pr_auc,0.4185961987041879,0.33360164641876106,0.5030177045966284
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall50,0.02810843252975892,0.017656881576604066,0.04002807815588585
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall20,0.0030009002700810417,-0.005053517608482586,0.015978762779876317
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,pr_auc,0.0449168539010274,0.036493555105660686,0.062374581401786026
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall50,0.013103931179353823,0.005764386459511575,0.02254133376168658
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall20,-0.0030009002700809306,-0.009998664621681589,0.009603932062523617
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,pr_auc,0.1506256106736218,0.10136214750990385,0.2339717476559101
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - best (calibrated_persistence_below_fs),,,,,,,,,,,,,recall50,0.013103931179353823,0.005764386459511575,0.02254133376168658
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - best (calibrated_persistence_below_fs),,,,,,,,,,,,,recall20,-0.0030009002700809306,-0.009998664621681589,0.009603932062523617
+UNSEEN gauges (non-Florence),all hours,DIFF hgb_seedavg - best (calibrated_persistence_below_fs),,,,,,,,,,,,,pr_auc,0.1506256106736218,0.10136214750990385,0.2339717476559101
+TEST Florence,onset (is_exceed_now False),hgb_seed42,217026.0,1362.0,177.0,0.0,0.0,0.3673779532814706,0.7349486049926579,0.0,0.8243118857056329,0.19287328773181656,0.11757252849245622,0.33418742801048923,,,,
+TEST Florence,onset (is_exceed_now False),hgb_seed43,217026.0,1362.0,177.0,0.3707782672540382,0.0,0.5169273856817134,0.7701908957415565,0.6900804993069197,0.835209853680003,0.3309694785974917,0.26717647958644974,0.4024984381706121,,,,
+TEST Florence,onset (is_exceed_now False),hgb_seed44,217026.0,1362.0,177.0,0.2834067547723935,0.0,0.49604991523494396,0.7790014684287812,0.6826899994735641,0.835421131528916,0.3186859164066979,0.26175406312177696,0.3837902170480849,,,,
+TEST Florence,onset (is_exceed_now False),hgb_seedavg,217026.0,1362.0,177.0,0.5044052863436124,0.40298899752233774,0.5917868577983896,0.7099853157121879,0.5853667943722001,0.8093904602859827,0.46709099884139454,0.40822323307290453,0.5282982538944687,,,,
+TEST Florence,onset (is_exceed_now False),persist_stage_frac,217026.0,1362.0,177.0,0.005139500734214391,0.0008299294889284779,0.010391693496187827,0.05286343612334802,0.0015466013585324154,0.13817400611199823,0.05888841047861353,0.044630120016120906,0.08049900499647479,,,,
+TEST Florence,onset (is_exceed_now False),persist_extrap12h,217026.0,1362.0,177.0,0.0014684287812041115,0.0,0.05039645875274675,0.4882525697503671,0.4137946195083682,0.5626454772275296,0.16516667491531684,0.12170197221828552,0.21163990660827414,,,,
+TEST Florence,onset (is_exceed_now False),calibrated_persistence,217026.0,1362.0,177.0,0.005139500734214391,0.0008519661656371346,0.07135394527983718,0.1828193832599119,0.12643384958351028,0.25066277430253187,0.10989039912447088,0.08113939866685181,0.1470412294303613,,,,
+TEST Florence,onset (is_exceed_now False),calibrated_persistence_below_fs,217026.0,1362.0,177.0,0.004405286343612335,0.0,0.11459667581958738,0.3509544787077827,0.2842791013984982,0.4178879674106919,0.16302909226415935,0.12199643543750768,0.2081329339449966,,,,
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall50,0.499265785609398,0.3998306630085288,0.5844026620146024
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall20,0.6571218795888399,0.5050985518905873,0.7750716025917364
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,pr_auc,0.408202588362781,0.34940236833976124,0.4687408981638588
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall50,0.5029368575624082,0.375238483694653,0.5885697839559305
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall20,0.2217327459618208,0.10374995488787873,0.32036596196712175
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,pr_auc,0.3019243239260777,0.24527489463795518,0.36173792329920557
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall50,0.499265785609398,0.3858329149958865,0.5768622409225496
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall20,0.527165932452276,0.3925748405784121,0.6257997107701831
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,pr_auc,0.35720059971692364,0.2999021251530694,0.4215714690324746
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall50,0.5,0.36337928621451304,0.5767070717560541
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall20,0.35903083700440525,0.23569546655092602,0.45834785621459173
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,pr_auc,0.3040619065772352,0.2522370071116933,0.3613721929293982
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,recall50,0.499265785609398,0.3998306630085288,0.5844026620146024
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,recall20,0.6571218795888399,0.5050985518905873,0.7750716025917364
+TEST Florence,onset (is_exceed_now False),DIFF hgb_seedavg - best (persist_stage_frac),,,,,,,,,,,,,pr_auc,0.408202588362781,0.34940236833976124,0.4687408981638588
+TEST Florence,strict onset (stage at cutoff < flood stage),hgb_seed42,216905.0,1350.0,177.0,0.0,0.0,0.4025934772009659,0.7385185185185185,0.0,0.8242074743843689,0.19460693762766232,0.11583218150522746,0.34463396113128264,,,,
+TEST Florence,strict onset (stage at cutoff < flood stage),hgb_seed43,216905.0,1350.0,177.0,0.39185185185185184,0.0,0.5484792821829505,0.7696296296296297,0.695511283918923,0.8363499406328212,0.33677096594283806,0.27359511978453677,0.41389548618754013,,,,
+TEST Florence,strict onset (stage at cutoff < flood stage),hgb_seed44,216905.0,1350.0,177.0,0.36,0.0,0.5279510625326196,0.7785185185185185,0.7041882543880058,0.8421100887916613,0.32404861435204885,0.26895229203726356,0.398828659117332,,,,
+TEST Florence,strict onset (stage at cutoff < flood stage),hgb_seedavg,216905.0,1350.0,177.0,0.5155555555555555,0.41448412002105633,0.5966862509930353,0.7133333333333334,0.5815074220730463,0.8047253512596899,0.48582470937264743,0.41838864612881665,0.5498570568771283,,,,
+TEST Florence,strict onset (stage at cutoff < flood stage),persist_stage_frac,216905.0,1350.0,177.0,0.0,0.0,1.6633399866936585e-05,0.06666666666666667,0.0,0.12418352691395029,0.05754884991674723,0.045027948617419135,0.07912082749458674,,,,
+TEST Florence,strict onset (stage at cutoff < flood stage),persist_extrap12h,216905.0,1350.0,177.0,0.0014814814814814814,0.0,0.05796143644932929,0.48518518518518516,0.4257902196628925,0.5552455787482271,0.1648788964144177,0.13289487409387402,0.20673438761940183,,,,
+TEST Florence,strict onset (stage at cutoff < flood stage),calibrated_persistence,216905.0,1350.0,177.0,0.0007407407407407407,0.0,0.15615657509781167,0.1814814814814815,0.126763699937236,0.2533572814872825,0.11412655782801928,0.0884537784614865,0.1593673330630675,,,,
+TEST Florence,strict onset (stage at cutoff < flood stage),calibrated_persistence_below_fs,216905.0,1350.0,177.0,0.0014814814814814814,0.0,0.1248108122531754,0.3466666666666667,0.29147163574756646,0.4217370205454748,0.1620171540501662,0.13169710449134805,0.20670182374188173,,,,
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall50,0.5155555555555555,0.41448412002105633,0.5966862509930353
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall20,0.6466666666666667,0.5106279722918737,0.7601117401995764
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,pr_auc,0.4282758594559002,0.36723167024282893,0.4858245298143279
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall50,0.514074074074074,0.40092188914893445,0.5867853517855226
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall20,0.2281481481481482,0.0970119744561047,0.3241527214132251
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,pr_auc,0.32094581295822977,0.27055104644477107,0.372183960561009
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall50,0.5148148148148148,0.35221895980356804,0.5611996656845156
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall20,0.5318518518518519,0.3915464657849557,0.6184611120741645
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,pr_auc,0.37169815154462815,0.3162641511151052,0.42381792468362556
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall50,0.514074074074074,0.3637808418174945,0.5853033165082215
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall20,0.3666666666666667,0.2339401213446048,0.4506107901094863
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,pr_auc,0.32380755532248123,0.26681836029298706,0.3729062587406275
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - best (persist_extrap12h),,,,,,,,,,,,,recall50,0.514074074074074,0.40092188914893445,0.5867853517855226
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - best (persist_extrap12h),,,,,,,,,,,,,recall20,0.2281481481481482,0.0970119744561047,0.3241527214132251
+TEST Florence,strict onset (stage at cutoff < flood stage),DIFF hgb_seedavg - best (persist_extrap12h),,,,,,,,,,,,,pr_auc,0.32094581295822977,0.27055104644477107,0.372183960561009
+TEST Florence,all hours,hgb_seed42,224373.0,8599.0,177.0,0.9781369926735667,0.9527659960997931,0.9885219460268936,0.9953482963135248,0.9897165724893429,0.9982380587506805,0.7311471887741824,0.5560333464358994,0.8969194132305094,,,,
+TEST Florence,all hours,hgb_seed43,224373.0,8599.0,177.0,0.9776718223049192,0.9567509209399164,0.9905417079126936,0.9933713222467728,0.9847851843810895,0.9986742546274595,0.906635506875771,0.8423840864977475,0.9470480200088457,,,,
+TEST Florence,all hours,hgb_seed44,224373.0,8599.0,177.0,0.9688335853006164,0.9310068029134049,0.9866312337145854,0.9831375741365275,0.9564584506978219,0.9968326790918275,0.887681008072902,0.8241108569954716,0.9350154250302388,,,,
+TEST Florence,all hours,hgb_seedavg,224373.0,8599.0,177.0,0.9763926037911385,0.9505366178098558,0.988611946630178,0.9956971740900105,0.9886189161531403,0.9989165906299623,0.9646410365520603,0.9396447050505884,0.9778350546692842,,,,
+TEST Florence,all hours,persist_stage_frac,224373.0,8599.0,177.0,0.896848470752413,0.834940589612033,0.9310239479981437,0.950808233515525,0.899174891345092,0.9736151555669528,0.8991707553936991,0.8510168074554035,0.9312714751432917,,,,
+TEST Florence,all hours,persist_extrap12h,224373.0,8599.0,177.0,0.9232468891731597,0.8763012184387968,0.9487110644064853,0.9613908594022561,0.9246804178021822,0.9802382434065798,0.7736429165234722,0.6911895598311799,0.8247533096722349,,,,
+TEST Florence,all hours,calibrated_persistence,224373.0,8599.0,177.0,0.9056867077567159,0.8498875570903214,0.9365649717389443,0.9534829631352483,0.9031799906119458,0.9749337061849063,0.9057493977149229,0.8577915033096112,0.9348228955344834,,,,
+TEST Florence,all hours,calibrated_persistence_below_fs,224373.0,8599.0,177.0,0.9159204558669612,0.8694466641011508,0.9431911950795561,0.9582509594138854,0.9119559031612078,0.978439332436887,0.8888277839697979,0.8426246273414157,0.9192708464116801,,,,
+TEST Florence,all hours,DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall50,0.07954413303872543,0.053680822806537985,0.12099201604561831
+TEST Florence,all hours,DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,recall20,0.04488894057448545,0.024033720047303163,0.08750033601129274
+TEST Florence,all hours,DIFF hgb_seedavg - persist_stage_frac,,,,,,,,,,,,,pr_auc,0.06547028115836129,0.047180330473063324,0.09606276155206603
+TEST Florence,all hours,DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall50,0.05314571461797879,0.035798813778960104,0.08034117665625315
+TEST Florence,all hours,DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,recall20,0.03430631468775436,0.017756109491932733,0.06432924168069
+TEST Florence,all hours,DIFF hgb_seedavg - persist_extrap12h,,,,,,,,,,,,,pr_auc,0.19099812002858818,0.15166871120042355,0.24703332726767321
+TEST Florence,all hours,DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall50,0.07070589603442257,0.04826101945119974,0.1055837066855631
+TEST Florence,all hours,DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,recall20,0.04221421095476219,0.022962648512966536,0.08349523674443897
+TEST Florence,all hours,DIFF hgb_seedavg - calibrated_persistence,,,,,,,,,,,,,pr_auc,0.05889163883713744,0.04306525391145412,0.08326038891468973
+TEST Florence,all hours,DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall50,0.06047214792417721,0.04108541102142823,0.08696462200699491
+TEST Florence,all hours,DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,recall20,0.03744621467612508,0.01972678211372212,0.07471932419517699
+TEST Florence,all hours,DIFF hgb_seedavg - calibrated_persistence_below_fs,,,,,,,,,,,,,pr_auc,0.07581325258226246,0.05419979082074085,0.09789247903713591
+TEST Florence,all hours,DIFF hgb_seedavg - best (persist_extrap12h),,,,,,,,,,,,,recall50,0.05314571461797879,0.035798813778960104,0.08034117665625315
+TEST Florence,all hours,DIFF hgb_seedavg - best (persist_extrap12h),,,,,,,,,,,,,recall20,0.03430631468775436,0.017756109491932733,0.06432924168069
+TEST Florence,all hours,DIFF hgb_seedavg - best (persist_extrap12h),,,,,,,,,,,,,pr_auc,0.19099812002858818,0.15166871120042355,0.24703332726767321

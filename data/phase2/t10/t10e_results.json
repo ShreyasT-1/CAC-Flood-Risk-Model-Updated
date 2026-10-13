@@ -1,0 +1,50 @@
+{
+ "q10_cfs": {
+  "level": "q10_cfs",
+  "listed_testable": 70,
+  "listed_hit": 55,
+  "listed_hit_share": 0.786,
+  "unlisted_n": 46,
+  "unlisted_hit": 30,
+  "unlisted_hit_share": 0.652,
+  "fisher_p_one_sided": 0.0851,
+  "pass_E1": false,
+  "E2_testable_units": 8,
+  "E2_hit_share": 1.0,
+  "E2_timing_hit_share": 1.0,
+  "E2_units_total": 8,
+  "pass_E2": true
+ },
+ "q2_cfs": {
+  "level": "q2_cfs",
+  "listed_testable": 70,
+  "listed_hit": 65,
+  "listed_hit_share": 0.929,
+  "unlisted_n": 46,
+  "unlisted_hit": 41,
+  "unlisted_hit_share": 0.891,
+  "fisher_p_one_sided": 0.3533,
+  "pass_E1": false,
+  "E2_testable_units": 8,
+  "E2_hit_share": 1.0,
+  "E2_timing_hit_share": 1.0,
+  "E2_units_total": 8,
+  "pass_E2": true
+ },
+ "q50_cfs": {
+  "level": "q50_cfs",
+  "listed_testable": 70,
+  "listed_hit": 27,
+  "listed_hit_share": 0.386,
+  "unlisted_n": 46,
+  "unlisted_hit": 10,
+  "unlisted_hit_share": 0.217,
+  "fisher_p_one_sided": 0.0433,
+  "pass_E1": false,
+  "E2_testable_units": 8,
+  "E2_hit_share": 0.875,
+  "E2_timing_hit_share": 0.875,
+  "E2_units_total": 8,
+  "pass_E2": true
+ }
+}

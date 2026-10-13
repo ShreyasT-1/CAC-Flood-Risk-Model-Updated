@@ -1,0 +1,18 @@
+{
+ "lsr_rows": 38674,
+ "nc_dedup": 23605,
+ "candidates": 709,
+ "structure_within_1km_on_named_road": 213,
+ "within_500m": 120,
+ "assessed": 113,
+ "suggested_accept": 64,
+ "unique_crossings": 58,
+ "by_year": {
+  "2017": 6,
+  "2018": 33,
+  "2019": 8,
+  "2020": 10,
+  "2021": 3,
+  "2022": 4
+ }
+}

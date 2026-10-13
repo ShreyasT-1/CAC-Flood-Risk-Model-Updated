@@ -1,0 +1,15 @@
+segments 0 / 2487
+segments 200 / 2487
+segments 400 / 2487
+segments 600 / 2487
+segments 800 / 2487
+segments 1000 / 2487
+segments 1200 / 2487
+segments 1400 / 2487
+segments 1600 / 2487
+segments 1800 / 2487
+segments 2000 / 2487
+segments 2200 / 2487
+segments 2400 / 2487
+consequence: assessed 2742 of 2920 | segments in baseline trees 2161 of 2487
+wrote ['crossings_export.csv', 'crossings_export.geojson', 'consequence_ranking.csv', 'address_report_sample.json', 'florence_replay_hourly.csv', 'blocks_export.csv', 'README.md']

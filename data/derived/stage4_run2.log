@@ -1,0 +1,120 @@
+201412 cached
+201501 cached
+201502 cached
+201503 cached
+201504 cached
+201505 cached
+201506 cached
+201507 cached
+201508 cached
+201509 cached
+201510 cached
+201511 cached
+201512 cached
+201601 cached
+201602 cached
+201603 cached
+201604 cached
+201605 cached
+201606 cached
+201607 cached
+201608 cached
+201609 cached
+201610 cached
+201611 cached
+201612 cached
+201701 cached
+201702 cached
+201703 cached
+201704 cached
+201705 cached
+201706 cached
+201707 cached
+201708 cached
+201709 cached
+201710 cached
+201711 cached
+201712 cached
+201801 cached
+201802 cached
+201803 cached
+201804 cached
+201805 cached
+201806 cached
+201807 cached
+201808 cached
+201809 cached
+201810 cached
+201811 cached
+201812 cached
+201901 FAILED ReadError("file could not be opened successfully:\n- method gz: ReadError('bad checksum')\n- method bz2: ReadError('not a bzip2 file')\n- method xz: ReadError('not an lzma file')\n- method zst: ReadEr
+201902 FAILED ReadError("file could not be opened successfully:\n- method gz: ReadError('bad checksum')\n- method bz2: ReadError('not a bzip2 file')\n- method xz: ReadError('not an lzma file')\n- method zst: ReadEr
+201903 FAILED ReadError("file could not be opened successfully:\n- method gz: ReadError('bad checksum')\n- method bz2: ReadError('not a bzip2 file')\n- method xz: ReadError('not an lzma file')\n- method zst: ReadEr
+201904 cached
+201905 cached
+201906 cached
+201907 cached
+201908 cached
+201909 cached
+201910 cached
+201911 720 hours
+201912 744 hours
+202001 744 hours
+202002 696 hours
+202003 744 hours
+202004 720 hours
+202005 744 hours
+202006 720 hours
+202007 660 hours
+202008 0 hours
+202009 0 hours
+202010 0 hours
+202011 0 hours
+202012 0 hours
+202101 0 hours
+202102 0 hours
+202103 0 hours
+202104 0 hours
+202105 0 hours
+202106 0 hours
+202107 0 hours
+202108 0 hours
+202109 0 hours
+202110 0 hours
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 203, in _process_chunk
+    return [fn(*args) for args in chunk]
+            ~~^^^^^^^
+  File "C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py", line 98, in month
+    try:
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py", line 1042, in unlink
+    os.unlink(self)
+    ~~~~~~~~~^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\nisha\\OneDrive\\Desktop\\Projects\\lifeline\\data\\raw\\stage4\\stage4.202111.tar'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py", line 105, in <module>
+    break
+    
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 617, in _chain_from_iterable_of_lists
+    for element in iterable:
+                   ^^^^^^^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 645, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 312, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 454, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 396, in __get_result
+    raise self._exception
+PermissionError: [Errno 13] The process cannot access the file because it is being used by another process: 'C:\\Users\\nisha\\OneDrive\\Desktop\\Projects\\lifeline\\data\\raw\\stage4\\stage4.202111.tar'

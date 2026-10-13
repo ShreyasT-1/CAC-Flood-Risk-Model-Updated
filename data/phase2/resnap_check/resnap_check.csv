@@ -1,0 +1,52 @@
+group,geoid20,county,pop20,old_snap_m,new_snap_m,new_node_road_classes,new_node_road_names,new_only_ramp_or_service,new_has_ramp,new_line_crosses_water,new_water_type,old_node_road_classes,old_node_road_names,old_line_crosses_water,old_was_unreachable,flag_wrong
+sample_30_now_reachable,371290121061009,New Hanover,424,30,587,residential,San Jose Drive,False,False,False,,service,,False,True,True
+sample_30_now_reachable,371290116082030,New Hanover,60,243,411,residential,,False,False,False,,service,,False,True,False
+sample_30_now_reachable,371419201052008,Pender,14,77,436,residential,Heron Cove Road,False,False,False,,residential,Seahorse Lane,False,True,False
+sample_30_now_reachable,371290117031010,New Hanover,16,405,1167,service,,True,False,False,,service,,False,True,True
+sample_30_now_reachable,370190205111019,Brunswick,12,108,357,residential,Kure Drive Southwest,False,False,False,,residential,Yaupon Court Southwest,False,True,False
+sample_30_now_reachable,371290115031014,New Hanover,30,133,1050,residential,Sondey Road,False,False,False,,service,,False,True,True
+sample_30_now_reachable,371290117031001,New Hanover,45,440,1146,service,,True,False,False,,service,,False,True,True
+sample_30_now_reachable,371290116083001,New Hanover,163,594,875,service,,True,False,False,,service,,False,True,True
+sample_30_now_reachable,371290117031009,New Hanover,44,708,880,service,,True,False,False,,service,,False,True,True
+sample_30_now_reachable,371290123001010,New Hanover,39,373,1300,residential,Edgewater Club Road,False,False,False,,service,,False,True,True
+sample_30_now_reachable,370190205183034,Brunswick,66,7,104,residential,Arnette Drive,False,False,False,,service,,False,True,False
+sample_30_now_reachable,371290115031012,New Hanover,88,25,1111,residential,,False,False,False,,residential,Indian Corn Trail,False,True,True
+sample_30_now_reachable,371290117031003,New Hanover,10,110,513,service,,True,False,False,,service,,False,True,True
+sample_30_now_reachable,371290116061015,New Hanover,209,66,122,service,,True,False,False,,residential,Vinewood Court,False,True,True
+sample_30_now_reachable,371290115031013,New Hanover,17,151,919,residential,Sondey Road,False,False,False,,residential,"Bear Drive, Indian Corn Trail",False,True,True
+sample_30_now_reachable,371290117032003,New Hanover,73,216,549,residential,Fisherman Creek Drive,False,False,False,,service,,False,True,True
+sample_30_now_reachable,371290117031012,New Hanover,76,73,132,service,,True,False,False,,service,,False,True,True
+sample_30_now_reachable,371290118002005,New Hanover,142,182,239,service,,True,False,False,,service,,False,True,True
+sample_30_now_reachable,371290115031009,New Hanover,31,119,367,residential,Bavarian Drive,False,False,False,,service,,False,True,False
+sample_30_now_reachable,370190206023089,Brunswick,5,374,378,residential,,False,False,False,,residential,,False,True,False
+sample_30_now_reachable,371290117031002,New Hanover,28,134,743,residential,Sunnybranch Drive,False,False,False,,service,,False,True,True
+sample_30_now_reachable,371419202042051,Pender,41,1151,1330,"tertiary, residential","NC 50, Williams Road",False,False,False,,service,,False,True,True
+sample_30_now_reachable,370190201011019,Brunswick,106,224,324,residential,"Ballard Circle Northeast, Blue Banks Loop Road",False,False,False,,service,,False,True,False
+sample_30_now_reachable,371290117032026,New Hanover,39,201,355,"residential, service",Beech Street,False,False,False,,service,,False,True,False
+sample_30_now_reachable,371290117031017,New Hanover,26,460,465,residential,Drysdale Drive,False,False,False,,service,,False,True,False
+sample_30_now_reachable,370190205131006,Brunswick,6,200,207,residential,Bridger Road Extension,False,False,False,,service,,False,True,False
+sample_30_now_reachable,371290117032030,New Hanover,39,374,819,residential,Providence Point Road,False,False,False,,service,,False,True,True
+sample_30_now_reachable,370190206021033,Brunswick,8,203,249,"tertiary, residential","Merk's Place Northeast, Northwest Road",False,False,False,,service,,False,True,False
+sample_30_now_reachable,371290117031019,New Hanover,108,518,593,service,,True,False,False,,service,,False,True,True
+sample_30_now_reachable,371290117031005,New Hanover,34,576,1035,service,,True,False,False,,service,,False,True,True
+dropped_21,370190203071016,Brunswick,42,1390,5131,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,Stede Bonnet Wynd,False,True,True
+dropped_21,370190203071024,Brunswick,31,631,4427,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,,False,True,True
+dropped_21,370190203071027,Brunswick,14,1077,2989,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,Stede Bonnet Wynd,False,True,True
+dropped_21,370190203071032,Brunswick,7,1394,6169,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,,False,True,True
+dropped_21,370190203071036,Brunswick,1,880,5477,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,,False,True,True
+dropped_21,370190203071039,Brunswick,61,369,3861,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,,False,True,True
+dropped_21,370190203071040,Brunswick,2,447,3532,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,Stede Bonnet Wynd,False,True,True
+dropped_21,370190203071041,Brunswick,5,341,4436,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,,False,True,True
+dropped_21,370190203071042,Brunswick,4,151,4099,"tertiary, residential",Caswell Beach Road,False,False,False,,service,,False,True,True
+dropped_21,370190203071045,Brunswick,1,660,3258,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,,False,True,True
+dropped_21,370190203071046,Brunswick,31,182,5023,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,,False,True,True
+dropped_21,370190203071051,Brunswick,2,727,5658,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,,False,True,True
+dropped_21,370190203071052,Brunswick,3,979,5886,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,,False,True,True
+dropped_21,370190203071054,Brunswick,1,1246,5779,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,,False,True,True
+dropped_21,370190203071065,Brunswick,3,1123,2999,"tertiary, residential",Caswell Beach Road,False,False,True,river,service,Stede Bonnet Wynd,False,True,True
+dropped_21,371290115041003,New Hanover,13,1285,1756,residential,Glod Drive,False,False,False,,service,,False,True,True
+dropped_21,371290117032016,New Hanover,226,522,1629,residential,Summer Rest Road,False,False,False,,service,,False,True,True
+dropped_21,371290117032022,New Hanover,38,648,1698,service,,True,False,False,,service,,False,True,True
+dropped_21,371290123001008,New Hanover,62,1292,2256,"residential, service",Bald Eagle Lane,False,False,False,,residential,Beach Road North,False,True,True
+dropped_21,371290123001011,New Hanover,19,739,2129,"tertiary, residential","Bald Eagle Lane, Futch Creek Road",False,False,False,,residential,Beach Road North,False,True,True
+dropped_21,371419202041034,Pender,12,573,2175,service,,True,False,False,,service,,False,True,True

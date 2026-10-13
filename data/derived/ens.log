@@ -1,0 +1,15 @@
+VAL (held-out events, trained gauges) onset only
+VAL (held-out events, trained gauges) strict onset (stage at cutoff < flood stage)
+VAL (held-out events, trained gauges) all hours
+UNSEEN gauges (non-Florence) onset only
+UNSEEN gauges (non-Florence) strict onset (stage at cutoff < flood stage)
+UNSEEN gauges (non-Florence) all hours
+TEST (Florence) onset only
+TEST (Florence) strict onset (stage at cutoff < flood stage)
+TEST (Florence) all hours
+PILOT non-Florence (VAL+UNSEEN) onset only
+PILOT non-Florence (VAL+UNSEEN) strict onset (stage at cutoff < flood stage)
+PILOT non-Florence (VAL+UNSEEN) all hours
+PILOT Florence (TEST) onset only
+PILOT Florence (TEST) strict onset (stage at cutoff < flood stage)
+PILOT Florence (TEST) all hours

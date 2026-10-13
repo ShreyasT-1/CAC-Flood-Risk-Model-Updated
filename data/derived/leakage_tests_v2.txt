@@ -1,0 +1,11 @@
+LEAKAGE TESTS v2 (new feature groups + structure)
+[PASS] no event_id appears in both test and trainval/unseen
+[PASS] no event_id spans two cv folds
+[PASS] 34 unseen gauges, none has a trainval row
+[PASS] no trainval/unseen row inside test+buffer window
+[PASS] all old columns identical in v2 (every 7th gauge), mismatching gauges=0
+[PASS] own stage: features recomputed from raw data truncated at t match the table (60 gauges x 6 hours, 3240 values), mismatches=0
+[PASS] upstream gauges: features recomputed from raw data truncated at t match the table (60 gauges x 6 hours, 18000 values), mismatches=0
+[PASS] catchment rain: features recomputed from raw data truncated at t match the table (60 gauges x 6 hours, 2520 values), mismatches=0
+[PASS] rain accumulations: window = hourly values with END time in (t-w, t], none after t (1260 values), mismatches=0
+[PASS] basin-mean rain re-derived independently from raw GRIB (11 gauge-hours), mismatches=0

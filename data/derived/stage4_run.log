@@ -1,0 +1,214 @@
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201412 744 hours
+201501 744 hours
+201502 672 hours
+201503 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201504 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201505 744 hours
+201506 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201507 744 hours
+201508 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201509 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201510 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201511 720 hours
+201512 744 hours
+201601 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201602 696 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201603 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201604 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201605 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201606 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201607 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201608 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201609 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201610 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201611 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201612 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201701 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201702 672 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201703 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201704 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201705 744 hours
+201706 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201707 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201708 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201709 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201710 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201711 720 hours
+201712 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201801 744 hours
+201802 672 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201803 744 hours
+201804 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201805 744 hours
+201806 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201807 744 hours
+201808 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201809 720 hours
+201810 744 hours
+201811 720 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+201812 744 hours
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py:88: RuntimeWarning: invalid value encountered in divide
+  r_ = np.where(den / tot >= 0.9, num / np.maximum(den, 1e-9), np.nan)
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 203, in _process_chunk
+    return [fn(*args) for args in chunk]
+            ~~^^^^^^^
+  File "C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py", line 75, in month
+    with tarfile.open(fileobj=outer.extractfile(m)) as inner:
+         ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\tarfile.py", line 1935, in open
+    raise ReadError(f"file could not be opened successfully:\n{error_msgs_summary}")
+tarfile.ReadError: file could not be opened successfully:
+- method gz: ReadError('bad checksum')
+- method bz2: ReadError('not a bzip2 file')
+- method xz: ReadError('not an lzma file')
+- method zst: ReadError('not a zstd file')
+- method tar: ReadError('invalid header')
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nisha\OneDrive\Desktop\Projects\lifeline\src\11_stage4_catch.py", line 98, in <module>
+    for ym, s in ex.map(month, MONTHS):
+                 ~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 617, in _chain_from_iterable_of_lists
+    for element in iterable:
+                   ^^^^^^^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 645, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 312, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 447, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nisha\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 396, in __get_result
+    raise self._exception
+tarfile.ReadError: file could not be opened successfully:
+- method gz: ReadError('bad checksum')
+- method bz2: ReadError('not a bzip2 file')
+- method xz: ReadError('not an lzma file')
+- method zst: ReadError('not a zstd file')
+- method tar: ReadError('invalid header')

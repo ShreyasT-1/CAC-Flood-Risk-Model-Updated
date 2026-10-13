@@ -1,0 +1,21 @@
+crossing_set,fema_zone_class,n_assessed,n_above_rl10,share_above_rl10,n_above_rl2,share_above_rl2
+seed (250 hazard-ready structure-seeded),SFHA: A/AE/AH/AO,219,213,0.973,219.0,1.0
+seed (250 hazard-ready structure-seeded),SFHA: V/VE (coastal high hazard),2,1,0.5,2.0,1.0
+seed (250 hazard-ready structure-seeded),X minimal,27,25,0.926,27.0,1.0
+seed (250 hazard-ready structure-seeded),X shaded (0.2% annual chance),2,2,1.0,2.0,1.0
+seed (250 hazard-ready structure-seeded),ALL,250,241,0.964,250.0,1.0
+seed (250 hazard-ready structure-seeded),[SFHA yes/no x above RL10] among above: share in SFHA,241,214,0.888,,
+seed (250 hazard-ready structure-seeded),[..] among NOT above: share in SFHA,9,7,0.778,,
+seed_reliable,SFHA: A/AE/AH/AO,121,118,0.975,121.0,1.0
+seed_reliable,X minimal,25,23,0.92,25.0,1.0
+seed_reliable,X shaded (0.2% annual chance),1,1,1.0,1.0,1.0
+seed_reliable,ALL,147,142,0.966,147.0,1.0
+seed_reliable,[SFHA yes/no x above RL10] among above: share in SFHA,142,118,0.831,,
+seed_reliable,[..] among NOT above: share in SFHA,5,3,0.6,,
+seed_plus_osm_secondary (sensitivity),SFHA: A/AE/AH/AO,628,595,0.947,627.0,0.998
+seed_plus_osm_secondary (sensitivity),SFHA: V/VE (coastal high hazard),5,3,0.6,4.0,0.8
+seed_plus_osm_secondary (sensitivity),X minimal,901,807,0.896,896.0,0.994
+seed_plus_osm_secondary (sensitivity),X shaded (0.2% annual chance),49,46,0.939,49.0,1.0
+seed_plus_osm_secondary (sensitivity),ALL,1583,1451,0.917,1576.0,0.996
+seed_plus_osm_secondary (sensitivity),[SFHA yes/no x above RL10] among above: share in SFHA,1451,598,0.412,,
+seed_plus_osm_secondary (sensitivity),[..] among NOT above: share in SFHA,132,35,0.265,,

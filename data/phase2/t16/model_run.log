@@ -1,0 +1,136 @@
+pooled LOSO AUC (mean of 8 event AUCs): {'base': 0.69, 'logistic_without_hand': 0.757, 'hgb_without_hand': 0.798, 'logistic_with_hand': 0.757, 'hgb_with_hand': 0.798}
+max |with HAND - without HAND| prediction difference: {'logistic': 2.525757381022231e-14, 'hgb': 0.0}
+{
+ "pooled_auc": {
+  "base": 0.69,
+  "logistic_without_hand": 0.757,
+  "hgb_without_hand": 0.798,
+  "logistic_with_hand": 0.757,
+  "hgb_with_hand": 0.798
+ },
+ "pooled_ci95": {
+  "base": [
+   0.624,
+   0.744
+  ],
+  "logistic_without_hand": [
+   0.697,
+   0.802
+  ],
+  "hgb_without_hand": [
+   0.759,
+   0.82
+  ]
+ },
+ "diff_vs_baseline": {
+  "logistic_without_hand": {
+   "diff": 0.066,
+   "ci95": [
+    0.03,
+    0.102
+   ],
+   "excludes_zero": true
+  },
+  "hgb_without_hand": {
+   "diff": 0.108,
+   "ci95": [
+    0.045,
+    0.171
+   ],
+   "excludes_zero": true
+  }
+ },
+ "PRIMARY_verdict": "PASS",
+ "within_county_auc": {
+  "loso_non_helene|base": {
+   "auc": 0.626,
+   "ci95": [
+    0.578,
+    0.671
+   ],
+   "cells": 38
+  },
+  "loso_non_helene|logistic_without_hand": {
+   "auc": 0.733,
+   "ci95": [
+    0.689,
+    0.777
+   ],
+   "cells": 38
+  },
+  "loso_non_helene|hgb_without_hand": {
+   "auc": 0.708,
+   "ci95": [
+    0.66,
+    0.756
+   ],
+   "cells": 38
+  },
+  "helene|base": {
+   "auc": 0.651,
+   "ci95": [
+    0.57,
+    0.704
+   ],
+   "cells": 17
+  },
+  "helene|logistic_without_hand": {
+   "auc": 0.727,
+   "ci95": [
+    0.651,
+    0.804
+   ],
+   "cells": 17
+  },
+  "helene|hgb_without_hand": {
+   "auc": 0.711,
+   "ci95": [
+    0.61,
+    0.794
+   ],
+   "cells": 17
+  }
+ },
+ "helene": {
+  "base": {
+   "auc": 0.638
+  },
+  "logistic_without_hand": {
+   "auc": 0.726
+  },
+  "hgb_without_hand": {
+   "auc": 0.719
+  },
+  "logistic_with_hand": {
+   "auc": 0.726
+  },
+  "hgb_with_hand": {
+   "auc": 0.719
+  }
+ }
+}
+event_id  n_pos  n_neg  auc_base        ci_base  auc_logistic_without_hand ci_logistic_without_hand  auc_hgb_without_hand ci_hgb_without_hand
+      E1     48   1236     0.806 [0.671, 0.864]                      0.765            [0.572, 0.81]                 0.800      [0.662, 0.839]
+      E2    140   7505     0.500   [0.424, 0.6]                      0.686           [0.589, 0.776]                 0.675       [0.616, 0.74]
+      E3    171   7234     0.652 [0.558, 0.732]                      0.780           [0.724, 0.832]                 0.684       [0.64, 0.725]
+      E4     26   1901     0.819 [0.637, 0.915]                      0.842           [0.702, 0.926]                 0.869      [0.704, 0.952]
+      E6     45   2485     0.801 [0.725, 0.877]                      0.786            [0.69, 0.868]                 0.777      [0.695, 0.869]
+      E7     39   1716     0.671 [0.467, 0.826]                      0.739           [0.535, 0.878]                 0.794      [0.734, 0.848]
+      E8     25   1441     0.516  [0.14, 0.828]                      0.669           [0.384, 0.962]                 0.941      [0.857, 0.971]
+      E9     23   1302     0.758  [0.65, 0.908]                      0.785            [0.707, 0.87]                 0.845      [0.764, 0.899]
+      E5    196   8588     0.638 [0.554, 0.713]                      0.726           [0.657, 0.791]                 0.719      [0.647, 0.784]
+   model            group   mean    std
+     hgb     stream_order 0.1049 0.0445
+     hgb          log_r10 0.0951 0.0283
+     hgb structure_length 0.0906 0.0467
+     hgb           log_r2 0.0654 0.0366
+     hgb   hours_above_q2 0.0404 0.0263
+     hgb   structure_type 0.0101 0.0095
+     hgb       tidal_flag 0.0026 0.0025
+logistic           log_r2 0.1642 0.1513
+logistic     stream_order 0.1230 0.0374
+logistic structure_length 0.0647 0.0238
+logistic   hours_above_q2 0.0274 0.0291
+logistic   structure_type 0.0251 0.0135
+logistic          log_r10 0.0094 0.0229
+logistic       tidal_flag 0.0003 0.0004

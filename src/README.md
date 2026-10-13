@@ -20,3 +20,19 @@ Order for a full rerun: 01, 02, `03 fetch` (hours; USGS quota 1000 req/h), `03 h
 
 No model is trained or tuned anywhere.
 The NWM retrospective v3.0 ends 2023-02-01, so the whole study window is 2015-01-01 .. 2023-01-31 23:00 UTC.
+
+
+## v2: new information (observed stage, upstream gauges, observed rain) - nowcast, not forecast
+Run after the steps above. Needs `eccodes` (`pip install eccodes`). Sources and URLs: `reports/new_features_sources.md`.
+
+| Script | What it does | Main outputs |
+|---|---|---|
+| `10_nldi.py` | NLDI basin polygon + upstream (UT) NWIS sites per gauge; nearest 1-3 upstream usable gauges | `data/raw/nldi_basin/`, `nldi_ut/`, `data/derived/upstream_gauges.csv` |
+| `11_stage4_catch.py` | NCAR GDEX d507005 Stage IV hourly rain (monthly tars via OSDF, GRIB1 -> 2020-07, GRIB2 from 2020-08) -> area-mean over each basin (fractional-area weights) | `data/derived/stage4_catch/YYYYMM.npz`, `stage4_weights.npz` |
+| `12_build_v2.py` | adds own-stage, upstream-gauge and catchment-rain columns to every existing column | `data/derived/ml_full_table_v2/` |
+| `14_leakage_v2.py` | truncation recompute for each new group, rain window/end-time checks, raw-GRIB re-derivation | `data/derived/leakage_tests_v2.txt` |
+| `13_sample_model_v2.py` | 6 feature-set ablations x 3 seeds (HGB, fixed settings) + 4 baselines, cluster bootstrap, lead time | `sample_model_v2.csv`, `_lead.csv`, `_boots.pkl` |
+| `16_ensemble_v2.py` | seed-averaged scores with the same bootstrap draws | `sample_model_v2_ens.csv` |
+| `15_report_v2.py` | tables + paired-bootstrap verdict | `the appendix of reports/sample_model_v2.md`, `sample_model_v2_verdict.csv` |
+
+Timing convention (stricter than the v1 table): row time t = start of hour; new features use only stage/discharge bins that ended by t (bin t-1 and earlier) and Stage IV accumulations that END at or before t. Nothing is filled; missing is NaN.
