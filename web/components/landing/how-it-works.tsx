@@ -36,6 +36,26 @@ export function HowItWorks() {
             </li>
           ))}
         </ol>
+
+        <div className="reveal mx-auto mt-16 max-w-3xl rounded-3xl border border-white/15 bg-white/5 p-6 sm:p-8">
+          <h3 className="font-display text-2xl font-bold sm:text-3xl">What this does not model</h3>
+          <p className="mt-2 font-ui text-sm leading-relaxed text-white/75">
+            The scenarios use river flow only. Anything below can close a road without showing up here, so a crossing that is not flagged is
+            &ldquo;not flagged in this scenario&rdquo;, never an assurance.
+          </p>
+          <ul className="mt-4 list-disc space-y-2 pl-5 font-body text-base leading-relaxed text-white/85">
+            <li><b>Storm surge and tide.</b> Observed coastal water levels are shown separately in the nowcast. They are not combined with the river-flow scenarios.</li>
+            <li><b>Street and drainage (pluvial) flooding</b> from rain that never reaches a stream.</li>
+            <li><b>Road deck height</b>, and <b>debris and scour</b> at a crossing.</li>
+            <li>
+              <b>Service-island cutoffs.</b> Areas that lose their route without a modelled stream crossing closing, such as the Smithville Island area
+              served by Dosher Memorial Hospital on Brunswick County Emergency Management&rsquo;s service-islands map, may not appear in a river-flow-only replay.
+            </li>
+          </ul>
+          <p className="mt-4 font-ui text-xs leading-relaxed text-white/60">
+            Brunswick County Emergency Management&rsquo;s service-islands map is a modelled reference, not an observation of what happened.
+          </p>
+        </div>
       </div>
     </section>
   );
