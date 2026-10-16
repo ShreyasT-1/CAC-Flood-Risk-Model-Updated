@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --color-paper: #F9F9F7;
+  --color-ink: #111111;
+  --color-blue: #2D5DA1;
+  --color-red: #CC0000;
+  --color-yellow: #FFF9C4;
+  --color-soft-blue: #E8F0FA;
+  --color-soft-red: #F7E1E1;
+  --color-muted: #737373;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-paper font-body text-ink antialiased;
+    min-width: 320px;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
+  ::selection {
+    color: var(--color-ink);
+    background: var(--color-yellow);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-blue);
+    outline-offset: 3px;
+  }
+
+  input[type="range"] {
+    accent-color: var(--color-blue);
+  }
+}
+
+@layer utilities {
+  .label {
+    @apply font-ui text-xs font-semibold uppercase tracking-[0.12em];
+  }
+
+  .glass {
+    background: rgb(255 255 255 / 0.72);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+
+  .hl {
+    background: linear-gradient(var(--hl, #FFF9C4), var(--hl, #FFF9C4)) no-repeat 0 91% / 100% 32%;
+    padding-inline: 0.06em;
+    animation: mark 0.9s 0.7s cubic-bezier(0.65, 0, 0.35, 1) both;
+  }
+
+  /* Page-load entrance; stagger with [--d:120ms]. */
+  .enter {
+    animation: rise 0.9s var(--d, 0ms) cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .lift {
+    transition: translate 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .lift:hover {
+    translate: 0 -4px;
+    box-shadow: 0 24px 64px -28px rgb(17 17 17 / 0.3);
+  }
+
+  .drift {
+    animation: drift 14s ease-in-out infinite alternate;
+  }
+
+  .drift-slow {
+    animation: drift-slow 30s ease-in-out infinite alternate;
+  }
+
+  .pop {
+    animation: pop 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  details[open] > :not(summary) {
+    animation: rise-sm 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .hatch {
+    background-image: repeating-linear-gradient(135deg, rgb(255 255 255 / 0.54) 0 2px, transparent 2px 6px);
+  }
+
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(28px); }
+}
+@keyframes rise-sm {
+  from { opacity: 0; transform: translateY(-6px); }
+}
+@keyframes zoom {
+  from { opacity: 0.3; transform: scale(0.92); }
+}
+@keyframes mark {
+  from { background-size: 0% 32%; }
+}
+@keyframes drift {
+  to { transform: translate(-46%, 24px) scale(1.08); }
+}
+@keyframes drift-slow {
+  to { transform: scale(1.06) translate(-1%, 1%); }
+}
+@keyframes pop {
+  from { transform: scale(1.18); }
+}
+
+/* Scroll-linked reveals; browsers without view timelines just show content. */
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: rise linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 55%;
+  }
+  .reveal-zoom {
+    animation: zoom linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hl, .enter, .drift, .drift-slow, .pop, .reveal, .reveal-zoom, details[open] > :not(summary) {
+    animation: none !important;
+  }
+  .lift:hover {
+    translate: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

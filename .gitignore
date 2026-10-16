@@ -4,3 +4,18 @@ data/derived/*.parquet
 __pycache__/
 *.tmp
 data/forecasts/
+
+# inventory downloads (large / re-creatable via src/inventory/*.py)
+data/raw_new/
+data/derived_new/osm_extract/
+data/phase2/fema_nfhl.parquet
+
+# re-creatable / >100MB downloads (kept on disk, not committed)
+data/raw_new/
+data/phase0/raw/
+data/phase1b/raw/
+data/phase2/t10/osm_roads_nc.parquet
+data/phase2/fema_nfhl.parquet
+*.tif
+*.pbf
+archive/

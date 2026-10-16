@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lifelines Sample Preview</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<style>
+  :root { --ink:#1d2430; --muted:#5b6575; --line:#d9dee5; --bg:#f6f7f9; --panel:#fff; --warn:#7a4b00; --warnbg:#ffe7a3; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; height:100%; font:14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:var(--bg); }
+  .banner { background:var(--warnbg); color:var(--warn); border-bottom:2px solid #e0b030; padding:8px 16px; }
+  .banner strong { font-size:16px; letter-spacing:.02em; }
+  .banner span { display:block; font-size:12px; }
+  .app { display:flex; height:calc(100% - 58px); }
+  #map { flex:1; min-width:0; }
+  aside { width:380px; overflow-y:auto; background:var(--panel); border-left:1px solid var(--line); padding:12px 16px 24px; }
+  h2 { font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin:18px 0 6px; }
+  .slider label { display:flex; justify-content:space-between; font-weight:600; }
+  input[type=range] { width:100%; }
+  .legend { display:flex; height:10px; border-radius:2px; overflow:hidden; margin-top:6px; }
+  .legend + .ticks { display:flex; justify-content:space-between; font-size:11px; color:var(--muted); }
+  .tag { font-size:10px; padding:1px 5px; border-radius:3px; white-space:nowrap; }
+  .syn { background:#efe3ff; color:#5a2d91; }
+  .real { background:#e3eefc; color:#1f4f8f; }
+  ol, ul { margin:0; padding:0; list-style:none; }
+  .row { display:flex; gap:8px; align-items:center; padding:5px 4px; border-bottom:1px solid var(--line); cursor:pointer; }
+  .row:hover, .row.sel { background:#f1f4f8; }
+  .rank { width:22px; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .dot { width:12px; height:12px; border-radius:50%; flex:none; border:1px solid #0003; }
+  .grow { flex:1; min-width:0; }
+  .grow b { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-weight:600; }
+  .grow small { color:var(--muted); }
+  .num { font-variant-numeric:tabular-nums; text-align:right; }
+  #panel { border:1px solid var(--line); border-radius:6px; padding:10px; background:#fbfcfd; }
+  #panel table { width:100%; border-collapse:collapse; font-size:13px; margin-top:8px; }
+  #panel td { padding:3px 2px; border-bottom:1px solid var(--line); }
+  #panel td:last-child { text-align:right; white-space:nowrap; }
+  .hint { color:var(--muted); font-size:13px; }
+  .alert { font-size:12px; padding:6px 0; border-bottom:1px solid var(--line); }
+  .alert b { display:block; font-size:11px; letter-spacing:.04em; }
+  .foot { font-size:11px; color:var(--muted); margin-top:16px; }
+  @media (max-width: 760px) { .app { flex-direction:column; height:auto; } #map { flex:none; height:60vh; } aside { width:100%; border-left:0; } }
+</style>
+</head>
+<body>
+<div class="banner" role="alert"><strong>Sample data, not for emergency use</strong>
+  <span>FloodLens Lifelines preview &middot; Hurricane Florence (2018) hindcast replay &middot; not validated &middot; values tagged <b>placeholder</b> are synthetic</span></div>
+<div class="app">
+  <div id="map" aria-label="Map of sample crossings and locations"></div>
+  <aside>
+    <div class="slider">
+      <label for="hour"><span>Replay hour <span id="hlabel">0</span> / 17</span><span id="htime"></span></label>
+      <input id="hour" type="range" min="0" max="17" value="0" step="1">
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="ticks"><span>0%</span><span>Chance of losing access / flooding <span class="tag syn">placeholder</span></span><span>100%</span></div>
+
+    <h2>Location timeline</h2>
+    <div id="panel"><p class="hint">Click a location (large circle) on the map or in the watchlist.</p></div>
+
+    <h2>What Breaks First?</h2>
+    <p class="hint" style="margin:0 0 4px">Order: first hour above the 10-year flow in the Florence hindcast <span class="tag real">replay</span>, then people affected if closed <span class="tag real">replay</span>.</p>
+    <ol id="breaks"></ol>
+
+    <h2>Facility watchlist</h2>
+    <div id="watch"></div>
+
+    <p class="foot" id="foot"></p>
+  </aside>
+</div>
+<script>
+const STOPS = [[0,'#c9d3dd'],[0.3,'#f2c14e'],[0.6,'#e8743b'],[0.9,'#b2182b']];
+const color = p => { if (p == null) return '#9aa3ad'; let c = STOPS[0][1]; for (const [s, k] of STOPS) if (p >= s) c = k; return c; };
+const ramp = ['interpolate', ['linear'], ['get', 'p'], ...STOPS.flat()];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pct = p => p == null ? '-' : Math.round(p * 100) + '%';
+const tag = f => f.synthetic ? '<span class="tag syn">placeholder</span>' : '<span class="tag real">replay</span>';
+const KIND = { dialysis:'Dialysis (placeholder facility)', nursing_home:'Nursing home (placeholder facility)', residential:'Residential block' };
+document.getElementById('legend').innerHTML = STOPS.map(([s, c], i) => `<div style="flex:${(STOPS[i+1]?.[0] ?? 1) - s};background:${c}"></div>`).join('');
+
+let D, hour = 0, selected = null;
+Promise.all(['meta.json','addresses.json','crossings.json','facilities_watchlist.json','network.geojson'].map(f => fetch(f).then(r => { if (!r.ok) throw new Error(f + ' ' + r.status); return r.json(); })))
+  .then(([meta, addr, cross, watch, net]) => { D = { meta, A: addr.addresses, C: cross.crossings, W: watch.watchlist, net }; init(); })
+  .catch(e => { document.getElementById('panel').innerHTML = `<p class="hint">Could not load data (${esc(e.message)}). Serve this folder over HTTP, e.g. <code>python -m http.server</code>.</p>`; });
+
+const ptFC = (items, pick) => ({ type:'FeatureCollection', features: items.map(x => ({ type:'Feature', id: x._i, properties: { id: x.id, p: pick(x), kind: x.kind || 'crossing' }, geometry: { type:'Point', coordinates:[x.lon, x.lat] } })) });
+
+let map;
+function init() {
+  D.A.forEach((a, i) => a._i = i); D.C.forEach((c, i) => c._i = i);
+  map = new maplibregl.Map({
+    container:'map', bounds:[[-78.65, 33.83], [-77.65, 34.65]], fitBoundsOptions:{ padding:20 },
+    style:'https://tiles.openfreemap.org/styles/positron'   // keyless OpenMapTiles vector basemap; attribution comes with the style
+  });
+  map.addControl(new maplibregl.NavigationControl({ showCompass:false }));
+  map.on('load', () => {
+    map.addSource('roads', { type:'geojson', data:{ type:'FeatureCollection', features: D.net.features.filter(f => f.properties.kind === 'road') } });
+    map.addLayer({ id:'roads', type:'line', source:'roads', paint:{
+      'line-color':['case', ['get','carries_sample_crossing'], '#4a5568', '#7b8794'],
+      'line-width':['match', ['get','highway'], 'motorway', 2.4, 'trunk', 2, 'primary', 1.6, 'secondary', 1.2, 0.8], 'line-opacity':0.75 } });
+    map.addSource('crossings', { type:'geojson', data: ptFC(D.C, c => c.hourly[hour].flood_probability.value) });
+    map.addLayer({ id:'crossings', type:'circle', source:'crossings', paint:{ 'circle-radius':5, 'circle-color':ramp, 'circle-stroke-color':'#333', 'circle-stroke-width':0.8 } });
+    map.addSource('addr', { type:'geojson', data: ptFC(D.A, a => a.timeline[hour].isolation_probability.value) });
+    map.addLayer({ id:'addr', type:'circle', source:'addr', paint:{
+      'circle-radius':['case', ['boolean', ['feature-state','sel'], false], 13, ['==', ['get','kind'], 'residential'], 8, 10],
+      'circle-color':ramp, 'circle-stroke-color':['case', ['boolean', ['feature-state','sel'], false], '#000', '#fff'], 'circle-stroke-width':2.5 } });
+    const pop = new maplibregl.Popup({ closeButton:false, closeOnClick:false });
+    for (const L of ['crossings', 'addr']) {
+      map.on('mouseenter', L, e => { map.getCanvas().style.cursor = 'pointer'; const id = e.features[0].properties.id;
+        const x = L === 'addr' ? D.A.find(a => a.id === id) : D.C.find(c => c.id === id);
+        const p = L === 'addr' ? x.timeline[hour].isolation_probability.value : x.hourly[hour].flood_probability.value;
+        pop.setLngLat([x.lon, x.lat]).setHTML(`<b>${esc(x.name)}</b><br>${L === 'addr' ? 'Chance of losing access' : 'Chance of flooding'}: ${pct(p)} <span class="tag syn">placeholder</span>`).addTo(map); });
+      map.on('mouseleave', L, () => { map.getCanvas().style.cursor = ''; pop.remove(); });
+    }
+    map.on('click', 'addr', e => select(e.features[0].properties.id));
+    map.on('click', 'crossings', e => { const c = D.C.find(x => x.id === e.features[0].properties.id); map.flyTo({ center:[c.lon, c.lat], zoom:Math.max(map.getZoom(), 11) }); });
+    render();
+  });
+  document.getElementById('hour').addEventListener('input', e => { hour = +e.target.value; render(); });
+  const m = D.meta;
+  document.getElementById('foot').innerHTML = `${esc(m.stamp)}. Scenario: crossing set <b>${esc(m.scenario.crossing_set)}</b>, closure rule <b>${esc(m.scenario.closure_rule)}</b> (${esc(m.scenario.closure_rule_note)}) ` +
+    m.known_gaps.map(esc).join(' ') + ` Generated ${esc(m.generated_at)}.`;
+}
+
+function select(id) {
+  if (selected != null) map.setFeatureState({ source:'addr', id: D.A.find(a => a.id === selected)._i }, { sel:false });
+  selected = id; const a = D.A.find(x => x.id === id);
+  map.setFeatureState({ source:'addr', id: a._i }, { sel:true });
+  map.easeTo({ center:[a.lon, a.lat] }); render();
+}
+
+function render() {
+  const t = D.A[0].timeline[hour].valid_time_utc;
+  document.getElementById('hlabel').textContent = hour;
+  document.getElementById('htime').textContent = t.replace('T', ' ');
+  if (map.getSource('crossings')) {
+    map.getSource('crossings').setData(ptFC(D.C, c => c.hourly[hour].flood_probability.value));
+    map.getSource('addr').setData(ptFC(D.A, a => a.timeline[hour].isolation_probability.value));
+    if (selected) map.setFeatureState({ source:'addr', id: D.A.find(a => a.id === selected)._i }, { sel:true });
+  }
+  document.getElementById('breaks').innerHTML = D.C.map(c => { const h = c.hourly[hour];
+    return `<li class="row" data-c="${esc(c.id)}"><span class="rank">${c.breaks_first_rank}</span><span class="dot" style="background:${color(h.flood_probability.value)}"></span>
+      <span class="grow"><b>${esc(c.name)}</b><small>${esc(c.county)} &middot; ${esc(h.level_reached.value)} now &middot; ${c.consequence.people_affected.toLocaleString()} people affected if closed</small></span>
+      <span class="num">${pct(h.flood_probability.value)}</span></li>`; }).join('');
+  document.querySelectorAll('#breaks .row').forEach(r => r.onclick = () => { const c = D.C.find(x => x.id === r.dataset.c); map.flyTo({ center:[c.lon, c.lat], zoom:12 }); });
+  document.getElementById('watch').innerHTML = D.W.map(w => `<div class="alert row" data-a="${esc(w.id)}"><span class="grow"><b>${w.rank}. ${esc(w.alert_level)}</b>${esc(w.text)}</span></div>`).join('');
+  document.querySelectorAll('#watch .row').forEach(r => r.onclick = () => select(r.dataset.a));
+  renderPanel();
+}
+
+function renderPanel() {
+  const el = document.getElementById('panel'); if (!selected) return;
+  const a = D.A.find(x => x.id === selected), h = a.timeline[hour], W = 340, H = 90, bw = W / 18;
+  const bars = a.timeline.map((x, i) => { const p = x.isolation_probability.value, bh = p * (H - 20);
+    return `<rect x="${i * bw + 1}" y="${H - 20 - bh}" width="${bw - 2}" height="${bh}" fill="${color(p)}" ${i === hour ? 'stroke="#000" stroke-width="1.5"' : ''}><title>Hour ${i}: ${pct(p)} (placeholder)</title></rect>` +
+      (x.scenario_lost_access.value ? `<rect x="${i * bw + 1}" y="${H - 14}" width="${bw - 2}" height="8" fill="#1d2430"><title>Hour ${i}: no route to an ED hospital in the replay</title></rect>` : ''); }).join('');
+  const v = f => f.value == null ? '-' : f.value;
+  el.innerHTML = `<b>${esc(a.name)}</b><br><small class="hint">${esc(KIND[a.kind])} &middot; ${esc(a.county)} &middot; ${esc(a.location_basis)}</small>
+    <svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="18-hour chance of losing access">${bars}
+      <line x1="0" x2="${W}" y1="${(H - 20) / 2}" y2="${(H - 20) / 2}" stroke="#0004" stroke-dasharray="3 3"/></svg>
+    <small class="hint">Bars: chance of losing access <span class="tag syn">placeholder</span> (dashed = 50%). Dark strip: no route in the replay <span class="tag real">replay</span>.</small>
+    <table>
+      <tr><td>Chance of losing access to an ED hospital ${tag(h.isolation_probability)}</td><td>${pct(h.isolation_probability.value)}</td></tr>
+      <tr><td>Hours until likely isolation ${tag(h.time_to_isolation)}</td><td>${v(h.time_to_isolation)}</td></tr>
+      <tr><td>Likely isolation duration, h ${tag(h.isolation_duration)}</td><td>${v(h.isolation_duration)}</td></tr>
+      <tr><td>Isolation tolerance, h ${tag(h.isolation_tolerance)}</td><td>${v(h.isolation_tolerance)}</td></tr>
+      <tr><td>Route to an ED hospital in replay ${tag(h.scenario_lost_access)}</td><td>${h.scenario_lost_access.value ? 'none' : 'yes'}</td></tr>
+      <tr><td>Added drive time, min ${tag(h.detour_minutes)}</td><td>${v(h.detour_minutes)}</td></tr>
+      <tr><td>Critical crossing ${tag(h.critical_crossing_id)}</td><td>${esc(v(h.critical_crossing_id))}</td></tr>
+      <tr><td>ED hospitals within 30 min ${tag(h.route_redundancy)}</td><td>${v(h.route_redundancy)} (base ${a.baseline_route_redundancy.value})</td></tr>
+    </table>`;
+}
+</script>
+</body>
+</html>

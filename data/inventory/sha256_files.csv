@@ -1,0 +1,157 @@
+dataset,path,bytes,sha256
+NCDOT Structure Locations (point gdb),data/phase0/raw/NCDOTStructureLocationsPoint.gdb.zip,3962066,1f26f28cdf88fad3918f35d7470cd1d0b22082a2416218e5d9a19a3c03b93cdf
+NBI 2025 NC delimited,data/phase0/raw/NBI_NC25.txt,7661852,635d77588bad655de619ae23d288fb64fbf128db878e0cd2a3c1a575dd6a359d
+IEM LSR export (Florence/Matthew window) lsr_201610072029_201610122029(1).xlsx,data/lsr_201610072029_201610122029(1).xlsx,35971,a691fedef9c7922c773f9bc789d2c113bc3ebf584306361d9985079a4da761ed
+IEM LSR export (Florence/Matthew window) lsr_201610072029_201610122029.xlsx,data/lsr_201610072029_201610122029.xlsx,127115,eb63375b72a92a7f68eb169898d160d62c5fc77c2d0c637e112c1b3557a87593
+IEM LSR export (Florence/Matthew window) lsr_201809132029_201810212029.xlsx,data/lsr_201809132029_201810212029.xlsx,91540,0cfe655a076a3c8736a000c0f4edbaa844851fa6128ed187b062aa7d3e7236f0
+Geofabrik NC OSM extract,data/raw/nc.osm.pbf,429458441,3c8b9469e0ac93d0b0a6cfe3624dde96982349d64341ac7b54e0f33aa0547a6e
+CMS Hospital General Information,data/phase1/raw/Hospital_General_Information.csv,1450767,f874f09fef895a1ccf5bb7392dcbb2be05c9860339261b093fe00f0c1b013480
+"Pilot facilities (hospitals_40km, fire_stations_40km)",handoff_for_shreyas/06_facilities/exits.csv,1443,28a047a93b6325ebd01608bd5666edc6b45afeab2ec880375126b2a63c5afd36
+"Pilot facilities (hospitals_40km, fire_stations_40km)",handoff_for_shreyas/06_facilities/fire_stations_40km.csv,24950,18257a0c213ee67691b5fee24fe996892796167c07af9d023bd5394931db2e8f
+"Pilot facilities (hospitals_40km, fire_stations_40km)",handoff_for_shreyas/06_facilities/firestations_snapped.parquet,19001,6aea7041c17ea03ddf947ecc91168e285a699847e030dcc424a32f24e44cc4cf
+"Pilot facilities (hospitals_40km, fire_stations_40km)",handoff_for_shreyas/06_facilities/hospitals_40km.csv,3803,ee4a057735c1ab931e68ae46489b74bf9be9229c70e9d96aab2c6a15b1ee0c1c
+"Pilot facilities (hospitals_40km, fire_stations_40km)",handoff_for_shreyas/06_facilities/hospitals_snapped.parquet,11375,7f77dc6b4f5954c8c4da25b927efbbd88a19be44cb8be3fcef0c0d24df4ec558
+Pilot crossings_v2,handoff_for_shreyas/02_crossings/crossings_v2.parquet,273722,ba22000b4380e93f378da2afb4efc6e86888fc50c66714f466a340411ec1e101
+TNM 1 m DEM tile index (pilot),handoff_for_shreyas/03_terrain_proxy/tnm_1m_products.parquet,51263,eb4d1c2dab67394176dbfad7eba949cb4cc3b9f6cd1421f1f545a52e5be8ab7d
+FEMA NFHL Flood Hazard Zones (pilot),data/phase2/fema_nfhl.parquet,259226580,5b0776a11318659f082addd3012fcd039f32d6fd8aad49c00bad084b757ceb4d
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-11/incidents_20261011T1836Z.geojson,751465,e1b7b7ab51c6aada7bcd58910b94246a217726c74d2aa935043fc617b1232fe8
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-11/incidents_20261011T1837Z.geojson,751465,90f96a030de8225dbfe88a1f85066a170fe74b18e4594264cebfa9907ea2ebc7
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-11/incidents_20261011T1920Z.geojson,749845,2378878fe9906418a02391eae823aabb05d5bc650d911ac559c5412774748e0f
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-11/incidents_20261011T2309Z.geojson,751593,7c7347470bba4d15b79c7007caf5116dbafb1ef73603fe47770cea705466d7bc
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T0015Z.geojson,751620,0e44e144c52e00ba1c7be4f795aa144ec1571ee34b19a5f39f82dbe224b74d5f
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T0115Z.geojson,746878,5a92d05bdd56c0d795341cc86adbf07b7988685d230585778799a92208e1acc2
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T0215Z.geojson,747744,149a6742bdc5931c37002f94353dff7bd794b60ae23e6dcdfef9b54888aaa0e5
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T0315Z.geojson,749730,114e1c854a64b6b819f22ec2769ad1cde7de053977a1063a4b3df212e3a7e061
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T0415Z.geojson,750298,fbc9ac1f37f6c7dcb00809f7abfdba3be25356255293ce8154937a80318ab197
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T0515Z.geojson,748445,889010bf1a6258cbee617a92b04f6bba39feadc1e12964a61a282f68b429c6fb
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T0615Z.geojson,748445,162724cd308892a1e79d3be0cded21fc0c5cc71909e6b081953ec8bb7ca0a3ac
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T0715Z.geojson,750108,31224c0f7cac272984e6052880ecc581f99a700211df018e11e72785aca73093
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T0815Z.geojson,750108,99052979bf03f72257ff5bc946ca3e684f354e9c423a646ca578e3f6c7cc23f5
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T0915Z.geojson,742320,59af9f054f13d3f0e2415f8a45a4d4f71c2c4fd07fad1411bf50ec152fb776f4
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T1015Z.geojson,739551,c0c2167a338538902122cfd2f9caeb2c1c4f4c910b2c4b929124686b2b094222
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T1115Z.geojson,729694,c85f78249fcbc348f2e17e0296cfa4e36b8afe798cf501245c183516094dca95
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T1216Z.geojson,738005,72374e61fab35cd957e872c8713b6bf2cbf71dc73bfb41d1295cd7484df452d8
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T1349Z.geojson,732901,0741273a4208e83e3df9b1444f5f1ca2e8a98df0f59955d9cdb4d45295c739d2
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T1415Z.geojson,734656,72337a1db97dc281cb6f15a7d3453a3d73eee8af85f8187b2e4650b492ddd6cc
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T1515Z.geojson,738175,a49a59f8cec7dffc06335e5905cc163d956fae11c64828150394c90a127a3f9d
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T1615Z.geojson,742206,569c09f70a8043686fe105340d97e30856e8dec4bd47bf4bd1e7604e28ec8cf7
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T1715Z.geojson,740678,067eb105a8db27cafb528bc35876a055d854c8512f6d44500ed2e2aa169bcb10
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T1815Z.geojson,739856,e8175814eea79b3452ef7e5545e2c39ace10717f832020d64230ae64660b29a4
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T1915Z.geojson,737305,3fb081e6619168ec30b39a301a6524b6b69e78d3378db16e28488dadf230cd04
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T2015Z.geojson,738178,69011a6abe164a80dd12bc1922b0dfe32d60d093dff939241472d8ef138409c8
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T2115Z.geojson,741275,196f2d417beaa51bc9fdc83bd1cb84da357cdbf2ab59ac60651119c84df78af7
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T2215Z.geojson,737841,870e65392f6e15537561e5748171174c28fdc13b92f3684187bb14d38d97bd4c
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-12/incidents_20261012T2315Z.geojson,740198,ce846e5a0cd23812c26560e02d686ddf08f355fb6e9514b5e7dbe692f26bb8aa
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T0015Z.geojson,748363,457d0d6816ae11c491c5b294573840fb3298eb1e1b1e429af5bfc84ccda9c8d9
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T0132Z.geojson,738070,aa4b9aa8c7b6f495f122e7197733bd1bd23ec29430404115492cd19aff2e4280
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T1140Z.geojson,738987,43b71806ef09f9e1fc2095609a4b61305bbb6a2e9d970eaf1af64e55c017f026
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T1215Z.geojson,740039,dfc4d978f685d08889f5621512b6d5e465e9bfd60f9388e29ca33d8d59cb25a7
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T1315Z.geojson,742080,88e7dd3e076f8372d11191fbdc6bd96b0bd13911a4fc938b80cdb2c8fc4222bb
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T1415Z.geojson,754665,cc9930f08dca8eb5fcf660c1fba2453ec6ad3156fead376348109c095f7f67e6
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T1515Z.geojson,785730,fbf7501df261e5b79f9829dc1dc55c13ebbc01d37adead82ace640c55249967c
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T1621Z.geojson,790871,43c77fe43c8ec67db67210025758bc11191e11bdbec5b76c8b008bcf9f1a08fa
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T1715Z.geojson,794088,996e90e04b588bda0165fc17b53ca7ac129bbef32d4d0f2f3ac7bfcd2db116e9
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T2004Z.geojson,804908,b2c829d372bae766102a215d20953a6d102211488062a9420dcead02c6028fc2
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T2015Z.geojson,802323,5e2685546fd2da132c5dc464ea471464d58f0b476a74f5b85e74f56f622fceab
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T2213Z.geojson,799380,aa9e089300c483e622bf944b8af8abfc01794c9814e562ad3222a46296ca308a
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T2215Z.geojson,798552,789371914641ed93a6690d2de6b6d2a16ddfdb83aee246f37d25c348dd3e8cdf
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-13/incidents_20261013T2315Z.geojson,804692,e27c046ed33bdc7c7cc3b0ee76e7f589a6cb1a851da0c21faec90dc0732169bd
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-14/incidents_20261014T0015Z.geojson,811520,d75df1f75687e0e5f08a1f5264b89ab035c7e3573c84c91b93f42f1c232f702c
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-14/incidents_20261014T0314Z.geojson,785724,71ffe4dd2a9b1dee21dff755e3a26d5ea63b2ebaec3ab6500401e2cbd458f178
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-14/incidents_20261014T1054Z.geojson,786604,957b9b45518de8641b7b22f7622855dbb0dfd72627fb524c038bbbc3b04dfcd5
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-14/incidents_20261014T1124Z.geojson,785810,2eb1787f8104d6bd18ba9fbab346a2cabadcd522d9b958c2a5ff8c76cd878c3b
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-14/incidents_20261014T1215Z.geojson,785860,654a51f9da7d28ddd2f1e543dbf0c2d64fa51d7fd70bdccdd408da5667c9ffa6
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-14/incidents_20261014T1315Z.geojson,790689,048b0a7513f7eb4036005282829648c5e5ca7608b7d0c56de875194defb21d42
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-14/incidents_20261014T1420Z.geojson,793287,d0201fded68e85071c8f81a38e0305b7b1596561a721d0f73d43fa524183bbae
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-14/incidents_20261014T1515Z.geojson,792379,4cab95d3b0d0ffef1ddae4044c93365b6ec0c8d7989a35472e5d8f79fbf320d9
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-14/incidents_20261014T1615Z.geojson,794913,23b0db6bf3f0d79bd7c0b9f51c73ac8669882c1e856c82d2914d8ff400487aab
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-14/incidents_20261014T1717Z.geojson,794586,2fef0775308dc6ae0669a3348ada4f36a8565c2d4e829b5e1074c0cf8839adac
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-14/incidents_20261014T1816Z.geojson,799094,bca7b2286d38aeddfa4f8ad3c3e0735b1e6ce09f9ae3d4e42040d0b8c5e0baae
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/2026-10-14/incidents_20261014T2027Z.geojson,802004,09d6ee1a5f5fe9791290a2cf352af82ed4f4a325ec606b6cb5d8327f931fc051
+NCDOT live TIMS incident snapshots (hourly),data/closures_live/logs/closures_live.log,6890,ce7b49a41279c7351ab947f7b986768fe3a270a51e237f4077feba3d64907253
+NG911 road centerlines (NC 911 Board / NC OneMap),data/raw_new/nc_ng911_centerlines/ng911_centerlines_areaA_buf.parquet,33285041,07daa0ccfdef107de7a76d513e9a3bce91ed9d764eb2352cf2ba009e22805e7d
+OSM drive network Area A (extracted),data/derived_new/osm_extract/osm_drive_lines_areaA_buf.parquet,35243796,2691b976e175b6914bae10a644e50566280b9542a5a80deb63f494070ca4910e
+OSM fire stations + hospitals (extracted),data/derived_new/osm_extract/osm_firestations_hospitals_AB_buf.parquet,44998,345a3f04510d177d7488f79dff258e7bd508fb1899b32d3826dc7c7064f49b18
+NCDOT State Maintained Roads (ER snapshot),data/raw_new/ncdot_state_maintained_roads/state_maintained_roads_areaA_buf.parquet,15101395,66970aa57b46442206aef10b328aae7b1cad42311ab48b18d6d18fb3890e2f02
+NCDOT State Maintained Roads (ER snapshot),data/raw_new/ncdot_state_maintained_roads/state_maintained_roads_areaB_buf.parquet,9759680,2f443166669a562271fea6e9f9ffb24e1459f1fced15b333556e6cda68e27045
+NCDOT road inundation points 10/25/50/100/500-yr,data/raw_new/ncdot_inundation_points/road_inundation_100yr_areaA_buf.parquet,506767,aa9309c381f3dd37bbae696cd3bfd97876013c55dd500bbafa9884f6f149da1f
+NCDOT road inundation points 10/25/50/100/500-yr,data/raw_new/ncdot_inundation_points/road_inundation_100yr_areaB_buf.parquet,3303126,afc57d872bf4941a40184ad1ca48e14c6f06b12caa590a2dfd0a6fd6f2f3e50b
+NCDOT road inundation points 10/25/50/100/500-yr,data/raw_new/ncdot_inundation_points/road_inundation_10yr_areaA_buf.parquet,153382,b5028180d0f1e3cabe64ec45aed535ed90b41260bd9f83e655ca820493a8ca4c
+NCDOT road inundation points 10/25/50/100/500-yr,data/raw_new/ncdot_inundation_points/road_inundation_10yr_areaB_buf.parquet,518567,fb61de9b817b7d56024f0845dea991e8d0cfccd087c81b97a4e3bee808a1ee88
+NCDOT road inundation points 10/25/50/100/500-yr,data/raw_new/ncdot_inundation_points/road_inundation_25yr_areaA_buf.parquet,244050,351cad95555e66602ed769301951f4f5459e82a8b214de1bcb8890fbe6683cc8
+NCDOT road inundation points 10/25/50/100/500-yr,data/raw_new/ncdot_inundation_points/road_inundation_25yr_areaB_buf.parquet,1551108,f2c394943e454c3bbd233b60661222d8a67c5fa9c3c6ca188c7ac464afd7c8b8
+NCDOT road inundation points 10/25/50/100/500-yr,data/raw_new/ncdot_inundation_points/road_inundation_500yr_areaA_buf.parquet,911887,a6763c8b882039095a58615526f9be9453b26de433e099c6ce430c1ba1d393e2
+NCDOT road inundation points 10/25/50/100/500-yr,data/raw_new/ncdot_inundation_points/road_inundation_500yr_areaB_buf.parquet,5381313,6687047613748ff0ba1724a2adf48718d937dc77e45274a2ab3d2c786a26fc35
+NCDOT road inundation points 10/25/50/100/500-yr,data/raw_new/ncdot_inundation_points/road_inundation_50yr_areaA_buf.parquet,348573,7bfee3fc1cdfe4d41392f3c8b240a97f6fefc990ff0a60b6f24c2203747ef899
+NCDOT road inundation points 10/25/50/100/500-yr,data/raw_new/ncdot_inundation_points/road_inundation_50yr_areaB_buf.parquet,2462883,29bfbc03727488e12f40a7b10bc348a34ff8992d7a31e8d267e7c5ebc8400710
+3DEP 1 m DEM tile manifest (Area A),data/raw_new/dem_3dep/tile_manifest.csv,11565,0f81731dc22e52be729a05c0de02f57f4aa9a7e3fb083c2aeb03a9007a9bad8c
+3DEP 1 m DEM tile manifest (Area A),data/raw_new/dem_3dep/lidar_workunits_A.csv,4549,2cfab8a86e276187b9e43a6d6c80e94a3e35e0851c303daf061c7c84007722e1
+3DEP 1/3 arc-second NED tiles (Area A),data/raw_new/dem_3dep/ned_13/USGS_13_n36w079_20250507.tif,497376568,0aaa03eeed2d212fca8861f01496d82008ab65a585b1591b2e93a9cfbb25293e
+3DEP 1/3 arc-second NED tiles (Area A),data/raw_new/dem_3dep/ned_13/USGS_13_n36w080_20240611.tif,494107267,9323f8ca81e15ff160fdc057f131ddcb8564af18ff6b9aec34777e418ae380cb
+3DEP 1/3 arc-second NED tiles (Area A),data/raw_new/dem_3dep/ned_13/USGS_13_n37w079_20250507.tif,490903809,f77c5e691df9e066895cac4df3ee18ca4a90c74e14eb64ec2db912cb1bf4c0d9
+3DEP 1/3 arc-second NED tiles (Area A),data/raw_new/dem_3dep/ned_13/USGS_13_n37w080_20210305.tif,492122898,a01dd98bcf7b64e670001b2cf7d82553fddfd90152957dd3e286e9ddfb03cd22
+"USGS 3DEP lidar workunit index (A, B)",data/raw_new/dem_3dep/lidar_workunits_A.csv,4549,2cfab8a86e276187b9e43a6d6c80e94a3e35e0851c303daf061c7c84007722e1
+"USGS 3DEP lidar workunit index (A, B)",data/raw_new/dem_3dep/lidar_workunits_B.csv,14025,654a9e7e5a1e33c3da73605838981e1540f0e6da08ec046d31296f06c57c8bd0
+"FEMA NFHL Area A (zones, LOMRs, BFE lines, cross-sections) + Area B (LOMRs, BFE, xsections)",data/raw_new/fema_nfhl/nfhl_base_flood_elevations_areaA_buf.parquet,487543,cf7c9a01646806f1a716b40c545395088af25bacc6b125da8afd0108f35fe0ba
+"FEMA NFHL Area A (zones, LOMRs, BFE lines, cross-sections) + Area B (LOMRs, BFE, xsections)",data/raw_new/fema_nfhl/nfhl_base_flood_elevations_areaB_buf.parquet,1149855,1e8fb5dd89d985dd8ed9ecacea96b8988da7b2c855056b777cd6e6d7c6f75e9f
+"FEMA NFHL Area A (zones, LOMRs, BFE lines, cross-sections) + Area B (LOMRs, BFE, xsections)",data/raw_new/fema_nfhl/nfhl_cross_sections_areaA_buf.parquet,2908909,24293513404709c6bc5fd5b3d891e990805edd02fb5767c7462e706e4f7e9d18
+"FEMA NFHL Area A (zones, LOMRs, BFE lines, cross-sections) + Area B (LOMRs, BFE, xsections)",data/raw_new/fema_nfhl/nfhl_cross_sections_areaB_buf.parquet,12731600,ae3c033930603aff149dd90f7445613efaa1dac5d6c5ca1467ca9b959d626437
+"FEMA NFHL Area A (zones, LOMRs, BFE lines, cross-sections) + Area B (LOMRs, BFE, xsections)",data/raw_new/fema_nfhl/nfhl_flood_hazard_zones_areaA_buf.parquet,287172440,c00efd4c6194efd73dd76a214f02a1f94f215c8d24027d2c01c355ff756dc810
+"FEMA NFHL Area A (zones, LOMRs, BFE lines, cross-sections) + Area B (LOMRs, BFE, xsections)",data/raw_new/fema_nfhl/nfhl_lomrs_areaA_buf.parquet,37356,6d551505e506cdaed3c7dd6bdeddc6a6577b0887abcb89710fd4436c3dedbeed
+"FEMA NFHL Area A (zones, LOMRs, BFE lines, cross-sections) + Area B (LOMRs, BFE, xsections)",data/raw_new/fema_nfhl/nfhl_lomrs_areaB_buf.parquet,40835,2e089f76095deaa2ff4072b27d423af3bcd87f4b6b9d27518ccaf09fcec67a5a
+FEMA OpenFEMA Public Assistance projects (cat C/D),data/raw_new/openfema_pa/pa_projects_CD_areasAB.csv,84956,05af14e9cf560cf2456a5c01f3e0283383796ff801a17b415b6d2a8e6860dc5a
+NCDOT TIMS incident history (points),data/raw_new/ncdot_tims_history/tims_incidents_history_points.parquet,19331547,39c038fb52ea80a90d5aed5df3e3b8ac75db7fcf3df8bced631d72c4e1a60fff
+NCDOT TIMS Helene historical incidents,data/raw_new/ncdot_tims_helene/tims_helene_historical_lines.parquet,579659,a04824888861e037b26b939750aab9af046e17f68ad2137d2278071aba482240
+NCDOT TIMS Helene historical incidents,data/raw_new/ncdot_tims_helene/tims_helene_historical_points.parquet,204716,ff5a6aa3cdd8e0c2082495c266b4814dd2b8ce512d7f6932f34638a95109dc06
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2005.geojson,389754,e49158a092b0cb47277c373f70f7ca7dc09cc66d8c5c87166a2a8ac9a43bf7c8
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2006.geojson,1735866,2b7714ea75ac038d9122c50a989bc5bad83d337507d98fef3532a79a8e77ee98
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2007.geojson,864159,7dcc85b8482f2af7cc6059bebd143608af021b622acdb1aabe930144ff919aa6
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2008.geojson,1827105,f1a958d4a724aba5d967c64dcd47066a74b4c7a0cb6afa746f42ca38acb66369
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2009.geojson,1369178,427fac433464b7a574705f432f84cf5dd87996a05706b7a223346591482928d3
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2010.geojson,2299104,ff928f722ca3bdda9ff714fdca465fa8786dd87d641ce85bc665e3a16ccbbd5f
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2011.geojson,3217486,0970ab6e35f7f38fe3b7afe59c415251489bcc5fc4d760d3cf0b54297bdc37c6
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2012.geojson,2210486,b6d25fa8f7190d1227d7afa55f4805a78414cf03ab2bc805c67e0b84f4721edd
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2013.geojson,2316189,01a00d00fe201035f5bbce334084f7ebf6a9b961eede7a211ffbc289bf4de319
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2014.geojson,3575691,ded7e3b0c96a6796c899d73e30c9d22da44b1c3178f7e80c6a6c87a68bbb4868
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2015.geojson,2644434,74964839f10bd48c4ecef243c30047f7d6c83eff8fdadc1fc687588b9e09150b
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2016.geojson,2927513,db470370d5e3b7e6437082192f2954fe81632e557a1f150462f06bdbfe3a3661
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2017.geojson,2503737,29f62fd835d5a288e585c827191b160f18bebf7f8659907fced3c7484c1d39ba
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2018.geojson,4385441,5a2cb226048d8ef2fcc00731fb7b2b416a7d55921b65a66f037a48a603ffe7f6
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2019.geojson,2134979,17b3d8902b1df60c96a44f36566537cd896c994f9d9cafa8da15a9f512fa62a6
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2020.geojson,2256697,f5c153b9ff917d65f9dd930dadae214345a7c5291f2cdf3621d81721eee4a042
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2021.geojson,1551711,bcb5e1ace7b22bb2bd62a2d2b42865334c84e5aa11f474429bb1d2c3688ae317
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2022.geojson,2826823,976a4df4313cbca79c7707db0e993e741e32d80db48165a5a52c96ffc49a7636
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2023.geojson,2283895,05c5f1f4d3930c9e4a2df6507bae8674baebfbc6a9886b5324ea374e9230db1d
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2024.geojson,2071644,2095d220ce89e6863af17bf0ad40cf15811143af9cd5e98e21ab43b07224251e
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2025.geojson,3418013,f570c70eebe1dfab33005b791ac4a3deb12b6543ffb320daae63a03044ae15d2
+"IEM Local Storm Reports, NC 2005-2026",data/raw_new/iem_lsr_nc/lsr_NC_2026.geojson,3467404,439dc9ab9f9f485192458948cee91d582de7a5fe3ee872aafe9ff9b338ca8f67
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2005_c20260323.csv.gz,7765419,d68e3cbfbe5fb79f720eccea372c53585614bab618f3c2a4433e47767f54e55f
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2006_c20260323.csv.gz,7590951,a958ea15688b3346fd69efe53e91b4d57a26f8e6f99e1ddcc3b92c2eb2d57d0b
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2007_c20260323.csv.gz,9775676,e8289daa871946230862e2ca0d119195df7108e4a680fe83e3d419f3f21a7524
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2008_c20260323.csv.gz,12276398,c97260e82760b17bc571d55e1ca1f5073ccc0558b774313d46dddc3e1ef39b37
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2009_c20260323.csv.gz,10335606,c04d6e0173153475440cb614bd019287986c74c311c61864478f9087d7d1b357
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2010_c20260323.csv.gz,11729156,d109f8a6ab1a71e70f60fe42d30a0e31f370c904e248a51e5fe85573f904878e
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2011_c20260323.csv.gz,15695066,be3b40cd098a879be12c2c3e614700560bd537e6178bba8b1aaf099f665dda40
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2012_c20260323.csv.gz,11820671,673db47f6dc9e97e06ffec3b628f5341c128f594d9b247bd07bad2e8397ebac3
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2013_c20260323.csv.gz,11725909,4fa4036ed1c7ea9a779d5a5841d18de08596c423920189a9e6173488d1a98260
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2014_c20260323.csv.gz,11084754,410b457b1b9628cfd63292848a626482a88714c8bd8c45d56a0469f9de05d078
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2015_c20260323.csv.gz,10041550,c4a5a24b8c69ad2b6b867790ce298f5b642a60516c9fce5550a8d2f67cd7bf2e
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2016_c20260323.csv.gz,9065715,d8e1389897df3557e74ba36820357f6962a7c0ca922595400fe74d883f7a5036
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2017_c20260519.csv.gz,9340854,bd3ca72b71544222cba8aa2b29eb3f0efe050d3330a0c408e208befb66881750
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2018_c20260323.csv.gz,9585982,19702480f50cd2a8dacce5e57891feba156afb87b1ea5cbb4eaeda69d2b964a4
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2019_c20260323.csv.gz,11602648,f5043ecc776818b0feffdf1e0fcbaf63329db0635eab1057c7b8ba00ef332e3b
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2020_c20260323.csv.gz,10444606,895c56fd46991c4d9a135d67558dc4b447a02a2314efac0ace645135b98f9c9d
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2021_c20260323.csv.gz,10563953,60c1daf96dbe8eafd48c80df5b70df51a0125ab95d467ee7009a646761d57715
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2022_c20260625.csv.gz,11817849,7d6b79d0049a6edec96b061738289daddba90be26fc9afe7b0a6fd617f21452e
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2023_c20260323.csv.gz,12888092,713784bed40d9e5a95b1d6240a654f865f3ef97703713105c7b35437270da134
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2024_c20260728.csv.gz,12693243,2070b83eccab041b36360ab73645b9a249c3eefc5b92b5b3fc0cbba4d9fcc09c
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2025_c20260819.csv.gz,12585209,d9b46b4c6aae554723cadbb9691f3d5258371c02e530ba815d6fe41e4550149f
+NCEI Storm Events Database details 2005-2026,data/raw_new/ncei_storm_events/StormEvents_details-ftp_v1.0_d2026_c20260918.csv.gz,7490892,61c1dfebdfb24d561bad4528a31659791cf9a83d74663dd4e97b1e0088003f44
+Unified flood road-event table (derived),data/derived_new/flood_road_events_unified.csv,1364559,a51588c53bcb7a97d415d82c5e8c9e986ee4209273c8ee60d06410e2cec87d26
+OEMS trauma center list (hand-keyed),data/raw_new/oems_trauma/trauma_centers_oems_read_2026-10-14.csv,1485,a33258f96f393390dfc6bcaae06845faecf5694d5d5097d17e494f1df8d39a1c
+"HIFLD Hospitals (third-party mirror, NC rows)",data/raw_new/hifld_hospitals_mirror/hifld_hospitals_mirror_NC_2021snapshot.parquet,51557,5d51d26d6976b9fb3de623ad3ffb9ecb0f5edd5113cd77efaf5afd685c85495e
+Consolidated hospitals A+B (derived),data/derived_new/hospitals_AB.csv,7656,77a9b3cd08808a1904c03016e1630076501c8a8c6d869da1f106f87444c47ba3
+NC OSFM fire stations (hosted copy),data/raw_new/nc_fire_stations_osfm/nc_fire_stations_osfm_statewide.parquet,208325,2de166e8582b9a9ce06c057aa4979a5bae09451e9f004d016c76eae7f0f29a01
+Wake County GIS Fire Stations,data/raw_new/wake_county_fire_stations/wake_fire_stations.parquet,17412,e685a98e6dece608fdc989020e3cbf6f9689884c774a120d092a8f572e581033
+Consolidated fire stations A+B (derived),data/derived_new/fire_stations_AB.csv,91133,cd45783ae7c4c6b7957237c48d8c1608f8cade94d0cc4f271c4e045f7fc2c883
+Census cartographic county boundaries 2024,data/raw_new/census_counties/cb_2024_us_county_500k.zip,11626066,da4051717caec55c75e3748c3608c2a3dbde8d1ff401bbaf4f952e3c3fb63ef1

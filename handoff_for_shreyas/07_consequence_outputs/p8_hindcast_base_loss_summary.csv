@@ -1,0 +1,193 @@
+facility_type,crossing_set,scenario,group,pop_base,peak_share_lost,peak_pop_lost,peak_hour,first_ge1pct,last_ge1pct,hours_ge1pct,first_ge10pct,hours_ge10pct,hours_ge50pct
+hospital_ED_acute,seed,REF_3.64xHWT,Brunswick,135766,0.0433,5872,2018-09-16 05:00:00,2018-09-14 13:00:00,2018-09-17 11:00:00,71,,0,0
+hospital_ED_acute,seed,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed,REF_3.64xHWT,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed,REF_3.64xHWT,Pender,58879,0.0287,1687,2018-09-16 23:00:00,2018-09-15 06:00:00,2018-09-18 17:00:00,79,,0,0
+hospital_ED_acute,seed,RL10,Brunswick,135766,0.0371,5040,2018-09-16 05:00:00,2018-09-14 14:00:00,2018-09-16 19:00:00,35,,0,0
+hospital_ED_acute,seed,RL10,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed,RL10,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed,RL10,Pender,58879,0.0287,1687,2018-09-17 03:00:00,2018-09-15 16:00:00,2018-09-18 14:00:00,71,,0,0
+hospital_ED_acute,seed,RL2,Brunswick,135766,0.0433,5872,2018-09-15 19:00:00,2018-09-14 11:00:00,2018-09-18 00:00:00,86,,0,0
+hospital_ED_acute,seed,RL2,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed,RL2,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed,RL2,Pender,58879,0.0287,1687,2018-09-16 21:00:00,2018-09-15 01:00:00,2018-09-22 12:00:00,176,,0,0
+hospital_ED_acute,seed,RL25,Brunswick,135766,0.0313,4255,2018-09-16 06:00:00,2018-09-14 14:00:00,2018-09-16 15:00:00,19,,0,0
+hospital_ED_acute,seed,RL25,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed,RL25,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed,RL25,Pender,58879,0.0276,1623,2018-09-16 07:00:00,2018-09-15 19:00:00,2018-09-17 17:00:00,47,,0,0
+hospital_ED_acute,seed,RL5,Brunswick,135766,0.0433,5872,2018-09-16 05:00:00,2018-09-14 13:00:00,2018-09-16 23:00:00,58,,0,0
+hospital_ED_acute,seed,RL5,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed,RL5,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed,RL5,Pender,58879,0.0287,1687,2018-09-16 23:00:00,2018-09-15 06:00:00,2018-09-19 07:00:00,93,,0,0
+hospital_ED_acute,seed,RL50,Brunswick,135766,0.0209,2842,2018-09-16 04:00:00,2018-09-14 15:00:00,2018-09-16 07:00:00,7,,0,0
+hospital_ED_acute,seed,RL50,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed,RL50,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed,RL50,Pender,58879,0.0273,1610,2018-09-16 04:00:00,2018-09-15 22:00:00,2018-09-17 03:00:00,30,,0,0
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,Brunswick,135766,0.775,105219,2018-09-16 15:00:00,2018-09-14 09:00:00,2018-09-23 23:00:00,231,2018-09-14 09:00:00,90,41
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),183610,0.0277,5086,2018-09-16 06:00:00,2018-09-14 11:00:00,2018-09-16 21:00:00,47,,0,0
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover north (lat>=34.28),36143,0.4043,14612,2018-09-16 06:00:00,2018-09-14 11:00:00,2018-09-17 11:00:00,61,2018-09-16 00:00:00,33,0
+hospital_ED_acute,seed_plus_osm_secondary,REF_3.64xHWT,Pender,58879,0.2735,16102,2018-09-16 15:00:00,2018-09-14 12:00:00,2018-09-20 11:00:00,144,2018-09-15 15:00:00,72,0
+hospital_ED_acute,seed_plus_osm_secondary,RL10,Brunswick,135766,0.6661,90439,2018-09-16 13:00:00,2018-09-14 12:00:00,2018-09-20 12:00:00,144,2018-09-14 12:00:00,60,12
+hospital_ED_acute,seed_plus_osm_secondary,RL10,New Hanover Wilmington/south (lat<34.28),183610,0.0184,3380,2018-09-16 08:00:00,2018-09-14 11:00:00,2018-09-16 13:00:00,10,,0,0
+hospital_ED_acute,seed_plus_osm_secondary,RL10,New Hanover north (lat>=34.28),36143,0.4043,14612,2018-09-16 08:00:00,2018-09-14 11:00:00,2018-09-16 22:00:00,40,2018-09-16 04:00:00,11,0
+hospital_ED_acute,seed_plus_osm_secondary,RL10,Pender,58879,0.2607,15349,2018-09-16 14:00:00,2018-09-15 05:00:00,2018-09-18 18:00:00,83,2018-09-15 17:00:00,50,0
+hospital_ED_acute,seed_plus_osm_secondary,RL2,Brunswick,135766,0.7857,106675,2018-09-16 12:00:00,2018-09-14 06:00:00,2018-10-02 15:00:00,442,2018-09-14 08:00:00,174,65
+hospital_ED_acute,seed_plus_osm_secondary,RL2,New Hanover Wilmington/south (lat<34.28),183610,0.0288,5286,2018-09-16 08:00:00,2018-09-14 11:00:00,2018-09-17 14:00:00,64,,0,0
+hospital_ED_acute,seed_plus_osm_secondary,RL2,New Hanover north (lat>=34.28),36143,0.4043,14612,2018-09-15 20:00:00,2018-09-14 11:00:00,2018-09-19 00:00:00,90,2018-09-15 19:00:00,63,0
+hospital_ED_acute,seed_plus_osm_secondary,RL2,Pender,58879,0.2736,16109,2018-09-16 08:00:00,2018-09-14 12:00:00,2018-09-23 11:00:00,216,2018-09-15 05:00:00,112,0
+hospital_ED_acute,seed_plus_osm_secondary,RL25,Brunswick,135766,0.4099,55657,2018-09-16 09:00:00,2018-09-14 12:00:00,2018-09-17 09:00:00,62,2018-09-14 13:00:00,30,0
+hospital_ED_acute,seed_plus_osm_secondary,RL25,New Hanover Wilmington/south (lat<34.28),183610,0.0106,1952,2018-09-16 05:00:00,2018-09-16 05:00:00,2018-09-16 05:00:00,1,,0,0
+hospital_ED_acute,seed_plus_osm_secondary,RL25,New Hanover north (lat>=34.28),36143,0.1122,4056,2018-09-16 06:00:00,2018-09-14 12:00:00,2018-09-16 11:00:00,10,2018-09-16 06:00:00,3,0
+hospital_ED_acute,seed_plus_osm_secondary,RL25,Pender,58879,0.2558,15064,2018-09-16 09:00:00,2018-09-15 15:00:00,2018-09-18 02:00:00,60,2018-09-15 19:00:00,31,0
+hospital_ED_acute,seed_plus_osm_secondary,RL5,Brunswick,135766,0.7252,98461,2018-09-16 13:00:00,2018-09-14 09:00:00,2018-09-23 20:00:00,226,2018-09-14 12:00:00,96,21
+hospital_ED_acute,seed_plus_osm_secondary,RL5,New Hanover Wilmington/south (lat<34.28),183610,0.0277,5086,2018-09-16 05:00:00,2018-09-14 11:00:00,2018-09-16 21:00:00,22,,0,0
+hospital_ED_acute,seed_plus_osm_secondary,RL5,New Hanover north (lat>=34.28),36143,0.4043,14612,2018-09-16 05:00:00,2018-09-14 11:00:00,2018-09-17 07:00:00,57,2018-09-15 23:00:00,30,0
+hospital_ED_acute,seed_plus_osm_secondary,RL5,Pender,58879,0.2688,15829,2018-09-16 04:00:00,2018-09-14 22:00:00,2018-09-19 22:00:00,118,2018-09-15 15:00:00,69,0
+hospital_ED_acute,seed_plus_osm_secondary,RL50,Brunswick,135766,0.1467,19923,2018-09-14 14:00:00,2018-09-14 12:00:00,2018-09-17 03:00:00,41,2018-09-14 14:00:00,6,0
+hospital_ED_acute,seed_plus_osm_secondary,RL50,New Hanover Wilmington/south (lat<34.28),183610,0.0042,772,2018-09-16 05:00:00,,,0,,0,0
+hospital_ED_acute,seed_plus_osm_secondary,RL50,New Hanover north (lat>=34.28),36143,0.0066,240,2018-09-16 06:00:00,,,0,,0,0
+hospital_ED_acute,seed_plus_osm_secondary,RL50,Pender,58879,0.2071,12192,2018-09-16 07:00:00,2018-09-15 15:00:00,2018-09-17 14:00:00,45,2018-09-15 22:00:00,13,0
+hospital_ED_acute,seed_reliable,REF_3.64xHWT,Brunswick,135766,0.0088,1195,2018-09-15 20:00:00,,,0,,0,0
+hospital_ED_acute,seed_reliable,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed_reliable,REF_3.64xHWT,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed_reliable,REF_3.64xHWT,Pender,58879,0.0067,394,2018-09-16 23:00:00,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL10,Brunswick,135766,0.0088,1195,2018-09-15 23:00:00,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL10,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL10,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL10,Pender,58879,0.0067,394,2018-09-17 00:00:00,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL2,Brunswick,135766,0.0088,1195,2018-09-14 17:00:00,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL2,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL2,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL2,Pender,58879,0.0067,394,2018-09-16 21:00:00,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL25,Brunswick,135766,0.0087,1175,2018-09-16 04:00:00,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL25,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL25,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL25,Pender,58879,0.0057,335,2018-09-16 07:00:00,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL5,Brunswick,135766,0.0088,1195,2018-09-15 20:00:00,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL5,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL5,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL5,Pender,58879,0.0067,394,2018-09-16 23:00:00,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL50,Brunswick,135766,0.0085,1154,2018-09-16 04:00:00,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL50,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL50,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+hospital_ED_acute,seed_reliable,RL50,Pender,58879,0.0057,335,2018-09-16 10:00:00,,,0,,0,0
+exit_major,seed,REF_3.64xHWT,Brunswick,135766,0.322,43715,2018-09-16 05:00:00,2018-09-14 13:00:00,2018-09-17 11:00:00,71,2018-09-15 09:00:00,40,0
+exit_major,seed,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major,seed,REF_3.64xHWT,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major,seed,REF_3.64xHWT,Pender,58879,0.0287,1687,2018-09-16 23:00:00,2018-09-15 06:00:00,2018-09-18 17:00:00,79,,0,0
+exit_major,seed,RL10,Brunswick,135766,0.3159,42883,2018-09-16 05:00:00,2018-09-14 14:00:00,2018-09-16 19:00:00,37,2018-09-15 11:00:00,28,0
+exit_major,seed,RL10,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major,seed,RL10,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major,seed,RL10,Pender,58879,0.0287,1687,2018-09-17 03:00:00,2018-09-15 16:00:00,2018-09-18 14:00:00,71,,0,0
+exit_major,seed,RL2,Brunswick,135766,0.322,43715,2018-09-15 19:00:00,2018-09-14 11:00:00,2018-09-19 08:00:00,110,2018-09-14 17:00:00,90,0
+exit_major,seed,RL2,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major,seed,RL2,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major,seed,RL2,Pender,58879,0.0287,1687,2018-09-16 21:00:00,2018-09-15 01:00:00,2018-09-22 12:00:00,176,,0,0
+exit_major,seed,RL25,Brunswick,135766,0.3105,42160,2018-09-16 07:00:00,2018-09-14 14:00:00,2018-09-16 15:00:00,19,2018-09-16 02:00:00,8,0
+exit_major,seed,RL25,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major,seed,RL25,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major,seed,RL25,Pender,58879,0.0276,1623,2018-09-16 07:00:00,2018-09-15 19:00:00,2018-09-17 17:00:00,47,,0,0
+exit_major,seed,RL5,Brunswick,135766,0.322,43715,2018-09-16 05:00:00,2018-09-14 13:00:00,2018-09-16 23:00:00,59,2018-09-15 09:00:00,39,0
+exit_major,seed,RL5,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major,seed,RL5,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major,seed,RL5,Pender,58879,0.0287,1687,2018-09-16 23:00:00,2018-09-15 06:00:00,2018-09-19 07:00:00,93,,0,0
+exit_major,seed,RL50,Brunswick,135766,0.0209,2842,2018-09-16 04:00:00,2018-09-14 15:00:00,2018-09-16 07:00:00,7,,0,0
+exit_major,seed,RL50,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major,seed,RL50,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major,seed,RL50,Pender,58879,0.0273,1610,2018-09-16 04:00:00,2018-09-15 22:00:00,2018-09-17 03:00:00,30,,0,0
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,Brunswick,135766,0.8228,111715,2018-09-16 15:00:00,2018-09-14 09:00:00,2018-09-23 23:00:00,231,2018-09-14 09:00:00,95,58
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),183610,0.0277,5086,2018-09-16 06:00:00,2018-09-14 11:00:00,2018-09-16 21:00:00,47,,0,0
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,New Hanover north (lat>=34.28),36143,0.4043,14612,2018-09-16 06:00:00,2018-09-14 11:00:00,2018-09-17 11:00:00,61,2018-09-15 15:00:00,42,0
+exit_major,seed_plus_osm_secondary,REF_3.64xHWT,Pender,58879,0.4746,27945,2018-09-16 16:00:00,2018-09-14 12:00:00,2018-09-20 11:00:00,144,2018-09-15 15:00:00,71,0
+exit_major,seed_plus_osm_secondary,RL10,Brunswick,135766,0.7382,100225,2018-09-16 13:00:00,2018-09-14 12:00:00,2018-09-20 12:00:00,144,2018-09-14 12:00:00,62,19
+exit_major,seed_plus_osm_secondary,RL10,New Hanover Wilmington/south (lat<34.28),183610,0.0184,3380,2018-09-16 08:00:00,2018-09-14 11:00:00,2018-09-16 13:00:00,10,,0,0
+exit_major,seed_plus_osm_secondary,RL10,New Hanover north (lat>=34.28),36143,0.4043,14612,2018-09-16 08:00:00,2018-09-14 11:00:00,2018-09-16 22:00:00,41,2018-09-16 04:00:00,11,0
+exit_major,seed_plus_osm_secondary,RL10,Pender,58879,0.4572,26919,2018-09-16 06:00:00,2018-09-15 05:00:00,2018-09-18 18:00:00,83,2018-09-15 17:00:00,50,0
+exit_major,seed_plus_osm_secondary,RL2,Brunswick,135766,0.8337,113193,2018-09-17 15:00:00,2018-09-14 06:00:00,2018-10-02 15:00:00,442,2018-09-14 08:00:00,174,99
+exit_major,seed_plus_osm_secondary,RL2,New Hanover Wilmington/south (lat<34.28),183610,0.0288,5286,2018-09-16 08:00:00,2018-09-14 11:00:00,2018-09-17 14:00:00,64,,0,0
+exit_major,seed_plus_osm_secondary,RL2,New Hanover north (lat>=34.28),36143,0.4043,14612,2018-09-15 20:00:00,2018-09-14 11:00:00,2018-09-19 00:00:00,90,2018-09-15 14:00:00,68,0
+exit_major,seed_plus_osm_secondary,RL2,Pender,58879,0.4747,27952,2018-09-16 08:00:00,2018-09-14 12:00:00,2018-09-23 11:00:00,216,2018-09-15 05:00:00,112,0
+exit_major,seed_plus_osm_secondary,RL25,Brunswick,135766,0.6205,84242,2018-09-16 15:00:00,2018-09-14 12:00:00,2018-09-17 09:00:00,62,2018-09-14 13:00:00,36,7
+exit_major,seed_plus_osm_secondary,RL25,New Hanover Wilmington/south (lat<34.28),183610,0.0106,1952,2018-09-16 05:00:00,2018-09-16 05:00:00,2018-09-16 05:00:00,1,,0,0
+exit_major,seed_plus_osm_secondary,RL25,New Hanover north (lat>=34.28),36143,0.1122,4056,2018-09-16 05:00:00,2018-09-14 12:00:00,2018-09-16 11:00:00,13,2018-09-16 05:00:00,4,0
+exit_major,seed_plus_osm_secondary,RL25,Pender,58879,0.4459,26253,2018-09-16 06:00:00,2018-09-15 15:00:00,2018-09-18 02:00:00,60,2018-09-15 19:00:00,28,0
+exit_major,seed_plus_osm_secondary,RL5,Brunswick,135766,0.7709,104666,2018-09-16 14:00:00,2018-09-14 09:00:00,2018-09-23 20:00:00,226,2018-09-14 12:00:00,96,31
+exit_major,seed_plus_osm_secondary,RL5,New Hanover Wilmington/south (lat<34.28),183610,0.0277,5086,2018-09-16 05:00:00,2018-09-14 11:00:00,2018-09-16 21:00:00,22,,0,0
+exit_major,seed_plus_osm_secondary,RL5,New Hanover north (lat>=34.28),36143,0.4043,14612,2018-09-16 05:00:00,2018-09-14 11:00:00,2018-09-17 07:00:00,57,2018-09-15 19:00:00,34,0
+exit_major,seed_plus_osm_secondary,RL5,Pender,58879,0.47,27672,2018-09-16 04:00:00,2018-09-14 22:00:00,2018-09-19 22:00:00,118,2018-09-15 15:00:00,69,0
+exit_major,seed_plus_osm_secondary,RL50,Brunswick,135766,0.3227,43813,2018-09-16 05:00:00,2018-09-14 12:00:00,2018-09-17 03:00:00,41,2018-09-14 14:00:00,7,0
+exit_major,seed_plus_osm_secondary,RL50,New Hanover Wilmington/south (lat<34.28),183610,0.0042,772,2018-09-16 05:00:00,,,0,,0,0
+exit_major,seed_plus_osm_secondary,RL50,New Hanover north (lat>=34.28),36143,0.0427,1543,2018-09-16 05:00:00,2018-09-16 05:00:00,2018-09-16 05:00:00,1,,0,0
+exit_major,seed_plus_osm_secondary,RL50,Pender,58879,0.3897,22947,2018-09-16 05:00:00,2018-09-15 15:00:00,2018-09-17 14:00:00,45,2018-09-16 03:00:00,7,0
+exit_major,seed_reliable,REF_3.64xHWT,Brunswick,135766,0.0088,1195,2018-09-15 20:00:00,,,0,,0,0
+exit_major,seed_reliable,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major,seed_reliable,REF_3.64xHWT,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major,seed_reliable,REF_3.64xHWT,Pender,58879,0.0067,394,2018-09-16 23:00:00,,,0,,0,0
+exit_major,seed_reliable,RL10,Brunswick,135766,0.0088,1195,2018-09-15 23:00:00,,,0,,0,0
+exit_major,seed_reliable,RL10,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major,seed_reliable,RL10,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major,seed_reliable,RL10,Pender,58879,0.0067,394,2018-09-17 00:00:00,,,0,,0,0
+exit_major,seed_reliable,RL2,Brunswick,135766,0.0088,1195,2018-09-14 17:00:00,,,0,,0,0
+exit_major,seed_reliable,RL2,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major,seed_reliable,RL2,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major,seed_reliable,RL2,Pender,58879,0.0067,394,2018-09-16 21:00:00,,,0,,0,0
+exit_major,seed_reliable,RL25,Brunswick,135766,0.0087,1175,2018-09-16 04:00:00,,,0,,0,0
+exit_major,seed_reliable,RL25,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major,seed_reliable,RL25,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major,seed_reliable,RL25,Pender,58879,0.0057,335,2018-09-16 07:00:00,,,0,,0,0
+exit_major,seed_reliable,RL5,Brunswick,135766,0.0088,1195,2018-09-15 20:00:00,,,0,,0,0
+exit_major,seed_reliable,RL5,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major,seed_reliable,RL5,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major,seed_reliable,RL5,Pender,58879,0.0067,394,2018-09-16 23:00:00,,,0,,0,0
+exit_major,seed_reliable,RL50,Brunswick,135766,0.0085,1154,2018-09-16 04:00:00,,,0,,0,0
+exit_major,seed_reliable,RL50,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major,seed_reliable,RL50,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major,seed_reliable,RL50,Pender,58879,0.0057,335,2018-09-16 10:00:00,,,0,,0,0
+exit_major_plus_secondary,seed,REF_3.64xHWT,Brunswick,135766,0.322,43715,2018-09-16 05:00:00,2018-09-14 13:00:00,2018-09-17 11:00:00,71,2018-09-15 09:00:00,40,0
+exit_major_plus_secondary,seed,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed,REF_3.64xHWT,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed,REF_3.64xHWT,Pender,58879,0.0287,1687,2018-09-16 23:00:00,2018-09-15 06:00:00,2018-09-18 17:00:00,79,,0,0
+exit_major_plus_secondary,seed,RL10,Brunswick,135766,0.3159,42883,2018-09-16 05:00:00,2018-09-14 14:00:00,2018-09-16 19:00:00,37,2018-09-15 11:00:00,28,0
+exit_major_plus_secondary,seed,RL10,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed,RL10,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed,RL10,Pender,58879,0.0287,1687,2018-09-17 03:00:00,2018-09-15 16:00:00,2018-09-18 14:00:00,71,,0,0
+exit_major_plus_secondary,seed,RL2,Brunswick,135766,0.322,43715,2018-09-15 19:00:00,2018-09-14 11:00:00,2018-09-19 08:00:00,110,2018-09-14 17:00:00,90,0
+exit_major_plus_secondary,seed,RL2,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed,RL2,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed,RL2,Pender,58879,0.0287,1687,2018-09-16 21:00:00,2018-09-15 01:00:00,2018-09-22 12:00:00,176,,0,0
+exit_major_plus_secondary,seed,RL25,Brunswick,135766,0.3105,42160,2018-09-16 07:00:00,2018-09-14 14:00:00,2018-09-16 15:00:00,19,2018-09-16 02:00:00,8,0
+exit_major_plus_secondary,seed,RL25,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed,RL25,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed,RL25,Pender,58879,0.0276,1623,2018-09-16 07:00:00,2018-09-15 19:00:00,2018-09-17 17:00:00,47,,0,0
+exit_major_plus_secondary,seed,RL5,Brunswick,135766,0.322,43715,2018-09-16 05:00:00,2018-09-14 13:00:00,2018-09-16 23:00:00,59,2018-09-15 09:00:00,39,0
+exit_major_plus_secondary,seed,RL5,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed,RL5,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed,RL5,Pender,58879,0.0287,1687,2018-09-16 23:00:00,2018-09-15 06:00:00,2018-09-19 07:00:00,93,,0,0
+exit_major_plus_secondary,seed,RL50,Brunswick,135766,0.0209,2842,2018-09-16 04:00:00,2018-09-14 15:00:00,2018-09-16 07:00:00,7,,0,0
+exit_major_plus_secondary,seed,RL50,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed,RL50,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed,RL50,Pender,58879,0.0273,1610,2018-09-16 04:00:00,2018-09-15 22:00:00,2018-09-17 03:00:00,30,,0,0
+exit_major_plus_secondary,seed_reliable,REF_3.64xHWT,Brunswick,135766,0.0088,1195,2018-09-15 20:00:00,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,REF_3.64xHWT,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,REF_3.64xHWT,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,REF_3.64xHWT,Pender,58879,0.0067,394,2018-09-16 23:00:00,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL10,Brunswick,135766,0.0088,1195,2018-09-15 23:00:00,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL10,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL10,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL10,Pender,58879,0.0067,394,2018-09-17 00:00:00,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL2,Brunswick,135766,0.0088,1195,2018-09-14 17:00:00,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL2,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL2,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL2,Pender,58879,0.0067,394,2018-09-16 21:00:00,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL25,Brunswick,135766,0.0087,1175,2018-09-16 04:00:00,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL25,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL25,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL25,Pender,58879,0.0057,335,2018-09-16 07:00:00,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL5,Brunswick,135766,0.0088,1195,2018-09-15 20:00:00,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL5,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL5,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL5,Pender,58879,0.0067,394,2018-09-16 23:00:00,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL50,Brunswick,135766,0.0085,1154,2018-09-16 04:00:00,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL50,New Hanover Wilmington/south (lat<34.28),183610,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL50,New Hanover north (lat>=34.28),36143,0.0,0,,,,0,,0,0
+exit_major_plus_secondary,seed_reliable,RL50,Pender,58879,0.0057,335,2018-09-16 10:00:00,,,0,,0,0

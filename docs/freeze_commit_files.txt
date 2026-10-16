@@ -1,8 +1,7 @@
-technical-freeze-1 commit file list. Included 492 files (542 MB), excluded 557 (2631 MB).
+﻿technical-freeze-1 commit file list. Included 492 files (542 MB), excluded 557 (2631 MB).
 
 ## EXCLUDED (path | reason)
 .github/workflows/nwm_live.yml | cache / live snapshots / unused workflow
-FloodLens_data_for_Shreyas.zip | zip / stray archive (bundle or downloaded input)
 data/NCDOTStructureLocationsPolygon.gdb.zip | zip / stray archive (bundle or downloaded input)
 data/closures_live/2026-10-11/incidents_20261011T1836Z.geojson | cache / live snapshots / unused workflow
 data/closures_live/2026-10-11/incidents_20261011T1837Z.geojson | cache / live snapshots / unused workflow
@@ -503,7 +502,6 @@ data/phase2/engine/replay_hindcast_base_origin_state.parquet | over 50 MB (80 MB
 data/phase2/engine/replay_hindcast_resnap_origin_state.parquet | over 50 MB (82 MB)
 data/phase2/fema_nfhl.parquet | over 50 MB (259 MB)
 data/phase2/t10/osm_roads_nc.parquet | over 50 MB (128 MB)
-handoff_for_shreyas.zip | zip / stray archive (bundle or downloaded input)
 handoff_for_shreyas/01_road_network/counties.geojson | handoff bundle (copies of data for the ML teammate)
 handoff_for_shreyas/01_road_network/graph_nodes.parquet | handoff bundle (copies of data for the ML teammate)
 handoff_for_shreyas/01_road_network/graph_segments.parquet | handoff bundle (copies of data for the ML teammate)
@@ -557,7 +555,6 @@ src/cache/62211ce5e34b1c3111805c35ae524cd074bf3df0.json | cache / live snapshots
 src/cache/9b1872b19cac7c8ce645ab214f322f322249323f.json | cache / live snapshots / unused workflow
 src/cache/be6d3641e35faa492fdfcfbecd69ffb78a8d506d.json | cache / live snapshots / unused workflow
 src/cache/d99b4a0506138b5dea49d40864d8690c92f4e8e7.json | cache / live snapshots / unused workflow
-ziUjqCBe | zip / stray archive (bundle or downloaded input)
 
 ## INCLUDED
 .gitignore

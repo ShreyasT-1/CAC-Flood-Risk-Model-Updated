@@ -1,0 +1,65 @@
+{
+ "W_250": {
+  "calls": 205,
+  "snapped": 20,
+  "share": 0.098,
+  "crossings": 13,
+  "reaches": 13
+ },
+ "W_500": {
+  "calls": 205,
+  "snapped": 42,
+  "share": 0.205,
+  "crossings": 27,
+  "reaches": 26
+ },
+ "W_1000": {
+  "calls": 205,
+  "snapped": 76,
+  "share": 0.371,
+  "crossings": 44,
+  "reaches": 42
+ },
+ "R_250": {
+  "calls": 194,
+  "snapped": 20,
+  "share": 0.103,
+  "crossings": 16,
+  "reaches": 16
+ },
+ "R_500": {
+  "calls": 194,
+  "snapped": 37,
+  "share": 0.191,
+  "crossings": 23,
+  "reaches": 22
+ },
+ "R_1000": {
+  "calls": 194,
+  "snapped": 77,
+  "share": 0.397,
+  "crossings": 38,
+  "reaches": 34
+ },
+ "T_250": {
+  "calls": 410,
+  "snapped": 14,
+  "share": 0.034,
+  "crossings": 10,
+  "reaches": 10
+ },
+ "T_500": {
+  "calls": 410,
+  "snapped": 41,
+  "share": 0.1,
+  "crossings": 24,
+  "reaches": 23
+ },
+ "T_1000": {
+  "calls": 410,
+  "snapped": 125,
+  "share": 0.305,
+  "crossings": 53,
+  "reaches": 51
+ }
+}

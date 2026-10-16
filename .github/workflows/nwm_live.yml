@@ -1,0 +1,30 @@
+# Hourly NWM short-range archiver. Data lives on the orphan branch `nwm-archive` (keeps main small); no secrets needed.
+name: nwm-live
+on:
+  schedule: [{cron: "17 * * * *"}]
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency: nwm-live
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: restore archive branch into data/forecasts
+        run: |
+          if git ls-remote --exit-code origin nwm-archive >/dev/null 2>&1; then
+            git fetch origin nwm-archive && git worktree add data/forecasts FETCH_HEAD && cd data/forecasts && git checkout -B nwm-archive
+          else
+            git worktree add --orphan -b nwm-archive data/forecasts
+          fi
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install netCDF4 numpy pandas pyarrow requests
+      - run: python src/nwm_live.py
+        working-directory: .
+      - name: commit
+        working-directory: data/forecasts
+        run: |
+          git config user.name nwm-bot && git config user.email nwm-bot@users.noreply.github.com
+          git add -A && (git diff --cached --quiet || git commit -m "nwm cycles $(date -u +%FT%HZ)") && git push origin nwm-archive

@@ -1,0 +1,79 @@
+2024 0 fetched
+2024 8 fetched
+2024 16 fetched
+2024 24 fetched
+2024 32 fetched
+  waiting 65 s
+2024 40 fetched
+2024 48 fetched
+2024 56 fetched
+2024 64 fetched
+2024 72 fetched
+  waiting 65 s
+2024 80 fetched
+2024 88 fetched
+2024 96 fetched
+2024 104 fetched
+2024 112 fetched
+  waiting 65 s
+2024 120 fetched
+2024 128 fetched
+2024 136 fetched
+2024 144 fetched
+2024 152 fetched
+  waiting 65 s
+2024 160 fetched
+2025 0 fetched
+2025 8 fetched
+2025 16 fetched
+2025 24 fetched
+2025 32 fetched
+  waiting 65 s
+2025 40 fetched
+2025 48 fetched
+2025 56 fetched
+2025 64 fetched
+2025 72 fetched
+  waiting 65 s
+2025 80 fetched
+2025 88 fetched
+2025 96 fetched
+2025 104 fetched
+2025 112 fetched
+  waiting 65 s
+2025 120 fetched
+  waiting 600 s
+2025 128 fetched
+2025 136 fetched
+2025 144 fetched
+2025 152 fetched
+2025 160 fetched
+2026 0 fetched
+2026 8 fetched
+2026 16 fetched
+  waiting 65 s
+2026 24 fetched
+2026 32 fetched
+2026 40 fetched
+2026 48 fetched
+2026 56 fetched
+2026 64 fetched
+2026 72 fetched
+  waiting 65 s
+2026 80 fetched
+2026 88 fetched
+2026 96 fetched
+2026 104 fetched
+2026 112 fetched
+2026 120 fetched
+2026 128 fetched
+2026 136 fetched
+2026 144 fetched
+2026 152 fetched
+2026 160 fetched
+                    rows  ...                      last
+model                     ...                          
+gfs_global       3974040  ... 2026-10-12 22:00:00+00:00
+ncep_hrrr_conus  3970222  ... 2026-10-12 22:00:00+00:00
+
+[2 rows x 4 columns]

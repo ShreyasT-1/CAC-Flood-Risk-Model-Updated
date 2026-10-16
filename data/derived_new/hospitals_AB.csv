@@ -1,0 +1,38 @@
+facility_id,name,address,city,county,ed,hospital_type,ownership,lat,lon,coord_src,match_name,match_score,system_operator,beds,beds_src,trauma_level_oems,trauma_hifld2017,area
+340024,SAMPSON REGIONAL MEDICAL CENTER,607 BEAMAN ST,CLINTON,SAMPSON,True,Acute Care Hospitals,Government - Local,35.00620175,-78.32395442845943,osm,Sampson Regional Medical Center,1.0,,146,osm tag / hifld(2017 data),,NOT AVAILABLE,B
+340030,DUKE UNIVERSITY HOSPITAL,2301  ERWIN RD,DURHAM,DURHAM,True,Acute Care Hospitals,Proprietary,36.007021300000005,-78.93734788335824,osm,Duke University Hospital,1.0,Duke University Health System,943,osm tag / hifld(2017 data),I,LEVEL I,A
+340042,ONSLOW MEMORIAL HOSPITAL,317 WESTERN BOULEVARD,JACKSONVILLE,ONSLOW,True,Acute Care Hospitals,Government - Hospital District or Authority,34.76326775,-77.3854606924092,osm,Onslow Memorial Hospital,1.0,UNC Health Care,162,osm tag / hifld(2017 data),,NOT AVAILABLE,B
+340049,NORTH CAROLINA SPECIALTY HOSPITAL,3916 BEN FRANKLIN BOULEVARD,DURHAM,DURHAM,False,Acute Care Hospitals,Proprietary,36.043054850000004,-78.8968568108163,osm,North Carolina Specialty Hospital,1.0,,18,osm tag / hifld(2017 data),,NOT AVAILABLE,A
+340061,UNC HOSPITALS,101 MANNING DRIVE,CHAPEL HILL,ORANGE,True,Acute Care Hospitals,Government - State,35.9050278,-79.050641782249,osm,UNC Medical Center,1.0,UNC Health Care,,osm tag / hifld(2017 data),I,,A
+340068,COLUMBUS REGIONAL HEALTHCARE SYSTEM,500 JEFFERSON ST,WHITEVILLE,COLUMBUS,True,Acute Care Hospitals,Voluntary non-profit - Other,34.33749125,-78.69448854681553,osm,Columbus Regional Healthcare System,1.0,Carolinas HealthCare System,154,osm tag / hifld(2017 data),,NOT AVAILABLE,B
+340069,"WAKEMED, RALEIGH CAMPUS",3000 NEW BERN AVE,RALEIGH,WAKE,True,Acute Care Hospitals,Voluntary non-profit - Private,35.7826101,-78.5882426603876,osm,WakeMed Health & Hospitals: Raleigh Campus,1.0,WakeMed,628,osm tag / hifld(2017 data),I,,A
+340114,REX HOSPITAL,4420 LAKE BOONE TRAIL,RALEIGH,WAKE,True,Acute Care Hospitals,Government - State,35.8174886369911,-78.7031719142524,hifld2017,REX HOSPITAL,1.0,NON-PROFIT,514,osm tag / hifld(2017 data),,NOT AVAILABLE,A
+34011F,NMC Camp Lejeune,100 Brewster Blvd,Camp Lejeune,ONSLOW,True,Acute Care - Department of Defense,Department of Defense,34.72133775,-77.35937967553149,osm,Naval Medical Center Camp Lejeune,1.0,United States Navy,,osm tag / hifld(2017 data),,NOT AVAILABLE,B
+340120,VIDANT DUPLIN HOSPITAL,401 N MAIN ST,KENANSVILLE,DUPLIN,True,Acute Care Hospitals,Government - Local,34.9648246,-77.96186572649601,osm,ECU Health Duplin Hospital,1.0,ECU Health,101,osm tag / hifld(2017 data),,,B
+34012F,DURHAM VA MEDICAL CENTER,508 FULTON STREET,DURHAM,DURHAM,True,Acute Care - Veterans Administration,Veterans Health Administration,36.009512072724,-78.9388323298481,hifld2017,VA MEDICAL CENTER - DURHAM,1.0,GOVERNMENT - FEDERAL,,,,NOT AVAILABLE,A
+340141,NOVANT HEALTH NEW HANOVER REGIONAL MEDICAL CENTER,2131 S 17TH ST,WILMINGTON,NEW HANOVER,True,Acute Care Hospitals,Government - Local,34.205089099999995,-77.92105615450585,osm,New Hanover Regional Medical Center,1.0,Novant Health,769,osm tag / hifld(2017 data),II,LEVEL II,B
+340155,DUKE REGIONAL HOSPITAL,3643 N ROXBORO STREET,DURHAM,DURHAM,True,Acute Care Hospitals,Government - Local,36.03643695,-78.8996543662317,osm,Duke Regional Hospital,1.0,Duke University Health System,369,osm tag / hifld(2017 data),,NOT AVAILABLE,A
+340158,NOVANT HEALTH BRUNSWICK MEDICAL CENTER,1 MEDICAL CENTER DR  PO BOX 139,SUPPLY,BRUNSWICK,True,Acute Care Hospitals,Voluntary non-profit - Other,34.031381800000005,-78.26145816747322,osm,Brunswick Medical Center,1.0,Novant Health,74,osm tag / hifld(2017 data),,,B
+340168,WILMINGTON TREATMENT CENTER,2520 TROY DRIVE,WILMINGTON,NEW HANOVER,False,Acute Care Hospitals,Voluntary non-profit - Private,,,UNLOCATED,,0.0,,,,,,
+340173,"WAKEMED, CARY HOSPITAL",1900 KILDARE FARM ROAD,CARY,WAKE,True,Acute Care Hospitals,Voluntary non-profit - Private,35.74039165,-78.78147066245384,osm,WakeMed Cary Hospital,1.0,WakeMed,150,osm tag / hifld(2017 data),III,NOT AVAILABLE,A
+341307,PENDER MEMORIAL HOSPITAL,507 E FREMONT ST,BURGAW,PENDER,True,Critical Access Hospitals,Government - Local,34.5505574,-77.91980848512868,osm,Pender Medical Center,1.0,Novant Health,86,osm tag / hifld(2017 data),,NOT AVAILABLE,B
+341315,CAPE FEAR VALLEY-BLADEN COUNTY HOSPITAL,501 SOUTH POPLAR STREET,ELIZABETHTOWN,BLADEN,True,Critical Access Hospitals,Voluntary non-profit - Private,34.62247135,-78.60790529003071,osm,Cape Fear Valley Bladen County Hospital,1.0,Cape Fear Valley Health System,58,osm tag / hifld(2017 data),,NOT AVAILABLE,B
+341327,J ARTHUR DOSHER MEMORIAL HOSPITAL,924 HOWE ST,SOUTHPORT,BRUNSWICK,True,Critical Access Hospitals,Voluntary non-profit - Other,33.9296619503388,-78.0215903117435,hifld2017,J. ARTHUR DOSHER MEMORIAL HOSPITAL,1.0,NON-PROFIT,100,osm tag / hifld(2017 data),,NOT AVAILABLE,B
+344004,CENTRAL REGIONAL HOSPITAL,300 VEAZY RD,BUTNER,GRANVILLE,True,Psychiatric,Voluntary non-profit - Church,36.1453551,-78.77180955830025,osm,Central Regional Hospital,1.0,,,osm tag / hifld(2017 data),,,A
+344014,HOLLY HILL MENTAL HEALTH SERVICES,3019 FALSTAFF RD,RALEIGH,WAKE,False,Psychiatric,Proprietary,,,UNLOCATED,,0.0,,,,,,
+344030,STRATEGIC BEHAVIORAL CENTER-LELAND,2050 MERCANTILE DRIVE,LELAND,BRUNSWICK,False,Psychiatric,Proprietary,34.2607578099251,-78.063713705623,hifld2017,STRATEGIC BEHAVIORAL CENTER LELAND,1.0,PROPRIETARY,112,osm tag / hifld(2017 data),,NOT AVAILABLE,B
+344032,TRIANGLE SPRINGS,10901 WORLD TRADE BLVD,RALEIGH,WAKE,False,Psychiatric,Proprietary,35.9027533,-78.81578830000001,osm,Triangle Springs,1.0,,,osm tag / hifld(2017 data),,,A
+344035,RALEIGH OAKS BEHAVIORAL HEALTH,3200 WATERFIELD DRIVE,GARNER,WAKE,False,Psychiatric,Proprietary,,,UNLOCATED,,0.0,,,,,,
+osm:10832140430,Veritas Collaborative Eating Disorder Treatment Center,,,,,osm_only (not in CMS file),,36.009940400000005,-78.9423254,osm,,,,50,osm tag,,,A
+osm:13404346301,Garner VA Clinic,,,,,osm_only (not in CMS file),,35.655394300000005,-78.61471370000001,osm,,,Veterans Health Administration,,osm tag,,,A
+osm:10129388538,Novant Health,,,,,osm_only (not in CMS file),,33.962111300000004,-78.39687550000001,osm,,,Novant Health,,osm tag,,,B
+osm:nan,Duke Raleigh Hospital,,,,True,osm_only (not in CMS file),,35.82859565,-78.61794743373098,osm,,,Duke University Health System,186,osm tag,,,A
+osm:nan,Holly Hill Hospital,,,,False,osm_only (not in CMS file),,35.78293015,-78.58398735132177,osm,,,,,osm tag,,,A
+osm:nan,UNC Health Johnston Clayton,,,,True,osm_only (not in CMS file),,35.630856449999996,-78.5029938078651,osm,,,UNC Health Care,,osm tag,,,A
+osm:nan,WakeMed North Family Health & Women’s Hospital,,,,True,osm_only (not in CMS file),,35.9091397,-78.59770630078972,osm,,,WakeMed,61,osm tag,,,A
+osm:nan,Murdoch Developmental Center,,,,False,osm_only (not in CMS file),,36.150226950000004,-78.73791289978243,osm,,,,,osm tag,,,A
+osm:nan,Lenox Baker Children's Hospital,,,,False,osm_only (not in CMS file),,36.0052071,-78.949811816276,osm,,,Duke University Health System,,osm tag,,,A
+osm:nan,UNC Hospitals Hillsborough Campus,,,,True,osm_only (not in CMS file),,36.036918650000004,-79.0909761262633,osm,,,UNC Health Care,68,osm tag,I,,A
+osm:nan,New Hanover Regional Medical Center Orthopedic Hospital,,,,True,osm_only (not in CMS file),,34.21313755,-77.86288092076006,osm,,,Novant Health,,osm tag,II,,B
+osm:nan,Brynn Marr Hospital,,,,,osm_only (not in CMS file),,34.74639295,-77.37497329498005,osm,,,,,osm tag,,,B
+osm:nan,Brunswick Medical Center,,,,,osm_only (not in CMS file),,34.0092612,-78.29079207001425,osm,,,Novant Health,60,osm tag,,,B

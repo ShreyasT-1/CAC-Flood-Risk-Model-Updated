@@ -1,0 +1,5082 @@
+{
+ "sample": false,
+ "mode": "FORECAST",
+ "label": "NWM short-range forecast, unvalidated; river flow only",
+ "source": "NOAA National Water Model operational short-range forecast (NWM 3.1), channel_rt, 18 hourly leads",
+ "caveats": [
+  "Unvalidated: no forecast skill is claimed for this layer.",
+  "River flow only: no storm surge, tide, wave run-up, or rain/drainage flooding.",
+  "Not a closure probability. 'Scenario: flagged' means modelled flow above the reach's 10-year flow; 'not flagged' is never an all-clear.",
+  "The 10-year flows are recurrence flows of unverified provenance; the replay uses a different model version (v3.0 retrospective), so ratios are not directly comparable."
+ ],
+ "not_a_closure_probability": true,
+ "validated": false,
+ "river_flow_only": true,
+ "nwm_version": "NWM 3.1",
+ "cycle_issue_time": "2026-10-14T19:00Z",
+ "cycle_age_hours": 2.4,
+ "stale": false,
+ "generated_at": "2026-10-14T21:23Z",
+ "leads": 18,
+ "fallback": {
+  "used": false,
+  "skipped_newer_cycles": [],
+  "note": ""
+ },
+ "scenario_rule": "RL10: flow > q10_cfs of the crossing's reach => 'scenario: flagged'. A flow level, not a probability; excludes surge, tide, wave run-up, rain/drainage flooding.",
+ "ml": {
+  "enabled": false,
+  "reason": "no ML outputs in this repo; any wiring needs its own synthetic flag and validation status"
+ },
+ "crossings": [
+  {
+   "id": "V2_0112",
+   "name": "US17,US76 over Bradley Creek",
+   "nwm_feature_id": 10520410,
+   "q10_cfs": 1959.5,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 36.0,
+     "flow_ratio_q10": 0.018,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 36.0,
+     "flow_ratio_q10": 0.018,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 36.4,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 36.4,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 36.4,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 36.4,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 36.4,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 36.7,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 36.7,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 36.7,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 37.1,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 37.4,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 37.4,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 37.4,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 37.8,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 37.8,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 37.4,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 37.4,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0256",
+   "name": "HOLLY TREE RD. over Hewlett's Creek",
+   "nwm_feature_id": 10520196,
+   "q10_cfs": 572.1,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 3.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 4.9,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 5.3,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 5.7,
+     "flow_ratio_q10": 0.01,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 5.7,
+     "flow_ratio_q10": 0.01,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 5.7,
+     "flow_ratio_q10": 0.01,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 5.7,
+     "flow_ratio_q10": 0.01,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0079",
+   "name": "US17,US74/76,NC133 over Alligator Creek",
+   "nwm_feature_id": 8832744,
+   "q10_cfs": 179.4,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0032",
+   "name": "US74,US76 over Sturgeon Creek",
+   "nwm_feature_id": 8834598,
+   "q10_cfs": 841.5,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 3.2,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0069",
+   "name": "US17S. over Jackeys Creek",
+   "nwm_feature_id": 8833900,
+   "q10_cfs": 1399.8,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 1.8,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0099",
+   "name": "SR1472 over Sturgeon Creek",
+   "nwm_feature_id": 8833800,
+   "q10_cfs": 1316.2,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 6.7,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 6.4,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 6.0,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 5.7,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 5.7,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 6.0,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 6.0,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 6.4,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 6.7,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 7.1,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 7.1,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 7.4,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 7.4,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 7.8,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 7.8,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 7.8,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 7.8,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 7.8,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0020",
+   "name": "NC211 over Dutchman Creek",
+   "nwm_feature_id": 8835710,
+   "q10_cfs": 1359.2,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 29.7,
+     "flow_ratio_q10": 0.022,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 29.3,
+     "flow_ratio_q10": 0.022,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 29.0,
+     "flow_ratio_q10": 0.021,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 28.6,
+     "flow_ratio_q10": 0.021,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 28.3,
+     "flow_ratio_q10": 0.021,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 28.3,
+     "flow_ratio_q10": 0.021,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 27.9,
+     "flow_ratio_q10": 0.021,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 27.5,
+     "flow_ratio_q10": 0.02,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 27.2,
+     "flow_ratio_q10": 0.02,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 26.8,
+     "flow_ratio_q10": 0.02,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 26.5,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 26.1,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 26.1,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 25.8,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 25.4,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 25.1,
+     "flow_ratio_q10": 0.018,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 24.7,
+     "flow_ratio_q10": 0.018,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 24.7,
+     "flow_ratio_q10": 0.018,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0280",
+   "name": "NC133 over Jump And Run Creek",
+   "nwm_feature_id": 8835850,
+   "q10_cfs": 946.1,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 23.7,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 23.3,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 23.3,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 23.0,
+     "flow_ratio_q10": 0.024,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 22.6,
+     "flow_ratio_q10": 0.024,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 22.2,
+     "flow_ratio_q10": 0.023,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 22.2,
+     "flow_ratio_q10": 0.023,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 21.9,
+     "flow_ratio_q10": 0.023,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 21.5,
+     "flow_ratio_q10": 0.023,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 21.2,
+     "flow_ratio_q10": 0.022,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 21.2,
+     "flow_ratio_q10": 0.022,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 20.8,
+     "flow_ratio_q10": 0.022,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 20.5,
+     "flow_ratio_q10": 0.022,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 20.5,
+     "flow_ratio_q10": 0.022,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 20.1,
+     "flow_ratio_q10": 0.021,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 20.1,
+     "flow_ratio_q10": 0.021,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 19.8,
+     "flow_ratio_q10": 0.021,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 19.4,
+     "flow_ratio_q10": 0.021,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0061",
+   "name": "NC133 over Jackeys Creek",
+   "nwm_feature_id": 8832552,
+   "q10_cfs": 1737.1,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 14.5,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 13.8,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 13.8,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 14.1,
+     "flow_ratio_q10": 0.008,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0009",
+   "name": "NC87 over Orton Creek",
+   "nwm_feature_id": 8835694,
+   "q10_cfs": 333.6,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0062",
+   "name": "NC211 over Beaverdam Swamp",
+   "nwm_feature_id": 8835714,
+   "q10_cfs": 1140.9,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 22.2,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 22.2,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 21.9,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 21.5,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 21.2,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 21.2,
+     "flow_ratio_q10": 0.019,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 20.8,
+     "flow_ratio_q10": 0.018,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 20.5,
+     "flow_ratio_q10": 0.018,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 20.5,
+     "flow_ratio_q10": 0.018,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 20.1,
+     "flow_ratio_q10": 0.018,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 20.1,
+     "flow_ratio_q10": 0.018,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 19.8,
+     "flow_ratio_q10": 0.017,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 19.4,
+     "flow_ratio_q10": 0.017,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 19.4,
+     "flow_ratio_q10": 0.017,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 19.1,
+     "flow_ratio_q10": 0.017,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 19.1,
+     "flow_ratio_q10": 0.017,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 18.7,
+     "flow_ratio_q10": 0.016,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 18.7,
+     "flow_ratio_q10": 0.016,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0022",
+   "name": "NC87 over Allen Creek",
+   "nwm_feature_id": 8834284,
+   "q10_cfs": 262.4,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 2.8,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0048",
+   "name": "SR1115 over Little Doe Creek",
+   "nwm_feature_id": 11562566,
+   "q10_cfs": 305.2,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0018",
+   "name": "SR1112 over Mercers Mill Pond",
+   "nwm_feature_id": 11561022,
+   "q10_cfs": 1753.5,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0060",
+   "name": "US17S,NC87 over Town Creek",
+   "nwm_feature_id": 8834748,
+   "q10_cfs": 1800.5,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 16.2,
+     "flow_ratio_q10": 0.009,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0047",
+   "name": "SR1115 over Pamlico Creek",
+   "nwm_feature_id": 11561558,
+   "q10_cfs": 412.1,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.001,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0039",
+   "name": "SR1115 over Doe Creek",
+   "nwm_feature_id": 11562512,
+   "q10_cfs": 412.5,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 0.0,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0100",
+   "name": "US17 NBL over Royal Oak River",
+   "nwm_feature_id": 11562446,
+   "q10_cfs": 3459.9,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 1.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0035",
+   "name": "SR1342 over Br.of Royal Oak Swamp",
+   "nwm_feature_id": 11562428,
+   "q10_cfs": 860.9,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 0.4,
+     "flow_ratio_q10": 0.0,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0056",
+   "name": "NC211 over Lockwoods Folly River",
+   "nwm_feature_id": 11562816,
+   "q10_cfs": 10490.7,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 49.1,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 48.7,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 48.7,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 48.4,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 48.4,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 48.0,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 48.0,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 47.7,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 47.7,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 47.3,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 47.3,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 47.3,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 47.0,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 47.0,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 47.0,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 46.6,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 46.6,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 46.6,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0036",
+   "name": "US17BUS,NC130 over Shallote River",
+   "nwm_feature_id": 11560992,
+   "q10_cfs": 4007.5,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 10.9,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 10.9,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 10.9,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 10.9,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 10.9,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 10.9,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 10.9,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 10.9,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 11.3,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 11.3,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 11.3,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 11.3,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 11.3,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 11.3,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 11.3,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 11.3,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 11.3,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 11.3,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0131",
+   "name": "US117, NC132 RAMP over Smith Creek",
+   "nwm_feature_id": 10528991,
+   "q10_cfs": 2477.0,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 79.1,
+     "flow_ratio_q10": 0.032,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 79.1,
+     "flow_ratio_q10": 0.032,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 79.5,
+     "flow_ratio_q10": 0.032,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 79.5,
+     "flow_ratio_q10": 0.032,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 79.8,
+     "flow_ratio_q10": 0.032,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 79.8,
+     "flow_ratio_q10": 0.032,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 80.2,
+     "flow_ratio_q10": 0.032,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 80.2,
+     "flow_ratio_q10": 0.032,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 80.2,
+     "flow_ratio_q10": 0.032,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 80.5,
+     "flow_ratio_q10": 0.032,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 80.5,
+     "flow_ratio_q10": 0.032,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 80.5,
+     "flow_ratio_q10": 0.032,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 80.9,
+     "flow_ratio_q10": 0.033,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 80.9,
+     "flow_ratio_q10": 0.033,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 80.9,
+     "flow_ratio_q10": 0.033,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 80.9,
+     "flow_ratio_q10": 0.033,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 80.9,
+     "flow_ratio_q10": 0.033,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 80.9,
+     "flow_ratio_q10": 0.033,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0125",
+   "name": "I40 over Prince George Creek",
+   "nwm_feature_id": 10528981,
+   "q10_cfs": 685.9,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 17.0,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 17.0,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 17.0,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 17.0,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 17.0,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 17.3,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 17.3,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 17.3,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 17.3,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 17.3,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 17.3,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 17.3,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 17.3,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 17.3,
+     "flow_ratio_q10": 0.025,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 17.7,
+     "flow_ratio_q10": 0.026,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 17.7,
+     "flow_ratio_q10": 0.026,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 17.7,
+     "flow_ratio_q10": 0.026,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 17.7,
+     "flow_ratio_q10": 0.026,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0147",
+   "name": "NC11,53 over Moore Creek",
+   "nwm_feature_id": 8815547,
+   "q10_cfs": 4239.1,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 27.9,
+     "flow_ratio_q10": 0.007,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 27.2,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 26.8,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 26.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 25.4,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 24.4,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 23.0,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 21.5,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 20.1,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 19.1,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 18.0,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 17.3,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 16.6,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 16.6,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 16.6,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 17.3,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 18.0,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 19.1,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0178",
+   "name": "SR1209 over Moores Creek",
+   "nwm_feature_id": 8815441,
+   "q10_cfs": 1285.0,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0195",
+   "name": "SR1411 over Cypress Creek",
+   "nwm_feature_id": 10526727,
+   "q10_cfs": 426.5,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.006,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0164",
+   "name": "NC53 over Long Creek",
+   "nwm_feature_id": 10528051,
+   "q10_cfs": 1178.3,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 2.5,
+     "flow_ratio_q10": 0.002,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0158",
+   "name": "NC210 over Riley's Creek",
+   "nwm_feature_id": 10528823,
+   "q10_cfs": 1547.5,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 18.7,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 18.4,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 18.4,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 18.4,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 18.4,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 18.7,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 19.4,
+     "flow_ratio_q10": 0.013,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 19.8,
+     "flow_ratio_q10": 0.013,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 20.1,
+     "flow_ratio_q10": 0.013,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 20.5,
+     "flow_ratio_q10": 0.013,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 20.8,
+     "flow_ratio_q10": 0.013,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 20.8,
+     "flow_ratio_q10": 0.013,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 20.8,
+     "flow_ratio_q10": 0.013,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 21.2,
+     "flow_ratio_q10": 0.014,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 21.2,
+     "flow_ratio_q10": 0.014,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 21.5,
+     "flow_ratio_q10": 0.014,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 21.9,
+     "flow_ratio_q10": 0.014,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 22.2,
+     "flow_ratio_q10": 0.014,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0003",
+   "name": "US74,US76E over Hood Creek",
+   "nwm_feature_id": 8833654,
+   "q10_cfs": 1890.2,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 8.8,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 8.8,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 8.8,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 8.8,
+     "flow_ratio_q10": 0.005,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 8.5,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 8.5,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 8.5,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 8.1,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 8.1,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 8.1,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 7.8,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 7.8,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 7.4,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 7.4,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 7.4,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 7.4,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 7.4,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 7.1,
+     "flow_ratio_q10": 0.004,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0161",
+   "name": "NC53 over Cypress Creek",
+   "nwm_feature_id": 10528379,
+   "q10_cfs": 727.1,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 2.1,
+     "flow_ratio_q10": 0.003,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0220",
+   "name": "I40 over Burgaw Creek",
+   "nwm_feature_id": 10526613,
+   "q10_cfs": 872.5,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 10.2,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 10.2,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0165",
+   "name": "NC53 over Burgaw Creek",
+   "nwm_feature_id": 10526613,
+   "q10_cfs": 872.5,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 10.2,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 10.2,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 9.9,
+     "flow_ratio_q10": 0.011,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  },
+  {
+   "id": "V2_0169",
+   "name": "NC53 over Ne Cape Fear River",
+   "nwm_feature_id": 10526537,
+   "q10_cfs": 20357.9,
+   "in_model_output": true,
+   "hourly": [
+    {
+     "lead_hours": 1,
+     "valid_time": "2026-10-14T20:00Z",
+     "flow_cfs": 240.5,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 2,
+     "valid_time": "2026-10-14T21:00Z",
+     "flow_cfs": 241.2,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 3,
+     "valid_time": "2026-10-14T22:00Z",
+     "flow_cfs": 241.6,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 4,
+     "valid_time": "2026-10-14T23:00Z",
+     "flow_cfs": 241.9,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 5,
+     "valid_time": "2026-10-15T00:00Z",
+     "flow_cfs": 242.3,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 6,
+     "valid_time": "2026-10-15T01:00Z",
+     "flow_cfs": 242.6,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 7,
+     "valid_time": "2026-10-15T02:00Z",
+     "flow_cfs": 243.0,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 8,
+     "valid_time": "2026-10-15T03:00Z",
+     "flow_cfs": 243.0,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 9,
+     "valid_time": "2026-10-15T04:00Z",
+     "flow_cfs": 243.3,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 10,
+     "valid_time": "2026-10-15T05:00Z",
+     "flow_cfs": 243.3,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 11,
+     "valid_time": "2026-10-15T06:00Z",
+     "flow_cfs": 243.7,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 12,
+     "valid_time": "2026-10-15T07:00Z",
+     "flow_cfs": 243.7,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 13,
+     "valid_time": "2026-10-15T08:00Z",
+     "flow_cfs": 243.7,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 14,
+     "valid_time": "2026-10-15T09:00Z",
+     "flow_cfs": 243.7,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 15,
+     "valid_time": "2026-10-15T10:00Z",
+     "flow_cfs": 243.7,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 16,
+     "valid_time": "2026-10-15T11:00Z",
+     "flow_cfs": 243.7,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 17,
+     "valid_time": "2026-10-15T12:00Z",
+     "flow_cfs": 243.7,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    },
+    {
+     "lead_hours": 18,
+     "valid_time": "2026-10-15T13:00Z",
+     "flow_cfs": 243.7,
+     "flow_ratio_q10": 0.012,
+     "scenario_state": "scenario: not flagged",
+     "synthetic": false
+    }
+   ]
+  }
+ ]
+}

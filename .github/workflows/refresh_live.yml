@@ -1,0 +1,37 @@
+# Hourly refresh of the live layers (NOWCAST + FORECAST preview) and copy into the website repo.
+# Setup (no secret is stored in this repo): create a fine-grained token with Contents: read/write on the website repo and save it as the
+# Actions secret SITE_PUSH_TOKEN. Set the repository variable SITE_REPO to "<owner>/<website repo>" (default: <this owner>/lifelineswebsite).
+# Each script keeps its previous output when it fails, so a failed fetch leaves the last good files (their own `stale` flags then show the age).
+name: refresh-live
+on:
+  schedule: [{cron: "37 * * * *"}]   # offset from nwm-live (minute 17)
+  workflow_dispatch:
+permissions: {contents: read}
+concurrency: refresh-live
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.SITE_REPO || format('{0}/lifelineswebsite', github.repository_owner) }}
+          token: ${{ secrets.SITE_PUSH_TOKEN }}
+          path: site
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install netCDF4 numpy pandas pyarrow requests
+      - name: nowcast (river gauges + coastal)
+        run: python src/45_nowcast.py
+        continue-on-error: true
+      - name: forecast preview
+        run: python src/44_forecast_preview.py
+        continue-on-error: true
+      - name: copy into the site and commit
+        run: |
+          cp export/sample/nowcast.json export/sample/coastal.json export/sample/forecast_latest.json site/public/data/sample/
+          cd site
+          git config user.name refresh-bot && git config user.email refresh-bot@users.noreply.github.com
+          git add public/data/sample/nowcast.json public/data/sample/coastal.json public/data/sample/forecast_latest.json
+          git diff --cached --quiet || (git commit -m "live data $(date -u +%FT%HZ)" && git pull --rebase && git push)
