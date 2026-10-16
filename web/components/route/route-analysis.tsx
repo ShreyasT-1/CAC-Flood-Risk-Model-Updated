@@ -1,14 +1,14 @@
 "use client";
 import { AlertTriangle, CircleSlash, Route as RouteIcon } from "lucide-react";
 import { CLOSED, blockedHours, routeAtHour, type HourStatus, type RouteOption } from "@/lib/route";
-import { hourTime, pct, utc, type LocationView } from "@/lib/sample";
+import { hourTime, band, utc, type LocationView } from "@/lib/sample";
 import { Tag } from "@/components/ui/tags";
 
 type Ranked = { o: RouteOption; s: HourStatus }[];
 export type Group = { kind: "hospital" | "fire"; title: string; ranked: Ranked };
 const STATE = [
   { label: "Open in replay", cls: "border-blue/30 bg-soft-blue text-blue", note: "Open in this replay hour is not an all-clear: the replay sees river flow only, and streams the model did not assess are not counted." },
-  { label: "At risk", cls: "border-alert/40 bg-softred text-alert", note: "Crosses streams above their 2-year flow, or the placeholder chance of a crossing flooding is 35% or more." },
+  { label: "At risk", cls: "border-alert/40 bg-softred text-alert", note: "Crosses streams above their 2-year flow, or the illustrative band for a crossing flooding is Elevated or higher (a placeholder, not a probability)." },
   { label: "Blocked in replay", cls: "border-[#7A0000] bg-[#7A0000] text-white", note: "Crosses at least one crossing whose stream is above its 10-year flow, which closes it in this scenario." },
 ];
 const mins = (s: number) => (s < 5400 ? `${Math.round(s / 60)} min` : `${Math.floor(s / 3600)} h ${Math.round((s % 3600) / 60)} min`);
@@ -49,7 +49,7 @@ export function RouteAnalysis({ groups, focusId, onFocus, hour, hours, start, na
           <p className="mt-3 font-body text-sm leading-relaxed text-ink/80">
             {allBlocked
               ? `Every route found to the selected ${group.title.toLowerCase()} crosses a crossing that is closed in this replay hour${noRoute.length ? ", and no detour around the closures was found" : ""}. Shown: the option with the fewest closures. Call 911 in an emergency.`
-              : `Ranked first of ${ranked.length} option${ranked.length > 1 ? "s" : ""}: open in the replay this hour, ${pct(s.pFail)} placeholder chance that a crossing on it floods, and ${mins(o.timeS)} in normal traffic.`}
+              : `Ranked first of ${ranked.length} option${ranked.length > 1 ? "s" : ""}: open in the replay this hour, illustrative flood band ${band(s.pFail)} (a placeholder, not a probability), and ${mins(o.timeS)} in normal traffic.`}
           </p>
         )}
       </div>
@@ -59,7 +59,7 @@ export function RouteAnalysis({ groups, focusId, onFocus, hour, hours, start, na
           ["Drive time (normal roads)", mins(o.timeS), null],
           ["Compared with fastest", extra > 30 ? `+${mins(extra)}` : "Fastest", null],
           ["Distance", `${o.km.toFixed(1)} km`, null],
-          ["Chance a crossing on it floods", pct(s.pFail), true],
+          ["Illustrative flood band for a crossing on it", band(s.pFail), true],
           ["Hours blocked in replay", `${bh.length} of ${hours}`, false],
           ["First blocked", bh.length ? hourTime(start, bh[0]) : "Not in this window", false],
         ] as [string, string, boolean | null][]).map(([k, v, syn], i) => (
@@ -76,14 +76,14 @@ export function RouteAnalysis({ groups, focusId, onFocus, hour, hours, start, na
           {Array.from({ length: hours }, (_, h) => {
             const st = routeAtHour(o.on, h);
             return (
-              <span key={h} title={`${hourTime(start, h)}: ${STATE[st.state].label}, ${pct(st.pFail)} placeholder chance`}
+              <span key={h} title={`${hourTime(start, h)}: ${STATE[st.state].label}, illustrative band ${band(st.pFail)}`}
                 className={`flex-1 rounded-t-sm ${["bg-blue/70", "bg-alert", "bg-[#7A0000] hatch"][st.state]} ${h === hour ? "outline outline-2 outline-offset-1 outline-ink" : ""}`}
                 style={{ height: `${Math.max(10, st.pFail * 100)}%` }} />
             );
           })}
         </div>
         <p className="mt-2 font-ui text-xs text-muted">
-          Colour: replay status <Tag synthetic={false} /> · height: chance a crossing floods <Tag synthetic />
+          Colour: replay status <Tag synthetic={false} /> · height: illustrative flood band <Tag synthetic />
         </p>
       </div>
 
@@ -105,7 +105,7 @@ export function RouteAnalysis({ groups, focusId, onFocus, hour, hours, start, na
                         : lv > 0 ? <span className="rounded-full bg-softred px-2 py-px font-ui text-[11px] font-semibold text-alert">above 2-yr</span> : null}
                     </p>
                     <p className="mt-0.5 font-ui text-xs leading-relaxed text-muted">
-                      Flow {r == null ? "unknown" : `${r}× the 10-year flow`} <Tag synthetic={false} /> · flood chance {c.x!.p_pct[hour]}% <Tag synthetic /> ·
+                      Flow {r == null ? "unknown" : `${r}× the 10-year flow`} <Tag synthetic={false} /> · illustrative flood band {band(c.x!.p_pct[hour] / 100)} <Tag synthetic /> ·
                       first above 10-yr {c.x!.first_above_RL10_utc ? utc(c.x!.first_above_RL10_utc) : "not in replay"} · FEMA {c.x!.fema_zone}
                       {c.x!.tidal ? " · tidal: surge may matter more than river flow" : ""} · {c.x!.people_affected.toLocaleString()} people affected if it closes alone
                     </p>
@@ -136,7 +136,7 @@ export function RouteAnalysis({ groups, focusId, onFocus, hour, hours, start, na
                     <span className="min-w-0">
                       <span className="block truncate font-ui text-sm font-medium">{names[r.serviceId]}</span>
                       <span className="block truncate font-ui text-xs text-muted">
-                        {KIND[r.kind]} · {mins(r.timeS)} · {pct(st.pFail)} chance{r.on.some((c) => !c.x) ? ` · ${r.on.filter((c) => !c.x).length} unassessed` : ""}
+                        {KIND[r.kind]} · {mins(r.timeS)} · {band(st.pFail)} band{r.on.some((c) => !c.x) ? ` · ${r.on.filter((c) => !c.x).length} unassessed` : ""}
                       </span>
                     </span>
                     <StatusBadge state={st.state} />
@@ -150,7 +150,7 @@ export function RouteAnalysis({ groups, focusId, onFocus, hour, hours, start, na
           <p key={n.name} className="mt-2 flex gap-2 font-ui text-xs text-alert"><CircleSlash size={14} className="mt-px shrink-0" aria-hidden />{n.name}: {n.reason}.</p>
         ))}
         <p className="mt-2 font-ui text-xs leading-relaxed text-muted">
-          Ranking: fewest closed crossings first (open routes lead), then the lower placeholder chance (in 5-point steps), then the shorter drive.
+          Ranking: fewest closed crossings first (open routes lead), then the lower illustrative band value (in 5-point steps), then the shorter drive.
         </p>
       </div>
 

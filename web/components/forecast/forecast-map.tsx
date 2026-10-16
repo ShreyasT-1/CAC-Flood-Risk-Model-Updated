@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { RISK, crossingStatus, getJSON, hourTime, pct } from "@/lib/sample";
+import { RISK, crossingStatus, getJSON, hourTime } from "@/lib/sample";
 import { BOUNDS, STYLE, esc, loadMaplibre, type ML } from "@/lib/maplibre";
 import { useSample } from "@/components/forecast/sample-store";
 import { HourSlider } from "@/components/ui/hour-slider";
@@ -16,7 +16,7 @@ function Legend() {
     <div className="grid gap-4 sm:justify-items-end">
       <div>
         <p className="label mb-2.5 text-muted">
-          Chance of losing access <span className="ml-1 rounded-full bg-[#EFE3FF] px-2 py-0.5 normal-case tracking-normal text-[#5A2D91]">placeholder</span>
+          Illustrative band of losing access <span className="ml-1 rounded-full bg-[#EFE3FF] px-2 py-0.5 normal-case tracking-normal text-[#5A2D91]">placeholder</span>
         </p>
         <ul className="flex flex-wrap gap-x-5 gap-y-3 font-ui text-xs text-ink/80" aria-label="Isolation likelihood legend">
           {RISK.map(({ label, cls }) => (
@@ -104,7 +104,7 @@ export function ForecastMap() {
           m.on("mousemove", "sites", (e: ML) => {
             const f = e.features[0].properties;
             m.getCanvas().style.cursor = "pointer";
-            tip.setLngLat(e.lngLat).setHTML(`<b>${esc(f.name)}</b><br>${pct(f.p)} chance of losing access · placeholder`).addTo(m);
+            tip.setLngLat(e.lngLat).setHTML(`<b>${esc(f.name)}</b><br>Illustrative band: ${RISK.find((r) => f.p < r.max)!.label} · placeholder`).addTo(m);
           });
           for (const id of ["crossings", "sites"]) m.on("mouseleave", id, () => { m.getCanvas().style.cursor = ""; tip.remove(); });
           m.on("click", "sites", (e: ML) => select(data.sites.find((s) => s.id === e.features[0].properties.id) ?? null));

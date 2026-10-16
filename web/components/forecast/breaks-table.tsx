@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { crossingStatus, hourTime, pct, utc } from "@/lib/sample";
+import { crossingStatus, hourTime, band, utc } from "@/lib/sample";
 import { useSample } from "@/components/forecast/sample-store";
 
 const STATUS = {
@@ -70,7 +70,7 @@ export function BreaksTable() {
                     </p>
                     <p className="font-ui text-xs text-muted">
                       Replay: flow {h.flow_ratio_q10.value}× the 10-year flow this hour · FEMA zone {c.fema_zone}
-                      {c.tidal_flag ? " · tidal (river flow may not capture its flooding)" : ""} · placeholder flood chance {pct(h.flood_probability.value)}
+                      {c.tidal_flag ? " · tidal (river flow may not capture its flooding)" : ""} · illustrative flood band {band(h.flood_probability.value)} (placeholder, not a probability)
                     </p>
                   </div>
                 </details>

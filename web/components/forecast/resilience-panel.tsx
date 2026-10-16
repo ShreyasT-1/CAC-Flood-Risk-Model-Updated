@@ -1,6 +1,6 @@
 "use client";
 import { Activity, ExternalLink, HeartPulse, House, Info, MapPin, Search, Stethoscope } from "lucide-react";
-import { hourTime, isStress, pct, risk, type LocationView } from "@/lib/sample";
+import { hourTime, isStress, band, risk, type LocationView } from "@/lib/sample";
 import { useSample } from "@/components/forecast/sample-store";
 import { Tag } from "@/components/ui/tags";
 
@@ -9,12 +9,12 @@ const ICON = { dialysis: HeartPulse, nursing_home: Stethoscope, residential: Hou
 
 function Timeline({ loc, hour }: { loc: LocationView; hour: number }) {
   return (
-    <div className="mt-6" aria-label="Chance of losing access in each replay hour">
+    <div className="mt-6" aria-label="Illustrative band of losing access in each replay hour">
       <div className="flex h-16 items-end gap-[3px]">
         {loc.hours.map((h, i) => (
           <span
             key={i}
-            title={`Hour ${i}: ${pct(h.p)} (placeholder)${h.lost ? ", no route in the replay" : ""}`}
+            title={`Hour ${i}: illustrative band ${band(h.p)}${h.lost ? ", no route in the replay" : ""}`}
             className={`flex-1 rounded-t-sm border border-ink/10 ${risk(h.p).cls} ${i === hour ? "outline outline-2 outline-offset-1 outline-blue" : ""}`}
             style={{ height: `${Math.max(6, h.p * 100)}%` }}
           />
@@ -24,7 +24,7 @@ function Timeline({ loc, hour }: { loc: LocationView; hour: number }) {
         {loc.hours.map((h, i) => <span key={i} className={`h-1.5 flex-1 rounded-sm ${h.lost ? "bg-ink" : "bg-ink/10"}`} />)}
       </div>
       <p className="mt-2 font-ui text-xs text-muted">
-        Bars: chance of losing access <Tag synthetic /> · dark strip: no route to an emergency hospital in the replay <Tag synthetic={false} />
+        Bars: illustrative band of losing access <Tag synthetic /> · dark strip: no route to an emergency hospital in the replay <Tag synthetic={false} />
       </p>
     </div>
   );
@@ -38,7 +38,7 @@ export function ResiliencePanel() {
   const r = h ? risk(h.p) : null;
 
   const metrics: [string, string, boolean][] = !loc || !h || !loc.assessed ? [] : [
-    ["Isolation probability", pct(h.p), syn("isolation_probability")],
+    ["Isolation band (illustrative)", band(h.p), syn("isolation_probability")],
     ["Time to isolation", h.tti === null ? "Not in replay window" : h.tti === 0 ? "Now" : `In about ${h.tti} h`, syn("time_to_isolation")],
     ["Isolation duration", h.dur === null ? "-" : `About ${h.dur} h`, syn("isolation_duration")],
     ["Detour", h.lost ? "No route" : h.detour ? `+${h.detour} min` : "1 min or less", syn("detour_minutes")],
@@ -58,7 +58,7 @@ export function ResiliencePanel() {
           </div>
           {r && loc?.assessed ? (
             <span className={`rounded-full border border-ink/10 px-3 py-1.5 font-ui text-xs font-semibold ${r.solid} ${r.max > 0.55 ? "text-white" : "text-ink"}`}>
-              {r.label} · placeholder
+              Illustrative · {r.label}
             </span>
           ) : (
             <span className="rounded-full border border-ink/10 bg-paper px-3 py-1.5 font-ui text-xs font-semibold text-muted">Sample replay</span>
@@ -84,13 +84,13 @@ export function ResiliencePanel() {
         ) : (
           <>
             <p className="mt-8 font-display text-3xl font-bold leading-tight tracking-[-0.02em] sm:text-4xl">
-              {h!.lost ? "No route to an emergency hospital in this replay hour" : h!.p >= 0.5 ? "May lose every route to an emergency hospital" : "Not flagged in this replay hour"}
+              {h!.lost ? "No route to an emergency hospital in this replay hour" : "Not flagged in this replay hour"}
             </p>
             <p className="mt-3 inline-flex flex-wrap items-center gap-2 font-mono text-sm text-blue">
               <Activity size={16} aria-hidden />
-              {pct(h!.p)} chance of losing access <Tag synthetic={syn("isolation_probability")} />
+              Illustrative band: {band(h!.p)} <Tag synthetic={syn("isolation_probability")} />
             </p>
-            {h!.p < 0.5 && !h!.lost && (
+            {!h!.lost && (
               <p className="mt-2 font-ui text-xs text-muted">Not flagged is not an all-clear: this replay sees river flow only.</p>
             )}
             <Timeline loc={loc} hour={hour} />
@@ -98,7 +98,7 @@ export function ResiliencePanel() {
         )}
 
         <dl className="mt-8 grid grid-cols-2 gap-x-6 border-t border-ink/10 sm:grid-cols-3">
-          {(metrics.length ? metrics : ["Isolation probability", "Time to isolation", "Isolation duration", "Detour", "Critical crossing", "Route redundancy"].map((l) => [l, "-", false] as [string, string, boolean])).map(([label, value, s], index) => (
+          {(metrics.length ? metrics : ["Isolation band (illustrative)", "Time to isolation", "Isolation duration", "Detour", "Critical crossing", "Route redundancy"].map((l) => [l, "-", false] as [string, string, boolean])).map(([label, value, s], index) => (
             <div key={label} className={`min-w-0 py-4 ${index < 4 ? "border-b border-ink/10" : ""} ${index >= 3 ? "sm:border-b-0" : ""}`}>
               <dt className="font-ui text-xs leading-snug text-muted">
                 {label}
@@ -182,14 +182,14 @@ export function ResiliencePanel() {
                       <span className="block truncate font-ui text-sm font-medium">{w.name.replace(" (placeholder)", "")}</span>
                       <span className="block font-ui text-[11px] text-muted">{w.alert_level.replace(" (sample)", "")} · {w.county}</span>
                     </span>
-                    <span className={`shrink-0 rounded-full px-2 py-0.5 font-mono text-xs ${risk(p).solid} ${p >= 0.55 ? "text-white" : "text-ink"}`}>{pct(p)}</span>
+                    <span className={`shrink-0 rounded-full px-2 py-0.5 font-mono text-xs ${risk(p).solid} ${p >= 0.55 ? "text-white" : "text-ink"}`}><span className="mr-1 text-[10px] uppercase tracking-wide opacity-80">Illustrative</span>{band(p)}</span>
                   </button>
                 </li>
               );
             })}
           </ul>
           <p className="mt-3 font-ui text-xs leading-relaxed text-muted">
-            Placeholder facilities placed at real Census block centres; chances are placeholders. Alert levels follow the watch/warning style but are
+            Placeholder facilities placed at real Census block centres; chances are placeholders. Bands only order places against each other; they are not probabilities. Alert levels follow the watch/warning style but are
             not National Weather Service products.
           </p>
         </section>

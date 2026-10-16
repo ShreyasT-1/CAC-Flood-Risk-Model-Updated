@@ -155,6 +155,8 @@ export const crossingStatus = (level: string) =>
   ["RL10", "RL25", "RL50"].includes(level) ? "Above 10-year flow" : level === "RL0" ? "Below 2-year flow" : "Above 2-year flow";
 
 export const pct = (p: number) => `${Math.round(p * 100)}%`;
+/** Placeholder chances are never shown as percentages: only this coarse band, always next to an "Illustrative" tag. */
+export const band = (p: number) => risk(p).label;
 export const utc = (iso: string) => iso.replace("T", " ").replace("Z", " UTC");
 export const hourTime = (start: string, h: number) =>
   utc(new Date(Date.parse(start) + h * 3600e3).toISOString().slice(0, 16) + "Z");
