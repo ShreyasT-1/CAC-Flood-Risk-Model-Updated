@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowRight, Search } from "lucide-react";
 import { isStress } from "@/lib/sample";
+import { ADDRESS_EXAMPLE } from "@/lib/geocode";
 import { Button } from "@/components/ui/button";
 import { useSample } from "@/components/forecast/sample-store";
 
@@ -12,7 +13,7 @@ export function AddressSearch() {
   const { data } = useSample();
   const [query, setQuery] = useState("");
   const go = (params: Record<string, string>) =>
-    router.push(`/route?${new URLSearchParams({ ...params, ...(isStress() ? { data: "stress" } : {}) })}`);
+    router.push(`/route?${new URLSearchParams({ ...(isStress() ? { data: "stress" } : {}), ...(params.q ? {} : params) })}${params.q ? `#q=${encodeURIComponent(params.q)}` : ""}`);
 
   function trySample() {
     const site = data?.sites.find((s) => s.kind === "residential" && s.hours.some((h) => h.lost));
@@ -42,6 +43,7 @@ export function AddressSearch() {
           </Button>
         </div>
       </form>
+      <p className="mt-2 text-center font-ui text-xs text-muted">Use a street address with the town name, {ADDRESS_EXAMPLE}. Place names like &ldquo;City Hall&rdquo; often do not match.</p>
       <p className="mt-5 inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-2 font-ui text-xs text-muted">
         <span className="rounded-full bg-yellow px-3 py-1 font-mono font-medium text-ink">Sample replay, not a live forecast</span>
         <button type="button" onClick={trySample} className="min-h-11 underline underline-offset-4 hover:text-blue">

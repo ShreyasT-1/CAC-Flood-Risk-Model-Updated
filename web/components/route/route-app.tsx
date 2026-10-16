@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { ArrowLeft, Check, Flame, Hospital, LoaderCircle, MapPin, Search } from "lucide-react";
-import { geocode } from "@/lib/geocode";
+import { ADDRESS_EXAMPLE, geocode } from "@/lib/geocode";
 import { blockView, getJSON, nearestBlock, type LocationView, type Lookup, type Meta } from "@/lib/sample";
 import { crossingsOnRoute, rankRoutes, routeAtHour, type LngLat, type RouteCrossings, type RouteOption } from "@/lib/route";
 import { matrix, openRoute, route } from "@/lib/valhalla";
@@ -26,10 +26,9 @@ const FILTERS = [["all", "All"], ["hospital", "Hospitals"], ["fire", "Fire stati
 
 export function RouteApp() {
   const params = useSearchParams();
-  const router = useRouter();
   const [base, setBase] = useState<{ meta: Meta; fac: Facilities; X: RouteCrossings } | null>(null);
   const [loadErr, setLoadErr] = useState<string | null>(null);
-  const [query, setQuery] = useState(params.get("q") ?? "");
+  const [query, setQuery] = useState("");
   const [origin, setOrigin] = useState<Origin | null>(null);
   const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
@@ -57,16 +56,15 @@ export function RouteApp() {
     if (typeof r === "string") return setMsg(r);
     setMsg(null);
     setOrigin(r);
-    const next = new URLSearchParams(params.get("data") ? { data: params.get("data")! } : {});
-    next.set("q", q);
-    router.replace(`/route?${next}`, { scroll: false });
   }
 
   // Starting point from the link: ?lat&lon&label (sample place) or ?q (address).
   useEffect(() => {
-    const lat = params.get("lat"), lon = params.get("lon"), q = params.get("q");
+    // A typed address arrives in the URL #fragment (never sent to our server or its logs) and is cleared once read.
+    const lat = params.get("lat"), lon = params.get("lon"), q = new URLSearchParams(window.location.hash.slice(1)).get("q");
     if (lat && lon) setOrigin({ lat: +lat, lon: +lon, label: params.get("label") ?? "Selected place" });
-    else if (q && !origin) search(q);
+    else if (q && !origin) { setQuery(q); search(q); }
+    if (q) history.replaceState(null, "", window.location.pathname + window.location.search);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // New origin: list services with drive times, preselect the nearest emergency hospital, load the block cross-check.
@@ -203,6 +201,7 @@ export function RouteApp() {
             </button>
           </div>
         </form>
+        <p className="mt-2 font-ui text-xs text-muted">Use a street address with the town name, {ADDRESS_EXAMPLE}. Nothing you type is stored.</p>
         <p aria-live="polite" className="mt-2 min-h-5 font-ui text-sm text-alert">{loadErr ? `Sample data failed to load (${loadErr}).` : msg}</p>
 
         {origin && (
