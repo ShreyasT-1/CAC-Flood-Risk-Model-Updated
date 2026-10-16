@@ -6,7 +6,7 @@ Most flood tools answer *"is this road underwater?"* FloodLens Lifelines answers
 
 Pilot region: **Cape Fear, North Carolina** (New Hanover, Brunswick and Pender counties, plus a 40 km road-network buffer). Live app: https://lifelines-flax.vercel.app
 
-Built by Nishaanth Jay for the Congressional App Challenge. ML teammate: Shreyas Thota.
+Built by Nishaanth Jay and Shreyas Thota for the Congressional App Challenge.
 
 > **Scenarios, not predictions.** Everything here is a river-flow scenario, a nowcast or a structural estimate. It never says a road is safe, and a road that is not flagged is "not flagged in this scenario", never an all-clear. See [What we do not claim](#what-we-do-not-claim).
 
