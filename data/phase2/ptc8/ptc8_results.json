@@ -1,0 +1,232 @@
+{
+ "results": {
+  "primary": {
+   "label": "pos100",
+   "metric": "r10",
+   "n": 842,
+   "n_pos": 8,
+   "n_neg": 834,
+   "counties": 7,
+   "auc": 0.729,
+   "ci95_county_boot": [
+    0.569,
+    0.859
+   ],
+   "boot_valid": 10000,
+   "precision_q10": 0.029,
+   "recall_q10": 0.375,
+   "precision_q2": 0.017,
+   "recall_q2": 0.875,
+   "base_rate": 0.0095,
+   "share_gt_q10_pos": 0.375,
+   "share_gt_q10_neg": 0.122,
+   "verdict": "PASS"
+  },
+  "sens_250m": {
+   "label": "pos250",
+   "metric": "r10",
+   "n": 842,
+   "n_pos": 13,
+   "n_neg": 829,
+   "counties": 7,
+   "auc": 0.789,
+   "ci95_county_boot": [
+    0.615,
+    0.906
+   ],
+   "boot_valid": 10000,
+   "precision_q10": 0.057,
+   "recall_q10": 0.462,
+   "precision_q2": 0.03,
+   "recall_q2": 0.923,
+   "base_rate": 0.0154,
+   "share_gt_q10_pos": 0.462,
+   "share_gt_q10_neg": 0.119
+  },
+  "sens_no_structural_damage_rows": {
+   "label": "pos100_nodamage",
+   "metric": "r10",
+   "n": 842,
+   "n_pos": 8,
+   "n_neg": 834,
+   "counties": 7,
+   "auc": 0.729,
+   "ci95_county_boot": [
+    0.566,
+    0.855
+   ],
+   "boot_valid": 10000,
+   "precision_q10": 0.029,
+   "recall_q10": 0.375,
+   "precision_q2": 0.017,
+   "recall_q2": 0.875,
+   "base_rate": 0.0095,
+   "share_gt_q10_pos": 0.375,
+   "share_gt_q10_neg": 0.122
+  },
+  "sens_r2": {
+   "label": "pos100",
+   "metric": "r2",
+   "n": 842,
+   "n_pos": 8,
+   "n_neg": 834,
+   "counties": 7,
+   "auc": 0.734,
+   "ci95_county_boot": [
+    0.616,
+    0.855
+   ],
+   "boot_valid": 10000,
+   "precision_q10": 0.029,
+   "recall_q10": 0.375,
+   "precision_q2": 0.017,
+   "recall_q2": 0.875,
+   "base_rate": 0.0095,
+   "share_gt_q10_pos": 0.375,
+   "share_gt_q10_neg": 0.122
+  }
+ },
+ "per_county": [
+  {
+   "county": "BLADEN",
+   "n": 89,
+   "n_pos": 1,
+   "auc": null
+  },
+  {
+   "county": "BRUNSWICK",
+   "n": 122,
+   "n_pos": 1,
+   "auc": null
+  },
+  {
+   "county": "COLUMBUS",
+   "n": 146,
+   "n_pos": 2,
+   "auc": null
+  },
+  {
+   "county": "DUPLIN",
+   "n": 166,
+   "n_pos": 1,
+   "auc": null
+  },
+  {
+   "county": "JONES",
+   "n": 64,
+   "n_pos": 1,
+   "auc": null
+  },
+  {
+   "county": "PENDER",
+   "n": 93,
+   "n_pos": 0,
+   "auc": null
+  },
+  {
+   "county": "SAMPSON",
+   "n": 162,
+   "n_pos": 2,
+   "auc": null
+  }
+ ],
+ "strata": [
+  {
+   "stratum": "order_class=1",
+   "n": 185,
+   "n_pos": 1,
+   "auc": null
+  },
+  {
+   "stratum": "order_class=2",
+   "n": 333,
+   "n_pos": 2,
+   "auc": null
+  },
+  {
+   "stratum": "order_class=>=3",
+   "n": 324,
+   "n_pos": 5,
+   "auc": 0.605
+  },
+  {
+   "stratum": "reliable_analogue=False",
+   "n": 281,
+   "n_pos": 2,
+   "auc": null
+  },
+  {
+   "stratum": "reliable_analogue=True",
+   "n": 561,
+   "n_pos": 6,
+   "auc": 0.721
+  },
+  {
+   "stratum": "tidal=False",
+   "n": 734,
+   "n_pos": 7,
+   "auc": 0.712
+  },
+  {
+   "stratum": "tidal=True",
+   "n": 108,
+   "n_pos": 1,
+   "auc": null
+  }
+ ],
+ "timing": {
+  "n_positives_with_unflagged_record": 8,
+  "closure_start_minus_nwm_peak_h_median": 4.3,
+  "iqr": [
+   -19.4,
+   7.9
+  ],
+  "record_duration_days_median_unflagged": 2.02,
+  "record_duration_days_iqr_unflagged": [
+   0.92,
+   2.22
+  ],
+  "n_records_in_timing_stats": 32
+ },
+ "flow_meta": {
+  "window_start": "2024-09-14 16:00:00",
+  "window_end": "2024-09-20 18:00:00",
+  "hours_expected": 147,
+  "hours_read": 147,
+  "missing": [],
+  "versions": [
+   "v3.0"
+  ],
+  "reaches": 709,
+  "seconds": 47
+ },
+ "counties": [
+  "BLADEN",
+  "BRUNSWICK",
+  "COLUMBUS",
+  "DUPLIN",
+  "JONES",
+  "PENDER",
+  "SAMPSON"
+ ],
+ "closures": {
+  "n": 35,
+  "records_with_assessed_crossing_100m": 8,
+  "structural_damage_flagged": 3,
+  "by_county": {
+   "Columbus": 14,
+   "Brunswick": 8,
+   "Duplin": 5,
+   "Sampson": 3,
+   "Bladen": 2,
+   "Pender": 2,
+   "Jones": 1
+  }
+ },
+ "t15_E4_for_comparison": {
+  "n_pos": 26,
+  "n": 1927,
+  "auc_r10": 0.819,
+  "ci95": "[0.637, 0.915]"
+ }
+}

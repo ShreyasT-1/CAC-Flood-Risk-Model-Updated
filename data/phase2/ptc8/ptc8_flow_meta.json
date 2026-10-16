@@ -1,0 +1,12 @@
+{
+ "window_start": "2024-09-14 16:00:00",
+ "window_end": "2024-09-20 18:00:00",
+ "hours_expected": 147,
+ "hours_read": 147,
+ "missing": [],
+ "versions": [
+  "v3.0"
+ ],
+ "reaches": 709,
+ "seconds": 47
+}
