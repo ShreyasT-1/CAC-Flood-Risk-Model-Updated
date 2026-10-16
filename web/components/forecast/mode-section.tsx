@@ -23,7 +23,7 @@ const ReplayHeader = () => {
       <p role="note" className="mb-4 rounded-2xl border border-[#E6DFA3] bg-yellow px-5 py-4 font-ui text-sm font-semibold">
         Replay of a past storm (NWM v3.0 hindcast), not a forecast.
       </p>
-      <ModeHeader mode={m.mode ?? "REPLAY"} generated={m.generated_at} source={m.data_sources[0]} stale={!!m.stale}
+      <ModeHeader mode={m.mode ?? "REPLAY"} generated={m.generated_at} source={m.data_sources[0]} stale={!!m.stale} fixed
         staleNote={`Replay starts ${hourTime(m.event.replay_start_utc, 0)}; the data are fixed, not live.`} caveats={[m.event.note, m.stamp, ...m.known_gaps]} />
     </>
   );
@@ -114,7 +114,7 @@ function ExamplePreview() {
       <p role="note" className="mb-4 rounded-2xl border border-[#E6DFA3] bg-yellow px-5 py-4 font-ui text-sm font-semibold">
         Example run of a past storm (Hurricane Florence, 2018). Not live, not a forecast, not validated.
       </p>
-      <ModeHeader mode="EXAMPLE · PAST STORM (HINDCAST)" generated={m.generated_at} source={m.data_sources[0]} stale={false}
+      <ModeHeader mode="EXAMPLE · PAST STORM (HINDCAST)" generated={m.generated_at} source={m.data_sources[0]} stale={false} fixed
         staleNote={`Fixed data, not live. Leads 1 to ${m.event.hours} h are the replay hours starting ${hourTime(start, 0)}.`}
         caveats={["The flows are the NWM v3.0 retrospective (a free-running hindcast), laid out like forecast leads. No forecast was issued at the time and none is shown.",
           "Not validated, and no forecast skill is claimed. River flow only; no surge, tide or drainage flooding.",
