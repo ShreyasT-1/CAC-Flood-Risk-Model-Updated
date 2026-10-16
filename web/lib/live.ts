@@ -11,7 +11,7 @@ export type Gauge = {
   usgs: { discharge_cfs: number | null; discharge_time: string | null; discharge_stale: boolean; gage_height_ft_usgs_datum: number | null; gage_height_time: string | null };
   nws: { stage_ft_nws_datum: number | null; stage_time: string | null; stage_stale: boolean; flood_category: string; thresholds_ft: Record<string, number> };
 };
-export type Nowcast = { mode: string; stale: boolean; generated_at: string; sources: string[]; caveats: string[]; errors: string[]; gauges: Gauge[] };
+export type Nowcast = { mode: string; stale: boolean; generated_at: string; sources: string[]; caveats: string[]; errors: string[]; gauges: Gauge[]; gauge_rule?: string; n_pilot_area?: number; n_other_basin?: number };
 
 export type FcHour = { lead_hours: number; valid_time: string; flow_cfs: number | null; flow_ratio_q10: number | null; scenario_state: string | null };
 export type Forecast = {

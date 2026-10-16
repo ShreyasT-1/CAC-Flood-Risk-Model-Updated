@@ -4,7 +4,7 @@ River sources (verified 2026-10-14):
   USGS Water Data API (api.waterdata.usgs.gov/ogcapi/v0, collection latest-continuous; the legacy WaterServices is NOT used): latest 00060 discharge (cfs) and 00065 gage height (ft, USGS gauge datum).
   NWS NWPS (api.water.noaa.gov/nwps/v1/gauges/{lid}): observed stage in the NWS stage datum, the NWS flood thresholds, and NWS's own flood category.
   The USGS gage height and the NWS stage are on DIFFERENT datums (e.g. STPN7: USGS 1.40 ft vs NWS 33.49 ft): they are never compared or subtracted. The flood status is NWS's category for NWS's stage.
-Gauges = in_pilot rows of config/reaches.csv. Every value carries synthetic:false (real observations), a UTC time and stale (> 3 h old). A gauge category of no_flooding / below action is NOT an all-clear for any road."""
+Gauges: `gauges` = the in_pilot rows of config/reaches.csv that lie within 40 km of New Hanover/Brunswick/Pender (config/nowcast_gauges.csv, made by src/46_nowcast_gauge_km.py); the other in_pilot gauges (upstream basin: Fayetteville, Greensboro, Chapel Hill ...) are kept under `other_basin_gauges` and not shown. Every value carries synthetic:false (real observations), a UTC time and stale (> 3 h old). A gauge category of no_flooding / below action is NOT an all-clear for any road."""
 import sys, json, importlib.util, datetime as dt, urllib.request, urllib.parse
 import pandas as pd
 STALE = dt.timedelta(hours=3)
@@ -56,7 +56,7 @@ def build_gauge(g, usgs, nws, now):
 
 
 def river(now):
-    R = pd.read_csv("config/reaches.csv"); R = R[R.in_pilot & R.usgs_ids.notna() & R.nws_lid.notna()]; gauges, errors = [], []
+    R = pd.read_csv("config/reaches.csv"); R = R[R.in_pilot & R.usgs_ids.notna() & R.nws_lid.notna()]; gauges, errors = [], []; pub = set(pd.read_csv("config/nowcast_gauges.csv").query("public").nws_lid)
     cand = {}; [cand.setdefault(sid, r.nws_lid) for r in R.itertuples() for sid in usgs_ids(r.usgs_ids)]
     uj = {}
     try:
@@ -68,7 +68,7 @@ def river(now):
         site = next((s for s in usgs_ids(r.usgs_ids) if s in uj), usgs_ids(r.usgs_ids)[0])
         try: nws = get(NWPS + r.nws_lid)
         except Exception as e: nws = None; errors.append(f"NWPS {r.nws_lid}: {type(e).__name__}: {e}"[:200])
-        gauges.append(build_gauge(dict(lid=r.nws_lid, site=site), uj.get(site), nws, now))
+        gauges.append(dict(build_gauge(dict(lid=r.nws_lid, site=site), uj.get(site), nws, now), pilot_area=r.nws_lid in pub))
     return gauges, errors
 
 
@@ -76,10 +76,12 @@ def run():
     now = dt.datetime.now(dt.timezone.utc); gauges, errors = [], []
     try: gauges, errors = river(now)
     except Exception as e: errors.append(f"river: {type(e).__name__}: {e}"[:200])
+    other = [g for g in gauges if not g["pilot_area"]]; gauges = [g for g in gauges if g["pilot_area"]]
     if gauges:
         doc = dict(sample=False, mode="NOWCAST", stale=all(g["stale"] for g in gauges), generated_at=now.strftime("%Y-%m-%dT%H:%MZ"), stale_after_hours=3, sources=["USGS Water Data API (latest-continuous, 00060/00065)", "NWS NWPS (observed stage, flood thresholds, flood category)"],
                    caveats=["Observed gauge readings, provisional. Not a forecast and not a closure probability.", "USGS gage height and NWS stage use different datums and are not compared.", "A gauge below flood stage says nothing about whether any road is open or passable; it does not capture drainage flooding, surge, or small streams.", "Flood category is NWS's, for the gauge's own stage."],
-                   errors=errors, gauges=gauges)
+                   gauge_rule="Gauges within 40 km of New Hanover, Brunswick or Pender county. Other Cape Fear basin gauges further upstream are kept in other_basin_gauges and not shown.",
+                   n_pilot_area=len(gauges), n_other_basin=len(other), errors=errors, gauges=gauges, other_basin_gauges=other)
         json.dump(doc, open("export/sample/nowcast.json", "w"), indent=1); print("wrote export/sample/nowcast.json", len(gauges), "gauges;", sum(g["stale"] for g in gauges), "stale;", len(errors), "errors")
     else: print("river nowcast failed; previous nowcast.json kept:", errors)
     try:

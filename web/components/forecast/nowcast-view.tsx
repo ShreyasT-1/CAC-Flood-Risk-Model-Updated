@@ -51,7 +51,7 @@ export function NowcastView({ now }: { now: number }) {
         staleNote={age !== null ? `File generated ${hoursText(age)}` : undefined} caveats={[...n.caveats, ...n.errors.map((e) => `Data error: ${e}`)]} />
       <h3 id="gauges-h" className="font-display text-2xl font-bold">River gauges: observed now</h3>
       <p className="mt-2 font-ui text-sm text-ink/80" role="status">
-        {gs.length} pilot gauges · {up} at or above NWS action stage · {stale} stale. Each row shows NWS&rsquo;s own category for NWS&rsquo;s stage. USGS gage height uses a different datum and is not compared with NWS stage.
+        {gs.length} {gs.length === 1 ? "gauge" : "gauges"} within 40 km of New Hanover, Brunswick or Pender · {up} at or above NWS action stage · {stale} stale.{n.n_other_basin ? ` ${n.n_other_basin} more gauges further up the Cape Fear basin are not shown.` : ""} Each row shows NWS&rsquo;s own category for NWS&rsquo;s stage. USGS gage height uses a different datum and is not compared with NWS stage.
       </p>
       <ul className="mt-4 border-t border-divider">{shown.map((g) => <Row key={g.lid} g={g} now={now} />)}</ul>
       {gs.length > 8 && (
