@@ -1,10 +1,10 @@
-"""NOWCAST (observed now), one command:  python src/45_nowcast.py   (selftest: python src/45_nowcast.py selftest)
+"""NOWCAST (observed now), one command:  python src/live/45_nowcast.py   (selftest: python src/live/45_nowcast.py selftest)
 Writes export/sample/nowcast.json (river gauges) and refreshes export/sample/coastal.json (via 43_coastal_levels.fetch). A failure in one part keeps that part's previous file and is logged in nowcast.json "errors".
 River sources (verified 2026-10-14):
   USGS Water Data API (api.waterdata.usgs.gov/ogcapi/v0, collection latest-continuous; the legacy WaterServices is NOT used): latest 00060 discharge (cfs) and 00065 gage height (ft, USGS gauge datum).
   NWS NWPS (api.water.noaa.gov/nwps/v1/gauges/{lid}): observed stage in the NWS stage datum, the NWS flood thresholds, and NWS's own flood category.
   The USGS gage height and the NWS stage are on DIFFERENT datums (e.g. STPN7: USGS 1.40 ft vs NWS 33.49 ft): they are never compared or subtracted. The flood status is NWS's category for NWS's stage.
-Gauges: `gauges` = the in_pilot rows of config/reaches.csv that lie within 40 km of New Hanover/Brunswick/Pender (config/nowcast_gauges.csv, made by src/46_nowcast_gauge_km.py); the other in_pilot gauges (upstream basin: Fayetteville, Greensboro, Chapel Hill ...) are kept under `other_basin_gauges` and not shown. Every value carries synthetic:false (real observations), a UTC time and stale (> 3 h old). A gauge category of no_flooding / below action is NOT an all-clear for any road."""
+Gauges: `gauges` = the in_pilot rows of config/reaches.csv that lie within 40 km of New Hanover/Brunswick/Pender (config/nowcast_gauges.csv, made by src/live/46_nowcast_gauge_km.py); the other in_pilot gauges (upstream basin: Fayetteville, Greensboro, Chapel Hill ...) are kept under `other_basin_gauges` and not shown. Every value carries synthetic:false (real observations), a UTC time and stale (> 3 h old). A gauge category of no_flooding / below action is NOT an all-clear for any road."""
 import sys, json, importlib.util, datetime as dt, urllib.request, urllib.parse
 import pandas as pd
 STALE = dt.timedelta(hours=3)
@@ -85,7 +85,7 @@ def run():
         json.dump(doc, open("export/sample/nowcast.json", "w"), indent=1); print("wrote export/sample/nowcast.json", len(gauges), "gauges;", sum(g["stale"] for g in gauges), "stale;", len(errors), "errors")
     else: print("river nowcast failed; previous nowcast.json kept:", errors)
     try:
-        spec = importlib.util.spec_from_file_location("coastal", "src/43_coastal_levels.py"); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); m.fetch()
+        spec = importlib.util.spec_from_file_location("coastal", "src/live/43_coastal_levels.py"); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); m.fetch()
     except Exception as e: print("coastal failed; previous coastal.json kept:", type(e).__name__, e)
 
 

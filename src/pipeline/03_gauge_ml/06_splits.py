@@ -13,7 +13,7 @@ Outputs: ml_full_table/ gets split, cv_fold, nwm_flow_pctile, q_fs_cfs, q_fs_qua
          data/derived/splits.csv (event-level split/fold), holdout_gauges.csv, split_summary.csv, leakage_tests.txt
 """
 import numpy as np, pandas as pd
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 TBL = DER / "ml_full_table"
 K = 5

@@ -8,7 +8,7 @@ Groups:
   rain_*  : Stage IV area-mean rain over the gauge's NLDI basin, accumulation over past 1/3/6/12/24/48/72h (needs all hours present, else NaN)
 """
 import numpy as np, pandas as pd
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 OLD, NEW = DER / "ml_full_table", DER / "ml_full_table_v2"
 LAGS = (1, 3, 6, 12, 24)

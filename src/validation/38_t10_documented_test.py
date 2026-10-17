@@ -1,9 +1,9 @@
 """Phase 2 / T10E: test the hindcast closure rule (NWM v3.0 retro flow > q10 on a crossing's reach) against the documented Florence closures in docs/florence_documented_closures.csv.
 Definitions: docs/validation_protocol.md (section E + Amendment 1). Statewide seed structures from data/phase2/t10/structures_nc.parquet (NCDOT + NBI, waterway-like). Hindcast only; no tuning.
-Usage (repo root): python src/38_t10_documented_test.py"""
+Usage (repo root): python src/validation/38_t10_documented_test.py"""
 import re, sys, time, json, requests, numpy as np, pandas as pd, geopandas as gpd
 from scipy.stats import fisher_exact
-sys.path.insert(0, "src"); from nwm_retro import fetch
+sys.path.insert(0, "src/live"); from nwm_retro import fetch
 O = "data/phase2/t10/"; U = 32119; CFS = 35.3146667
 DOC = pd.read_csv("docs/florence_documented_closures.csv"); DOC = DOC[DOC.status == "verified"]
 cs = gpd.read_file("zip://data/raw/counties.zip"); cs = cs[cs.STATEFP == "37"]; code2name = dict(zip(cs.COUNTYFP, cs.NAME.str.upper()))

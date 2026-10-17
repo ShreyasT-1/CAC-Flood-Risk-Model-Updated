@@ -1,4 +1,4 @@
-"""Assertions for the export folder (T6; default data/export/). Exit code 1 and a list of failures if anything is wrong. Usage (repo root): python src/export_checks.py [export_dir]"""
+"""Assertions for the export folder (T6; default data/export/). Exit code 1 and a list of failures if anything is wrong. Usage (repo root): python src/pipeline/04_export/export_checks.py [export_dir]"""
 import os, re, sys, json, hashlib, pandas as pd, geopandas as gpd
 X = (sys.argv[1] if len(sys.argv) > 1 else "data/export/").rstrip("/") + "/"; bad = []
 def chk(ok, msg):

@@ -1,4 +1,4 @@
-"""3DEP project index (layer 24 'Lidar Point Cloud' workunits) intersecting Area A+10km and Area B+40km -> data/raw_new/dem_3dep/lidar_workunits_<A|B>.csv. Usage: python -I src/inventory/lidar_projects.py"""
+"""3DEP project index (layer 24 'Lidar Point Cloud' workunits) intersecting Area A+10km and Area B+40km -> data/raw_new/dem_3dep/lidar_workunits_<A|B>.csv. Usage: python -I src/pipeline/01_build_world/inventory/lidar_projects.py"""
 import os, sys, json, requests, pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common_geo import areas, ROOT

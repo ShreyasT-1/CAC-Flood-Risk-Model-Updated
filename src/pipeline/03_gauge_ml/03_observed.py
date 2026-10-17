@@ -6,7 +6,7 @@ Outputs: data/raw/usgs/{usgs_id}_{pc}_{year}.csv, data/derived/obs_hourly.parque
 """
 import io, sys, time
 import numpy as np, pandas as pd
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 PC = {"stage": "00065", "q": "00060"}
 LIMIT = 50000

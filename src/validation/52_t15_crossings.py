@@ -1,6 +1,6 @@
 """Phase 2 / T15 Step 2: crossing sets and labels for the chosen events (Amendment 3 + 4). Statewide NWM flowlines + OWP q2/q10 pulled once (tiled bbox queries), statewide seed structures (data/phase2/t10/structures_nc.parquet)
 matched to the nearest reach <= 100 m (assessed: q2 >= 1 cfs), per event: counties with >= 1 flood-related CLOSED record, positives = crossing within 100 m (250 m sensitivity) of a closure record started in the window (point or line geometry).
-Usage (repo root): python src/52_t15_crossings.py"""
+Usage (repo root): python src/validation/52_t15_crossings.py"""
 import os, re, json, time, requests, numpy as np, pandas as pd, geopandas as gpd, xarray as xr
 from shapely.geometry import Point, LineString, shape
 O = "data/phase2/t15/"; U = 32119

@@ -1,10 +1,10 @@
-"""PTC8 (Potential Tropical Cyclone Eight, Sept 2024) as a TEST event for the C5 ranking test. Usage (repo root): python src/81_ptc8_test.py   (flow download ~150 hourly files, cached; rerun reads the cache)
-Rules fixed here BEFORE the first run (no tuning, no threshold change, no feature selection on this event; metric and pass rule copied from src/54_t15_test.py):
+"""PTC8 (Potential Tropical Cyclone Eight, Sept 2024) as a TEST event for the C5 ranking test. Usage (repo root): python src/validation/81_ptc8_test.py   (flow download ~150 hourly files, cached; rerun reads the cache)
+Rules fixed here BEFORE the first run (no tuning, no threshold change, no feature selection on this event; metric and pass rule copied from src/validation/54_t15_test.py):
   closures  = data/derived_new/flood_road_events_unified.csv, source_type == confirmed_closure, start 2024-09-14..2024-09-25, area in {B, B_buffer} -> data/derived_new/ptc8_closures.csv.
               duration > 14 days = probable structural damage (flag only): kept as positives in the primary test (they are storm-caused), excluded from timing statistics, and the test is repeated without them.
-  crossings = assessed crossings of src/52_t15_crossings.py (same structure->reach match, q2/q10, assessed rule) in the counties that have >= 1 PTC8 closure record; positive = within 100 m of a closure POINT
+  crossings = assessed crossings of src/validation/52_t15_crossings.py (same structure->reach match, q2/q10, assessed rule) in the counties that have >= 1 PTC8 closure record; positive = within 100 m of a closure POINT
               (route+milepost point, not surveyed to the crossing; the unified file has no line geometry, unlike 52 which also used lines). 250 m is a sensitivity.
-  flows     = NWM operational analysis_assim channel_rt tm00 from gs://national-water-model (same read as src/53_t15_flows.py, NOT the retrospective), window = first start - 2 d .. last start + 1 d (Amendment 4 rule).
+  flows     = NWM operational analysis_assim channel_rt tm00 from gs://national-water-model (same read as src/validation/53_t15_flows.py, NOT the retrospective), window = first start - 2 d .. last start + 1 d (Amendment 4 rule).
   test      = AUC of peak flow / q10 (positives vs negatives), 95% CI by bootstrap over county clusters (10000 resamples); PASS if the lower bound > 0.5, otherwise FAIL (reported either way).
 Note: PTC8 is event E4 of the T15 pool already (C5), so this is the same storm re-sliced (TIMS records in New Hanover/Brunswick/Pender + buffer counties only), not an independent held-out storm. See reports/ptc8_test.md."""
 import json, time, requests, numpy as np, pandas as pd, geopandas as gpd, netCDF4, threading
@@ -42,7 +42,7 @@ tree0 = X.sindex; pts["has_crossing_100m"] = [len(tree0.query(g.buffer(100), pre
 print("closure records with an assessed crossing within 100 m:", int(pts.has_crossing_100m.sum()), "of", len(pts))
 print("crossings assessed", len(X), "in counties", ctys, "| positives 100 m", int(X.pos100.sum()), "250 m", int(X.pos250.sum()), "100 m without >14 d rows", int(X.pos100_nodamage.sum()))
 
-# ---- flows: NWM operational analysis (same read as src/53_t15_flows.py) ----
+# ---- flows: NWM operational analysis (same read as src/validation/53_t15_flows.py) ----
 f0, f1 = C.start.min() - pd.Timedelta(days=2), C.start.max() + pd.Timedelta(days=1)
 hours = pd.date_range(f0.floor("h").tz_localize(None), f1.ceil("h").tz_localize(None), freq="h"); ids = np.sort(X.feature_id.dropna().astype("int64").unique())
 def read(t):

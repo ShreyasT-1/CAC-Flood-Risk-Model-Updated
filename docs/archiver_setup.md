@@ -29,14 +29,14 @@ Get-Content data\forecasts\logs\live_task.log -Tail 5      # expect "exit ok"
 `LastTaskResult : 0` = success. Verified 2026-10-11 13:49 local: result 0, one new cycle (15Z) archived, log shows start and exit.
 
 ## Problems seen on 2026-10-11 (and fixes)
-- First version ran a `.cmd` wrapper (`src/run_nwm_live.cmd`, now unused). Launched from a session whose console was torn down, it died with `-1073741510` (Ctrl-C) before doing work (seen on 10:20, 12:50 and 13:45 starts; the 10:45 start happened to succeed). Running `pythonw.exe` directly with its own log fixed it.
+- First version ran a `.cmd` wrapper (`src/legacy/run_nwm_live.cmd`, now unused). Launched from a session whose console was torn down, it died with `-1073741510` (Ctrl-C) before doing work (seen on 10:20, 12:50 and 13:45 starts; the 10:45 start happened to succeed). Running `pythonw.exe` directly with its own log fixed it.
 - The 11:45 and 12:45 runs did not start, and DNS failed for part of that window: consistent with the laptop sleeping. `-StartWhenAvailable` runs a missed start on wake and the 72 h look-back refills any gap. Default `schtasks /Create` also sets "do not start on battery"; the settings above disable that.
 - If the PC is off for more than ~10 days, cycles AWS no longer holds are lost for good.
 
 ## Limits and tools
 - The PC must be on and the user logged in; the task does not wake the machine.
 - Disable: `Unregister-ScheduledTask -TaskName FloodLens_NWM_Archiver -Confirm:$false`. Pause: `Disable-ScheduledTask -TaskName FloodLens_NWM_Archiver`.
-- Measure publication delay (Last-Modified of f001/f018 minus issue time, last 12 cycles): `python src/nwm_delay.py` -> `data/forecasts/live_delay.csv` (overwrites that CSV each time). Measured 2026-10-11: median 104 min AWS, 104 GCS, 103 NOMADS; max 119 / 113 / 107.
+- Measure publication delay (Last-Modified of f001/f018 minus issue time, last 12 cycles): `python src/live/nwm_delay.py` -> `data/forecasts/live_delay.csv` (overwrites that CSV each time). Measured 2026-10-11: median 104 min AWS, 104 GCS, 103 NOMADS; max 119 / 113 / 107.
 - Manual catch-up: `python src/nwm_backfill.py 2026-10-10T22` (UTC ISO hour) or `python src/nwm_backfill.py 120` (hours back).
 
 # Live NCDOT closures/incidents archiver (T14)

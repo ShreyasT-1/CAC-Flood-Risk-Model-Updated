@@ -1,10 +1,10 @@
 """Origin re-snap check (2026-10-12): 30 random blocks unreachable under the phase-1 snap and reachable under the phase-2 re-snap, plus all blocks dropped by the re-snap (new snap > 1,500 m).
 Per block: snap distance, class/name of the roads at the snapped node, whether the straight line block -> snapped node crosses OSM river/canal/tidal water (>= river-sized; streams/ditches/drains excluded), ramp/service flags.
-Usage (repo root): python src/60_resnap_check.py"""
+Usage (repo root): python src/validation/60_resnap_check.py"""
 import os, importlib.util, numpy as np, pandas as pd, geopandas as gpd
 from shapely.geometry import LineString
 os.environ["P2_RESNAP"] = "1"; U = 5070; O = "data/phase2/resnap_check/"; os.makedirs(O, exist_ok=True)
-sp = importlib.util.spec_from_file_location("eng", "src/22_engine_p2.py"); eng = importlib.util.module_from_spec(sp); sp.loader.exec_module(eng)
+sp = importlib.util.spec_from_file_location("eng", "src/pipeline/02_routing/22_engine_p2.py"); eng = importlib.util.module_from_spec(sp); sp.loader.exec_module(eng)
 raw = pd.read_parquet("data/phase1b/origins_snapped.parquet"); old = raw[raw.snap_m < 1500].reset_index(drop=True)   # phase-1 snap, as the phase-1 engine used it
 new_all = eng.resnap(raw)                                                                                         # phase-2 re-snap of all 6,977 blocks
 b = pd.read_parquet("data/phase2/engine/replay_hindcast_base_baseline.parquet"); b = b[b.facility_type == "hospital_ED_acute"]; unreach_old = set(b[~b.baseline_reachable].geoid20)

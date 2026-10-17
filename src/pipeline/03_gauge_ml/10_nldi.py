@@ -6,7 +6,7 @@ ponytail: 'nearest' = great-circle distance among upstream (UT) sites, not along
 import json, numpy as np, pandas as pd
 from concurrent.futures import ThreadPoolExecutor
 import requests
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 NL = "https://api.water.usgs.gov/nldi/linked-data/nwissite/USGS-"
 miss = pd.read_csv(DER / "obs_missing.csv", dtype={"usgs_id": str})

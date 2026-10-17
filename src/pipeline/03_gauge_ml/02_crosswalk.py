@@ -4,7 +4,7 @@ RouteLink `gages` field of the NWM v3.0 domain (NCAR/NOAA-OWP RouteLink_CONUS). 
 Output: data/derived/gauge_crosswalk.csv
 """
 import numpy as np, pandas as pd, xarray as xr
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 ds = xr.open_zarr("s3://noaa-nwm-retrospective-3-0-pds/CONUS/zarr/chrtout.zarr", storage_options={"anon": True})
 rl = pd.DataFrame({"feature_id": ds.feature_id.values, "gage_id": ds.gage_id.values.astype(str),

@@ -1,7 +1,7 @@
 """Job 1b: validate the filled data/review/label_review_sheet.csv and (only with --apply) write reviewer_decision / reviewer_crossing_id / reviewer_notes into
 data/phase0/florence_label_review.csv and data/phase2/t10/report_candidates.csv. Dry run by default. Originals are copied once to <file>.orig (never overwritten).
 Rules: reviewer_decision in accept/reject/uncertain on EVERY row (no blanks); reviewer_crossing_id, if given, must exist (V2_* in crossings_v2.parquet, T10_* in structures_nc.parquet);
-accept with no listed crossing needs reviewer_crossing_id; (source, report_id) unique and exactly the rows of the source files. Exit 1 on any error. Usage (repo root): python src/70_apply_label_review.py [--apply]"""
+accept with no listed crossing needs reviewer_crossing_id; (source, report_id) unique and exactly the rows of the source files. Exit 1 on any error. Usage (repo root): python src/validation/70_apply_label_review.py [--apply]"""
 import os, shutil, sys, pandas as pd
 SHEET = "data/review/label_review_sheet.csv"; SRC = {"florence": "data/phase0/florence_label_review.csv", "t10": "data/phase2/t10/report_candidates.csv"}
 S = pd.read_csv(SHEET, dtype=str, keep_default_na=False); bad = []

@@ -1,4 +1,4 @@
-"""PHASE 2 COPY of src/phase1/p8_connectivity.py reading replays from data/phase2/engine/ (set W). Original docstring follows.
+"""PHASE 2 COPY of src/legacy/p8_connectivity.py reading replays from data/phase2/engine/ (set W). Original docstring follows.
 Phase1b step 3: (A) outside-connectivity: when origins lose ALL paths to the derived exit points; (B) origin->ED-hospital access for Brunswick, Pender, northern New Hanover and Wilmington/south New Hanover separately.
 Subgroups: county; New Hanover split at latitude 34.28 (north = >= 34.28, my arbitrary line just north of Wilmington's urban core; written here, not derived). All numbers are SCENARIOS from the replay named on the command line;
 the crossing set is named in every row. 'loss' = unreachable AND reachable in the no-closure baseline (baseline-unreachable origins are excluded from numerators and denominators).

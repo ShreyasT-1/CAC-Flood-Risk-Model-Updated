@@ -1,5 +1,5 @@
 """Consolidate hospitals for Area A (+10 km) and Area B (+40 km): CMS (ED flag, type, ownership; no coords) + OSM (coords, operator, beds) + HIFLD mirror (coords, beds, trauma; SOURCE DATA 2017) + OEMS trauma list (hand-keyed from https://oems.nc.gov/trauma/, read 2026-10-14).
-Output: data/derived_new/hospitals_AB.csv. Name matching is fuzzy -> match_score column; review rows < 0.8. Usage: python -I src/inventory/build_hospitals.py"""
+Output: data/derived_new/hospitals_AB.csv. Name matching is fuzzy -> match_score column; review rows < 0.8. Usage: python -I src/pipeline/01_build_world/inventory/build_hospitals.py"""
 import os, sys, re, difflib, pandas as pd, geopandas as gpd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common_geo import areas, ROOT

@@ -7,7 +7,7 @@ its CI resamples GAUGES instead (labelled). Output: data/derived/kill_test_1.csv
 """
 import numpy as np, pandas as pd
 from sklearn.metrics import average_precision_score, precision_recall_curve
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 B, NB = 1000, 2000
 rng = np.random.default_rng(0)

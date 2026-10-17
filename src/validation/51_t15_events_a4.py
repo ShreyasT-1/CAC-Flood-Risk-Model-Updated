@@ -1,5 +1,5 @@
 """Phase 2 / T15 under Amendment 4, Step 1: events from flood-related CLOSED records (Condition == 'Closed' + flood regex), gap > 72 h, >= 30 records and >= 3 counties, start >= 2019-01-01. Counts only; no model output.
-Usage (repo root): python src/51_t15_events_a4.py"""
+Usage (repo root): python src/validation/51_t15_events_a4.py"""
 import re, pandas as pd, numpy as np
 O = "data/phase2/t15/"; P = pd.read_parquet(O + "history_points.parquet")
 for c in ["StartDateTime", "EndDateTime"]: P[c] = pd.to_datetime(P[c], unit="ms", utc=True, errors="coerce")

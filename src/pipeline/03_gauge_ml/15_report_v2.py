@@ -5,7 +5,7 @@ otherwise 'NO' (not distinguishable or worse). Same for recall at 20% precision.
 """
 import pickle
 import numpy as np, pandas as pd
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 E = pd.read_csv(DER / "sample_model_v2_ens.csv"); eb = pickle.load(open(DER / "sample_model_v2_ens_boots.pkl", "rb"))
 R = pd.read_csv(DER / "sample_model_v2.csv"); LD = pd.read_csv(DER / "sample_model_v2_lead.csv")

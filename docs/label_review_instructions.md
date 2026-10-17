@@ -18,7 +18,7 @@ A *label* says: "this report is a real flood-related closure (or impassable wate
 1. `reviewer_decision` (required on every row): exactly `accept`, `reject` or `uncertain` (lower case). No blanks.
 2. `reviewer_crossing_id` (optional on most rows): leave blank to mean "the listed `nearest_crossing_id` is right". Fill it only to name a different crossing id (must exist: `V2_xxxx` for florence rows, `T10_xxxxx` for t10 rows). **Required** for an `accept` on a row that has no listed crossing (many t10 rows have none).
 3. `reviewer_notes` (optional): a few words on why.
-4. Save as CSV in place. Then check without changing anything: `python src/70_apply_label_review.py` (dry run; prints counts and every problem). When it reports no errors, `python src/70_apply_label_review.py --apply` writes the decisions into the two source files (originals kept as `*.csv.orig`).
-5. Then `python src/71_label_sensitivity.py` for the label sensitivity.
+4. Save as CSV in place. Then check without changing anything: `python src/validation/70_apply_label_review.py` (dry run; prints counts and every problem). When it reports no errors, `python src/validation/70_apply_label_review.py --apply` writes the decisions into the two source files (originals kept as `*.csv.orig`).
+5. Then `python src/validation/71_label_sensitivity.py` for the label sensitivity.
 
 Rows you accept that the model rejected (and the reverse) are the interesting ones; the sensitivity script reports how much the T10 results move.

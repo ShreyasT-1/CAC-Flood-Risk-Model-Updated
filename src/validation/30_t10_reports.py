@@ -1,6 +1,6 @@
 """Phase 2 / T10A: NC flood-closure road reports 2016-2022 (IEM LSR) -> candidate reports with a seed structure crossing on the named road within 500 m. Definitions: docs/validation_protocol.md (fixed before running).
 Outputs data/phase2/t10/: lsr_nc_raw.parquet, structures_nc.parquet, osm_roads_nc.parquet (cache), report_candidates.csv (REVIEW FILE, nothing auto-accepted), report_crossings.parquet (reaches + q2..q50).
-Usage (repo root): python src/30_t10_reports.py"""
+Usage (repo root): python src/validation/30_t10_reports.py"""
 import os, re, json, time, requests, numpy as np, pandas as pd, geopandas as gpd
 O = "data/phase2/t10/"; os.makedirs(O, exist_ok=True); U = 32119   # NC State Plane (m)
 

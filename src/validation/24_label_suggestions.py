@@ -1,5 +1,5 @@
 """Phase 2 / T3: add SUGGESTED review columns to data/phase0/florence_label_review.csv. Nothing is auto-accepted: reviewer_decision / reviewer_crossing_id / reviewer_notes stay blank.
-Suggestions are my reading of each remark (hand-written below, one line each). Original file is kept as florence_label_review.orig.csv. Usage (repo root): python src/24_label_suggestions.py"""
+Suggestions are my reading of each remark (hand-written below, one line each). Original file is kept as florence_label_review.orig.csv. Usage (repo root): python src/validation/24_label_suggestions.py"""
 import os, shutil, numpy as np, pandas as pd
 P = "data/phase0/florence_label_review"
 if not os.path.exists(P + ".orig.csv"): shutil.copy(P + ".csv", P + ".orig.csv")

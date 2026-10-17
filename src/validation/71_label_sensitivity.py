@@ -1,18 +1,18 @@
 """Job 1c: label sensitivity. Which results depend on the reviewed labels?
  * T15 (nine-event pooled AUC, 0.690) uses NCDOT closure RECORDS as positives (src/50-54), not the LSR report labels reviewed in data/review/label_review_sheet.csv, so review cannot change it.
    It is recomputed here as a self-check (variant 1 only) and is identical under any review outcome.
- * T10-B/C (claims C1/C2: AUC 0.958 on 74 accepted reports) IS driven by the review labels, so the three variants are run on it with the unchanged code of src/33_t10_flow_test.py
+ * T10-B/C (claims C1/C2: AUC 0.958 on 74 accepted reports) IS driven by the review labels, so the three variants are run on it with the unchanged code of src/validation/33_t10_flow_test.py
    (executed from a patched copy that writes to data/review/sensitivity/ and never touches data/phase2/t10/):
    (1) all auto-labels as they are now (model-suggested accept);
    (2) only labels the reviewer accepted (reviewer 'accept', including rows the model rejected; reviewer reject/uncertain dropped);
    (3) reviewer accepts that are also model accepts (reviewer-rejected AND reviewer-uncertain removed from the positives, nothing added).
-Variants 2 and 3 run only when the sheet is fully filled (same rules as src/70_apply_label_review.py); until then only variant 1 runs. Usage (repo root): python src/71_label_sensitivity.py"""
+Variants 2 and 3 run only when the sheet is fully filled (same rules as src/validation/70_apply_label_review.py); until then only variant 1 runs. Usage (repo root): python src/validation/71_label_sensitivity.py"""
 import importlib, json, os, sys, numpy as np, pandas as pd
 O, OUT = "data/phase2/t10/", "data/review/sensitivity/"; os.makedirs(OUT, exist_ok=True)
-sys.path.insert(0, "src"); a, npos, evs = importlib.import_module("80_repro_headlines").t15_pooled("data/phase2/t15_nine/")
+sys.path.insert(0, "src/validation"); a, npos, evs = importlib.import_module("80_repro_headlines").t15_pooled("data/phase2/t15_nine/")
 print(f"T15 nine-event pooled AUC recomputed from files: {a:.3f} ({npos} positives; events {','.join(evs)}); unaffected by label review (labels = NCDOT records)")
 assert round(a, 3) == 0.690, "T15 self-check failed: expected 0.690"
-src = open("src/33_t10_flow_test.py", encoding="utf-8").read()
+src = open("src/validation/33_t10_flow_test.py", encoding="utf-8").read()
 for x, y in (('O + "report_candidates.csv"', "CAND"), ('X.to_csv(O + f"t10bc_per_report_{label}.csv"', 'X.to_csv(OUTD + f"t10bc_per_report_{label}_{VAR}.csv"')):
     assert x in src, x; src = src.replace(x, y)
 src = src[:src.index("res = []")] + 'res = [run(D[D.decision == "accept"], "primary_hour")]\n'

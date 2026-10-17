@@ -11,7 +11,7 @@
 import importlib.util, gzip, io, json, re, tarfile
 import numpy as np, pandas as pd, requests
 import eccodes as ec
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 spec = importlib.util.spec_from_file_location("b", Path(__file__).parent / "12_build_v2.py"); b = importlib.util.module_from_spec(spec); spec.loader.exec_module(b)
 V2, OLD = b.NEW, b.OLD

@@ -1,4 +1,4 @@
-"""IEM Local Storm Reports (NC, per year) + NCEI Storm Events details (per year). Never overwrites. Usage: python -I src/inventory/fetch_storm_reports.py"""
+"""IEM Local Storm Reports (NC, per year) + NCEI Storm Events details (per year). Never overwrites. Usage: python -I src/pipeline/01_build_world/inventory/fetch_storm_reports.py"""
 import os, sys, re, json, time, requests
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common_geo import ROOT

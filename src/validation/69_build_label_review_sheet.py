@@ -1,6 +1,6 @@
 """Job 1a: build data/review/label_review_sheet.csv, one row per unreviewed label candidate from data/phase0/florence_label_review.csv (source=florence) and
 data/phase2/t10/report_candidates.csv (source=t10). Model suggestions are in model_suggested_* columns (NOT decisions); reviewer_* columns are left EMPTY.
-Refuses to overwrite an existing sheet (it may hold the reviewer's work) unless --force. Usage (repo root): python src/69_build_label_review_sheet.py"""
+Refuses to overwrite an existing sheet (it may hold the reviewer's work) unless --force. Usage (repo root): python src/validation/69_build_label_review_sheet.py"""
 import os, sys, pandas as pd
 OUT = "data/review/label_review_sheet.csv"
 if os.path.exists(OUT) and "--force" not in sys.argv: sys.exit(f"{OUT} exists; refusing to overwrite (use --force only if it is still empty)")

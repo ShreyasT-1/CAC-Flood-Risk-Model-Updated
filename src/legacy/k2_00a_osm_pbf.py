@@ -2,7 +2,7 @@
 per-county files k2_00_crossings.py caches (data/raw/osm_roads_{019,141}.parquet; 129 already came from Overpass)."""
 import osmium, geopandas as gpd
 from shapely.geometry import LineString
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); from common import *
 from k2_00_crossings import CLASS, COUNTIES
 
 cs = gpd.read_file(f"zip://{RAW / 'counties.zip'}")

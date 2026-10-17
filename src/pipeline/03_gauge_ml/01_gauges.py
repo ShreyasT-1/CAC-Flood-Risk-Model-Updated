@@ -4,7 +4,7 @@ Outputs data/derived/gauges_all.csv, data/derived/datum_check.csv, data/derived/
 import io, json, sys, zipfile
 import numpy as np, pandas as pd, requests
 from concurrent.futures import ThreadPoolExecutor
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 NC_BBOX = "-84.4,33.8,-75.4,36.7"
 NWPS = "https://api.water.noaa.gov/nwps/v1/"

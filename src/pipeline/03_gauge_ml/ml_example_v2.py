@@ -3,7 +3,7 @@ Rules enforced here: v2 columns only; split / cv_fold taken from the table and c
 the 7-day buffer rows (split == 'buffer') are dropped everywhere; unseen gauges (34) are never trained on; every fitted statistic comes from trainval folds 0-3 only; one fixed HistGradientBoosting setting, no tuning.
 Baselines (same rows, same bootstrap draws): persist_stage_frac, persist_extrap12h, calibrated_persistence (logistic regression on those two columns, fit on the same training rows as the model; plus a variant fit only on rows with stage < flood stage).
 Metrics: recall at 50% and 20% precision and PR-AUC, onset only (is_exceed_now == False) and all hours; 95% CI by cluster bootstrap (event_id; gauge for Florence), paired across scores. Operating points are set on the eval set itself (an upper bound).
-Usage:  python src/ml_example_v2.py <DATA_ROOT> [--out results.csv] [--boot 200] [--seeds 42 43 44]
+Usage:  python src/pipeline/03_gauge_ml/ml_example_v2.py <DATA_ROOT> [--out results.csv] [--boot 200] [--seeds 42 43 44]
         DATA_ROOT = folder that contains ml_full_table_v2/ and splits.csv (in this repo: data/derived)."""
 import argparse, sys, numpy as np, pandas as pd
 from pathlib import Path

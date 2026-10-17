@@ -7,7 +7,7 @@ Output: data/derived/nwm_hourly.parquet (feature_id, time_utc, nwm_flow_cms)
 """
 import numpy as np, pandas as pd, xarray as xr
 from concurrent.futures import ThreadPoolExecutor
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 (RAW / "nwm").mkdir(exist_ok=True)
 ds = xr.open_zarr("s3://noaa-nwm-retrospective-3-0-pds/CONUS/zarr/chrtout.zarr", storage_options={"anon": True})

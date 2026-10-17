@@ -1,6 +1,6 @@
 # ML handoff - FloodLens gauge nowcast (`ml_full_table_v2`)
 
-For the ML teammate. Written 2026-10-12. Do not edit or push to anyone else's repo from this; copy the table and `src/ml_example_v2.py` into your own work. Every number below comes from `data/phase2/ml_example_v2_results.csv` (made by `src/ml_example_v2.py`, log `data/phase2/ml_example_v2.log`) unless another file is named.
+For the ML teammate. Written 2026-10-12. Do not edit or push to anyone else's repo from this; copy the table and `src/pipeline/03_gauge_ml/ml_example_v2.py` into your own work. Every number below comes from `data/phase2/ml_example_v2_results.csv` (made by `src/pipeline/03_gauge_ml/ml_example_v2.py`, log `data/phase2/ml_example_v2.log`) unless another file is named.
 
 ## Read first
 1. **This is a nowcast, not a forecast.** The v2 features include the gauge's own observed stage (up to one hour before the row time), upstream gauges' observed stage/discharge, and observed (Stage IV) rain over the catchment. A deployed system would need live feeds of all three. Nothing here forecasts rain or the NWM. The 12 h label horizon is the only "lead".
@@ -17,9 +17,9 @@ For the ML teammate. Written 2026-10-12. Do not edit or push to anyone else's re
 - **Onset** = `is_exceed_now == False` (the gauge is not yet at flood stage in the current hour). Most positives are already-flooding hours, so judge any model on onset, not only on all hours. Because the features stop one hour earlier than `is_exceed_now`, "onset" still includes some recession rows; the example also reports a **strict onset** (stage at the cutoff < flood stage).
 
 ## Example script
-`src/ml_example_v2.py` is self-contained (pandas, numpy, scikit-learn, pyarrow); no hardcoded paths.
+`src/pipeline/03_gauge_ml/ml_example_v2.py` is self-contained (pandas, numpy, scikit-learn, pyarrow); no hardcoded paths.
 ```
-python src/ml_example_v2.py <DATA_ROOT> [--out results.csv] [--boot 200] [--seeds 42 43 44]
+python src/pipeline/03_gauge_ml/ml_example_v2.py <DATA_ROOT> [--out results.csv] [--boot 200] [--seeds 42 43 44]
 # DATA_ROOT contains ml_full_table_v2/ and splits.csv; in this repo it is data/derived
 ```
 It trains one HistGradientBoosting model (200 trees, learning rate 0.1, 31 leaves, no early stopping, **no tuning**) on all v2 feature groups (NWM + own stage + upstream + rain; 81 columns) using trainval folds 0-3, all positives plus a 10% negative subsample per seed, 3 seeds. The seed-averaged probability is the score. It scores validation (fold 4), unseen gauges and Florence on the same rows, and reports recall at 50% and 20% precision and PR-AUC with 95% cluster-bootstrap intervals (events; gauges for Florence), paired across scores.

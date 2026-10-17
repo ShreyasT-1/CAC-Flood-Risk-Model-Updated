@@ -1,6 +1,6 @@
-"""FORECAST preview (river), one command:  python src/44_forecast_preview.py   (selftest: ... selftest)   -> export/sample/forecast_latest.json
+"""FORECAST preview (river), one command:  python src/live/44_forecast_preview.py   (selftest: ... selftest)   -> export/sample/forecast_latest.json
 "NWM short-range forecast, unvalidated; river flow only." NOT a closure probability, not a validated forecast; no skill claimed. Not fed into any ML placeholder value.
-Source: NOAA operational NWM short-range channel_rt, 18 hourly leads per cycle (AWS -> GCS -> NOMADS, the same fetcher as the hourly archiver, src/nwm_fc.py).
+Source: NOAA operational NWM short-range channel_rt, 18 hourly leads per cycle (AWS -> GCS -> NOMADS, the same fetcher as the hourly archiver, src/live/nwm_fc.py).
 Why not read data/forecasts: the archive holds only the 256 gauge reaches of config/reaches.csv, and only 1 of the 32 sample-crossing reaches is among them, so the sample crossings' reaches are fetched directly for the latest cycle.
 Cycle choice: newest cycle (starting 2 h before the current hour; f018 appears ~1h45 after issue) with ALL 18 leads on one source; if the newest is incomplete the previous complete cycle is used and the skipped ones are listed in "fallback".
 RL10 scenario state: flow > the crossing's q10_cfs (crossings.json) -> "scenario: flagged". A scenario level, not a probability; "not flagged" is never an assurance.
@@ -37,7 +37,7 @@ def build(cycle, df, crossings, fallback, now, version):
 
 def latest_complete(ids, now):
     import pandas as pd
-    sys.path.insert(0, "src"); import nwm_fc
+    sys.path.insert(0, "src/live"); import nwm_fc
     top = now.replace(minute=0, second=0, microsecond=0) - timedelta(hours=2); skipped = []
     for k in range(MAX_BACK):
         cyc = top - timedelta(hours=k); why = "lead 18 not available on any source"

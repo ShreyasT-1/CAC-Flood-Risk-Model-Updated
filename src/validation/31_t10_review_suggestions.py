@@ -1,6 +1,6 @@
 """Phase 2 / T10A step 2: my hand-read corrections to the automatic suggestions in data/phase2/t10/report_candidates.csv (all 120 reports with a structure on a named road within 500 m were read).
 Automatic rule over-rejects when the closed road is named after a word like AND/ON/AT; it can also accept a landmark. Writes suggested_decision (accept|reject|uncertain) + reviewer columns left blank.
-Runs on 'accept' only; 'uncertain' is excluded from the primary test and used in a sensitivity. Usage (repo root): python src/31_t10_review_suggestions.py"""
+Runs on 'accept' only; 'uncertain' is excluded from the primary test and used in a sensitivity. Usage (repo root): python src/validation/31_t10_review_suggestions.py"""
 import pandas as pd
 P = "data/phase2/t10/report_candidates.csv"; d = pd.read_csv(P, dtype={"reviewer_decision": str, "reviewer_notes": str}).fillna({"reviewer_decision": "", "reviewer_notes": ""})
 if "auto_suggested_decision" not in d: d["auto_suggested_decision"] = d.suggested_decision

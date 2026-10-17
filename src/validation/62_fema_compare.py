@@ -1,7 +1,7 @@
 """T4: assign the FEMA NFHL flood-hazard zone (data/phase2/fema_nfhl.parquet) to every crossing and every Census block origin (point-in-polygon; highest-hazard polygon wins where polygons overlap),
 then compare with the Florence hindcast scenario level RL10 (peak NWM v3.0 retrospective flow above the reach's 10-year recurrence flow, any hour 2018-09-13..2018-11-06).
 FEMA zones are a COMPARISON layer, not ground truth and not a model input. 'unmapped' = no NFHL polygon at the point; it does not mean low hazard.
-Usage (repo root): python src/62_fema_compare.py"""
+Usage (repo root): python src/validation/62_fema_compare.py"""
 import numpy as np, pandas as pd, geopandas as gpd
 O = "data/phase2/"; F = gpd.read_parquet(O + "fema_nfhl.parquet")
 def klass(z, st, sfha):

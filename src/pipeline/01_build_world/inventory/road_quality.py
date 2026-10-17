@@ -1,4 +1,4 @@
-"""Connectivity + field completeness of road datasets for Area A. Writes data/inventory/road_quality.md. Usage: python -I src/inventory/road_quality.py
+"""Connectivity + field completeness of road datasets for Area A. Writes data/inventory/road_quality.md. Usage: python -I src/pipeline/01_build_world/inventory/road_quality.py
 Connectivity = lines are linked when they share a (rounded) vertex. OSM ways are linked at shared nodes (vertex sharing); NG911/NCDOT segments by shared vertices too.
 This ignores grade separation (bridges/overpasses sharing no node are correctly unlinked; same-coordinate false links are rare). Dangling = way/segment END vertex touched by no other line."""
 import os, sys, numpy as np, pandas as pd, geopandas as gpd

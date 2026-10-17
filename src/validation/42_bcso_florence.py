@@ -1,7 +1,7 @@
 """Phase 2 / G: Brunswick Sheriff's Office Florence calls vs the NWM hazard layer. Definitions, thresholds, pass rules: docs/validation_protocol_bcso_florence.md (fixed before any call was snapped or compared).
-Stages (repo root):  python src/42_bcso_florence.py snap | fetchE | fetchSept | tests     ('tests' needs the first three; fetchSept is long, resumable per year)"""
+Stages (repo root):  python src/validation/42_bcso_florence.py snap | fetchE | fetchSept | tests     ('tests' needs the first three; fetchSept is long, resumable per year)"""
 import sys, os, json, hashlib, numpy as np, pandas as pd, geopandas as gpd
-sys.path.insert(0, "src"); O = "data/phase2/bcso/"; D = "data/bcso_florence/"; U = 32119; os.makedirs(O, exist_ok=True)
+sys.path.insert(0, "src/live"); O = "data/phase2/bcso/"; D = "data/bcso_florence/"; U = 32119; os.makedirs(O, exist_ok=True)
 CFS = 35.3146667; E0 = pd.Timestamp("2018-09-12 04:00"); E1 = pd.Timestamp("2018-09-25 04:00")   # 2018-09-12 00:00 .. 09-25 00:00 America/New_York as naive UTC
 NBOOT = 10000; NCTRL = 200; SEED = 20261014
 def calls(f, kind=None):

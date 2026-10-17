@@ -9,7 +9,7 @@ Rules are fixed here and applied mechanically (order = precedence of exclusion r
 """
 import re
 import numpy as np, pandas as pd, geopandas as gpd
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); from common import *
 
 SRC = RAW / "lsr_201809132029_201810212029.xlsx"
 COUNTIES = {"NEW HANOVER": "129", "BRUNSWICK": "019", "PENDER": "141"}

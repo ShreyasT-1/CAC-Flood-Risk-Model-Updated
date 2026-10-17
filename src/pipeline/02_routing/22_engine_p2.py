@@ -1,4 +1,4 @@
-"""PHASE 2 COPY of src/phase1/engine2.py (reads data/phase1b inputs, writes replays to data/phase2/engine/; variants in inputs()).
+"""PHASE 2 COPY of src/pipeline/02_routing/engine2.py (reads data/phase1b inputs, writes replays to data/phase2/engine/; variants in inputs()).
 Phase1b routing engine (v2). Differences from engine.py: closure SCENARIOS are recurrence levels (closed when flow > the reach's 2/5/10/25/50-yr flow) plus a labelled REFERENCE (3.64 x high_water_threshold,
 the median flood-stage/threshold ratio; not a recurrence level, not a probability); facilities = hospitals (40 km set; ED and non-ED), fire stations, and derived EXIT points; inputs/outputs in data/phase1b/.
 All results are SCENARIOS. Usage: python engine2.py <flows.parquet m3/s> <label>"""

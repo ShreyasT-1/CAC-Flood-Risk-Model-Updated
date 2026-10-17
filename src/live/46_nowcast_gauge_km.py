@@ -1,4 +1,4 @@
-"""Which gauges the public NOWCAST shows. Usage (repo root): python src/46_nowcast_gauge_km.py   (needs geopandas; run once, commit the csv)
+"""Which gauges the public NOWCAST shows. Usage (repo root): python src/live/46_nowcast_gauge_km.py   (needs geopandas; run once, commit the csv)
 Rule (fixed here, stated on the site): a gauge is shown if it is within 40 km of New Hanover, Brunswick or Pender county (straight-line, EPSG:32119). The other `in_pilot` gauges
 (upstream in the Cape Fear basin: Fayetteville, Greensboro, Chapel Hill, ...) stay in nowcast.json under `other_basin_gauges`, not in the public list.
 Writes config/nowcast_gauges.csv (nws_lid, pilot_km, public). Inputs: config/reaches.csv, data/derived/gauges_all.csv, data/phase0/counties.geojson."""

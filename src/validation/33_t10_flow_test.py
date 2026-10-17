@@ -1,7 +1,7 @@
 """Phase 2 / T10B + T10C: self-controlled flow test of the hazard layer. For each accepted flood-closure report: NWM v3.0 retro flow of the crossing's reach at the report hour, its percentile in the reach's own
 1979-2023 hourly record, ratios to q2 / q10 (fixed in advance), vs 200 same-reach same-calendar-month control hours (>72 h from any candidate report on that reach); matched AUC; storm-cluster bootstrap (gap > 48 h = new storm);
 timing: does the flow peak within +-24 h of the report (window +-72 h) more often than at control hours. All definitions, thresholds and pass rules are in docs/validation_protocol.md (fixed before running). No tuning.
-reviewer_decision (if non-blank) overrides suggested_decision. Usage (repo root): python src/33_t10_flow_test.py"""
+reviewer_decision (if non-blank) overrides suggested_decision. Usage (repo root): python src/validation/33_t10_flow_test.py"""
 import json, numpy as np, pandas as pd
 O = "data/phase2/t10/"; NCTRL = 200; NBOOT = 10000; W = 72; HIT = 24
 D = pd.read_csv(O + "report_candidates.csv", dtype={"reviewer_decision": str}).fillna({"reviewer_decision": ""}); D["decision"] = np.where(D.reviewer_decision.str.strip() != "", D.reviewer_decision.str.strip().str.lower(), D.suggested_decision)

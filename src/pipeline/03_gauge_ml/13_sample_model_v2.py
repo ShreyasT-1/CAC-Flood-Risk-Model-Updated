@@ -10,7 +10,7 @@ Outputs: data/derived/sample_model_v2.csv, sample_model_v2_lead.csv, sample_mode
 import sys, pickle, time
 import numpy as np, pandas as pd
 from sklearn.ensemble import HistGradientBoostingClassifier
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 V2 = DER / "ml_full_table_v2"
 Y = "exceed_next_12h"

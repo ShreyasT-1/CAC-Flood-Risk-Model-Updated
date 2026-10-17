@@ -1,6 +1,6 @@
 """FEMA NFHL (https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer) download by object id. Layers: 28 zones, 1 LOMRs, 16 BFEs, 14 cross-sections.
 Method: (1) object ids intersecting each 0.1-deg tile of the area bbox, (2) fetch geometry+attributes by id in chunks, halving a chunk on failure (FEMA returns empty/500 for big polygon pages), (3) keep features intersecting the buffered area.
-Usage: python -I src/inventory/fetch_nfhl.py A:28,1,16,14 B:1,16,14   (B zones already in data/phase2/fema_nfhl.parquet)"""
+Usage: python -I src/pipeline/01_build_world/inventory/fetch_nfhl.py A:28,1,16,14 B:1,16,14   (B zones already in data/phase2/fema_nfhl.parquet)"""
 import os, sys, time, datetime, requests, numpy as np, geopandas as gpd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common_geo import areas, ROOT

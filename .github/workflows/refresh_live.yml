@@ -18,10 +18,10 @@ jobs:
         with: {python-version: "3.12"}
       - run: pip install netCDF4 numpy pandas pyarrow requests
       - name: nowcast (river gauges + coastal)
-        run: python src/45_nowcast.py
+        run: python src/live/45_nowcast.py
         continue-on-error: true
       - name: forecast preview
-        run: python src/44_forecast_preview.py
+        run: python src/live/44_forecast_preview.py
         continue-on-error: true
       - name: copy into the site and commit
         run: |

@@ -2,8 +2,8 @@
 Verified 2026-10-14 against the CO-OPS docs (api.tidesandcurrents.noaa.gov/api/prod, mdapi): products water_level / predictions, datum=NAVD (offered at these 3 stations), 6-min observed (<= 1 month per request), predictions interval h.
 Station facts (mdapi, 2026-10-14): 8658120 Wilmington (obs+pred; UP the Cape Fear River, so its residual also contains river flow), 8658163 Wrightsville Beach (obs+pred; open coast side), 8659084 Southport (predictions ONLY, no observed water level).
 Honesty rules baked in: residual = observed - predicted is a *nowcast anomaly*, not a surge forecast; the outlook just holds the latest residual (persistence, flagged synthetic=true); no official NHC/NOS surge guidance is used here. Nothing here says a road is safe.
-This shell cannot reach NOAA: run on a machine with internet (or in the GitHub Action). Offline self-test: python src/43_coastal_levels.py selftest
-Usage: python src/43_coastal_levels.py fetch   -> export/sample/coastal.json"""
+This shell cannot reach NOAA: run on a machine with internet (or in the GitHub Action). Offline self-test: python src/live/43_coastal_levels.py selftest
+Usage: python src/live/43_coastal_levels.py fetch   -> export/sample/coastal.json"""
 import sys, json, math, datetime as dt, urllib.request, urllib.parse
 API = "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter"
 STALE = dt.timedelta(hours=3)   # observations older than this are flagged stale

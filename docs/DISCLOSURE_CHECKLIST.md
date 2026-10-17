@@ -37,7 +37,7 @@ Every `TODO-CONFIRM` line in `docs/claims.md`, copied verbatim, with what the re
 
 **Evidence in the repo:**
 
-- `reports/phase1_limitations.md` (2026-10-10) and `data/export/README.md` state scenario wording and forbid 'safe'/'no risk' claims; `src/export_checks.py` enforces the banned strings.
+- `reports/phase1_limitations.md` (2026-10-10) and `data/export/README.md` state scenario wording and forbid 'safe'/'no risk' claims; `src/pipeline/04_export/export_checks.py` enforces the banned strings.
 - `git remote -v` is empty and there is no push in `git log`; `docs/claims.md` section 2 item 4 states the no-'safe' rule.
 - Whether these rules came from you or from the assistant is not recorded.
 
@@ -51,7 +51,7 @@ Every `TODO-CONFIRM` line in `docs/claims.md`, copied verbatim, with what the re
 
 **Evidence in the repo:**
 
-- `docs/validation_protocol.md`: sections A-F (T10) and Amendments 1-5 dated 2026-10-11 and 2026-10-12, each stating it was written before the corresponding results. Amendment 4 (2026-10-11) changes the closure rule to `Condition == 'Closed'`; Helene is handled separately in `src/54_t15_test.py`.
+- `docs/validation_protocol.md`: sections A-F (T10) and Amendments 1-5 dated 2026-10-11 and 2026-10-12, each stating it was written before the corresponding results. Amendment 4 (2026-10-11) changes the closure rule to `Condition == 'Closed'`; Helene is handled separately in `src/validation/54_t15_test.py`.
 - The protocol file is written in the first person, but the repo cannot show who made each decision.
 
 **Your answer:**  [ ] yes, accurate   [ ] no, delete   [ ] edit (write the corrected sentence here): ______________________

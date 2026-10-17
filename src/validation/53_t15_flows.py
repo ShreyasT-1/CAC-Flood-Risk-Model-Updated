@@ -1,5 +1,5 @@
 """Phase 2 / T15 Step 3: peak NWM streamflow per assessed reach over each event's flow window (Amendment 4). Source: NWM operational analysis_assim channel_rt tm00, hourly, from NOAA's public Google Cloud mirror
-gs://national-water-model (the noaa-nwm-pds S3 bucket only starts 2025-01-01). Records the model version stored in the files. Missing hours are listed, never filled. Usage (repo root): python src/53_t15_flows.py"""
+gs://national-water-model (the noaa-nwm-pds S3 bucket only starts 2025-01-01). Records the model version stored in the files. Missing hours are listed, never filled. Usage (repo root): python src/validation/53_t15_flows.py"""
 import io, os, time, json, requests, numpy as np, pandas as pd, netCDF4
 from concurrent.futures import ThreadPoolExecutor
 import threading; LOCK = threading.Lock()   # HDF5/netCDF4 is not thread-safe: downloads run in parallel, parsing is serialised

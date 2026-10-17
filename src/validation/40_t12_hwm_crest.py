@@ -1,8 +1,8 @@
 """Phase 2 / T12: USGS STN Florence high-water marks vs lidar road crest at seed crossings, and the hindcast hazard output at those crossings.
 All definitions are fixed in docs/validation_protocol.md, Amendment 2 (written before this script ran). Run once.
-Usage (repo root): python src/40_t12_hwm_crest.py"""
+Usage (repo root): python src/validation/40_t12_hwm_crest.py"""
 import os, json, time, requests, numpy as np, pandas as pd, geopandas as gpd, rasterio, sys
-sys.path.insert(0, "src"); from nwm_retro import fetch
+sys.path.insert(0, "src/live"); from nwm_retro import fetch
 O = "data/phase2/t12/"; U = 32119; CFS = 35.3146667; FT = 0.3048; rng = np.random.default_rng(20261011); NB = 10000
 # ---- HWMs ----
 H = pd.DataFrame(json.load(open(O + "stn_hwms_florence_nc.json")))

@@ -2,9 +2,9 @@
  (a) DOCUMENTED-UPPER-BOUND: every statewide seed structure (waterway crossing) on a road/county pair NCDOT listed as "closed in sections" that day (the sections are not located, so this over-closes);
  (b) MODEL: the subset of (a)'s assessed structures whose NWM v3.0 retro flow is above q10 at that hour (the hazard rule, = RL10).
 Outcome per group: share of baseline-reachable people with NO path to the derived major exit points / to any ED hospital (same definitions as phase-1 p8). This tests graph + inventory, not the hazard layer alone. Hindcast scenario, not a closure estimate.
-Usage (repo root): python src/39_t10_exit_scenario.py"""
+Usage (repo root): python src/validation/39_t10_exit_scenario.py"""
 import sys, json, numpy as np, pandas as pd, geopandas as gpd
-sys.path.insert(0, "src/phase1"); sys.path.insert(0, "src"); import engine2 as E; from nwm_retro import fetch
+sys.path.insert(0, "src/pipeline/02_routing"); sys.path.insert(0, "src/live"); import engine2 as E; from nwm_retro import fetch
 O = "data/phase2/t10/"; U = 32617; CFS = 35.3146667
 import re
 DOC = pd.read_csv("docs/florence_documented_closures.csv"); DOC = DOC[(DOC.status == "verified") & DOC.time_precision.str.startswith("snapshot")]

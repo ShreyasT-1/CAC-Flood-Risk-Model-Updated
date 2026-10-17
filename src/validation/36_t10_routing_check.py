@@ -1,8 +1,8 @@
 """Phase 2 / T10F: routing validation. 150 random origin blocks (50 per county, seed 20261011) -> engine baseline drive minutes to the nearest ED hospital vs OSRM public demo server (car profile).
 OSRM demo policy (github.com/Project-OSRM/osrm-backend/wiki/Demo-server, read 2026-10-11): max 1 request/second, reasonable non-commercial use, no uptime guarantee. We send 150 requests at ~1.2 s spacing.
-Definitions fixed in docs/validation_protocol.md section F. Usage (repo root): python src/36_t10_routing_check.py"""
+Definitions fixed in docs/validation_protocol.md section F. Usage (repo root): python src/validation/36_t10_routing_check.py"""
 import sys, time, json, requests, numpy as np, pandas as pd
-sys.path.insert(0, "src/phase1"); import engine2 as E
+sys.path.insert(0, "src/pipeline/02_routing"); import engine2 as E
 O = "data/phase2/t10/"; net = E.Net(); sets, org, fac = E.inputs(); H = pd.read_parquet("data/phase1b/hospitals_snapped.parquet"); H = H[H.ed & ~H.is_behavioral_or_nonacute].drop_duplicates("node")
 hn = [int(n) for n in fac["hospital_ED_acute"]["nodes"]]; assert set(hn) == set(H.node.astype(int)), "hospital node set mismatch"
 D = np.vstack([E.solve(net, set(), [n], 0)[0] for n in hn]); onode = org.node.values; T = D[:, onode]; best = T.argmin(0); tt = T.min(0) / 60; ok = np.isfinite(tt)

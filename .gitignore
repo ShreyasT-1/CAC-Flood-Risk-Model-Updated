@@ -5,7 +5,7 @@ __pycache__/
 *.tmp
 data/forecasts/
 
-# inventory downloads (large / re-creatable via src/inventory/*.py)
+# inventory downloads (large / re-creatable via src/pipeline/01_build_world/inventory/*.py)
 data/raw_new/
 data/derived_new/osm_extract/
 data/phase2/fema_nfhl.parquet

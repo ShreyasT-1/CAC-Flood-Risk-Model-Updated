@@ -5,7 +5,7 @@ data/forecasts: that archive only holds the 256 gauge reaches in config/reaches.
 This is a SCENARIO VIEW of operational NWM output (flow vs each reach's own recurrence flows), not a closure forecast and not a probability. No value is ever filled: a reach missing from the
 file or with a missing value gets null; if no file can be read the output says "available": false with the reason.
 Levels: RL0 = flow at or below the reach's 2-year flow; RL2/5/10/25/50 = flow strictly above that recurrence flow (highest one reached). Stale = newest cycle older than 6 h.
-Usage (repo root): python src/72_live_conditions.py [--now YYYY-MM-DDTHH] [--out DIR]   (--now/--out are for testing the stale / unavailable paths)"""
+Usage (repo root): python src/live/72_live_conditions.py [--now YYYY-MM-DDTHH] [--out DIR]   (--now/--out are for testing the stale / unavailable paths)"""
 import hashlib, json, sys
 from datetime import datetime, timedelta, timezone
 import netCDF4, numpy as np, pandas as pd, requests
@@ -64,6 +64,6 @@ open(X + "live_conditions.json", "w", encoding="utf-8").write(json.dumps(J, inde
 mp = X + "manifest.json"; M = json.load(open(mp)); M["files"] = [m for m in M["files"] if m["file"] not in ("live_conditions.json", "live_conditions.csv")]
 inp = "data/export/crossings_export.csv"; sha = hashlib.sha256(open(inp, "rb").read()).hexdigest()
 for f, n in (("live_conditions.json", len(J["crossings"])), ("live_conditions.csv", len(R))):
-    M["files"].append(dict(file=f, rows=n, row_unit="records", live=True, source_script="src/72_live_conditions.py", input_files=[inp, "NOAA NWM analysis_assim channel_rt tm00 (url in the file)"], input_sha256={inp: sha}, generated_at=gen,
+    M["files"].append(dict(file=f, rows=n, row_unit="records", live=True, source_script="src/live/72_live_conditions.py", input_files=[inp, "NOAA NWM analysis_assim channel_rt tm00 (url in the file)"], input_sha256={inp: sha}, generated_at=gen,
                            note="rewritten on every run; sha256 deliberately not pinned; rows are 0 when available is false"))
 json.dump(M, open(mp, "w"), indent=1)

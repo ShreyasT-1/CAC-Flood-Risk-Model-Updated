@@ -1,4 +1,4 @@
-// Live layers written by lifeline/src/45_nowcast.py and 44_forecast_preview.py (copied to public/data/sample/ by refresh_live.yml or `npm run sample:sync`).
+// Live layers written by lifeline/src/live/45_nowcast.py and 44_forecast_preview.py (copied to public/data/sample/ by refresh_live.yml or `npm run sample:sync`).
 // Each file carries its own mode, generated_at, stale, source and caveats; the UI reads them and hard-codes none of that text.
 import { useEffect, useState } from "react";
 

@@ -1,12 +1,12 @@
 """T6: build data/export/ (website + ML teammate). Structural consequence ranking uses NO hazard/flow input. Origins: phase-1 snap by default (SNAP=resnap for the phase-2 re-snap; see README).
-Env: SNAP=phase1 (default) | resnap, EXPORT_DIR. Usage (repo root): python src/export_data.py   ->  then python src/export_checks.py"""
+Env: SNAP=phase1 (default) | resnap, EXPORT_DIR. Usage (repo root): python src/pipeline/04_export/export_data.py   ->  then python src/pipeline/04_export/export_checks.py"""
 import os, sys, json, hashlib, subprocess, datetime, importlib.util, numpy as np, pandas as pd, geopandas as gpd
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import dijkstra
 SNAP = os.environ.get("SNAP", "phase1"); assert SNAP in ("phase1", "resnap"); X = os.environ.get("EXPORT_DIR", "data/export/"); os.makedirs(X, exist_ok=True)
 if SNAP == "resnap": os.environ["P2_RESNAP"] = "1"   # default is the phase-1 snap (see README: the re-snap failed the 2026-10-12 check)
 RP = "resnap" if SNAP == "resnap" else "base"
-sp = importlib.util.spec_from_file_location("eng", "src/22_engine_p2.py"); eng = importlib.util.module_from_spec(sp); sp.loader.exec_module(eng)
+sp = importlib.util.spec_from_file_location("eng", "src/pipeline/02_routing/22_engine_p2.py"); eng = importlib.util.module_from_spec(sp); sp.loader.exec_module(eng)
 net = eng.Net(); _, org, fac = eng.inputs(); org = org.reset_index(drop=True); onode = org.node.values; pop = org.pop20.values.astype(float); NO = len(org)
 V = pd.read_parquet("data/phase0/crossings_v2.parquet"); SN = pd.read_parquet("data/phase1b/crossing_snap.parquet")[["crossing_id", "snap_seg", "snap_dist_m"]]
 H = pd.read_parquet("data/phase1b/hospitals_snapped.parquet"); H = H[H.ed & ~H.is_behavioral_or_nonacute]; F = pd.read_parquet("data/phase1b/firestations_snapped.parquet")
@@ -114,8 +114,8 @@ try: gh = subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text
 except Exception: gh = "unavailable"
 ins = {"crossings": ["data/phase0/crossings_v2.parquet", "data/phase1b/crossing_snap.parquet", "data/phase2/fema_assign_crossings.csv", "data/phase2/fema_nfhl.parquet"], "net": ["data/phase1b/graph_segments.parquet", "data/phase1b/origins_snapped.parquet", "data/phase1b/hospitals_snapped.parquet", "data/phase1b/firestations_snapped.parquet", "data/phase1b/graph_nodes.parquet"]}
 replay_in = ["data/phase1b/flows_hindcast.parquet", W + "replay_hindcast_" + RP + "_hour_state.parquet", W + "replay_hindcast_" + RP + "_origin_state.parquet"]
-spec = {"crossings_export.csv": ("src/export_data.py", ins["crossings"]), "crossings_export.geojson": ("src/export_data.py", ins["crossings"]), "consequence_ranking.csv": ("src/export_data.py (+src/22_engine_p2.py Net/solve)", ins["crossings"] + ins["net"]),
-        "address_report_sample.json": ("src/export_data.py", ins["crossings"] + ins["net"]), "florence_replay_hourly.csv": ("src/export_data.py (+src/22_engine_p2.py replay outputs)", ins["crossings"] + replay_in), "blocks_export.csv": ("src/export_data.py (+src/62_fema_compare.py)", ins["net"] + ["data/phase2/fema_assign_blocks.csv"]), "README.md": ("src/export_data.py + docs/export_readme_head.md", ["reports/phase1_limitations.md", "docs/export_readme_head.md"] + (["docs/export_snap_sidebyside.md"] if os.path.exists("docs/export_snap_sidebyside.md") else []))}
+spec = {"crossings_export.csv": ("src/pipeline/04_export/export_data.py", ins["crossings"]), "crossings_export.geojson": ("src/pipeline/04_export/export_data.py", ins["crossings"]), "consequence_ranking.csv": ("src/pipeline/04_export/export_data.py (+src/pipeline/02_routing/22_engine_p2.py Net/solve)", ins["crossings"] + ins["net"]),
+        "address_report_sample.json": ("src/pipeline/04_export/export_data.py", ins["crossings"] + ins["net"]), "florence_replay_hourly.csv": ("src/pipeline/04_export/export_data.py (+src/pipeline/02_routing/22_engine_p2.py replay outputs)", ins["crossings"] + replay_in), "blocks_export.csv": ("src/pipeline/04_export/export_data.py (+src/validation/62_fema_compare.py)", ins["net"] + ["data/phase2/fema_assign_blocks.csv"]), "README.md": ("src/pipeline/04_export/export_data.py + docs/export_readme_head.md", ["reports/phase1_limitations.md", "docs/export_readme_head.md"] + (["docs/export_snap_sidebyside.md"] if os.path.exists("docs/export_snap_sidebyside.md") else []))}
 rowcount = lambda f: (len(pd.read_csv(X + f)) if f.endswith(".csv") else len(json.load(open(X + f))) if f.endswith(".json") else len(gpd.read_file(X + f)) if f.endswith(".geojson") else len(open(X + f, encoding="utf-8").read().splitlines()))
 man = dict(snap=SNAP, built_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"), git_head=gh, git_note="most project files are uncommitted, so file sha256 values are the reliable provenance", files=[
     dict(file=f, rows=rowcount(f), row_unit="lines" if f == "README.md" else "records", source_script=s, input_files=i, input_sha256={p: sha(p) for p in i}, sha256=sha(X + f)) for f, (s, i) in spec.items()])

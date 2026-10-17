@@ -1,5 +1,5 @@
 import os, geopandas as gpd
-ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..")
 A_IDS = {"37183": "Wake", "37063": "Durham", "37135": "Orange"}
 B_IDS = {"37129": "New Hanover", "37019": "Brunswick", "37141": "Pender"}
 def areas():

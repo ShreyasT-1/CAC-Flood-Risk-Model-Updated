@@ -7,7 +7,7 @@ Output: data/derived/sample_model.csv, reports/sample_model.md
 import numpy as np, pandas as pd
 from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.metrics import average_precision_score, precision_recall_curve
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 FEATS = ["nwm_flow", "nwm_chg_1h", "nwm_chg_3h", "nwm_chg_6h", "nwm_chg_12h", "nwm_chg_24h", "nwm_lag_1h", "nwm_lag_3h", "nwm_lag_6h",
          "nwm_lag_12h", "nwm_lag_24h", "nwm_flow_pctile", "baseline_ratio", "stream_order", "month"]

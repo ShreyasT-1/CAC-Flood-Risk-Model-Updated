@@ -1,5 +1,5 @@
 """Phase 2 / T15 Step 4: AUC of peak flow ratio (positives vs negatives) per event and pooled; cluster bootstrap over (event, county) cells; precision/recall at q2 and q10; strata. Rules fixed in docs/validation_protocol.md Amendments 3-4. Run once.
-Primary = pooled over events excluding the Helene event (E5, window contains 2024-09-26..28), metric peak/q10, pass if lower 95% bound > 0.5. Everything else is secondary. Usage (repo root): python src/54_t15_test.py"""
+Primary = pooled over events excluding the Helene event (E5, window contains 2024-09-26..28), metric peak/q10, pass if lower 95% bound > 0.5. Everything else is secondary. Usage (repo root): python src/validation/54_t15_test.py"""
 import json, numpy as np, pandas as pd
 O = "data/phase2/t15/"; rng = np.random.default_rng(20261011); NB = 10000
 A = pd.read_parquet(O + "t15_crossing_sets.parquet"); PK = pd.read_parquet(O + "t15_peaks.parquet"); ev = pd.read_csv(O + "t15a4_events_chosen.csv", parse_dates=["start", "last_start"])

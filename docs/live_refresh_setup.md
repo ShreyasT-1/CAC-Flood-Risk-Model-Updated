@@ -1,6 +1,6 @@
 # Live data refresh (hourly) - manual setup
 
-What runs: `.github/workflows/refresh_live.yml` (GitHub Actions, free tier) runs `src/45_nowcast.py` and `src/44_forecast_preview.py` every hour at minute 37, copies `nowcast.json`, `coastal.json` and `forecast_latest.json` into `web/public/data/sample/`, and commits them. A commit to the default branch makes Vercel redeploy, so the site shows the new files. `generated_at` inside each file is the time the script ran; nothing is re-stamped.
+What runs: `.github/workflows/refresh_live.yml` (GitHub Actions, free tier) runs `src/live/45_nowcast.py` and `src/live/44_forecast_preview.py` every hour at minute 37, copies `nowcast.json`, `coastal.json` and `forecast_latest.json` into `web/public/data/sample/`, and commits them. A commit to the default branch makes Vercel redeploy, so the site shows the new files. `generated_at` inside each file is the time the script ran; nothing is re-stamped.
 
 No secret is needed (the old `SITE_PUSH_TOKEN` and `SITE_REPO` are gone: the website is now in this repo). Things to set by hand, once:
 
@@ -12,4 +12,4 @@ No secret is needed (the old `SITE_PUSH_TOKEN` and `SITE_REPO` are gone: the web
 
 If the cron stops (Actions disabled, token or permission problem), the site does not fake freshness: each file keeps its own `generated_at`, and the badge in the app goes red "Stale" again.
 
-Local one-off refresh (what was done on 2026-10-16): `python src/45_nowcast.py`, `python src/44_forecast_preview.py`, then `cd web && npm run sample:sync`.
+Local one-off refresh (what was done on 2026-10-16): `python src/live/45_nowcast.py`, `python src/live/44_forecast_preview.py`, then `cd web && npm run sample:sync`.

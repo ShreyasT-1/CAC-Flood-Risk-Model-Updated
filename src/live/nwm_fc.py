@@ -12,7 +12,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import netCDF4, numpy as np, pandas as pd, requests
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "data/forecasts"
 MANIFEST = OUT / "manifest.csv"
 CMS_TO_CFS = 35.3147

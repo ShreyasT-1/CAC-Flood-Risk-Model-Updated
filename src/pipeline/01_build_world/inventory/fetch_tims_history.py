@@ -1,6 +1,6 @@
 """Download NCDOT_TIMSIncidentsHistory layer 0 (points) fully, paged, to data/raw_new/ncdot_tims_history/. Never overwrites."""
 import json, os, time, requests, pandas as pd
-os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", ".."))
 B = "https://services.arcgis.com/NuWFvHYDMVmmxMeM/ArcGIS/rest/services/NCDOT_TIMSIncidentsHistory/FeatureServer/0/query"
 out = "data/raw_new/ncdot_tims_history"; os.makedirs(out, exist_ok=True)
 pq = f"{out}/tims_incidents_history_points.parquet"

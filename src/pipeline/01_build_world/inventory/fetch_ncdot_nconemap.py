@@ -1,4 +1,4 @@
-"""Download (Area A / B clipped) NG911 centerlines, NCDOT state-maintained roads, NCDOT road inundation points, Helene TIMS history. Usage: python -I src/inventory/fetch_ncdot_nconemap.py [name ...]"""
+"""Download (Area A / B clipped) NG911 centerlines, NCDOT state-maintained roads, NCDOT road inundation points, Helene TIMS history. Usage: python -I src/pipeline/01_build_world/inventory/fetch_ncdot_nconemap.py [name ...]"""
 import os, sys, datetime
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common_geo import areas, ROOT

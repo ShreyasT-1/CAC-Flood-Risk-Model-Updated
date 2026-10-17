@@ -1,6 +1,6 @@
 """Phase 2 / T10D (= T9): gauge validation of the NWM v3.0 retrospective flow the hazard layer is built on, at the 43 pilot gauges (pilot-flag crosswalk gauges with observed hourly discharge),
 for Matthew (2016-10-05..25) and Florence (2018-09-10..10-31). Definitions and the pre-declared verdict: docs/validation_protocol.md section D. Hindcast only; no tuning.
-Usage (repo root): python src/35_t10_gauge_validation.py"""
+Usage (repo root): python src/validation/35_t10_gauge_validation.py"""
 import json, requests, numpy as np, pandas as pd
 O = "data/phase2/t10/"; CFS = 35.3146667
 c = pd.read_csv("data/derived/gauge_crosswalk.csv", dtype={"usgs_id": str}); c = c[c.in_pilot].drop_duplicates("usgs_id")

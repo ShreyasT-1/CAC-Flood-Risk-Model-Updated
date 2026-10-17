@@ -18,7 +18,7 @@ Definitions (fixed before looking at results):
   its +-7 day buffer so the test/buffer hours share one id.
 """
 import numpy as np, pandas as pd, io
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 HORIZONS = range(1, 13)
 CMS_TO_CFS = 35.3146667

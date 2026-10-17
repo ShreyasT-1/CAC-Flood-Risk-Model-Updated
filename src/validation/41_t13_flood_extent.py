@@ -1,6 +1,6 @@
 """Phase 2 / T13: observed flood extent (TNC / Schaffer-Smith et al. 2020, Sentinel-1 composite 2018-09-18..09-28/30, ~20 m, CC-BY 4.0) vs the hindcast hazard output at the 250 hazard-ready seed crossings.
 Definitions fixed in docs/validation_protocol.md, Amendment 2. Raster pulled from the public NC OneMap ImageServer (exportImage, native 65.6167 ft cells, EPSG:2264); flooded = 1, NoData = 0 (not flooded OR outside the mapped area;
-the mosaic footprint polygon is used to tell those apart). Run once. Usage (repo root): python src/41_t13_flood_extent.py"""
+the mosaic footprint polygon is used to tell those apart). Run once. Usage (repo root): python src/validation/41_t13_flood_extent.py"""
 import os, json, requests, numpy as np, pandas as pd, geopandas as gpd, rasterio
 from shapely.geometry import Polygon
 O = "data/phase2/t13/"; os.makedirs(O, exist_ok=True); IS = "https://services.nconemap.gov/secure/rest/services/Florence_Flood_Extent/ImageServer"; PX = 65.61666666666667; CFS = 35.3146667; NB = 10000; rng = np.random.default_rng(20261011)

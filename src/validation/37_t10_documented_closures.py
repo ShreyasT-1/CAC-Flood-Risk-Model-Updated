@@ -1,6 +1,6 @@
 """Phase 2 / T10E step 1: build docs/florence_documented_closures.csv from sources actually fetched on 2026-10-11 (quotes are verbatim from the fetched page text; times are only what the source states).
 Nothing is guessed: a field the source does not state is left blank and time_precision says so. status = verified (source fetched and quote present) | unverified (seen in a search summary only, page not fetched).
-Usage (repo root): python src/37_t10_documented_closures.py"""
+Usage (repo root): python src/validation/37_t10_documented_closures.py"""
 import pandas as pd
 U19 = "https://www.ncdot.gov/news/press-releases/TestIgnore/2018/2018-09-19-assessing-florence-impacts-recovery.aspx"
 U22 = "https://www.ncdot.gov/news/press-releases/TestIgnore/2018/2018-09-22-wilmington-routes-open.aspx"

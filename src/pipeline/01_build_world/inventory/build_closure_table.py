@@ -1,5 +1,5 @@
 """Unified flood-related road event table, tiers kept separate via source_type. Output: data/derived_new/flood_road_events_unified.{csv,parquet}
-source_type: confirmed_closure | water_over_road | structure_damage | storm_report.  A storm_report is NOT a closure.  Usage: python -I src/inventory/build_closure_table.py"""
+source_type: confirmed_closure | water_over_road | structure_damage | storm_report.  A storm_report is NOT a closure.  Usage: python -I src/pipeline/01_build_world/inventory/build_closure_table.py"""
 import os, sys, re, glob, json, pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common_geo import areas, ROOT, A_IDS, B_IDS

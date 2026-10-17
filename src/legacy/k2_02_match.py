@@ -7,7 +7,7 @@ Output: data/derived/closure_matches.csv (one row per kept closure), data/derive
 """
 import re
 import numpy as np, pandas as pd, geopandas as gpd
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); from common import *
 
 R = 1500.0
 DIRW = {"NORTH": "N", "SOUTH": "S", "EAST": "E", "WEST": "W", "NORTHEAST": "NE", "NORTHWEST": "NW", "SOUTHEAST": "SE", "SOUTHWEST": "SW"}

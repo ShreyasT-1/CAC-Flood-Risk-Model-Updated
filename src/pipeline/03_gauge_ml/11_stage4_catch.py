@@ -15,7 +15,7 @@ from shapely.geometry import shape, box
 from shapely.ops import transform, unary_union
 from shapely import STRtree
 import pyproj, scipy.sparse as sp
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2])); from common import *
 
 BASE = "https://osdf-director.osg-htc.org/ncar/gdex/d507005/stage4/"
 OUT = DER / "stage4_catch"; OUT.mkdir(exist_ok=True)

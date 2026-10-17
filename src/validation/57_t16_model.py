@@ -1,6 +1,6 @@
 """T16 step 2 (Amendment 5, docs/validation_protocol.md): leave-one-storm-out logistic regression and one HistGradientBoosting model on the crossing x event table; Helene (E5) never trained on, reported separately.
 Nothing is tuned. Pass rule: primary model = HGB; pooled LOSO AUC (mean of the 8 event AUCs) > baseline (raw peak/q10) AND paired bootstrap difference CI excludes 0. Stop rule: any pooled AUC > 0.85 -> exit before writing results.
-Usage (repo root): python src/57_t16_model.py"""
+Usage (repo root): python src/validation/57_t16_model.py"""
 import sys, json, numpy as np, pandas as pd
 from scipy.stats import rankdata
 from sklearn.ensemble import HistGradientBoostingClassifier

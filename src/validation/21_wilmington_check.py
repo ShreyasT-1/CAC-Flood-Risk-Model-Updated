@@ -1,8 +1,8 @@
 """Phase 2 / T2b: is 'Wilmington loses no access' an artifact? Diagnostics + stress tests with the phase1b graph (engine2.Net). Outputs data/phase2/t2b_*.csv.
 Stress tests close segments irrespective of any flow (so they are NOT hazard scenarios): they measure whether the graph/crossing inventory CAN express a Wilmington loss at all.
-Usage (repo root): python src/21_wilmington_check.py"""
+Usage (repo root): python src/validation/21_wilmington_check.py"""
 import sys, numpy as np, pandas as pd, geopandas as gpd
-sys.path.insert(0, "src/phase1"); import engine2 as E
+sys.path.insert(0, "src/pipeline/02_routing"); import engine2 as E
 from scipy.sparse.csgraph import connected_components
 O, P2 = "data/phase1b/", "data/phase2/"; pd.set_option("display.width", 250, "display.max_columns", 40, "display.max_colwidth", 50)
 net = E.Net(); sets, org, fac = E.inputs(); X = gpd.read_parquet("data/phase0/crossings_v2.parquet")

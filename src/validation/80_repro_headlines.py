@@ -1,7 +1,7 @@
 """Job 3a: recompute every headline in docs/claims.md from files in the repo and compare with the documented number (parsed from claims.md, not typed here).
 Rows marked 'recomputed' are calculated from per-row data files; 'stored' are read from a results json/csv written by the original test script (the bootstrap CIs and long
 model runs are not re-run here). Mismatch = rounded recomputed value != documented value at the documented precision. Exit 1 on any mismatch.
-Usage (repo root): python src/80_repro_headlines.py"""
+Usage (repo root): python src/validation/80_repro_headlines.py"""
 import json, re, sys, numpy as np, pandas as pd
 from scipy.stats import rankdata
 CL = open("docs/claims.md", encoding="utf-8").read()
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     h = pd.read_csv("data/export/florence_replay_hourly.csv"); sd = h[(h.crossing_set == "seed") & (h.scenario == "RL2")]; rc = pd.read_csv("data/phase1b/recurrence_hindcast_nwm_v30_retro.csv")
     add("C7", "seed crossings above RL2 at peak hour", "recomputed", sd.n_crossings_above_level.max(), doc("C7", r"\((\d+) of 250 at the peak")); add("C7", "seed crossings assessed", "recomputed", sd.n_crossings_assessed.max(), doc("C7", r"of (\d+) at the peak"))
     add("C7", "seed crossings whose peak exceeds q50", "recomputed", int(((rc.in_seed) & (rc.peak_bin == "above_50")).sum()), doc("C7", r"(\d+) of 250 exceed the 50-year"))
-    # C8 ML nowcast (read from ml_example_v2_results.csv written by src/ml_example_v2.py)
+    # C8 ML nowcast (read from ml_example_v2_results.csv written by src/pipeline/03_gauge_ml/ml_example_v2.py)
     M = pd.read_csv("data/phase2/ml_example_v2_results.csv"); M = M[M.population.str.startswith("onset") & ~M.score.str.startswith("DIFF")]
     for es, rx in (("TEST Florence", r"Florence \(test\) \*\*([\d.]+)\*\* vs ([\d.]+)"), ("UNSEEN gauges (non-Florence)", r"unseen gauges ([\d.]+) vs ([\d.]+)"), ("VAL (fold 4, trained gauges)", r"validation fold ([\d.]+) vs ([\d.]+)")):
         g = M[M.eval_set == es]; add("C8", f"{es}: model recall@50% precision", "stored", g[g.score == "hgb_seedavg"].recall50.iloc[0], doc("C8", rx, 1)); add("C8", f"{es}: best persistence recall@50%", "stored", g[g.score.str.contains("persist")].recall50.max(), doc("C8", rx, 2))

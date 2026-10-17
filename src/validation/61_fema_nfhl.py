@@ -1,6 +1,6 @@
 """T4: download FEMA NFHL flood hazard zones (S_FLD_HAZ_AR) for the pilot bbox (New Hanover, Brunswick, Pender + 0.05 deg) from FEMA's public ArcGIS REST service, save data/phase2/fema_nfhl.parquet.
 Endpoint verified 2026-10-12: https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28 (layer name "Flood Hazard Zones", ArcGIS Server 11.1). The older path /gis/nfhl/rest/services/... returns 'Not Found'.
-Polygons are kept as served (no generalisation). FEMA zones are a COMPARISON layer, not ground truth and not a model input. Usage (repo root): python src/61_fema_nfhl.py"""
+Polygons are kept as served (no generalisation). FEMA zones are a COMPARISON layer, not ground truth and not a model input. Usage (repo root): python src/validation/61_fema_nfhl.py"""
 import json, time, requests, numpy as np, pandas as pd, geopandas as gpd
 URL = "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28/query"; OUT = "data/phase2/fema_nfhl.parquet"
 FIELDS = "OBJECTID,DFIRM_ID,FLD_AR_ID,FLD_ZONE,ZONE_SUBTY,SFHA_TF,STATIC_BFE,V_DATUM"

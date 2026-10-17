@@ -1,5 +1,5 @@
 """Extract from the existing data/raw/nc.osm.pbf (Geofabrik, 2026-10-09; read-only): drive-network lines for Area A+10km (with tags), fire_station and hospital features for A+10km and B+40km.
-Usage: python -I src/inventory/osm_extract.py"""
+Usage: python -I src/pipeline/01_build_world/inventory/osm_extract.py"""
 import os, sys, re, pyogrio, pandas as pd, geopandas as gpd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common_geo import areas, ROOT

@@ -2,7 +2,7 @@
 percentile of each label-matched reported crossing among the hazard-assessed SEED crossings of its county (mid-rank), vs a random-draw null (one crossing per report, same county), one-sided p for the median.
 Rules (higher = more severe): peak recurrence bin (phase1 baseline), earliest q2 exceedance (baseline), hours above q2, hours above q10, peak/q10, peak/q2, REF peak/(3.64 x HWT), REF hours above,
 and flow/q10 AT THE REPORT HOUR vs the county pool at that same hour (time-matched). 'seed_reliable only' = pool and reports restricted to seed_reliable crossings.
-All numbers are hindcast (NWM v3.0 retro) or v1.2 forecast-replay SCENARIO rankings, not closure probabilities. Usage (repo root): python src/20_alt_closure_rules.py"""
+All numbers are hindcast (NWM v3.0 retro) or v1.2 forecast-replay SCENARIO rankings, not closure probabilities. Usage (repo root): python src/validation/20_alt_closure_rules.py"""
 import json, numpy as np, pandas as pd
 P1, O = "data/phase1b/", "data/phase2/"; CFS = 35.3146667; NDRAW = 20000
 SERIES = {"hindcast_nwm_v30_retro": "flows_hindcast.parquet", "forecast_nwm_v12_shortrange": "flows_forecast.parquet"}

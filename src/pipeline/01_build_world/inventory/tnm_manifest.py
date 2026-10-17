@@ -1,4 +1,4 @@
-"""Query TNM Access API for 1 m DEM + 1/3 arc-sec NED + LPC (count only) over Area A (+10 km); write manifest CSV. Usage: python -I src/inventory/tnm_manifest.py"""
+"""Query TNM Access API for 1 m DEM + 1/3 arc-sec NED + LPC (count only) over Area A (+10 km); write manifest CSV. Usage: python -I src/pipeline/01_build_world/inventory/tnm_manifest.py"""
 import os, sys, requests, pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common_geo import areas, ROOT

@@ -1,5 +1,5 @@
 """Phase 2 / T15 Step 1 (data only, no model): pull the NCDOT TIMS incident history (ArcGIS Online NCDOT_TIMSIncidentsHistory, points + lines), count records per month 2019->, flag flood-related full closures
-with the regex fixed in docs/validation_protocol.md Amendment 3, build events (gap > 72 h) and list candidates (>= 30 records, >= 3 counties). Usage (repo root): python src/50_t15_step1_closures.py"""
+with the regex fixed in docs/validation_protocol.md Amendment 3, build events (gap > 72 h) and list candidates (>= 30 records, >= 3 counties). Usage (repo root): python src/validation/50_t15_step1_closures.py"""
 import os, re, json, time, requests, pandas as pd, numpy as np
 O = "data/phase2/t15/"; os.makedirs(O, exist_ok=True); B = "https://services.arcgis.com/NuWFvHYDMVmmxMeM/ArcGIS/rest/services/NCDOT_TIMSIncidentsHistory/FeatureServer/"
 def pull(layer, geom, name):

@@ -1,5 +1,5 @@
 """T16 POST-HOC diagnostic (NOT pre-registered; does not change the verdict): which feature family carries the T16 gain? Same LOSO scheme, same HGB settings, run on (a) flow-only features, (b) structure-only features (no flow at all).
-Usage (repo root): python src/58_t16_posthoc.py"""
+Usage (repo root): python src/validation/58_t16_posthoc.py"""
 import numpy as np, pandas as pd
 from scipy.stats import rankdata
 from sklearn.ensemble import HistGradientBoostingClassifier

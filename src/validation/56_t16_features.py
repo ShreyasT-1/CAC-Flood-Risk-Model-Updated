@@ -1,6 +1,6 @@
 """T16 step 1 (Amendment 5): build the crossing x event feature table. Same rows/labels as data/phase2/t15_nine/t15_crossing_sets.parquet.
 New here: hours above q2 per reach and event (hourly NWM analysis_assim channel_rt tm00 from the GCS mirror, same windows as T15; peaks recomputed and checked against t15_peaks.parquet), structure length (NBI, as 52_t15_crossings.py), structure type.
-Missing stays NaN. No rain feature (not assessable, Amendment 5 item 2) and no HAND (0 coverage). Usage (repo root): python src/56_t16_features.py"""
+Missing stays NaN. No rain feature (not assessable, Amendment 5 item 2) and no HAND (0 coverage). Usage (repo root): python src/validation/56_t16_features.py"""
 import os, time, threading, numpy as np, pandas as pd, geopandas as gpd, requests, netCDF4
 from concurrent.futures import ThreadPoolExecutor
 LOCK = threading.Lock(); N = "data/phase2/t15_nine/"; O = "data/phase2/t16/"; os.makedirs(O, exist_ok=True); G = "https://storage.googleapis.com/national-water-model/"; CFS = 35.3146667; U = 32119

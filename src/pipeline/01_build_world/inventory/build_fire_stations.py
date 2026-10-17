@@ -1,6 +1,6 @@
 """Fire stations for Area A (+10 km) and B (+40 km): NC OSFM statewide layer (hosted copy, snapshot 2024-11-04) cross-checked against OSM amenity=fire_station and the earlier OSM-only pilot list.
 Output data/derived_new/fire_stations_AB.csv. 'active' = listed by OSFM 9S rating program as of snapshot date (OSFM definition: 'all active fire stations'); OSM-only stations are 'unverified'.
-Usage: python -I src/inventory/build_fire_stations.py"""
+Usage: python -I src/pipeline/01_build_world/inventory/build_fire_stations.py"""
 import os, sys, pandas as pd, geopandas as gpd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common_geo import areas, ROOT

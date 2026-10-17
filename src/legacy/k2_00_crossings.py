@@ -11,7 +11,7 @@ import numpy as np, pandas as pd, geopandas as gpd
 import osmnx as ox
 from shapely.geometry import MultiPoint, Point
 from shapely.ops import unary_union
-from common import *
+import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1])); from common import *
 
 S3 = "prod-is-usgs-sb-prod-publish/65cbbb98d34ef4b119cb37c9"  # public bucket; lazy reads, nothing is downloaded in full
 COUNTIES = {"New Hanover": "129", "Brunswick": "019", "Pender": "141"}
